@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 const GamePage = () => {
     return (
-        <View style={{width: "100%", height: "100%", borderWidth: 1, borderColor: "red"}}>
+        <>
             <View style={styles.header}>
                 <TouchableOpacity style={styles.closeTouch}>
                     <Image
@@ -23,7 +23,7 @@ const GamePage = () => {
                     </TouchableOpacity>
                 </View>
             </View>
-        </View>
+        </>
     )
 }
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         position: "absolute",
         top: 70,
-        alignItems: "center"
+        alignItems: "center",
     },
     closeTouch: {
         width: "10%",
@@ -58,8 +58,9 @@ const styles = StyleSheet.create({
         color: "white",
     },
     coinTouch: {
-        width: "25%",
+        width: "20%",
         height: "100%",
-        alignItems: "center"
+        alignItems: "center",
+        marginRight: 10
     }
 })
