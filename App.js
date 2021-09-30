@@ -11,12 +11,25 @@ import { NativeRouter, Route, Link } from "react-router-native";
 
 const App = () => {
     return (
-        <NativeRouter>
-            <Route exact path="/" component={HomeScreen} />
-            <Route path="/profile" component={Profile} />
-        </NativeRouter>
+        <ImageBackground 
+            source={require("./assets/main/background.png")}
+            style={styles.background} 
+            resizeMode="cover" 
+        >
+            <NativeRouter>
+                <Route exact path="/" component={HomeScreen} />
+                <Route path="/profile" component={Profile} />
+            </NativeRouter>
+        </ImageBackground>
     );
 }
 
-export default App
+export default App;
+
+const styles = StyleSheet.create({
+    background: {
+        flex: 1,
+        justifyContent: "center"
+    }
+})
 
