@@ -12,8 +12,9 @@ const GamePage = () => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
+                <Text style={styles.closeText}>Level</Text>
                 <View style={styles.coinsContainer}>
-                    <Text style={styles.coinText}>20</Text>
+                    <Text style={styles.coinText}>400</Text>
                     <TouchableOpacity style={styles.coinTouch}>
                         <Image
                             source={require("../assets/main/coins.png")}
@@ -39,16 +40,18 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     closeTouch: {
-        width: "10%",
+        width: "15%",
         height: "80%",
         justifyContent: "center",
-        marginLeft: 10
+        padding: 10
     },
     coinsContainer: {
         flexDirection: "row",
         alignItems: "center",
         width: "90%",
-        height: "100%"
+        height: "100%",
+        position: "absolute",
+        right: 0
     },
     coinText: {
         marginLeft: "auto",
@@ -60,7 +63,12 @@ const styles = StyleSheet.create({
     coinTouch: {
         width: "20%",
         height: "100%",
-        alignItems: "center",
-        marginRight: 10
+        alignItems: "center"
+    },
+    closeText: {
+        fontSize: 25,
+        fontWeight: "900",
+        color: "black",
+        zIndex: 1
     }
 })
