@@ -1,9 +1,17 @@
 import React from "react"
 import { Image, StyleSheet, TouchableOpacity } from "react-native"
 
-const Letters = ({ letter, word, setWord }) => {
+const Letters = ({ letter, word }) => {
+
+    const handlePress = () => {
+        let index = word.indexOf(undefined)
+        if (index !== undefined) {
+            
+        }
+    }
+
     return (
-        <TouchableOpacity style={styles.letterTouch}>
+        <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
             <Image
                 source={white[letter]}
                 style={styles.letter}
