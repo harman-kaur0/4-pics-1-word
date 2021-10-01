@@ -84,7 +84,7 @@ const GamePage = () => {
                             key={index}
                             letters={letters}
                             letter={letter} 
-                            word={word} 
+                            word={word}
                             index={index}
                         />
                     ))

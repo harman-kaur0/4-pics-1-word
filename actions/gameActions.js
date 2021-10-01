@@ -33,15 +33,9 @@ export const handleInitialSetup = level => {
     }
 }
 
-export const addLetterToWord = (word, letters) => {
+export const updateWordAndLetters = (word, letters) => {
     return dispatch => {
         dispatch({ type: "WORD", word })
         dispatch({ type: "LETTERS", letters })
-    }
-}
-
-export const removeLetterToWord = () => {
-    return dispatch => {
-
     }
 }
