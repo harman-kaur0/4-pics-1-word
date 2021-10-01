@@ -1,7 +1,7 @@
 import React from "react"
 import { Image, StyleSheet } from "react-native"
 
-const GreenLetter = ({ letter, word, setWord }) => {
+const GreenLetter = ({ letter, word }) => {
     const source = letter ? green[letter] : require("../assets/game/box.png")
 
     return (

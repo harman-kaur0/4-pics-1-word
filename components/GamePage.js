@@ -1,34 +1,20 @@
-import React, { useState } from "react"
+import React, { useEffect } from "react"
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { useDispatch, useSelector } from "react-redux"
+import { handleInitialSetup } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 import WhiteLetter from "./WhiteLetter"
 
-const data = require("../assets/data.json")
-
 const GamePage = () => {
-    const levelData = data["1"]
-    
-    const [word, setWord] = useState(Array.from(Array(levelData.answer.length)))
+    const dispatch = useDispatch()
+    const gameData = useSelector(state => state.game)
+    const levelData = gameData.data
+    const word = gameData.word
+    const letters = gameData.letters
 
-    const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
-
-    let letters = levelData.answer.split("")
-
-    const getRandomItem = array => array[Math.floor(Math.random() * array.length)]
-    while (letters.length !== 12) letters.push(getRandomItem(alphabet))
-
-    const shuffleArray = array => {
-        let currentIndex = array.length
-        
-        while (currentIndex != 0) {
-            let randomIndex = Math.floor(Math.random() * currentIndex)
-            currentIndex--
-        
-            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
-        }
-
-        return array
-    }
+    useEffect(() => {
+        dispatch(handleInitialSetup("1"))
+    })
 
     return (
         <>
@@ -94,14 +80,14 @@ const GamePage = () => {
             <View style={styles.answerContainer}>
                 {
                     word.map((letter, index) => (
-                        <GreenLetter key={index} letter={letter} word={word} setWord={setWord}/>
+                        <GreenLetter key={index} letter={letter} word={word}/>
                     ))
                 }
             </View>
             <View style={styles.whiteContainer}>
                 {
-                    shuffleArray(letters).map((letter, index) => (
-                        <WhiteLetter key={index} letter={letter} word={word} setWord={setWord}/>
+                    letters.map((letter, index) => (
+                        <WhiteLetter key={index} letter={letter} word={word}/>
                     ))
                 }
             </View>

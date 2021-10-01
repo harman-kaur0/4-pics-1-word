@@ -1,8 +1,8 @@
 import { combineReducers } from "redux"
-import { wordReducer } from "./word"
+import { gameReducer as game } from "./game"
 
 const rootReducer = combineReducers({
-    word: wordReducer
+    game
 })
 
 export default rootReducer
