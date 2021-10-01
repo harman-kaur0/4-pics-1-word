@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-
+import { useNavigation } from "@react-navigation/native"
 
 const HomeScreen = () => {
     return (
@@ -16,7 +16,7 @@ const HomeScreen = () => {
                 </TouchableOpacity>
                 <View style={styles.coinContainer}>
                     <Text style={styles.coin}>20</Text>
-                    <TouchableOpacity style={styles.touchable1}>
+                    <TouchableOpacity style={styles.touchableCoin}>
                         <Image
                             source={require("../assets/main/coins.png")}
                             style={styles.coins}
@@ -46,14 +46,16 @@ const HomeScreen = () => {
                     />
                 </TouchableOpacity>
             </View>
-            <TouchableOpacity style={styles.touchable}>
-                <Image 
-                    source={require("../assets/buttons/challenge.png")}
-                    style={styles.challenge}
-                    resizeMode="contain" 
-                />
-            </TouchableOpacity>
-            <View style={styles.buttonContainer}>
+            <View style={styles.challengeButton}>
+                <TouchableOpacity style={styles.touchable}>
+                    <Image 
+                        source={require("../assets/main/facebook.png")}
+                        style={styles.row2}
+                        resizeMode="contain"
+                    />
+                </TouchableOpacity>
+            </View>
+            <View style={styles.loginContainer}>
                 <TouchableOpacity style={styles.touchable3}>
                     <Image 
                         source={require("../assets/main/facebook.png")}
@@ -120,7 +122,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         position: "absolute",
         top: 70,
-        alignItems: "center"
+        alignItems: "center",
     },
     logo: {
         width: "100%",
@@ -131,18 +133,32 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         width: "90%",
         height: "10%",
+        justifyContent: "space-between",
+        alignItems: "center",
+        alignSelf: "center",
+        borderWidth: 1,
+        borderColor: "black",
+        marginBottom: 20,
+        marginTop: 30
+    },
+    loginContainer: {
+        flexDirection: "row",
+        width: "90%",
+        height: "10%",
         justifyContent: "center",
         alignItems: "center",
-        alignSelf: "center"
+        alignSelf: "center",
     },
     touchable2: {
-        width: "50%",
-        height: "100%",
+        width: "48%",
+        borderColor: "purple",
+        borderWidth: 1,
+        height: "90%",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
     },
     row1: {
-        width: "90%",
+        width: "100%",
         marginLeft: 5,
         marginRight: 5
     },
@@ -150,25 +166,34 @@ const styles = StyleSheet.create({
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
-        height: "10%"
+        alignSelf: "center",
+        height: "8%",
+    },
+    challengeButton: {
+        width: "90%",
+        justifyContent: "center",
+        alignItems: "center",
+        alignSelf: "center",
+        borderWidth: 1,
+        borderColor: "black"
     },
     challenge: {
-        width: "90%",
+        width: "100%",
     },
     touchable3: {
         width: "30%",
-        height: "80%",
+        height: "60%",
         alignItems: "center",
+        marginLeft: 5,
+        marginRight: 5,
     },
     row2: {
-        width: "90%",
-        height: "60%",
-        marginLeft: 5,
-        marginRight: 5
+        width: "100%",
+        height: "100%",
     },
     row3: {
         width: "100%",
-        height: "100%",
+        height: "100%"
     },
     actionContainer: {
         flexDirection: "row",
@@ -184,20 +209,22 @@ const styles = StyleSheet.create({
         width: "20%"
     },
     settings: {
-        width: "10%",
-        marginLeft: 10
+        width: "100%",
+        height: "100%",
     },
     coinContainer: {
         flexDirection: "row",
         marginLeft: "auto",
         height: "100%",
-        width: "15%",
+        width: "50%",
         alignItems: "center",
+        marginRight: 10,
+        // borderColor: "orange",
+        // borderWidth: 1
     },
     coins: {
-        width: "80%",
-        height: "90%",
-        alignSelf: "center"
+        width: "100%",
+        height: "100%",
     },
     coin: {
         marginLeft: "auto",
@@ -206,6 +233,21 @@ const styles = StyleSheet.create({
         color: "white",
     },
     touchable1: {
-        width: "100%"
+        width: "13%",
+        // borderWidth: 1,
+        // borderColor: "black",
+        height: "100%",
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: 10
+    },
+    touchableCoin: {
+        width: "30%",
+        // borderWidth: 1,
+        // borderColor: "black",
+        height: "100%",
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: 10
     }
 });
