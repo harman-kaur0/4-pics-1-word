@@ -1,7 +1,32 @@
-import React from "react"
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import React, { useState } from "react"
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import Letter from "./Letter"
+
+const data = require("../assets/data.json")
 
 const GamePage = () => {
+    const levelData = data["1"]
+
+    const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
+
+    let letters = levelData.answer.split("")
+
+    const getRandomItem = array => array[Math.floor(Math.random() * array.length)]
+    while (letters.length !== 12) letters.push(getRandomItem(alphabet))
+
+    const shuffleArray = array => {
+        let currentIndex = array.length
+        
+        while (currentIndex != 0) {
+            let randomIndex = Math.floor(Math.random() * currentIndex)
+            currentIndex--
+        
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
+        }
+
+        return array
+    }
+
     return (
         <>
             <View style={styles.header}>
@@ -23,6 +48,51 @@ const GamePage = () => {
                         />
                     </TouchableOpacity>
                 </View>
+            </View>
+            <View style={styles.boxContainer}>
+                <Image
+                    source={{uri: levelData.image1}}
+                    style={styles.image}
+                />
+                <Image
+                    source={{uri: levelData.image2}}
+                    style={styles.image}
+                />
+                <Image
+                    source={{uri: levelData.image3}}
+                    style={styles.image}
+                />
+                <Image
+                    source={{uri: levelData.image4}}
+                    style={styles.image}
+                />
+            </View>
+            <View style={styles.hintsContainer}>
+                <TouchableOpacity style={styles.wandContainer}>
+                    <Image
+                        source={require("../assets/game/hint.png")}
+                        style={{height: "100%", width: "100%"}}
+                        resizeMode="contain"
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.letterContainer}>
+                    <Image
+                        source={require("../assets/game/letter.png")}
+                        style={{height: "100%", aspectRatio: 1}}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.letterContainer}>
+                    <Image
+                        source={require("../assets/game/trash.png")}
+                        style={{height: "100%", aspectRatio: 1}}
+                    />
+                </TouchableOpacity>
+            </View>
+            <View style={styles.hintsContainer}>
+
+            </View>
+            <View style={styles.whiteContainer}>
+                {shuffleArray(letters).map((letter, index) => <Letter key={index} letter={letter}/>)}
             </View>
         </>
     )
@@ -70,5 +140,45 @@ const styles = StyleSheet.create({
         fontWeight: "900",
         color: "black",
         zIndex: 1
+    },
+    boxContainer: {
+        aspectRatio: 1,
+        height: "40%",
+        alignSelf: "center",
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+    },
+    image: {
+        width: "48%",
+        height: "48%",
+        margin: 3,
+        borderRadius: 10
+    },
+    hintsContainer: {
+        flexDirection: "row",
+        height: "8%",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 20
+    },
+    wandContainer: {
+        height: "70%",
+        width: "25%",
+        marginRight: 10
+    },
+    letterContainer: {
+        height: "70%",
+        aspectRatio: 1,
+        marginRight: 10
+    },
+    whiteContainer: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+        height: "13%",
+        width: "85%",
+        alignSelf: "center",
+        position: "absolute",
+        bottom: 80,
+        justifyContent: "space-around"
     }
 })
