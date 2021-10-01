@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
         height: "80%",
         width: "15%",
         opacity: 0.6,
-        marginRight: 5,
-        marginLeft: 5
+        marginRight: 1,
+        marginLeft: 1
     }
 })
 
