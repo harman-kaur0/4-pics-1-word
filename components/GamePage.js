@@ -1,11 +1,14 @@
 import React, { useState } from "react"
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
-import Letter from "./Letter"
+import GreenLetter from "./GreenLetter"
+import WhiteLetter from "./WhiteLetter"
 
 const data = require("../assets/data.json")
 
 const GamePage = () => {
     const levelData = data["1"]
+    
+    const [word, setWord] = useState(Array.from(Array(levelData.answer.length)))
 
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 
@@ -88,11 +91,19 @@ const GamePage = () => {
                     />
                 </TouchableOpacity>
             </View>
-            <View style={styles.hintsContainer}>
-
+            <View style={styles.answerContainer}>
+                {
+                    word.map((letter, index) => (
+                        <GreenLetter key={index} letter={letter} word={word} setWord={setWord}/>
+                    ))
+                }
             </View>
             <View style={styles.whiteContainer}>
-                {shuffleArray(letters).map((letter, index) => <Letter key={index} letter={letter}/>)}
+                {
+                    shuffleArray(letters).map((letter, index) => (
+                        <WhiteLetter key={index} letter={letter} word={word} setWord={setWord}/>
+                    ))
+                }
             </View>
         </>
     )
@@ -147,6 +158,7 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         flexWrap: "wrap",
         justifyContent: "space-between",
+        marginTop: 80
     },
     image: {
         width: "48%",
@@ -159,7 +171,7 @@ const styles = StyleSheet.create({
         height: "8%",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 20
+        marginTop: 10,
     },
     wandContainer: {
         height: "70%",
@@ -177,8 +189,14 @@ const styles = StyleSheet.create({
         height: "13%",
         width: "85%",
         alignSelf: "center",
-        position: "absolute",
-        bottom: 80,
         justifyContent: "space-around"
+    },
+    answerContainer: {
+        flexDirection: "row",
+        height: "8%",
+        width: "90%",
+        alignSelf: "center",
+        justifyContent: "center",
+        marginTop: 10
     }
 })
