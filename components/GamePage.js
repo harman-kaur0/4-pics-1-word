@@ -14,7 +14,7 @@ const GamePage = () => {
 
     useEffect(() => {
         dispatch(handleInitialSetup("1"))
-    })
+    }, [])
 
     return (
         <>
