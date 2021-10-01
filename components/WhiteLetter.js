@@ -1,20 +1,29 @@
 import React from "react"
 import { Image, StyleSheet, TouchableOpacity } from "react-native"
+import { addLetterToWord } from "../actions/gameActions"
+import { useDispatch } from "react-redux"
 
-const Letters = ({ letter, word }) => {
+const Letters = ({ letters, letter, word, index }) => {
+    const dispatch = useDispatch()
 
     const handlePress = () => {
-        let index = word.indexOf(undefined)
-        if (index !== undefined) {
-            
+        let ind = word.indexOf(undefined)
+        if (ind !== undefined) {
+            let updatedWord = word.map((l,i) => i === ind ? letter : l)
+            let updatedLetters = letters.map((l,i) => i === index ? l.toUpperCase() : l)
+            dispatch(addLetterToWord(updatedWord, updatedLetters))
         }
     }
 
     return (
         <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
             <Image
-                source={white[letter]}
-                style={styles.letter}
+                source={white[letter.toLowerCase()]}
+                style={{
+                    width: "100%",
+                    height: "100%",
+                    opacity: letter === letter.toLowerCase() ? 1 : 0.4
+                }}
                 resizeMode="contain"
             />
         </TouchableOpacity>
@@ -27,10 +36,6 @@ const styles = StyleSheet.create({
     letterTouch: {
         width: "16%",
         aspectRatio: 1
-    },
-    letter: {
-        width: "100%",
-        height: "100%"
     }
 })
 

@@ -80,14 +80,26 @@ const GamePage = () => {
             <View style={styles.answerContainer}>
                 {
                     word.map((letter, index) => (
-                        <GreenLetter key={index} letter={letter} word={word}/>
+                        <GreenLetter 
+                            key={index}
+                            letters={letters}
+                            letter={letter} 
+                            word={word} 
+                            index={index}
+                        />
                     ))
                 }
             </View>
             <View style={styles.whiteContainer}>
                 {
                     letters.map((letter, index) => (
-                        <WhiteLetter key={index} letter={letter} word={word}/>
+                        <WhiteLetter 
+                            key={index} 
+                            letters={letters}
+                            letter={letter} 
+                            word={word} 
+                            index={index}
+                        />
                     ))
                 }
             </View>

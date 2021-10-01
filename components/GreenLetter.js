@@ -1,29 +1,25 @@
 import React from "react"
-import { Image, StyleSheet } from "react-native"
+import { Image } from "react-native"
 
-const GreenLetter = ({ letter, word }) => {
+const GreenLetter = ({ letters, letter, word, index }) => {
     const source = letter ? green[letter] : require("../assets/game/box.png")
 
     return (
         <Image
             source={source}
-            style={styles.letter}
+            style={{
+                height: "80%",
+                width: "15%",
+                opacity: source ? 1 : 0.6,
+                marginRight: 1,
+                marginLeft: 1,
+            }}
             resizeMode="contain"
         />
     )
 }
 
 export default GreenLetter
-
-const styles = StyleSheet.create({
-    letter: {
-        height: "80%",
-        width: "15%",
-        opacity: 0.6,
-        marginRight: 1,
-        marginLeft: 1
-    }
-})
 
 const green = {
     "a": require("../assets/letters/green/a.png"),
