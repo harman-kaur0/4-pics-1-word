@@ -1,27 +1,57 @@
 import React from "react"
-import { Image, StyleSheet } from "react-native"
+import { View, Image, StyleSheet, TouchableOpacity } from "react-native"
+import { updateWordAndLetters } from "../actions/gameActions"
+import { useDispatch } from "react-redux"
 
-const GreenLetter = ({ letter, word }) => {
-    const source = letter ? green[letter] : require("../assets/game/box.png")
+const GreenLetter = ({ letters, letter, word, index }) => {
+    const dispatch = useDispatch()
+
+    const handlePress = () => {
+        let ind = word.indexOf(letter)
+        let idx = letters.indexOf(letter.toUpperCase())
+        if (ind !== -1) {
+            let updatedWord = word.map((l,i) => i === index ? undefined : l)
+            let updatedLetters = letters.map((l,i) => i === idx ? letter : l)
+            dispatch(updateWordAndLetters(updatedWord, updatedLetters))
+        }
+    }
 
     return (
-        <Image
-            source={source}
-            style={styles.letter}
-            resizeMode="contain"
-        />
+        letter ?
+        <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
+            <Image
+                source={green[letter]}
+                style={{
+                    width: "100%",
+                    height: "100%"
+                }}
+                resizeMode="contain"
+            />
+        </TouchableOpacity> :
+        <View style={styles.letterContainer}>
+            <Image
+                source={require("../assets/game/box.png")}
+                style={{
+                    width: "90%",
+                    height: "100%",
+                    opacity: 0.6
+                }}
+            />
+        </View>
     )
 }
 
 export default GreenLetter
 
 const styles = StyleSheet.create({
-    letter: {
-        height: "80%",
-        width: "15%",
-        opacity: 0.6,
-        marginRight: 1,
-        marginLeft: 1
+    letterTouch: {
+        width: "16%",
+        aspectRatio: 1,
+    },
+    letterContainer: {
+        width: "16%",
+        aspectRatio: 1,
+        alignItems: "center"
     }
 })
 

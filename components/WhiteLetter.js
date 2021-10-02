@@ -1,36 +1,52 @@
 import React from "react"
-import { Image, StyleSheet, TouchableOpacity } from "react-native"
+import { View, Image, StyleSheet, TouchableOpacity } from "react-native"
+import { updateWordAndLetters } from "../actions/gameActions"
+import { useDispatch } from "react-redux"
 
-const Letters = ({ letter, word }) => {
+const WhiteLetters = ({ letters, letter, word, index }) => {
+    const dispatch = useDispatch()
 
     const handlePress = () => {
-        let index = word.indexOf(undefined)
-        if (index !== undefined) {
-            
+        let ind = word.indexOf(undefined)
+        if (ind !== -1 && letter === letter.toLowerCase()) {
+            let updatedWord = word.map((l,i) => i === ind ? letter : l)
+            let updatedLetters = letters.map((l,i) => i === index ? l.toUpperCase() : l)
+            dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         }
     }
 
     return (
+        letter === letter.toLowerCase() ?
         <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
             <Image
                 source={white[letter]}
-                style={styles.letter}
+                style={{
+                    width: "100%",
+                    height: "100%"
+                }}
                 resizeMode="contain"
             />
-        </TouchableOpacity>
+        </TouchableOpacity> :
+        <View style={styles.letterTouch}>
+            <Image
+                source={white[letter.toLowerCase()]}
+                style={{
+                    width: "100%",
+                    height: "100%",
+                    opacity: 0.4
+                }}
+                resizeMode="contain"
+            />
+        </View>
     )
 }
 
-export default Letters
+export default WhiteLetters
 
 const styles = StyleSheet.create({
     letterTouch: {
         width: "16%",
         aspectRatio: 1
-    },
-    letter: {
-        width: "100%",
-        height: "100%"
     }
 })
 

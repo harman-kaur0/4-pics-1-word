@@ -32,3 +32,10 @@ export const handleInitialSetup = level => {
         dispatch({ type: "LETTERS", letters })
     }
 }
+
+export const updateWordAndLetters = (word, letters) => {
+    return dispatch => {
+        dispatch({ type: "WORD", word })
+        dispatch({ type: "LETTERS", letters })
+    }
+}
