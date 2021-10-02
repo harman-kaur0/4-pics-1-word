@@ -35,23 +35,20 @@ const HomeScreen = () => {
                     <Image 
                         source={require("../assets/buttons/play.png")}
                         style={styles.row1} 
-                        resizeMode="contain" 
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.touchable2}>
                     <Image 
                         source={require("../assets/main/prize_wheel.png")}
                         style={styles.row1} 
-                        resizeMode="contain" 
                     />
                 </TouchableOpacity>
             </View>
             <View style={styles.challengeButton}>
                 <TouchableOpacity style={styles.touchable}>
                     <Image 
-                        source={require("../assets/main/facebook.png")}
-                        style={styles.row2}
-                        resizeMode="contain"
+                        source={require("../assets/buttons/challenge.png")}
+                        style={styles.row1}
                     />
                 </TouchableOpacity>
             </View>
@@ -133,13 +130,9 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         width: "90%",
         height: "10%",
-        justifyContent: "space-between",
         alignItems: "center",
         alignSelf: "center",
-        borderWidth: 1,
-        borderColor: "black",
-        marginBottom: 20,
-        marginTop: 30
+        justifyContent: "center"
     },
     loginContainer: {
         flexDirection: "row",
@@ -150,35 +143,26 @@ const styles = StyleSheet.create({
         alignSelf: "center",
     },
     touchable2: {
-        width: "48%",
-        borderColor: "purple",
-        borderWidth: 1,
-        height: "90%",
-        justifyContent: "center",
-        alignItems: "center",
+        width: "50%",
+        height: "75%",
+        marginLeft: 5,
+        marginRight: 5,
     },
     row1: {
         width: "100%",
-        marginLeft: 5,
-        marginRight: 5
+        height: "100%",
     },
     touchable: {
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
         alignSelf: "center",
-        height: "8%",
+        height: "100%",
     },
     challengeButton: {
         width: "90%",
-        justifyContent: "center",
-        alignItems: "center",
         alignSelf: "center",
-        borderWidth: 1,
-        borderColor: "black"
-    },
-    challenge: {
-        width: "100%",
+        height: "8%"
     },
     touchable3: {
         width: "30%",
@@ -197,7 +181,7 @@ const styles = StyleSheet.create({
     },
     actionContainer: {
         flexDirection: "row",
-        width: "100%",
+        width: "90%",
         height: "8%",
         justifyContent: "center",
         alignItems: "center",
@@ -206,7 +190,9 @@ const styles = StyleSheet.create({
         bottom: 50,
     },
     touchable4: {
-        width: "20%"
+        width: "20%",
+        marginRight: 5,
+        marginLeft: 5
     },
     settings: {
         width: "100%",

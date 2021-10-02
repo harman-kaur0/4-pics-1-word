@@ -30,7 +30,7 @@ const App = () => {
                     resizeMode="cover" 
                 >
                     <NativeRouter>
-                        <Route exact path="/" component={GamePage} />
+                        <Route exact path="/" component={HomeScreen} />
                         <Route path="/profile" component={Profile} />
                     </NativeRouter>
                 </ImageBackground>
