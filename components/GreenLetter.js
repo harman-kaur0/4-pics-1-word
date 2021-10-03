@@ -25,7 +25,8 @@ const GreenLetter = ({ letters, letter, word, index }) => {
                     source={green[letter.toLowerCase()]}
                     style={{
                         width: "100%",
-                        height: "100%"
+                        height: "100%",
+                        opacity: 0.6
                     }}
                     resizeMode="contain"
                 />
