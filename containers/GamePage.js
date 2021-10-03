@@ -2,8 +2,10 @@ import React, { useEffect } from "react"
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup } from "../actions/gameActions"
-import GreenLetter from "./GreenLetter"
-import WhiteLetter from "./WhiteLetter"
+import GreenLetter from "../components/GreenLetter"
+import WhiteLetter from "../components/WhiteLetter"
+import GameImages from "../components/GameImages"
+import GameHints from "../components/GameHints"
 
 const GamePage = () => {
     const dispatch = useDispatch()
@@ -26,7 +28,7 @@ const GamePage = () => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <Text style={styles.closeText}>Level</Text>
+                <Text style={styles.closeText}>Level {levelData.level}</Text>
                 <View style={styles.coinsContainer}>
                     <Text style={styles.coinText}>400</Text>
                     <TouchableOpacity style={styles.coinTouch}>
@@ -38,45 +40,8 @@ const GamePage = () => {
                     </TouchableOpacity>
                 </View>
             </View>
-            <View style={styles.boxContainer}>
-                <Image
-                    source={{uri: levelData.image1}}
-                    style={styles.image}
-                />
-                <Image
-                    source={{uri: levelData.image2}}
-                    style={styles.image}
-                />
-                <Image
-                    source={{uri: levelData.image3}}
-                    style={styles.image}
-                />
-                <Image
-                    source={{uri: levelData.image4}}
-                    style={styles.image}
-                />
-            </View>
-            <View style={styles.hintsContainer}>
-                <TouchableOpacity style={styles.wandContainer}>
-                    <Image
-                        source={require("../assets/game/hint.png")}
-                        style={{height: "100%", width: "100%"}}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.letterContainer}>
-                    <Image
-                        source={require("../assets/game/letter.png")}
-                        style={{height: "100%", aspectRatio: 1}}
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.letterContainer}>
-                    <Image
-                        source={require("../assets/game/trash.png")}
-                        style={{height: "100%", aspectRatio: 1}}
-                    />
-                </TouchableOpacity>
-            </View>
+            <GameImages levelData={levelData}/>
+            <GameHints word={word} levelData={levelData} letters={letters}/>
             <View style={styles.answerContainer}>
                 {
                     word.map((letter, index) => (
@@ -149,37 +114,6 @@ const styles = StyleSheet.create({
         fontWeight: "900",
         color: "black",
         zIndex: 1
-    },
-    boxContainer: {
-        aspectRatio: 1,
-        height: "40%",
-        alignSelf: "center",
-        flexWrap: "wrap",
-        justifyContent: "space-between",
-        marginTop: 80
-    },
-    image: {
-        width: "48%",
-        height: "48%",
-        margin: 3,
-        borderRadius: 10
-    },
-    hintsContainer: {
-        flexDirection: "row",
-        height: "8%",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: 10,
-    },
-    wandContainer: {
-        height: "70%",
-        width: "25%",
-        marginRight: 10
-    },
-    letterContainer: {
-        height: "70%",
-        aspectRatio: 1,
-        marginRight: 10
     },
     whiteContainer: {
         flexDirection: "row",
