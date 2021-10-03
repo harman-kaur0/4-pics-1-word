@@ -13,7 +13,7 @@ const GameHints = ({ word, levelData, letters }) => {
     let answer = levelData.answer ? levelData.answer.split("") : null
 
     const useWandHint = () => {
-        const updatedWord = answer
+        const updatedWord = answer.map(letter => letter.toUpperCase())
         let updatedLetters = [...letters]
 
         answer.forEach(letter => {
@@ -32,29 +32,31 @@ const GameHints = ({ word, levelData, letters }) => {
         const hintIndex = getRandomItem(unsolved)
         const letterHint = answer[hintIndex]
 
-        let updatedLetters = [...letters]
-        let updatedWord = [...word]
-        
-        if (word[hintIndex]) {
-            const index = letters.indexOf(word[hintIndex].toUpperCase())
-            updatedLetters = updatedLetters.map((letter,idx) => idx === index ? word[hintIndex] : letter)
-        }
-
-        if (!updatedLetters.includes(letterHint)) {
-            const indexInWord = updatedWord.indexOf(letterHint)
-            const indexInLetters = updatedLetters.indexOf(letterHint.toUpperCase())
+        if (letterHint) {
+            let updatedLetters = [...letters]
+            let updatedWord = [...word]
             
-            updatedWord = updatedWord.map((letter, idx) => idx === indexInWord ? undefined : letter)
-            updatedLetters = updatedLetters.map((letter, idx) => idx === indexInLetters ? letterHint : letter)
+            if (word[hintIndex]) {
+                const index = letters.indexOf(word[hintIndex].toUpperCase())
+                updatedLetters = updatedLetters.map((letter,idx) => idx === index ? word[hintIndex] : letter)
+            }
+    
+            if (!updatedLetters.includes(letterHint)) {
+                const indexInWord = updatedWord.indexOf(letterHint)
+                const indexInLetters = updatedLetters.indexOf(letterHint.toUpperCase())
+                
+                updatedWord = updatedWord.map((letter, idx) => idx === indexInWord ? undefined : letter)
+                updatedLetters = updatedLetters.map((letter, idx) => idx === indexInLetters ? letterHint : letter)
+            }
+    
+            let indexInLetters = updatedLetters.indexOf(letterHint)
+    
+            updatedLetters = updatedLetters.map((letter, idx) => idx === indexInLetters ? letter.toUpperCase() : letter)
+    
+            updatedWord = updatedWord.map((letter, idx) => idx === hintIndex ? letterHint.toUpperCase() : letter)
+    
+            dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         }
-
-        let indexInLetters = updatedLetters.indexOf(letterHint)
-
-        updatedLetters = updatedLetters.map((letter, idx) => idx === indexInLetters ? letter.toUpperCase() : letter)
-
-        updatedWord = updatedWord.map((letter, idx) => idx === hintIndex ? letterHint.toUpperCase() : letter)
-
-        dispatch(updateWordAndLetters(updatedWord, updatedLetters))
     }
 
     const useTrashHint = () => {
