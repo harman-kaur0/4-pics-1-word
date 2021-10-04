@@ -9,6 +9,7 @@ import rootReducer from './reducers';
 import HomeScreen from "./containers/HomeScreen"
 import Profile from "./containers/Profile"
 import GamePage from "./containers/GamePage"
+import LevelSelection from './containers/LevelSelection';
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -30,7 +31,7 @@ const App = () => {
                     resizeMode="cover" 
                 >
                     <NativeRouter>
-                        <Route exact path="/" component={GamePage} />
+                        <Route exact path="/" component={LevelSelection}/>
                         <Route path="/profile" component={Profile} />
                     </NativeRouter>
                 </ImageBackground>

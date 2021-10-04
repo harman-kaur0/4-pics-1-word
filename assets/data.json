@@ -2,9 +2,89 @@
     "1": {
         "level": 1,
         "answer": "dog",
-        "image1": "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFieSUyMGRvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-        "image2": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2019/12/03202400/Yellow-Labrador-Retriever.jpg",
-        "image3": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/14112506/Pembroke-Welsh-Corgi-standing-outdoors-in-the-fall.jpg",
-        "image4": "https://www.purinaproclub.com/sites/g/files/auxxlc346/files/styles/large/public/Kegs_Thumbnail.jpg?itok=V16-5I6m"
+        "image1": "https://images.squarespace-cdn.com/content/v1/55a2bffae4b037baec79f96e/1573668974810-VPJEUFYJBQQMJLAMUEB4/Norbio.jpeg",
+        "image2": "https://spiritdogtraining.com/wp-content/uploads/2021/02/samoyed.jpg",
+        "image3": "https://i1.sndcdn.com/avatars-000560768412-fgpz9h-t500x500.jpg",
+        "image4": "https://live.staticflickr.com/7480/16287774216_e1a44c09c5.jpg"
+    },
+    "2": {
+        "level": 2,
+        "answer": "cat",
+        "image1": "https://www.guildinsurance.com.au/images/librariesprovider3/breed-images/500x500/tabby-(1)-(1).jpg?sfvrsn=b28f650b_2",
+        "image2": "https://images-na.ssl-images-amazon.com/images/I/81BES+tsVvL.png",
+        "image3": "https://pawsitivepotential.com/wp-content/uploads/2016/05/Tongue-Kitten-500x500_t.jpg",
+        "image4": "https://uploads.scratch.mit.edu/users/avatars/65809176.png"
+    },
+    "3": {
+        "level": 3,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "4": {
+        "level": 4,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "5": {
+        "level": 5,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "6": {
+        "level": 6,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "7": {
+        "level": 7,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "8": {
+        "level": 8,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "9": {
+        "level": 9,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "10": {
+        "level": 10,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+    },
+    "11": {
+        "level": 11,
+        "answer": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
     }
 }
