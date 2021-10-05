@@ -1,9 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { useNavigation } from "@react-navigation/native"
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
     return (
         <>
             <View style={styles.header}>
@@ -69,7 +68,10 @@ const HomeScreen = () => {
                 </TouchableOpacity>
             </View>
             <View style={styles.actionContainer}>
-                <TouchableOpacity style={styles.touchable4}>
+                <TouchableOpacity 
+                    style={styles.touchable4}
+                    onPress={() => navigation.navigate('Profile')}
+                >
                     <Image
                         source={require("../assets/main/profile.png")}
                         style={styles.row3}

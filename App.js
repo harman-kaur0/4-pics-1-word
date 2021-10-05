@@ -1,6 +1,5 @@
 import React from 'react'
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
+import { StyleSheet, View, ImageBackground } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from "redux"
@@ -9,6 +8,8 @@ import rootReducer from './reducers';
 import HomeScreen from "./components/HomeScreen"
 import Profile from "./components/Profile"
 import GamePage from "./components/GamePage"
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -20,6 +21,8 @@ const enhancer = composeEnhancers(applyMiddleware(thunk))
 
 const store = createStore(rootReducer, enhancer)
 
+const Stack = createNativeStackNavigator();
+
 const App = () => {
     return (
         <Provider store={store}>
@@ -29,10 +32,12 @@ const App = () => {
                     style={styles.background} 
                     resizeMode="cover" 
                 >
-                    <NativeRouter>
-                        <Route exact path="/" component={HomeScreen} />
-                        <Route path="/profile" component={Profile} />
-                    </NativeRouter>
+                    <NavigationContainer>
+                        <Stack.Navigator screenOptions={{headerShown: false}}>
+                            <Stack.Screen name="Home" component={HomeScreen} />
+                            <Stack.Screen name="Profile" component={Profile} />
+                        </Stack.Navigator>
+                    </NavigationContainer>
                 </ImageBackground>
             </View>
         </Provider>
@@ -47,6 +52,6 @@ const styles = StyleSheet.create({
     },
     background: {
         flex: 1,
-        justifyContent: "center"
+        justifyContent: "center",
     }
 })

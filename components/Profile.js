@@ -1,8 +1,14 @@
 import React from 'react'
-const Profile = ({ navigation, route }) => {
+import { TouchableOpacity, View, Image } from 'react-native'
+
+const Profile = ({ navigation }) => {
     return (
         <View>
-
+            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+                <Image
+                    source={require("../assets/main/close.png")}
+                />
+            </TouchableOpacity>
         </View>
     )
 }
