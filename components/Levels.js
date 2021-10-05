@@ -11,6 +11,10 @@ const Levels = ({ data }) => {
                         source={require("../assets/game/box.png")}
                         style={styles.image}
                     />
+                    <Image
+                        // source={stars[]}
+                        style={styles.stars}
+                    />
                 </TouchableOpacity> :
                 <View style={styles.box}>
                     <Image
@@ -30,7 +34,9 @@ const styles = StyleSheet.create({
         width: "30%",
         aspectRatio: 1,
         borderColor: "red",
-        borderWidth: 1
+        borderWidth: 1,
+        position: "relative",
+        marginTop: 40
     },
     box: {
         // width: "30%",
@@ -41,5 +47,14 @@ const styles = StyleSheet.create({
     image: {
         width: "100%",
         height: "100%"
+    },
+    stars: {
+        
     }
 })
+
+const stars = {
+    "1": require("../assets/game/1star.png"),
+    "2": require("../assets/game/2star.png"),
+    "3": require("../assets/game/3star.png"),
+}

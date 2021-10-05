@@ -4,7 +4,7 @@ const initialState = {
     letters: []
 }
 
-export const gameReducer = (state = initialState, action) => {
+export const game = (state = initialState, action) => {
     switch(action.type) {
         case "DATA":
             return {...state, data: action.data}
