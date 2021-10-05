@@ -4,6 +4,7 @@ import { useSelector } from "react-redux"
 
 const Header = ({ button, text }) => {
     const levelData = useSelector(state => state.game.levelData)
+    const user = useSelector(state => state.user.user)
 
     let coins = 400
 
@@ -44,7 +45,7 @@ const Header = ({ button, text }) => {
                 )
             }
             <View style={styles.coinsContainer}>
-                <Text style={styles.coinText}>{displayedCoins(coins)}</Text>
+                <Text style={styles.coinText}>{displayedCoins(user.coins)}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
                     <Image
                         source={require("../assets/main/coins.png")}
