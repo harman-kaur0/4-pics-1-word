@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { StyleSheet, View } from "react-native"
+import { StyleSheet, View, Text } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchUserData } from "../actions/userActions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
@@ -12,6 +12,8 @@ const LevelSelection = () => {
     const [page, setPage] = useState(1)
 
     const dispatch = useDispatch()
+
+    const user = useSelector(state => state.user.user)
 
     const remove = async () => {
         try {
@@ -31,10 +33,11 @@ const LevelSelection = () => {
             <View style={styles.levelsContainer}>
                 {
                     Object.keys(gameData).map(level => (
-                        <Levels key={level} data={gameData[level]}/>
+                        <Levels key={level} data={gameData[level]} level={level} levels={user.levels}/>
                     ))
                 }
             </View>
+            <Text>{console.log(user)}</Text>
         </>
     )
 }

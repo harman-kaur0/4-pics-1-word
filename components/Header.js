@@ -6,16 +6,16 @@ const Header = ({ button, text }) => {
     const levelData = useSelector(state => state.game.levelData)
     const user = useSelector(state => state.user.user)
 
-    let coins = 400
-
     const displayedCoins = coins => {
-        let string = coins.toString()
-        if (coins > 1000000000000000) return string.slice(0, string.length - 15) + "Q"
-        if (coins > 1000000000000) return string.slice(0, string.length - 12) + "T"
-        if (coins > 1000000000) return string.slice(0, string.length - 9) + "B"
-        if (coins > 1000000) return string.slice(0, string.length - 6) + "M"
-        if (coins > 1000) return string.slice(0, string.length - 3) + "K"
-        return coins
+        if (coins) {
+            let string = coins.toString()
+            if (coins > 1000000000000000) return string.slice(0, string.length - 15) + "Q"
+            if (coins > 1000000000000) return string.slice(0, string.length - 12) + "T"
+            if (coins > 1000000000) return string.slice(0, string.length - 9) + "B"
+            if (coins > 1000000) return string.slice(0, string.length - 6) + "M"
+            if (coins > 1000) return string.slice(0, string.length - 3) + "K"
+            return coins
+        }
     }
 
     return (

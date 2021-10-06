@@ -1,7 +1,8 @@
 import React from "react"
 import { Image, StyleSheet, TouchableOpacity, View } from "react-native"
 
-const Levels = ({ data }) => {
+const Levels = ({ data, level, levels }) => {
+
     return (
         <View style={styles.boxContainer}>
             {
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
         height: "100%"
     },
     stars: {
-        
+
     }
 })
 
