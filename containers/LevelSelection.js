@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { fetchUserData, updateUserData } from "../actions/userActions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import Header from "../components/Header"
-import Levels from "../components/Levels"
+import Level from "../components/Level"
 
 const gameData = require("../assets/data.json")
 
@@ -33,7 +33,12 @@ const LevelSelection = ({ navigation }) => {
             <View style={styles.levelsContainer}>
                 {
                     Object.keys(gameData).map(level => (
-                        <Levels key={level} data={gameData[level]} level={level} levels={user.levels}/>
+                        <Level 
+                            key={level}
+                            level={level} 
+                            levels={user.levels}
+                            navigation={navigation}
+                        />
                     ))
                 }
             </View>

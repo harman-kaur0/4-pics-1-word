@@ -26,3 +26,11 @@ export const updateWordAndLetters = (word, letters) => {
         if (letters) dispatch({ type: "LETTERS", letters })
     }
 }
+
+export const setLevel = (level, navigation) => {
+    return async dispatch => {
+        await dispatch({ type: "LEVEL", level })
+
+        navigation.navigate("GamePage")
+    }
+}

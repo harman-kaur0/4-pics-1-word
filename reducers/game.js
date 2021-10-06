@@ -1,4 +1,5 @@
 const initialState = {
+    level: null,
     data: {},
     word: [],
     letters: []
@@ -6,6 +7,8 @@ const initialState = {
 
 export const game = (state = initialState, action) => {
     switch(action.type) {
+        case "LEVEL":
+            return {...state, level: action.level}
         case "DATA":
             return {...state, data: action.data}
         case "WORD":

@@ -8,7 +8,7 @@ import WhiteLetter from "../components/WhiteLetter"
 import GameImages from "../components/GameImages"
 import GameHints from "../components/GameHints"
 
-const GamePage = ({ level }) => {
+const GamePage = () => {
     const dispatch = useDispatch()
     const gameData = useSelector(state => state.game)
     const levelData = gameData.data
@@ -16,7 +16,7 @@ const GamePage = ({ level }) => {
     const letters = gameData.letters
 
     useEffect(() => {
-        dispatch(handleInitialSetup("1"))
+        dispatch(handleInitialSetup(gameData.level))
     }, [])
 
     return (
