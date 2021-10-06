@@ -1,3 +1,4 @@
+import { shuffleArray, getRandomItem } from "../helper/functions"
 const gameData = require("../assets/data.json")
 
 export const handleInitialSetup = level => {
@@ -7,21 +8,7 @@ export const handleInitialSetup = level => {
 
     let lettersArr = data.answer.split("")
 
-    const getRandomItem = array => array[Math.floor(Math.random() * array.length)]
     while (lettersArr.length !== 12) lettersArr.push(getRandomItem(alphabet))
-
-    const shuffleArray = array => {
-        let currentIndex = array.length
-        
-        while (currentIndex != 0) {
-            let randomIndex = Math.floor(Math.random() * currentIndex)
-            currentIndex--
-        
-            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
-        }
-
-        return array
-    }
     
     return dispatch => {
         const letters = shuffleArray(lettersArr)
@@ -35,7 +22,7 @@ export const handleInitialSetup = level => {
 
 export const updateWordAndLetters = (word, letters) => {
     return dispatch => {
-        dispatch({ type: "WORD", word })
-        dispatch({ type: "LETTERS", letters })
+        if (word) dispatch({ type: "WORD", word })
+        if (letters) dispatch({ type: "LETTERS", letters })
     }
 }
