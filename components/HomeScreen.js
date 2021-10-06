@@ -78,14 +78,20 @@ const HomeScreen = ({ navigation }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable4}>
+                <TouchableOpacity 
+                    style={styles.touchable4}
+                    onPress={() => navigation.navigate("Shop")}
+                >
                     <Image
                         source={require("../assets/main/shop.png")}
                         style={styles.row3}
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable4}>
+                <TouchableOpacity 
+                    style={styles.touchable4}
+                    onPress={() => navigation.navigate("Booster")}
+                >
                     <Image
                         source={require("../assets/main/boosters.png")}
                         style={styles.row3}

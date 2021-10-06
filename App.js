@@ -8,6 +8,8 @@ import rootReducer from './reducers';
 import HomeScreen from "./components/HomeScreen"
 import Profile from "./components/Profile"
 import GamePage from "./components/GamePage"
+import Shop from "./components/Shop"
+import BoosterPage from "./components/BoosterPage"
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -45,6 +47,8 @@ const App = () => {
                         <Stack.Screen name="Home" component={HomeScreen} />
                         <Stack.Screen name="Profile" component={Profile} />
                         <Stack.Screen name="GamePage" component={GamePage} />
+                        <Stack.Screen name="Shop" component={Shop} />
+                        <Stack.Screen name="Booster" component={BoosterPage} />
                     </Stack.Navigator>
                     </ImageBackground>
                 </NavigationContainer>
