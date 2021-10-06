@@ -1,21 +1,26 @@
 import React from "react"
-import { Image, StyleSheet, TouchableOpacity, View } from "react-native"
+import { Image, StyleSheet, TouchableOpacity, View, Text } from "react-native"
 
 const Levels = ({ data, level, levels }) => {
+
+    const levelData = levels[level]
 
     return (
         <View style={styles.boxContainer}>
             {
-                data ? 
+                levelData ? 
                 <TouchableOpacity style={styles.box}>
                     <Image
                         source={require("../assets/game/box.png")}
                         style={styles.image}
                     />
-                    <Image
-                        // source={stars[]}
-                        style={styles.stars}
-                    />
+                    {
+                        levelData.stars ?
+                        <Image
+                            source={stars[levelData.stars]}
+                            style={styles.stars}
+                        /> : null
+                    }
                 </TouchableOpacity> :
                 <View style={styles.box}>
                     <Image
