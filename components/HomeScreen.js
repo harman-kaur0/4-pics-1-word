@@ -70,7 +70,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.actionContainer}>
                 <TouchableOpacity 
                     style={styles.touchable4}
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate("Profile")}
                 >
                     <Image
                         source={require("../assets/main/profile.png")}
@@ -126,7 +126,8 @@ const styles = StyleSheet.create({
     logo: {
         width: "100%",
         height: "30%",
-        marginBottom: 15
+        marginBottom: 15,
+        marginTop: "40%"
     },
     buttonContainer: {
         flexDirection: "row",

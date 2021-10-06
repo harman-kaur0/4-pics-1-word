@@ -8,8 +8,16 @@ import rootReducer from './reducers';
 import HomeScreen from "./components/HomeScreen"
 import Profile from "./components/Profile"
 import GamePage from "./components/GamePage"
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const MyTheme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      background: 'transparent',
+    },
+  };
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -27,18 +35,19 @@ const App = () => {
     return (
         <Provider store={store}>
             <View style={styles.container}>
-                <ImageBackground 
-                    source={require("./assets/main/background.png")}
-                    style={styles.background} 
-                    resizeMode="cover" 
-                >
-                    <NavigationContainer>
-                        <Stack.Navigator screenOptions={{headerShown: false}}>
-                            <Stack.Screen name="Home" component={HomeScreen} />
-                            <Stack.Screen name="Profile" component={Profile} />
-                        </Stack.Navigator>
-                    </NavigationContainer>
-                </ImageBackground>
+                <NavigationContainer theme={MyTheme}>
+                    <ImageBackground 
+                        source={require("./assets/main/background.png")}
+                        style={styles.background} 
+                        resizeMode="cover" 
+                    >
+                    <Stack.Navigator screenOptions={{headerShown: false}} >
+                        <Stack.Screen name="Home" component={HomeScreen} />
+                        <Stack.Screen name="Profile" component={Profile} />
+                        <Stack.Screen name="GamePage" component={GamePage} />
+                    </Stack.Navigator>
+                    </ImageBackground>
+                </NavigationContainer>
             </View>
         </Provider>
     );
