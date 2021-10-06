@@ -18,16 +18,30 @@ const GreenLetter = ({ letters, letter, word, index }) => {
 
     return (
         letter ?
-        <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
-            <Image
-                source={green[letter]}
-                style={{
-                    width: "100%",
-                    height: "100%"
-                }}
-                resizeMode="contain"
-            />
-        </TouchableOpacity> :
+        (
+            letter === letter.toUpperCase() ?
+            <View style={styles.letterTouch}>
+                <Image
+                    source={green[letter.toLowerCase()]}
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        opacity: 0.6
+                    }}
+                    resizeMode="contain"
+                />
+            </View> :
+            <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
+                <Image
+                    source={green[letter]}
+                    style={{
+                        width: "100%",
+                        height: "100%"
+                    }}
+                    resizeMode="contain"
+                />
+            </TouchableOpacity>
+         ) :
         <View style={styles.letterContainer}>
             <Image
                 source={require("../assets/game/box.png")}

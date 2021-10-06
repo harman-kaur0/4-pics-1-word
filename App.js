@@ -1,15 +1,17 @@
 import React from 'react'
-import { StyleSheet, View, ImageBackground } from 'react-native';
-import { NativeRouter, Route, Link } from "react-router-native";
-import { Provider } from 'react-redux';
+import { StyleSheet, View, ImageBackground } from 'react-native'
+import { NativeRouter, Route, Link } from "react-router-native"
+import { Provider, useDispatch } from 'react-redux'
 import { createStore, applyMiddleware, compose } from "redux"
-import thunk from 'redux-thunk';
-import rootReducer from './reducers';
-import HomeScreen from "./components/HomeScreen"
-import Profile from "./components/Profile"
-import GamePage from "./components/GamePage"
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { loadhUserData } from './actions/userActions'
+import thunk from 'redux-thunk'
+import rootReducer from './reducers'
+import HomeScreen from "./containers/HomeScreen"
+import Profile from "./containers/Profile"
+import GamePage from "./containers/GamePage"
+import LevelSelection from './containers/LevelSelection'
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const MyTheme = {
     ...DefaultTheme,
@@ -17,7 +19,7 @@ const MyTheme = {
       ...DefaultTheme.colors,
       background: 'transparent',
     },
-  };
+  }
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -29,7 +31,7 @@ const enhancer = composeEnhancers(applyMiddleware(thunk))
 
 const store = createStore(rootReducer, enhancer)
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
 
 const App = () => {
     return (
@@ -50,10 +52,10 @@ const App = () => {
                 </NavigationContainer>
             </View>
         </Provider>
-    );
+    )
 }
 
-export default App;
+export default App
 
 const styles = StyleSheet.create({
     container: {
