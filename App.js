@@ -36,21 +36,22 @@ const Stack = createNativeStackNavigator()
 const App = () => {
     return (
         <Provider store={store}>
-            <View style={styles.container}>
-                <NavigationContainer theme={MyTheme}>
+            <NavigationContainer theme={MyTheme}>
+                <View style={styles.container}>
                     <ImageBackground 
                         source={require("./assets/main/background.png")}
                         style={styles.background} 
                         resizeMode="cover" 
                     >
-                    <Stack.Navigator screenOptions={{headerShown: false}} >
-                        <Stack.Screen name="Home" component={HomeScreen} />
-                        <Stack.Screen name="Profile" component={Profile} />
-                        <Stack.Screen name="GamePage" component={GamePage} />
+                    <Stack.Navigator screenOptions={{headerShown: false}}>
+                        <Stack.Screen name="Home" component={HomeScreen}/>
+                        <Stack.Screen name="Profile" component={Profile}/>
+                        <Stack.Screen name="GamePage" component={GamePage}/>
+                        <Stack.Screen name="LevelSelection" component={LevelSelection}/>
                     </Stack.Navigator>
                     </ImageBackground>
-                </NavigationContainer>
-            </View>
+                </View>
+            </NavigationContainer>
         </Provider>
     )
 }
@@ -59,10 +60,11 @@ export default App
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 1
+
     },
     background: {
         flex: 1,
-        justifyContent: "center",
+        justifyContent: "center"
     }
 })

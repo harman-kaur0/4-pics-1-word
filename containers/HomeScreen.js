@@ -30,7 +30,10 @@ const HomeScreen = ({ navigation }) => {
                 resizeMode="contain" 
             />
             <View style={styles.buttonContainer}>
-                <TouchableOpacity style={styles.touchable2}>
+                <TouchableOpacity 
+                    onPress={() => navigation.navigate("LevelSelection")}
+                    style={styles.touchable2}
+                >
                     <Image 
                         source={require("../assets/buttons/play.png")}
                         style={styles.row1} 

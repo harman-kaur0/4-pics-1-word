@@ -8,7 +8,7 @@ import Levels from "../components/Levels"
 
 const gameData = require("../assets/data.json")
 
-const LevelSelection = () => {
+const LevelSelection = ({ navigation }) => {
     const [page, setPage] = useState(1)
 
     const dispatch = useDispatch()
@@ -29,7 +29,7 @@ const LevelSelection = () => {
     
     return (
         <> 
-            <Header button="close" text=" Level Selection"/>
+            <Header button="close" text=" Level Selection" navigation={navigation}/>
             <View style={styles.levelsContainer}>
                 {
                     Object.keys(gameData).map(level => (
@@ -43,12 +43,11 @@ const LevelSelection = () => {
 
 const styles = StyleSheet.create({
     levelsContainer: {
-        borderColor: "black",
-        borderWidth: 1,
         height: "60%",
         flexDirection: "row",
         flexWrap: "wrap",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        marginTop: "40%"
     }
 })
 

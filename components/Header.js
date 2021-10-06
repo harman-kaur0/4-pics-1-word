@@ -2,7 +2,7 @@ import React from "react"
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
 import { useSelector } from "react-redux"
 
-const Header = ({ button, text }) => {
+const Header = ({ button, navigation, text }) => {
     const levelData = useSelector(state => state.game.levelData)
     const user = useSelector(state => state.user.user)
 
@@ -22,7 +22,10 @@ const Header = ({ button, text }) => {
         <View style={styles.header}>
             {
                 button === "close" ?
-                <TouchableOpacity style={styles.closeTouch}>
+                <TouchableOpacity 
+                    onPress={() => navigation.goBack()}
+                    style={styles.closeTouch}
+                >
                     <Image
                         source={require("../assets/main/close.png")}
                         style={{width: "100%"}}
