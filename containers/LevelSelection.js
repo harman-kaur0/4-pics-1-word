@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { StyleSheet, View, Text } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchUserData } from "../actions/userActions"
+import { fetchUserData, updateUserData } from "../actions/userActions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import Header from "../components/Header"
 import Levels from "../components/Levels"
@@ -37,7 +37,6 @@ const LevelSelection = () => {
                     ))
                 }
             </View>
-            <Text>{console.log(user)}</Text>
         </>
     )
 }

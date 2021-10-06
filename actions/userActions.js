@@ -27,3 +27,16 @@ export const fetchUserData = () => {
         }
     }
 }
+
+export const updateUserData = data => {
+    return async dispatch => {
+        const user = await AsyncStorage.getItem("user")
+
+        const updatedUser = {
+            ...JSON.parse(user), 
+            [Object.keys(data)[0]]: Object.values(data)[0]
+        }
+
+        await AsyncStorage.setItem("user", JSON.stringify(updatedUser))
+    }
+}

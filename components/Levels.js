@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Image, StyleSheet, TouchableOpacity, View, Text } from "react-native"
 
 const Levels = ({ data, level, levels }) => {
 
-    const levelData = levels[level]
+    const levelData = levels ? levels[level] : null
 
     return (
         <View style={styles.boxContainer}>
@@ -39,8 +39,6 @@ const styles = StyleSheet.create({
     boxContainer: {
         width: "30%",
         aspectRatio: 1,
-        borderColor: "red",
-        borderWidth: 1,
         position: "relative",
         marginTop: 40
     },
@@ -55,7 +53,11 @@ const styles = StyleSheet.create({
         height: "100%"
     },
     stars: {
-
+        position: "absolute",
+        top: -30,
+        width: "100%",
+        height: "50%",
+        resizeMode: "contain"
     }
 })
 
