@@ -92,7 +92,9 @@ const styles = StyleSheet.create({
         height: "13%",
         width: "85%",
         alignSelf: "center",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        marginTop: 10,
+        marginBottom: 10
     },
     answerContainer: {
         flexDirection: "row",
