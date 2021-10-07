@@ -7,6 +7,7 @@ import GreenLetter from "../components/GreenLetter"
 import WhiteLetter from "../components/WhiteLetter"
 import GameImages from "../components/GameImages"
 import GameHints from "../components/GameHints"
+import GameHelp from "../components/GameHelp"
 
 const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
@@ -77,6 +78,7 @@ const GamePage = ({ navigation }) => {
                     ))
                 }
             </View>
+            <GameHelp word={word} letters={letters}/>
         </>
     )
 }

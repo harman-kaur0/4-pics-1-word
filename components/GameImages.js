@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         flexWrap: "wrap",
         justifyContent: "space-between",
-        marginTop: "40%"
+        marginTop: "35%"
     },
     image: {
         width: "48%",
