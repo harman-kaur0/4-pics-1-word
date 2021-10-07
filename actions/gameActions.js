@@ -34,3 +34,13 @@ export const setLevel = (level, navigation) => {
         navigation.navigate("GamePage")
     }
 }
+
+export const handleWin = () => {
+    return dispatch => {
+        dispatch({ type: "WIN", })
+    }
+}
+
+export const handleLose = () => {
+    
+}

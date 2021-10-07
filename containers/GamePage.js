@@ -44,7 +44,7 @@ const GamePage = ({ navigation }) => {
 
     return (
         <>
-            <Header button="close" navigation={navigation}/>
+            <Header button="close" navigation={navigation} text={`Level ${levelData.level}`}/>
             <GameImages levelData={levelData}/>
             <GameHints word={word} levelData={levelData} letters={letters}/>
             <Animated.View 

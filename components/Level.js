@@ -33,7 +33,7 @@ const Level = ({ level, levels, navigation }) => {
             </ImageBackground>
         </TouchableOpacity> :
         <View style={styles.box}>
-            <Image
+            <ImageBackground
                 source={require("../assets/game/locked.png")}
                 style={styles.image}
             />
