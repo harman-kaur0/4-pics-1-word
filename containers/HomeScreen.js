@@ -1,29 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import Header from "../components/Header"
 
 const HomeScreen = ({ navigation }) => {
     return (
         <>
-            <View style={styles.header}>
-                <TouchableOpacity style={styles.touchable1}>
-                    <Image
-                        source={require("../assets/main/settings.png")}
-                        style={styles.settings}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <View style={styles.coinContainer}>
-                    <Text style={styles.coin}>20</Text>
-                    <TouchableOpacity style={styles.touchableCoin}>
-                        <Image
-                            source={require("../assets/main/coins.png")}
-                            style={styles.coins}
-                            resizeMode="contain"
-                        />    
-                    </TouchableOpacity>              
-                </View>
-            </View>
+            <Header button="settings"/>
             <Image 
                 source={require("../assets/main/logo.png")} 
                 style={styles.logo}

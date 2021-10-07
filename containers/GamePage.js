@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Animated } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup } from "../actions/gameActions"
 import Header from "../components/Header"
@@ -8,23 +8,50 @@ import WhiteLetter from "../components/WhiteLetter"
 import GameImages from "../components/GameImages"
 import GameHints from "../components/GameHints"
 
-const GamePage = () => {
+const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
     const gameData = useSelector(state => state.game)
     const levelData = gameData.data
     const word = gameData.word
     const letters = gameData.letters
+    const answer = levelData.answer
 
     useEffect(() => {
         dispatch(handleInitialSetup(gameData.level))
     }, [])
 
+    useEffect(() => {
+        if (!word.includes(undefined)) {
+            if (word.join("").toLowerCase() === answer) {
+                console.log("right")
+            } else {
+                shake()
+            }
+        }
+    }, [word])
+
+    const shakeAnimation = new Animated.Value(0)
+
+    const shake = () => {
+        Animated.sequence([
+            Animated.timing(shakeAnimation, { toValue: 10, duration: 50, useNativeDriver: true }),
+            Animated.timing(shakeAnimation, { toValue: -10, duration: 50, useNativeDriver: true }),
+            Animated.timing(shakeAnimation, { toValue: 10, duration: 50, useNativeDriver: true }),
+            Animated.timing(shakeAnimation, { toValue: 0, duration: 50, useNativeDriver: true })
+          ]).start()
+    }
+
     return (
         <>
-            <Header button="close"/>
+            <Header button="close" navigation={navigation}/>
             <GameImages levelData={levelData}/>
             <GameHints word={word} levelData={levelData} letters={letters}/>
-            <View style={styles.answerContainer}>
+            <Animated.View 
+                style={{
+                    ...styles.answerContainer,
+                    transform: [{translateX: shakeAnimation}]
+                }}
+            >
                 {
                     word.map((letter, index) => (
                         <GreenLetter 
@@ -36,7 +63,7 @@ const GamePage = () => {
                         />
                     ))
                 }
-            </View>
+            </Animated.View>
             <View style={styles.whiteContainer}>
                 {
                     letters.map((letter, index) => (
