@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyleSheet, View, ImageBackground } from 'react-native'
-import { NativeRouter, Route, Link } from "react-router-native"
 import { Provider, useDispatch } from 'react-redux'
 import { createStore, applyMiddleware, compose } from "redux"
 import { loadhUserData } from './actions/userActions'
@@ -9,6 +8,8 @@ import rootReducer from './reducers'
 import HomeScreen from "./containers/HomeScreen"
 import Profile from "./containers/Profile"
 import GamePage from "./containers/GamePage"
+import Shop from "./components/Shop"
+import BoosterPage from "./components/BoosterPage"
 import LevelSelection from './containers/LevelSelection'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
@@ -43,13 +44,13 @@ const App = () => {
                         style={styles.background} 
                         resizeMode="cover" 
                     >
-                    <Stack.Navigator screenOptions={{headerShown: false}} >
-                        <Stack.Screen name="Home" component={HomeScreen} />
-                        <Stack.Screen name="Profile" component={Profile} />
-                        <Stack.Screen name="GamePage" component={GamePage} />
-                        <Stack.Screen name="Shop" component={Shop} />
-                        <Stack.Screen name="Booster" component={BoosterPage} />
-                    </Stack.Navigator>
+                        <Stack.Navigator screenOptions={{headerShown: false}} >
+                            <Stack.Screen name="Home" component={HomeScreen} />
+                            <Stack.Screen name="Profile" component={Profile} />
+                            <Stack.Screen name="GamePage" component={GamePage} />
+                            <Stack.Screen name="Shop" component={Shop} />
+                            <Stack.Screen name="Booster" component={BoosterPage} />
+                        </Stack.Navigator>
                     </ImageBackground>
                 </NavigationContainer>
             </View>
@@ -57,7 +58,7 @@ const App = () => {
     )
 }
 
-export default App
+export default App;
 
 const styles = StyleSheet.create({
     container: {

@@ -1,15 +1,12 @@
 import React from 'react'
 import { TouchableOpacity, View, Image } from 'react-native'
+import Header from "../components/Header"
 
 const Shop = ({ navigation }) => {
     return (
-        <View>
-            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-                <Image
-                    source={require("../assets/main/close.png")}
-                />
-            </TouchableOpacity>
-        </View>
+        <>
+            <Header navigation={navigation} button="close" />
+        </>
     )
 }
 

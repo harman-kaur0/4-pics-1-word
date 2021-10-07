@@ -1,29 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import Header from "../components/Header"
 
 const HomeScreen = ({ navigation }) => {
     return (
         <>
-            <View style={styles.header}>
-                <TouchableOpacity style={styles.touchable1}>
-                    <Image
-                        source={require("../assets/main/settings.png")}
-                        style={styles.settings}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <View style={styles.coinContainer}>
-                    <Text style={styles.coin}>20</Text>
-                    <TouchableOpacity style={styles.touchableCoin}>
-                        <Image
-                            source={require("../assets/main/coins.png")}
-                            style={styles.coins}
-                            resizeMode="contain"
-                        />    
-                    </TouchableOpacity>              
-                </View>
-            </View>
+            <Header navigation={navigation}/>
             <Image 
                 source={require("../assets/main/logo.png")} 
                 style={styles.logo}
@@ -51,7 +34,7 @@ const HomeScreen = ({ navigation }) => {
                     />
                 </TouchableOpacity>
             </View>
-            <View style={styles.loginContainer}>
+            {/* <View style={styles.loginContainer}>
                 <TouchableOpacity style={styles.touchable3}>
                     <Image 
                         source={require("../assets/main/facebook.png")}
@@ -66,7 +49,7 @@ const HomeScreen = ({ navigation }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-            </View>
+            </View> */}
             <View style={styles.actionContainer}>
                 <TouchableOpacity 
                     style={styles.touchable4}
@@ -131,9 +114,10 @@ const styles = StyleSheet.create({
     },
     logo: {
         width: "100%",
-        height: "30%",
+        height: "33%",
         marginBottom: 15,
-        marginTop: "40%"
+        marginTop: "40%",
+        marginBottom: "10%"
     },
     buttonContainer: {
         flexDirection: "row",

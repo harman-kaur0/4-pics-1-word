@@ -2,7 +2,7 @@ import React from "react"
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
 import { useSelector } from "react-redux"
 
-const Header = ({ button, text }) => {
+const Header = ({ button, text, navigation }) => {
     const levelData = useSelector(state => state.game.levelData)
     const user = useSelector(state => state.user.user)
 
@@ -22,7 +22,7 @@ const Header = ({ button, text }) => {
         <View style={styles.header}>
             {
                 button === "close" ?
-                <TouchableOpacity style={styles.closeTouch}>
+                <TouchableOpacity style={styles.closeTouch} onPress={() => navigation.goBack()} >
                     <Image
                         source={require("../assets/main/close.png")}
                         style={{width: "100%"}}
@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
     coinsContainer: {
         flexDirection: "row",
         alignItems: "center",
-        width: "90%",
-        height: "100%",
+        width: "80%",
+        height: "80%",
         position: "absolute",
         right: 0
     },
@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     coinTouch: {
         width: "20%",
         height: "100%",
+        justifyContent: "center",
         alignItems: "center"
     },
     closeText: {
