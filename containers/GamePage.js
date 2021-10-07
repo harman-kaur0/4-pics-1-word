@@ -21,12 +21,12 @@ const GamePage = ({ navigation }) => {
 
     useEffect(() => {
         dispatch(handleInitialSetup(gameData.level))
-    }, [])
+    }, [gameData.level])
 
     useEffect(() => {
         if (!word.includes(undefined)) {
             if (word.join("").toLowerCase() === answer) {
-                dispatch(handleVictory())
+                dispatch(handleVictory(true))
             } else {
                 shake()
             }
@@ -85,7 +85,7 @@ const GamePage = ({ navigation }) => {
                     </View>
                     <GameHelp word={word} letters={letters}/>
                 </> :
-                <Outcome navigation={navigation} victory={victory}/>
+                <Outcome navigation={navigation} victory={victory} data={levelData}/>
             }
         </>
     )

@@ -35,8 +35,8 @@ export const setLevel = (level, navigation) => {
     }
 }
 
-export const handleVictory = () => {
+export const handleVictory = (victory) => {
     return dispatch => {
-        dispatch({ type: "VICTORY", victory: true })
+        dispatch({ type: "VICTORY", victory })
     }
 }
