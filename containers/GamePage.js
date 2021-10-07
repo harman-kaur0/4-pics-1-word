@@ -1,13 +1,14 @@
 import React, { useEffect } from "react"
 import { StyleSheet, Text, View, Animated } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
-import { handleInitialSetup } from "../actions/gameActions"
+import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import Header from "../components/Header"
 import GreenLetter from "../components/GreenLetter"
 import WhiteLetter from "../components/WhiteLetter"
 import GameImages from "../components/GameImages"
 import GameHints from "../components/GameHints"
 import GameHelp from "../components/GameHelp"
+import Outcome from "../components/Outcome"
 
 const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
@@ -16,6 +17,7 @@ const GamePage = ({ navigation }) => {
     const word = gameData.word
     const letters = gameData.letters
     const answer = levelData.answer
+    const victory = gameData.victory
 
     useEffect(() => {
         dispatch(handleInitialSetup(gameData.level))
@@ -24,7 +26,7 @@ const GamePage = ({ navigation }) => {
     useEffect(() => {
         if (!word.includes(undefined)) {
             if (word.join("").toLowerCase() === answer) {
-                console.log("right")
+                dispatch(handleVictory())
             } else {
                 shake()
             }
@@ -45,40 +47,46 @@ const GamePage = ({ navigation }) => {
     return (
         <>
             <Header button="close" navigation={navigation} text={`Level ${levelData.level}`}/>
-            <GameImages levelData={levelData}/>
-            <GameHints word={word} levelData={levelData} letters={letters}/>
-            <Animated.View 
-                style={{
-                    ...styles.answerContainer,
-                    transform: [{translateX: shakeAnimation}]
-                }}
-            >
-                {
-                    word.map((letter, index) => (
-                        <GreenLetter 
-                            key={index}
-                            letters={letters}
-                            letter={letter} 
-                            word={word}
-                            index={index}
-                        />
-                    ))
-                }
-            </Animated.View>
-            <View style={styles.whiteContainer}>
-                {
-                    letters.map((letter, index) => (
-                        <WhiteLetter 
-                            key={index} 
-                            letters={letters}
-                            letter={letter} 
-                            word={word} 
-                            index={index}
-                        />
-                    ))
-                }
-            </View>
-            <GameHelp word={word} letters={letters}/>
+            {
+                victory === null ?
+                <>
+                    <GameImages levelData={levelData}/>
+                    <GameHints word={word} levelData={levelData} letters={letters}/>
+                    <Animated.View 
+                        style={{
+                            ...styles.answerContainer,
+                            transform: [{translateX: shakeAnimation}]
+                        }}
+                    >
+                        {
+                            word.map((letter, index) => (
+                                <GreenLetter 
+                                    key={index}
+                                    letters={letters}
+                                    letter={letter} 
+                                    word={word}
+                                    index={index}
+                                />
+                            ))
+                        }
+                    </Animated.View>
+                    <View style={styles.whiteContainer}>
+                        {
+                            letters.map((letter, index) => (
+                                <WhiteLetter 
+                                    key={index} 
+                                    letters={letters}
+                                    letter={letter} 
+                                    word={word} 
+                                    index={index}
+                                />
+                            ))
+                        }
+                    </View>
+                    <GameHelp word={word} letters={letters}/>
+                </> :
+                <Outcome navigation={navigation} victory={victory}/>
+            }
         </>
     )
 }

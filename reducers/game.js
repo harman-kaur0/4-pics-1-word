@@ -2,7 +2,8 @@ const initialState = {
     level: null,
     data: {},
     word: [],
-    letters: []
+    letters: [],
+    victory: null
 }
 
 export const game = (state = initialState, action) => {
@@ -15,6 +16,8 @@ export const game = (state = initialState, action) => {
             return {...state, word: action.word}
         case "LETTERS":
             return {...state, letters: action.letters}
+        case "VICTORY":
+            return {...state, victory: action.victory, words: [], letters: []}
         default:
             return state
     }
