@@ -26,7 +26,7 @@ const GreenLetter = ({ letters, letter, word, index }) => {
                     style={{
                         width: "100%",
                         height: "100%",
-                        opacity: 0.6
+                        opacity: 0.7
                     }}
                     resizeMode="contain"
                 />
@@ -48,7 +48,7 @@ const GreenLetter = ({ letters, letter, word, index }) => {
                 style={{
                     width: "90%",
                     height: "100%",
-                    opacity: 0.6
+                    opacity: 0.7
                 }}
             />
         </View>

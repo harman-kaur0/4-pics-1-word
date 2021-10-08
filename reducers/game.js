@@ -1,9 +1,9 @@
 const initialState = {
     level: null,
+    victory: null,
     data: {},
     word: [],
-    letters: [],
-    victory: null
+    letters: []
 }
 
 export const game = (state = initialState, action) => {

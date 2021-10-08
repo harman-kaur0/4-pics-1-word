@@ -1,10 +1,25 @@
 import React from "react"
 import { View, ImageBackground, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
+import { useDispatch } from "react-redux"
+import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
 const Outcome = ({ navigation, victory, data }) => {
+    const dispatch = useDispatch()
+
+    const handleExit = () => {
+        dispatch(handleVictory())
+        navigation.goBack()
+    }
+
+    const handleRetry = () => {
+        dispatch(handleVictory())
+        dispatch(handleInitialSetup(data.level))
+    }
+
     return (
         <View style={styles.outcome}>
+            {console.log(victory)}
             {
                 victory ?
                 <>
@@ -33,7 +48,7 @@ const Outcome = ({ navigation, victory, data }) => {
                         <Text style={styles.text2}>You've earned 25 coins!</Text>
                     </View>
                     <View style={styles.buttonsContainer}>
-                        <TouchableOpacity style={styles.buttonTouch} onPress={() => navigation.goBack()}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
                             <Image
                                 source={require("../assets/buttons/exit.png")}
                                 style={styles.button}
@@ -48,15 +63,37 @@ const Outcome = ({ navigation, victory, data }) => {
                     </View>
                 </> : 
                 <>
-                    <ImageBackground
-                        source={require("../assets/game/lose_image.png")}
-                        style={styles.image}
-                    >
+                    <View style={styles.loseContainer}>
+                        <Image
+                            source={require("../assets/game/lose_image.png")}
+                            style={styles.loseImage}
+                        />
                         <Image
                             source={require("../assets/game/lose_text.png")}
                             style={styles.textImage}
                         />
-                    </ImageBackground>
+                    </View>
+                    <View style={styles.message}>
+                        <Image
+                            source={require("../assets/game/coin.png")}
+                            style={styles.coin}
+                        />
+                        <Text style={styles.text2}>You've lost 10 coins!</Text>
+                    </View>
+                    <View style={styles.buttonsContainer}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
+                            <Image
+                                source={require("../assets/buttons/exit.png")}
+                                style={styles.button}
+                            />
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={handleRetry}>
+                            <Image
+                                source={require("../assets/buttons/retry.png")}
+                                style={styles.button}
+                            />
+                        </TouchableOpacity>
+                    </View>
                 </>
             }
         </View>
@@ -69,9 +106,7 @@ const styles = StyleSheet.create({
     outcome: {
         flex: 1,
         alignItems: "center",
-        justifyContent: "center",
-        borderWidth: 1,
-        borderColor: "red"
+        justifyContent: "center"
     },
     image: {
         width: "100%",
@@ -83,7 +118,8 @@ const styles = StyleSheet.create({
         width: "90%",
         resizeMode: "contain",
         position: "absolute",
-        bottom: 0
+        bottom: -20,
+        alignSelf: "center"
     },
     answerContainer: {
         flexDirection: "row",
@@ -130,5 +166,16 @@ const styles = StyleSheet.create({
     coin: {
         height: "100%",
         resizeMode: "contain"
+    },
+    loseContainer: {
+        width: "100%",
+        height: "40%",
+        position: "relative"
+    }, 
+    loseImage: {
+        width: "100%",
+        height: "70%",
+        resizeMode: "contain",
+        position: "absolute"
     }
 })
