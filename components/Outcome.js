@@ -8,7 +8,7 @@ const Outcome = ({ navigation, victory, data }) => {
     const dispatch = useDispatch()
 
     const handleExit = () => {
-        dispatch(handleVictory())
+        handleRetry()
         navigation.goBack()
     }
 
@@ -17,9 +17,13 @@ const Outcome = ({ navigation, victory, data }) => {
         dispatch(handleInitialSetup(data.level))
     }
 
+    const handleNextLevel = () => {
+        dispatch(handleVictory())
+        dispatch(handleInitialSetup((parseInt(data.level) + 1).toString()))
+    }
+
     return (
         <View style={styles.outcome}>
-            {console.log(victory)}
             {
                 victory ?
                 <>
@@ -54,7 +58,7 @@ const Outcome = ({ navigation, victory, data }) => {
                                 style={styles.button}
                             />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.buttonTouch}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={handleNextLevel}>
                             <Image
                                 source={require("../assets/buttons/continue.png")}
                                 style={styles.button}

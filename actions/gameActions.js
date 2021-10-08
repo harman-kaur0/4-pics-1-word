@@ -14,6 +14,7 @@ export const handleInitialSetup = level => {
         const letters = shuffleArray(lettersArr)
         const word = Array.from(Array(data.answer.length))
 
+        dispatch({ type: "VICTORY", victory: null})
         dispatch({ type: "DATA", data })
         dispatch({ type: "WORD", word })
         dispatch({ type: "LETTERS", letters })
