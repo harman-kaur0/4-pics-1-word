@@ -1,8 +1,8 @@
 import { shuffleArray, getRandomItem } from "../helper/functions"
 const gameData = require("../assets/data.json")
 
-export const handleInitialSetup = level => {
-    const data = gameData[level]
+export const handleInitialSetup = (level, stage) => {
+    const data = gameData[level][stage - 1]
 
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 

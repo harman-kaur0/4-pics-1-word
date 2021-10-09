@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, victory, data }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage }) => {
     const dispatch = useDispatch()
 
     const handleExit = () => {
@@ -14,12 +14,13 @@ const Outcome = ({ navigation, victory, data }) => {
 
     const handleRetry = () => {
         dispatch(handleVictory())
-        dispatch(handleInitialSetup(data.level))
+        dispatch(handleInitialSetup(level, 1))
     }
 
     const handleNextLevel = () => {
         dispatch(handleVictory())
-        dispatch(handleInitialSetup((parseInt(data.level) + 1).toString()))
+        setStage(stage + 1)
+        dispatch(handleInitialSetup(level, stage + 1))
     }
 
     return (

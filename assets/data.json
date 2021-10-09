@@ -27,58 +27,58 @@
         {
             "level": 4,
             "answer": "pig",
-            "image1": "https://lh3.googleusercontent.com/proxy/zXEwhs6B26VtaqeQp5jN3__0rRnZUDvLjyWUmpibDQGDk0B7zyhr37XR8-Z94NuVtpIGqKmZWdY5Wyc1Oz7yiVeoOTqcpZzEt4TZ2n_BtD7GHt6To8Sxz0KANWAal5EDw_X5cm4UiJ8GPy4TiLxRzK4",
+            "image1": "http://tryveg.com/wp-content/uploads/2016/01/animals-pigs.jpg",
             "image2": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/SC959-500x500.webp",
             "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrfAE13WT0-O5-5VBge2O2xgCXSjDSvjbOg&usqp=CAU",
             "image4": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/AG645-500x500.webp"
         },
         {
             "level": 5,
-            "answer": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "image4": ""
+            "answer": "fish",
+            "image1": "https://www.stodels.com/wp-content/uploads/2009/03/Tropical-Fish-Blue-500x500.jpg",
+            "image2": "https://www.bettafish.com/attachments/moon-tail-betta-fish-500x500-jpg.951777/",
+            "image3": "https://www.nano-reef.com/applications/core/interface/imageproxy/imageproxy.php?img=http://www.thatpetplace.com/p30417.jpg&key=3d50d59ead6f2122704088e3f80febd93d3dbaf3efd4aebd0861d40866084b4f",
+            "image4": "https://news-cdn.softpedia.com/images/news2/Great-White-Sharks-in-the-Mediterranean-Came-from-Australia-2.jpg"
         },
         {
             "level": 6,
-            "answer": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "image4": ""
+            "answer": "lion",
+            "image1": "https://www.autism-products.com/wp-content/uploads/leo-the-talking-lion-2.jpg",
+            "image2": "https://i.pinimg.com/originals/eb/d5/3c/ebd53c6de4eb024aae6cf01eacff528a.jpg",
+            "image3": "https://willbl.com/wp-content/uploads/2020/02/WBL-Liuwa-Plain-Lions-151209050202-500x500.jpg",
+            "image4": "https://cdn.wallpapersafari.com/22/41/HjTMF8.jpg"
         },
         {
             "level": 7,
-            "answer": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "image4": ""
+            "answer": "crab",
+            "image1": "https://m.media-amazon.com/images/I/41EOW0m-djL.jpg",
+            "image2": "https://i.pinimg.com/564x/30/fe/2f/30fe2f26d05c3e38f96b430e36c01531.jpg",
+            "image3": "https://petesaquariums.com/wp-content/uploads/Sally-Lightfoot-Crab.png",
+            "image4": "https://m.media-amazon.com/images/I/51NvyFvUFJL.jpg"
         },
         {
             "level": 8,
-            "answer": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "image4": ""
+            "answer": "worm",
+            "image1": "https://m.media-amazon.com/images/I/61ZqKqmwAJL._AC_.jpg",
+            "image2": "https://i1.sndcdn.com/avatars-000621159561-mal9oa-t500x500.jpg",
+            "image3": "https://lh3.googleusercontent.com/proxy/B98maJssDV2CyCOo_ZJJqjepvviTMbD9wyJZRd3nQH3g0L9NkMXJdMrpCv5y0a0ibBg5pVJH37h7RveuPG3QuJ8AgkDpp9K2Rf2Q",
+            "image4": "https://i.pinimg.com/564x/7e/87/31/7e8731736020267dee0a29a46469fa7f--book-worms-nursery-decor.jpg"
         },
         {
             "level": 9,
-            "answer": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "image4": ""
+            "answer": "zebra",
+            "image1": "https://lh3.googleusercontent.com/proxy/EZZ7NtSyog9_F6juDHOMepQtA8sqFxig4XuDx8T4cLEpGrxhIfnINKe07y3JbZV4xzUsVF-yZqh2Rd0E91iAMxCU7TyvVaA",
+            "image2": "https://i.ebayimg.com/images/g/QbgAAOSwzoZdKmYm/s-l500.jpg",
+            "image3": "https://images.squarespace-cdn.com/content/v1/596eb6988419c20f0107fa08/1512588039296-NB8M6TH4LHRF91HIGUVT/baby-zebra.jpg?format=500w",
+            "image4": "https://www.hospiceofmiamicounty.org/wp-content/uploads/2014/01/zebra.jpg"
         },
         {
             "level": 10,
-            "answer": "",
-            "image1": "",
-            "image2": "",
-            "image3": "",
-            "image4": ""
+            "answer": "whale",
+            "image1": "https://res.cloudinary.com/sailtrilogy/image/upload/w_500,c_scale/v1548298694/wordpress/feature2-12_olt76u.jpg",
+            "image2": "https://i.pinimg.com/originals/50/6c/c6/506cc65427dec24df5eb74b854dcba71.jpg",
+            "image3": "https://i1.sndcdn.com/artworks-000250435807-bnw1z2-t500x500.jpg",
+            "image4": "https://i.pinimg.com/originals/30/73/b8/3073b8183664977766880824394f1d29.png"
         }
     ],
     "2": [

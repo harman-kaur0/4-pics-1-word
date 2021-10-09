@@ -40,13 +40,7 @@ const Header = ({ button, navigation, text }) => {
                     />
                 </TouchableOpacity>
             }
-            {
-                levelData ? <Text style={styles.closeText}>Level {levelData}</Text> :
-                (
-                    text ?
-                    <Text style={styles.selectionText}>{text}</Text> : null
-                )
-            }
+            { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             <View style={styles.coinsContainer}>
                 <Text style={styles.coinText}>{displayedCoins(user.coins)}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
@@ -71,6 +65,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         top: 70,
         alignItems: "center",
+        zIndex: 999
     },
     closeTouch: {
         width: "15%",
