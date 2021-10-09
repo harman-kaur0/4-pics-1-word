@@ -43,6 +43,22 @@ const Profile = ({ navigation }) => {
                     <Text style={styles.levelText}>Level 1</Text>
                 </View>
             </View>
+            <View style={styles.row3}>
+                <TouchableOpacity style={styles.row3Buttons}>
+                    <Image
+                        source={require("../assets/profile/play.png")}
+                        style={styles.play}
+                        resizeMode="contain"
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.row3Buttons}>
+                    <Image
+                        source={require("../assets/profile/wheel.png")}
+                        style={styles.play}
+                        resizeMode="contain"
+                    />
+                </TouchableOpacity>
+            </View>
         </>
     )
 }
@@ -153,5 +169,29 @@ const styles = StyleSheet.create({
         fontWeight: "900",
         width: "60%",
         textAlign: "center"
+    },
+    row3: {
+        width: "90%",
+        height: "12%",
+        flexDirection: "row",
+        // borderColor: "black",
+        // borderWidth: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        alignSelf: "center"
+    },
+    row3Buttons: {
+        width: "45%",
+        // borderWidth: 1,
+        // borderColor: "red",
+        height: "70%",
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: 5,
+        marginRight: 5
+    },
+    play: {
+        width: "100%",
+        height: "100%"
     }
 })
