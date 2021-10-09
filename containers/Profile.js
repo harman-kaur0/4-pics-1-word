@@ -1,5 +1,5 @@
 import React from 'react'
-import { TouchableOpacity, View, Image, StyleSheet, TextInput, Text, ImageBackground, Button } from 'react-native'
+import { TouchableOpacity, View, Image, StyleSheet, TextInput, Text, ImageBackground, Button, Pressable } from 'react-native'
 import Header from "../components/Header"
 
 const Profile = ({ navigation }) => {
@@ -28,18 +28,19 @@ const Profile = ({ navigation }) => {
                         source={require("../assets/profile/lives.png")}
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
                     />
-                    <Text style={{...styles.livesText, marginTop: "65%", fontSize: "10", fontWeight: "900"}}>get 10 lives</Text>
-                    <Button
-                        title="$0.99"
-                        style={styles.prizeButton}
-                        color="rgb(143,189,19)"
-                    />
+                    <Text style={styles.livesText2}>get 10 lives</Text>
+                    <Pressable
+                        style={styles.priceButton}
+                    >
+                        <Text style={{color: "white", fontWeight: "700"}}>$0.99</Text>
+                    </Pressable>
                 </View>
                 <View style={styles.row2Cards}>
                     <Image 
                         source={require("../assets/profile/prize.png")}
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
                     />
+                    <Text style={styles.levelText}>Level 1</Text>
                 </View>
             </View>
         </>
@@ -96,8 +97,8 @@ const styles = StyleSheet.create({
         fontWeight: "700",
     },
     row2: {
-        borderWidth: 1,
-        borderColor: "red",
+        // borderWidth: 1,
+        // borderColor: "red",
         width: "50%",
         height: "18%",
         alignItems: "center",
@@ -107,13 +108,15 @@ const styles = StyleSheet.create({
         marginTop: "3%"
     },
     row2Cards: {
-        borderWidth: 1,
-        borderColor: "black",
+        // borderWidth: 1,
+        // borderColor: "black",
         height: "100%",
         width: "50%",
         marginRight: 5,
         marginLeft: 5,
         resizeMode: "contain",
+        justifyContent: "center",
+        alignItems: "center"
     },
     livesText: {
         // borderColor: "red",
@@ -122,11 +125,33 @@ const styles = StyleSheet.create({
         textAlign: "center",
         alignSelf: "center",
         fontWeight: "700",
-        marginTop: "5%"
+        marginBottom: "45%",
     },
-    prizeButton: {
-        color: "rgb(143,189,19)",
-        borderColor: "black",
-        borderWidth: 2
+    livesText2: {
+        width: "70%",
+        textAlign: "center",
+        alignSelf: "center",
+        fontWeight: "700",
+        marginTop: "30%", 
+        fontSize: 11, 
+        fontWeight: "900"
+    },
+    priceButton: {
+        backgroundColor: "rgb(143,189,19)",
+        // borderColor: "black",
+        // borderWidth: 2,
+        borderRadius: 15,
+        width: "60%",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    levelText: {
+        // borderWidth: 1,
+        // borderColor: "black",
+        marginTop: "80%",
+        fontSize: 20,
+        fontWeight: "900",
+        width: "60%",
+        textAlign: "center"
     }
 })
