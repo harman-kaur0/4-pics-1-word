@@ -29,11 +29,11 @@ const Profile = ({ navigation }) => {
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
                     />
                     <Text style={styles.livesText2}>get 10 lives</Text>
-                    <Pressable
+                    <TouchableOpacity
                         style={styles.priceButton}
                     >
                         <Text style={{color: "white", fontWeight: "700"}}>$0.99</Text>
-                    </Pressable>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.row2Cards}>
                     <Image 
@@ -44,7 +44,7 @@ const Profile = ({ navigation }) => {
                 </View>
             </View>
             <View style={styles.row3}>
-                <TouchableOpacity style={styles.row3Buttons}>
+                <TouchableOpacity style={{...styles.row3Buttons, width: "45%"}}>
                     <Image
                         source={require("../assets/profile/play.png")}
                         style={styles.play}
@@ -58,6 +58,40 @@ const Profile = ({ navigation }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
+            </View>
+            <View style={styles.row2}>
+                <View style={styles.row2Cards}>
+                    <Image  
+                        source={require("../assets/profile/booster.png")}
+                        style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
+                    />
+                    <Text style={styles.row4Text}>Get Boosters</Text>
+                    <TouchableOpacity
+                        style={styles.goButton}
+                    >
+                        <Image
+                            source={require("../assets/profile/go.png")}
+                            style={styles.go}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.row2Cards}>
+                    <Image 
+                        source={require("../assets/profile/coin.png")}
+                        style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
+                    />
+                     <Text style={styles.row4Text}>Get more Coins</Text>
+                      <TouchableOpacity
+                        style={styles.goButton}
+                    >
+                        <Image
+                            source={require("../assets/profile/go.png")}
+                            style={styles.go}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
+                </View>
             </View>
         </>
     )
@@ -121,13 +155,13 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         flexDirection: "row",
         alignSelf: "center",
-        marginTop: "3%"
+        marginTop: "5%"
     },
     row2Cards: {
         // borderWidth: 1,
         // borderColor: "black",
         height: "100%",
-        width: "50%",
+        width: "47%",
         marginRight: 5,
         marginLeft: 5,
         resizeMode: "contain",
@@ -150,7 +184,9 @@ const styles = StyleSheet.create({
         fontWeight: "700",
         marginTop: "30%", 
         fontSize: 11, 
-        fontWeight: "900"
+        fontWeight: "900",
+        //  borderColor: "red",
+        // borderWidth: 1,
     },
     priceButton: {
         backgroundColor: "rgb(143,189,19)",
@@ -181,7 +217,7 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     row3Buttons: {
-        width: "45%",
+        width: "50%",
         // borderWidth: 1,
         // borderColor: "red",
         height: "70%",
@@ -193,5 +229,25 @@ const styles = StyleSheet.create({
     play: {
         width: "100%",
         height: "100%"
-    }
+    },
+    goButton: {
+        // borderColor: "red",
+        // borderWidth: 1,
+        width: "90%",
+        height: "20%",
+        marginTop: "5%"
+    },
+    go: {
+        width: "100%",
+        height: "100%"
+    },
+    row4Text: {
+        width: "100%",
+        textAlign: "center",
+        alignSelf: "center",
+        fontWeight: "700",
+        marginTop: "75%", 
+        fontSize: 11, 
+        fontWeight: "900",
+    },
 })
