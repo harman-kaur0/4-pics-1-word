@@ -155,7 +155,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         flexDirection: "row",
         alignSelf: "center",
-        marginTop: "5%"
+        marginTop: "5%",
+        position: "relative"
     },
     row2Cards: {
         // borderWidth: 1,
@@ -171,11 +172,13 @@ const styles = StyleSheet.create({
     livesText: {
         // borderColor: "red",
         // borderWidth: 1,
-        width: "60%",
+        width: "70%",
         textAlign: "center",
         alignSelf: "center",
         fontWeight: "700",
         marginBottom: "45%",
+        position: "absolute",
+        top: 6
     },
     livesText2: {
         width: "70%",
@@ -185,6 +188,8 @@ const styles = StyleSheet.create({
         marginTop: "30%", 
         fontSize: 11, 
         fontWeight: "900",
+        position: "absolute",
+        bottom: 30
         //  borderColor: "red",
         // borderWidth: 1,
     },
@@ -194,8 +199,11 @@ const styles = StyleSheet.create({
         // borderWidth: 2,
         borderRadius: 15,
         width: "60%",
+        height: "15%",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        position: "absolute",
+        bottom: 13
     },
     levelText: {
         // borderWidth: 1,
