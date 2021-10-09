@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { StyleSheet, Text, View, Animated } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
@@ -12,6 +12,10 @@ import Outcome from "../components/Outcome"
 
 const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
+
+    const [stage, setStage] = useState(1)
+    const [time, setTime] = useState(120)
+
     const gameData = useSelector(state => state.game)
     const levelData = gameData.data
     const word = gameData.word
@@ -19,19 +23,19 @@ const GamePage = ({ navigation }) => {
     const answer = levelData.answer
     const victory = gameData.victory
 
-    useEffect(() => {
-        dispatch(handleInitialSetup(gameData.level))
-    }, [gameData.level])
+    // useEffect(() => {
+    //     dispatch(handleInitialSetup(gameData.level))
+    // }, [gameData.level])
 
-    useEffect(() => {
-        if (!word.includes(undefined)) {
-            if (word.join("").toLowerCase() === answer) {
-                dispatch(handleVictory(true))
-            } else {
-                shake()
-            }
-        }
-    }, [word])
+    // useEffect(() => {
+    //     if (!word.includes(undefined)) {
+    //         if (word.join("").toLowerCase() === answer) {
+    //             dispatch(handleVictory(true))
+    //         } else {
+    //             shake()
+    //         }
+    //     }
+    // }, [word])
 
     const shakeAnimation = new Animated.Value(0)
 
@@ -47,10 +51,12 @@ const GamePage = ({ navigation }) => {
     return (
         <>
             <Header button="close" navigation={navigation} text={`Level ${levelData.level}`}/>
+            <Text>{console.log(gameData)}</Text>
             {
                 victory === null ?
                 <>
-                    <GameImages levelData={levelData}/>
+
+                    {/* <GameImages levelData={levelData}/>
                     <GameHints word={word} levelData={levelData} letters={letters}/>
                     <Animated.View 
                         style={{
@@ -83,7 +89,7 @@ const GamePage = ({ navigation }) => {
                             ))
                         }
                     </View>
-                    <GameHelp word={word} letters={letters}/>
+                    <GameHelp word={word} letters={letters}/> */}
                 </> :
                 <Outcome navigation={navigation} victory={victory} data={levelData}/>
             }

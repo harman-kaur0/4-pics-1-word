@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { StyleSheet, View, Text } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchUserData, updateUserData } from "../actions/userActions"
+import { updateUserData } from "../actions/userActions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import Header from "../components/Header"
 import Level from "../components/Level"
@@ -22,10 +22,6 @@ const LevelSelection = ({ navigation }) => {
             alert(err)
         }
     }
-
-    useEffect(() => {
-        dispatch(fetchUserData())
-    }, [])
     
     return (
         <> 

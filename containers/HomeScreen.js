@@ -1,9 +1,17 @@
-import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import React, { useEffect } from 'react'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
+import { fetchUserData } from '../actions/userActions'
+import { useDispatch } from 'react-redux'
 import Header from "../components/Header"
 
 const HomeScreen = ({ navigation }) => {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchUserData())
+    }, [])
+
     return (
         <>
             <Header button="settings"/>
