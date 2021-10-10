@@ -17,12 +17,14 @@ const HomeScreen = ({ navigation }) => {
                     <Image 
                         source={require("../assets/buttons/play.png")}
                         style={styles.row1} 
+                        resizeMode="contain"
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.touchable2}>
                     <Image 
                         source={require("../assets/main/prize_wheel.png")}
                         style={styles.row1} 
+                        resizeMode="contain"
                     />
                 </TouchableOpacity>
             </View>
@@ -31,6 +33,7 @@ const HomeScreen = ({ navigation }) => {
                     <Image 
                         source={require("../assets/buttons/challenge.png")}
                         style={styles.row1}
+                        resizeMode="contain"
                     />
                 </TouchableOpacity>
             </View>
@@ -116,7 +119,7 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "33%",
         marginBottom: 15,
-        marginTop: "40%",
+        marginTop: "30%",
         marginBottom: "10%"
     },
     buttonContainer: {

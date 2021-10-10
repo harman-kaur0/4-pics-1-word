@@ -5,7 +5,7 @@ import Header from "../components/Header"
 const Profile = ({ navigation }) => {
     return (
         <>
-            <Header navigation={navigation} button="close" />
+            <Header navigation={navigation} button="close" text="Profile"/>
             <View style={styles.user}>
                 <TouchableOpacity style={styles.pictureClick}>
                     <Image 
@@ -27,6 +27,7 @@ const Profile = ({ navigation }) => {
                     <Image  
                         source={require("../assets/profile/lives.png")}
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
+                        resizeMode="contain"
                     />
                     <Text style={styles.livesText2}>get 10 lives</Text>
                     <TouchableOpacity
@@ -39,6 +40,7 @@ const Profile = ({ navigation }) => {
                     <Image 
                         source={require("../assets/profile/prize.png")}
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
+                        resizeMode="contain"
                     />
                     <Text style={styles.levelText}>Level 1</Text>
                 </View>
@@ -64,6 +66,7 @@ const Profile = ({ navigation }) => {
                     <Image  
                         source={require("../assets/profile/booster.png")}
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
+                        resizeMode="contain"
                     />
                     <Text style={styles.row4Text}>Get Boosters</Text>
                     <TouchableOpacity
@@ -80,6 +83,7 @@ const Profile = ({ navigation }) => {
                     <Image 
                         source={require("../assets/profile/coin.png")}
                         style={{width: "100%", height: "100%", position: "absolute", zIndex: -1}}
+                        resizeMode="contain"
                     />
                      <Text style={styles.row4Text}>Get more Coins</Text>
                       <TouchableOpacity
@@ -105,7 +109,7 @@ const styles = StyleSheet.create({
         height: "10%",
         backgroundColor: "white",
         flexDirection: "row",
-        marginTop: "40%",
+        marginTop: "35%",
         alignSelf: "center",
         borderRadius: 15,
         justifyContent: "space-between"
