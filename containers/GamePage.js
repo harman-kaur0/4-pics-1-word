@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { StyleSheet, Text, View, Animated } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
+import { updateUserData } from "../actions/userActions"
 import Header from "../components/Header"
 import GreenLetter from "../components/GreenLetter"
 import WhiteLetter from "../components/WhiteLetter"
@@ -14,28 +15,56 @@ const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
 
     const [stage, setStage] = useState(1)
-    const [time, setTime] = useState(120)
+    const [time, setTime] = useState(5)
+    const [active, setActive] = useState(true)
 
+    const user = useSelector(state => state.user.user)
     const gameData = useSelector(state => state.game)
     const levelData = gameData.data
+    const levelCoins = gameData.coins
     const word = gameData.word
     const letters = gameData.letters
     const answer = levelData.answer
     const victory = gameData.victory
+    const level = gameData.level
+    const allLevelData = user.levels
+    const currentStars = allLevelData[level] || 0
 
     useEffect(() => {
-        dispatch(handleInitialSetup(gameData.level, stage))
-    }, [gameData.level])
+        dispatch(handleInitialSetup(level, stage))
+    }, [level])
 
     useEffect(() => {
         if (!word.includes(undefined)) {
             if (word.join("").toLowerCase() === answer) {
                 dispatch(handleVictory(true))
+                setActive(false)
+                console.log(updatedUserInfo())
+                if (stage === 10) {
+                    // dispatch(updateUserData(updatedUserInfo()))
+                }
             } else {
                 shake()
             }
         }
     }, [word])
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (active) {
+                if (time > 0) {
+                    setTime(time - 1)
+                } 
+                else {
+                    const coins = user.coins - 10 > 0 ? user.coins - 10 : 0
+                    dispatch(handleVictory(false))
+                    dispatch(updateUserData({ coins }))
+                }
+            }
+        }, 1000)
+
+        return () => clearInterval(interval)
+    }, [time])
 
     const shakeAnimation = new Animated.Value(0)
 
@@ -48,12 +77,59 @@ const GamePage = ({ navigation }) => {
           ]).start()
     }
 
+    const timeInMinutes = () => {
+        let minutes = Math.floor(time / 60)
+        let seconds = time - minutes * 60
+        return `${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`
+    }
+
+    const updatedUserInfo = () => {
+        const coins = user.coins
+        let newStars = time > 89 ? 3 : (time > 59 ? 2 : 1)
+        let updatedUser
+
+        if (newStars > currentStars) {
+            updatedUser = { 
+                coins: coins + calculateCoins(newStars, currentStars), 
+                levels: {...allLevelData, [level]: newStars} 
+            }
+        }
+
+        if (!allLevelData[level + 1]) {
+            let levels = updatedUser.levels
+
+            updatedUser = {...updatedUser, levels: {...levels, [level + 1]: null}}
+        }
+
+        return updatedUser
+    }
+
+    const calculateCoins = (newStars, currentStars) => {
+        switch([newStars, currentStars]) {
+            case [3, 0]:
+                return levelCoins
+            case [3, 1]:
+                return levelCoins * 0.75
+            case [3, 2]:
+                return levelCoins * 0.5
+            case [2, 0]:
+                return levelCoins * 0.5
+            case [2, 1]:
+                return levelCoins * 0.25
+            case [1, 0]:
+                return levelCoins * 0.25
+            default:
+                return
+        }
+    }
+
     return (
         <>
-            <Header button="close" navigation={navigation} text={`Level ${gameData.level}-${stage}`}/>
+            <Header button="close" navigation={navigation} text={`Level ${level}-${stage}`}/>
             {
                 victory === null ?
                 <>
+                    <Text style={styles.time}>{timeInMinutes()}</Text>
                     <GameImages levelData={levelData}/>
                     <GameHints word={word} levelData={levelData} letters={letters}/>
                     <Animated.View 
@@ -92,10 +168,13 @@ const GamePage = ({ navigation }) => {
                 <Outcome 
                     navigation={navigation} 
                     victory={victory}
-                    level={gameData.level}
+                    level={level}
                     data={levelData} 
                     stage={stage}
                     setStage={setStage}
+                    setTime={setTime}
+                    time={time}
+                    setActive={setActive}
                 />
             }
         </>
@@ -122,5 +201,11 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         justifyContent: "center",
         marginTop: 10
+    },
+    time: {
+        textAlign: "center",
+        marginTop: "30%",
+        fontWeight: "bold",
+        fontSize: 20
     }
 })

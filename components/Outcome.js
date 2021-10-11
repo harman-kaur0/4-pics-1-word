@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time }) => {
     const dispatch = useDispatch()
 
     const handleExit = () => {
@@ -15,11 +15,15 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage }) => {
     const handleRetry = () => {
         dispatch(handleVictory())
         dispatch(handleInitialSetup(level, 1))
+        setTime(120)
+        setActive(true)
     }
 
     const handleNextLevel = () => {
-        dispatch(handleVictory())
+        setTime(time + 3)
+        setActive(true)
         setStage(stage + 1)
+        dispatch(handleVictory())
         dispatch(handleInitialSetup(level, stage + 1))
     }
 
@@ -46,11 +50,17 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage }) => {
                         }
                     </View>
                     <View style={styles.message}>
-                        <Image
-                            source={require("../assets/game/coin.png")}
-                            style={styles.coin}
-                        />
-                        <Text style={styles.text2}>You've earned 25 coins!</Text>
+                        {
+                            stage === 10 ?
+                            <>
+                                <Image
+                                    source={require("../assets/game/coin.png")}
+                                    style={styles.coin}
+                                />
+                                <Text style={styles.text2}>You've earned 250 coins!</Text>
+                            </> :
+                            <Text style={styles.text2}>{10 - stage} stages to go! 2 seconds added.</Text>
+                        }
                     </View>
                     <View style={styles.buttonsContainer}>
                         <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>

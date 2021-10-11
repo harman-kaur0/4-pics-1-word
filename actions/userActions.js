@@ -11,11 +11,7 @@ export const fetchUserData = () => {
                 const newUser = {
                     name: "New User",
                     coins: 200,
-                    levels: {
-                        1: {
-                            
-                        }
-                    }
+                    levels: { 1: null }
                 }
         
                 await AsyncStorage.setItem("user", JSON.stringify(newUser))
@@ -28,15 +24,20 @@ export const fetchUserData = () => {
     }
 }
 
-export const updateUserData = data => {
+export const updateUserData = (data) => {
     return async dispatch => {
-        const user = await AsyncStorage.getItem("user")
-
-        const updatedUser = {
-            ...JSON.parse(user), 
-            [Object.keys(data)[0]]: Object.values(data)[0]
+        if (data) {
+            const user = await AsyncStorage.getItem("user")
+            const keys = Object.keys(data)
+            const values = Object.values(data)
+    
+            let updatedUser = {...JSON.parse(user)}
+    
+            keys.forEach((key, idx) => updatedUser[key] = values[idx])
+    
+            await AsyncStorage.setItem("user", JSON.stringify(updatedUser))
+    
+            dispatch({ type: "USER", user: updatedUser })
         }
-
-        await AsyncStorage.setItem("user", JSON.stringify(updatedUser))
     }
 }

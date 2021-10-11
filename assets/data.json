@@ -1,96 +1,102 @@
 {
-    "1": [
-        {
-            "level": 1,
-            "answer": "dog",
-            "image1": "https://images.squarespace-cdn.com/content/v1/55a2bffae4b037baec79f96e/1573668974810-VPJEUFYJBQQMJLAMUEB4/Norbio.jpeg",
-            "image2": "https://spiritdogtraining.com/wp-content/uploads/2021/02/samoyed.jpg",
-            "image3": "https://i1.sndcdn.com/avatars-000560768412-fgpz9h-t500x500.jpg",
-            "image4": "https://live.staticflickr.com/7480/16287774216_e1a44c09c5.jpg"
-        },
-        {
-            "level": 2,
-            "answer": "cat",
-            "image1": "https://www.guildinsurance.com.au/images/librariesprovider3/breed-images/500x500/tabby-(1)-(1).jpg?sfvrsn=b28f650b_2",
-            "image2": "https://images-na.ssl-images-amazon.com/images/I/81BES+tsVvL.png",
-            "image3": "https://pawsitivepotential.com/wp-content/uploads/2016/05/Tongue-Kitten-500x500_t.jpg",
-            "image4": "https://uploads.scratch.mit.edu/users/avatars/65809176.png"
-        },
-        {
-            "level": 3,
-            "answer": "cow",
-            "image1": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhUYGBgaHRocHRwaGBocFhgeGhkcGh4cHRwcIS4lHCMrIR0ZJzgmKy8xNTU1Gic7QDs0Py40NTEBDAwMEA8QHxISGjQrJSs0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcEBgECAwj/xABAEAACAQIDBQYEAQsCBwEAAAABAgADEQQSIQUGMUFRByJhcYGREzKhwYIUI0JSYnKSsdHh8KKyJDNTg8LS8XP/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB8RAQEAAgIDAQEBAAAAAAAAAAABAhEhMQMSQVEyIv/aAAwDAQACEQMRAD8AuaIiAiIgIiICIiAiIgIiICIiBxMSrjFHC7eXD3/pO1WrclRw5/0mMyTNv4seibQXmCPr/eZqsCLia/VRi9lH6P1H/wBmNs/HVqWIyVAWouLBhqEcXNzzCsNPAgaakyTL9NNrieVGsrqGVgyngQQQfUT1m0InmlRTexBtxsb2npAREQEREBERAREQEREBERAREQEREBIneTa64TDVMQ6lgig2GhYkhVF+V2I15SWmDtbZtPEUXoVRmRxZgCQeNxYjUWIB9IHz9tvtJ2hXY2rmgh4JSstvx2zE+oHgJH4PfXaKNmXG1iejvnU/he4mFvNu5iMFV+FXSxNyrDVKig2zKfa4OouLiRVKwHjAvPY3bBhHpXxKvSqqNVVS6Of2G5dbNa3UyC2j2hti69NctSlhVcZ1V7VKuosHYEZVHNQSDrcnlUbnWZeDqMbAG19Aenj95KsfVoQKLDQDlynVja8hd1dvri8OHCsrJZGDa94KDcHmD46yVMDgLfW1j/KeWKQZZkM4modpm2mwuCJpsVqVGVFYfMoOrEdDlB18ZmxVd4DffGYLGVSxVzmyVEe6q5Tuh9PlawHeAsRy4W9N+u0OpjSKdEvRw4HeXMA9RuecqflHJb68TytoOKqliGJJbmSblvEk63nFN9PGakRlYfFMhBpu6HqjMpv5qRLs7Kd8a2Kz4fEHPUpoHWppmdM2Uh7aXBK68wddRc0ng8MzuqIjO7kBVUEsx6ADjL97Mtz2wNJnrZfj1bZgNfhqOCZuZuSTbS+mtgYG9xESoREQEREBERAREQEREBETqTaBzOgcdR7yOr1ix8Okr7f3fpsK4w9AL8SwZ3YZggbVVUX1YjU30AI430m10tWY+IxdNFzO6oo/SZgq+50nzzit+8c4P/E1AP2SE9ggE16pVq1mzu7uf1nYs3oWN42i79794tkYii1Ks4xHEqKIzOrfrI/yqfW3I34SlqGwalWv8LDjOzk5FYhWyjm36INuNj1nsHyLpoB7k+J5ywuxzY7lqmMdbKwyUyeJ73fKjpoq38DJyrVMR2e1MLT+Niilr5QiOcxYg271vC+nIGQSYZQe6pJBNzfiAOgHEa8OPtLP7V9qKz08Op/5d3fwZ9EHnlzH8QlX1XGU3ub9POVVjdlG3T8SrhXIAZRUpjqRowB590qbfsmWpTTQz5mp7SdXpVKYyPSy5WHIqdL2/R1sR0Np9HbC2iMThqVcCwqIrW6EjUehuPSCu2J01lXdsW3VKU8MFuTlqlr6Ad9VUDmSQxJ5WHG+lnbRPcM+c99cUz42tmPyNkUdFTQfc+szP60fEt2Z7uU8bi2SoRkSk7FT8zXtTBXoVLBrm4uALa6brjOxRM4NHFsiWFxUph2BA4gqyggnlbTqZBdiFFmxzuB3VoMGPIZmQKPXKf4TL7m2Wqbo7kYfADMoNSsRZqrAZrHiFHBF8OJ5kza4iAiIgIiICIiAiIgIiICIiBxMfFVLAgHWdsQ+Vb3t1PQcSZXWxd9jiHxdTLajQpF0UfM9mclmPUhVsOWslo2zaGIFOk9QgtkRmsOJygm2nXhPm/aWJqYis9Zzmao2YnkOAAHgAAB4ATYt5N7sRjVKvZKQa4RL2Omhc375HTQa8Ocg6CAWEK6JgxbnMzD0NQAL8AABc3OgAHWKdTMdOHL+s33s82IGZsXUH5ujmKX/AE3UElvJf526GFjH2T2f1K1fLW7tCmQHINi75VZqaW5AnKz/ALJtrwmt/N51w6DBYUhGUKHyAAUksCtNbaAkWv0HnpKb5bfOAwiqhH5Q4sul7HjUqEeZJ/eYcdZSmHYsWZmLMSSzE3JJ1JJ5k8YGXiaxc5mYsxJJYm5J6knjI+qw0HUgT3Ogv6zCvmYdcygephK7YM98gaXvPojcijkwGFHWmrnwNS7kehYj0nztVRlqMoGoYge5tr7T6ewGFFKlTprwpoiD8KhftAx9oC6NPnHfAH8tr3Fu+dPwix9ePrPpHFrcHylB9peEyY0t/wBREfhzF6Z/2D3mZ/S/G1dhW0AtbEUCBd1Vwef5tspW/k4IHgZdk+Xdy9r/AJLjMPXY2RXIb9xxkYnyBv8Ahn0+jAi4NwdbjnNsu8REBERAREQEREBERAREQEREDUO03apw+BfL81Q/CBvYjOjEkdTYGU5u3XKYXaJvbNQpp6PWVCPZiPWWb20US2DpEcFri/helUAPvb3mkbrbvNWwddzcJUq0UJH6NOixq1X+gUeImasaeGso9/6CC54npr68IxtPKQDyLArzBQ2sfW877LwFTE1UoUxd3awv8qjmzdFVQT6SjcezPdxcU1SpVUmkmVRyDPcMQD4Lx/8A0HPhau1KiYfDkAKiLkSwsFVWYKSB4KWPpO2xNlphqCUE+Wmtr2ALtxZzbmSSfWaR2yY8pQo0gSM7u5tzCJlsf4/pAr3bm8D43EPVfRTcInJEBOVfPW5PMk+Ejytlt1P85hYV7N56TNJvA4eoeQ0kfUfx1me7WFpH5CYRL7Rpl8lQcairyv3uenn/ACn0rc5R1sP5SgtxtnflOIp4djZVYVDpchU1YeAJyr+OXJtLeKijlC5uujd05V0zWJ8RM703rfTOdCQdfrKu7VtjuaaVl1FK6uLa2dls3oRb1m8YXbivco6MvG6sCB4SOx+8WGdnw75XzLZlIurKQbjMNB466TEzl5auNijsemQonRFJ8279vYifQnZXtI19m0cxu1PNSP8A2zZf9GWfPu2WU1qhQsULsULfNlLHLf0tLL7CtqsKlfCk91lFZfBlKo/uCn8M6xzq6YiJUIiICIiAiIgIiICIiAiIgat2i4I1dn1wq5mUBwBxORgxt+ENPDAJTwmESjpdKQuul2bI7sSP2ilQ+hm2VEDAg6gggjqDoZom+NHKKr3AL0Kq5iflNOlWUHz/ADuX8UzVn4oysxJ1Op1PmdT9TLG7GtmXeviTbugUk6gtZ3NvLIPUyucQRmJGgJNh0F5e/Z7soYfA0hpmqfnWNub2Kj0UIvpKNoEp7tpq/n6C9KZP8Tt/6y3xKe7aVviaPhS/83/vCq5RrG/QzJqOQL3tMNBednLMQGP9oRz8e5nvn0v14TCWez6adIRbHYpTNsVUy/8ATUN5ZmK+l1PqJN7x7v0qoaoamRrOSSQL631B148xbjK83E30/IhUpuuem5z6WDK1gp8wQB/D4zaNpbXwW0FQmqtBxcWqL39dMtwbEXt9uM55R1wumg0XdVdA3da2ZeTWOlx/KeG21emFs/EBlAtmyt3icwAJBa+h6TcdqbuUsMStXFIr5cyqUIuAbdT5Xmj7UdHKnMxIFuIPkAeX14yY81cstYsGqb5T4D+U3nsaq22ko/Wp1V/2t/4n2miu03/sY2Y1TH/GGiUFZmP7VRWRV9QXP4Z1cX0BERKEREBERAREQEREBERAREQOJXXa4jfkyleHxVVv3WVm/wB6JLFms78bNOIwtWmvzFQy+LIc4Hrlt6yXpZ2+d61IsVCi5JAA6k6Ae8+jtk4VqVClTY5mpoiE8iVUAn3E+faGJCMj2GZGVwCLg5SGH1E+iqL5lVuoB9xeZlas07iVp2p7Neq4Krmy0DU042pVMr+wrKx/dlliYO064T84UL/DpVn0F7hQhKX6t055TL8SPmlF5Tq8kt4MEKGJq01+VXbJ+43eQ+qFT6yY7O8FTr4wUqihkelVBBAN+7yvwI4gjUERs01Kil3HvOb31khj9nmhiKtBjc02ZS1tDawzaciLH1mx7lblLjkdziMnw2ClVW5F9b3NgQRe0u0001OInsV0HtLBx3ZXVVx8KujJ+2CGHdvyuD3tPAG+s1jE7u4lKyUHpMr1DZAeBYHk3A+d+cm10bw7ZfEphmZTnRXpEjUuUKd7zNxp1k7guzstSHxKmSqWvpqqqQO74kG5vwmz7M3Sp0hh2e5egGa1xYu7ZmJ01ykLb90SWx+b4NUr82R8vnlNvrOeWfyNTH9UE694hdQL69QOflYXn0D2QbCbD4M1HGV8Qwex4hAtkv5i7fims9n+5C0wHxCh3qKFyMNER7ZgwPFjwPQXHWXEqgCw0AnSXbFmneIiaQiIgIiICIiAiIgIiICIiBxMXGjgZlTwxfy+RECh9/N3jQxDFUJpPd1IGi/rqbcMpPsRLQ3TxDPgsOzHM3w0BPUqMpP0ktUpqbZgDa/HxBU/QnSeGAwKUEFOmMqLfKLkhbktYX5XJsOU5603buMhWnZlBBU8CCD5HSeRnIaXaafPu/WFNPGvTP6CYdL9cmGpLf3Esbss2GtHDflLA/ErXtcWKorELa/61s1+YIkV2l7F+LtDC5UYiuqK2W5PcfK50GlkZdfCWXVphQqj5VAAHgBYQqtO07dlFvjEIU1GVXT9YkGzr46C458esieyTGMmMamWISohutgQzJqtzxFgX95Ye8mzWxbDDPT/ADJQuKoazU6q3C2XnoeBFrEzUdytyKoq0cV8YKqO+dMrLUBQshQ8tefgeckvK2cLPcazyxWCRyjOoJpsHQ81axW49CZmBBOKw0l0ztB4od6cLT0hm79jPWo1hOMn10r22W96iW6/YzaZrGwEvUB6An7febPO3j6c8u3MRE2yREQEREBERAREQEREBERATzrLdSPCekQIZhPTCYfMp152Htf7zo3OZWzeDef2mNctfGI6WNp1tMrHVe8FHLU/0/zrME1xe1pLYTbv+TKzpUI76B1U+FTKWH+hfaK4npTva+UgdeRnFSX4fUHtkM6ikrujVPldL3Qi5DaEXANtDoZL4SgURVJvYAXuTwFuJ1953wWEDgkmxB09p3dWXRh68jJjLvdW34GdHfQznPPDEmymW1IizoWY+J9BPGpVLTvXaynx095jgzz2/HWRsG7lPVm5WA99fsJPyN2JRy0V6tdvfh9AJJT0YzWMccu3MRE2hERAREQEREBERAREQEREBOj8D5TvOCIEOxmdgLZPU3/zytMKqtrjpMvZy90nqf5f59Jmdr8YddLO1+t/eeVJMzAdTMjFjvN5/acYFO8PC5mZOV3wkatO62HTT0ka40kxIyuLMRN1I6bJezOvkfsftJN1BFiLiQmGqZaqnk3dPrw+tpOyToqEx9LIw/VPA9D0MxaxJW3O82KogYWIuDPClg1U3AJPK/KS41ZWqbQpFWyniACfUXmPh6Zdgo5kAeptJHbRzV2A8B/pE7bKo2qr539gTOPr/p09uG0U0AAA4AAD0neInpcSIiAiIgIiICIiAiIgIiICIiAiIgReOHeP+cpn0UyqB0mHj/m9JISTsR2OHe8wJ32cOJ8hG0Rqp8/tO+zvlPn9hJ9a+MuQ+OxAUsT1P0kxNe3gom9xwOp6xldQxm6jE2iHcKAb3GXTnN0mrbt7NuxqMb5TZfP+15tMnj3rdM9b1HMRE2ygMdSUMzEa3MitmbST8oVRf5suo43Frj1MnNsU+PiP7f0mrbtYP/irk8Ltbpa/3tOOdsykjrjJcbasGIidnIiIgIiICIiAiIgIiICIiAiIgIiIEZtA972kgjXAPUSIxbXY+cz9nnuepmZ2tnDw2i/eUeBP+e07bNb5h5GYe1agLZQdVABsdRfUA+h+s52bU74HhaZl/wBLrhNSL2v9pKSF2lUuTNZdJGfsxbUk8v5mZcxdnf8AKXymVLOiuYiJUYePGg/zjI7ZFFVquQACV+4knjvlHn9jI3BNasPEEff7TN7jU6TkRE0yREQEREBERAREQEREBERAREQEROIGo4/GJ3sjd1bjQ3aw0ve9+XnMzdXaQqoCpDKy5g1+NrD7/SYmM3WqZ2elUVbm4BuPQ2v7zG2HuvXw7BlKBc+YqGYqA3zZRl566eM80ucy5jtfW462kt4DSo98KA9VhdjfXKtrE8ha2nnIKrth0QuFLZCD3bZ7XGYhRxAGtuOk3La+y0xCZHva4IKmzAjmDIRNzUX5azjW97AmXPDP23OjHLH157TuGxivRDqb3UH1I/vIStUJvpMhNmigotVOW/y5QATZhy4AZr/hEwcVtAIAbXuQOB5+XDzm7brlmTnhObCa9K3RmH3+8kpE7CrAqyg6hr2twBH9QZLTePTF7cxETSMPaLWUef2kBVxGVgw4ggjxtJTaWJT4i0ie8Vd7eClQfqwkVVVdb8JjKtYxtFJwwDDgQCPIi87zB2TXVqa5SDYW08OEzpqXcZrmIiUIiICIiAiIgIiICIiAiIgIiICIiAiIgajvrjchpjUEhzfloV/rNI2/tiqEpmmbn4iZha7FTfT3y+8tnH7PpVly1UDgai/EeRGokeu6+FBDfD4cizFTpaxBNm9Z58/FlcvaV2w8mMx1Yhd3dpH8pCG3eVhYdR3gfo03WReD2Dh6T/ESmFa1r3JsD0udJKTp48csZq1jOzK7jmIidGGrb7YxqVOmyADM2VmsL5bFsvra/wCGahgNtaFXdmJ4E5bW6aDWWTtbZqYik1J72a2o0ZSNQQeomj1uzioL/DxQ46Z6Z4dCQ2vmLTz+TDK3crthljJy7bobeUWD9xr5XUn5bk5XvzU9ehliAyvcLuJWAs9Wk3QhXvb9XU8JvOBoslNUZszKoBa1r2FrzXimU3Moz5LjeYyoiJ2cyIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiBxE5iAiIgIiICIiAiIgIiIH//2Q==",
-            "image2": "https://purepng.com/public/uploads/large/cow-3j7.png",
-            "image3": "https://pixieland.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/front_500.jpg",
-            "image4": "https://proearthanimalhealth.com/wp-content/uploads/2018/08/lodoen-cow-calf-resize-500x500.jpg"
-        },
-        {
-            "level": 4,
-            "answer": "pig",
-            "image1": "http://tryveg.com/wp-content/uploads/2016/01/animals-pigs.jpg",
-            "image2": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/SC959-500x500.webp",
-            "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrfAE13WT0-O5-5VBge2O2xgCXSjDSvjbOg&usqp=CAU",
-            "image4": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/AG645-500x500.webp"
-        },
-        {
-            "level": 5,
-            "answer": "fish",
-            "image1": "https://www.stodels.com/wp-content/uploads/2009/03/Tropical-Fish-Blue-500x500.jpg",
-            "image2": "https://www.bettafish.com/attachments/moon-tail-betta-fish-500x500-jpg.951777/",
-            "image3": "https://www.nano-reef.com/applications/core/interface/imageproxy/imageproxy.php?img=http://www.thatpetplace.com/p30417.jpg&key=3d50d59ead6f2122704088e3f80febd93d3dbaf3efd4aebd0861d40866084b4f",
-            "image4": "https://news-cdn.softpedia.com/images/news2/Great-White-Sharks-in-the-Mediterranean-Came-from-Australia-2.jpg"
-        },
-        {
-            "level": 6,
-            "answer": "lion",
-            "image1": "https://www.autism-products.com/wp-content/uploads/leo-the-talking-lion-2.jpg",
-            "image2": "https://i.pinimg.com/originals/eb/d5/3c/ebd53c6de4eb024aae6cf01eacff528a.jpg",
-            "image3": "https://willbl.com/wp-content/uploads/2020/02/WBL-Liuwa-Plain-Lions-151209050202-500x500.jpg",
-            "image4": "https://cdn.wallpapersafari.com/22/41/HjTMF8.jpg"
-        },
-        {
-            "level": 7,
-            "answer": "crab",
-            "image1": "https://m.media-amazon.com/images/I/41EOW0m-djL.jpg",
-            "image2": "https://i.pinimg.com/564x/30/fe/2f/30fe2f26d05c3e38f96b430e36c01531.jpg",
-            "image3": "https://petesaquariums.com/wp-content/uploads/Sally-Lightfoot-Crab.png",
-            "image4": "https://m.media-amazon.com/images/I/51NvyFvUFJL.jpg"
-        },
-        {
-            "level": 8,
-            "answer": "worm",
-            "image1": "https://m.media-amazon.com/images/I/61ZqKqmwAJL._AC_.jpg",
-            "image2": "https://i1.sndcdn.com/avatars-000621159561-mal9oa-t500x500.jpg",
-            "image3": "https://lh3.googleusercontent.com/proxy/B98maJssDV2CyCOo_ZJJqjepvviTMbD9wyJZRd3nQH3g0L9NkMXJdMrpCv5y0a0ibBg5pVJH37h7RveuPG3QuJ8AgkDpp9K2Rf2Q",
-            "image4": "https://i.pinimg.com/564x/7e/87/31/7e8731736020267dee0a29a46469fa7f--book-worms-nursery-decor.jpg"
-        },
-        {
-            "level": 9,
-            "answer": "zebra",
-            "image1": "https://lh3.googleusercontent.com/proxy/EZZ7NtSyog9_F6juDHOMepQtA8sqFxig4XuDx8T4cLEpGrxhIfnINKe07y3JbZV4xzUsVF-yZqh2Rd0E91iAMxCU7TyvVaA",
-            "image2": "https://i.ebayimg.com/images/g/QbgAAOSwzoZdKmYm/s-l500.jpg",
-            "image3": "https://images.squarespace-cdn.com/content/v1/596eb6988419c20f0107fa08/1512588039296-NB8M6TH4LHRF91HIGUVT/baby-zebra.jpg?format=500w",
-            "image4": "https://www.hospiceofmiamicounty.org/wp-content/uploads/2014/01/zebra.jpg"
-        },
-        {
-            "level": 10,
-            "answer": "whale",
-            "image1": "https://res.cloudinary.com/sailtrilogy/image/upload/w_500,c_scale/v1548298694/wordpress/feature2-12_olt76u.jpg",
-            "image2": "https://i.pinimg.com/originals/50/6c/c6/506cc65427dec24df5eb74b854dcba71.jpg",
-            "image3": "https://i1.sndcdn.com/artworks-000250435807-bnw1z2-t500x500.jpg",
-            "image4": "https://i.pinimg.com/originals/30/73/b8/3073b8183664977766880824394f1d29.png"
-        }
-    ],
-    "2": [
-        {
-            "level": 1,
-            "answer": "shoes",
-            "image1": "https://i.pinimg.com/564x/f3/14/e5/f314e514db49d8e5ae52fdd7eb86e83a.jpg",
-            "image2": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_44/1626501/518pgfxlqdl-5f997387c6e07.jpg",
-            "image3": "https://5.imimg.com/data5/HI/OQ/MY-22659923/ladies-sports-shoes-500x500.jpg",
-            "image4": "https://cdn.shopify.com/s/files/1/2448/8213/products/mt-emey-502-c-black-9e-width-mens-charcot-shoes-casual-dress-over-150-size-10-11-5-apisfootwear-com-bignwideshoes_277_1200x1200.jpg?v=1535055384"
-        }
-    ],
+    "1": {
+        "coins": 250,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "dog",
+                "image1": "https://images.squarespace-cdn.com/content/v1/55a2bffae4b037baec79f96e/1573668974810-VPJEUFYJBQQMJLAMUEB4/Norbio.jpeg",
+                "image2": "https://spiritdogtraining.com/wp-content/uploads/2021/02/samoyed.jpg",
+                "image3": "https://i1.sndcdn.com/avatars-000560768412-fgpz9h-t500x500.jpg",
+                "image4": "https://live.staticflickr.com/7480/16287774216_e1a44c09c5.jpg"
+            },
+            {
+                "level": 2,
+                "answer": "cat",
+                "image1": "https://www.guildinsurance.com.au/images/librariesprovider3/breed-images/500x500/tabby-(1)-(1).jpg?sfvrsn=b28f650b_2",
+                "image2": "https://images-na.ssl-images-amazon.com/images/I/81BES+tsVvL.png",
+                "image3": "https://pawsitivepotential.com/wp-content/uploads/2016/05/Tongue-Kitten-500x500_t.jpg",
+                "image4": "https://uploads.scratch.mit.edu/users/avatars/65809176.png"
+            },
+            {
+                "level": 3,
+                "answer": "cow",
+                "image1": "data:image/jpeg;base64,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",
+                "image2": "https://purepng.com/public/uploads/large/cow-3j7.png",
+                "image3": "https://pixieland.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/front_500.jpg",
+                "image4": "https://proearthanimalhealth.com/wp-content/uploads/2018/08/lodoen-cow-calf-resize-500x500.jpg"
+            },
+            {
+                "level": 4,
+                "answer": "pig",
+                "image1": "http://tryveg.com/wp-content/uploads/2016/01/animals-pigs.jpg",
+                "image2": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/SC959-500x500.webp",
+                "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrfAE13WT0-O5-5VBge2O2xgCXSjDSvjbOg&usqp=CAU",
+                "image4": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/AG645-500x500.webp"
+            },
+            {
+                "level": 5,
+                "answer": "fish",
+                "image1": "https://www.stodels.com/wp-content/uploads/2009/03/Tropical-Fish-Blue-500x500.jpg",
+                "image2": "https://www.bettafish.com/attachments/moon-tail-betta-fish-500x500-jpg.951777/",
+                "image3": "https://www.nano-reef.com/applications/core/interface/imageproxy/imageproxy.php?img=http://www.thatpetplace.com/p30417.jpg&key=3d50d59ead6f2122704088e3f80febd93d3dbaf3efd4aebd0861d40866084b4f",
+                "image4": "https://news-cdn.softpedia.com/images/news2/Great-White-Sharks-in-the-Mediterranean-Came-from-Australia-2.jpg"
+            },
+            {
+                "level": 6,
+                "answer": "lion",
+                "image1": "https://www.autism-products.com/wp-content/uploads/leo-the-talking-lion-2.jpg",
+                "image2": "https://i.pinimg.com/originals/eb/d5/3c/ebd53c6de4eb024aae6cf01eacff528a.jpg",
+                "image3": "https://willbl.com/wp-content/uploads/2020/02/WBL-Liuwa-Plain-Lions-151209050202-500x500.jpg",
+                "image4": "https://cdn.wallpapersafari.com/22/41/HjTMF8.jpg"
+            },
+            {
+                "level": 7,
+                "answer": "crab",
+                "image1": "https://m.media-amazon.com/images/I/41EOW0m-djL.jpg",
+                "image2": "https://i.pinimg.com/564x/30/fe/2f/30fe2f26d05c3e38f96b430e36c01531.jpg",
+                "image3": "https://petesaquariums.com/wp-content/uploads/Sally-Lightfoot-Crab.png",
+                "image4": "https://m.media-amazon.com/images/I/51NvyFvUFJL.jpg"
+            },
+            {
+                "level": 8,
+                "answer": "worm",
+                "image1": "https://m.media-amazon.com/images/I/61ZqKqmwAJL._AC_.jpg",
+                "image2": "https://i1.sndcdn.com/avatars-000621159561-mal9oa-t500x500.jpg",
+                "image3": "https://lh3.googleusercontent.com/proxy/B98maJssDV2CyCOo_ZJJqjepvviTMbD9wyJZRd3nQH3g0L9NkMXJdMrpCv5y0a0ibBg5pVJH37h7RveuPG3QuJ8AgkDpp9K2Rf2Q",
+                "image4": "https://i.pinimg.com/564x/7e/87/31/7e8731736020267dee0a29a46469fa7f--book-worms-nursery-decor.jpg"
+            },
+            {
+                "level": 9,
+                "answer": "zebra",
+                "image1": "https://lh3.googleusercontent.com/proxy/EZZ7NtSyog9_F6juDHOMepQtA8sqFxig4XuDx8T4cLEpGrxhIfnINKe07y3JbZV4xzUsVF-yZqh2Rd0E91iAMxCU7TyvVaA",
+                "image2": "https://i.ebayimg.com/images/g/QbgAAOSwzoZdKmYm/s-l500.jpg",
+                "image3": "https://images.squarespace-cdn.com/content/v1/596eb6988419c20f0107fa08/1512588039296-NB8M6TH4LHRF91HIGUVT/baby-zebra.jpg?format=500w",
+                "image4": "https://www.hospiceofmiamicounty.org/wp-content/uploads/2014/01/zebra.jpg"
+            },
+            {
+                "level": 10,
+                "answer": "whale",
+                "image1": "https://res.cloudinary.com/sailtrilogy/image/upload/w_500,c_scale/v1548298694/wordpress/feature2-12_olt76u.jpg",
+                "image2": "https://i.pinimg.com/originals/50/6c/c6/506cc65427dec24df5eb74b854dcba71.jpg",
+                "image3": "https://i1.sndcdn.com/artworks-000250435807-bnw1z2-t500x500.jpg",
+                "image4": "https://i.pinimg.com/originals/30/73/b8/3073b8183664977766880824394f1d29.png"
+            }
+        ]
+    },
+    "2": {
+        "gold": 250,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "shoes",
+                "image1": "https://i.pinimg.com/564x/f3/14/e5/f314e514db49d8e5ae52fdd7eb86e83a.jpg",
+                "image2": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_44/1626501/518pgfxlqdl-5f997387c6e07.jpg",
+                "image3": "https://5.imimg.com/data5/HI/OQ/MY-22659923/ladies-sports-shoes-500x500.jpg",
+                "image4": "https://cdn.shopify.com/s/files/1/2448/8213/products/mt-emey-502-c-black-9e-width-mens-charcot-shoes-casual-dress-over-150-size-10-11-5-apisfootwear-com-bignwideshoes_277_1200x1200.jpg?v=1535055384"
+            }
+        ]
+    },
     "3": [
 
     ],

@@ -2,7 +2,8 @@ import { shuffleArray, getRandomItem } from "../helper/functions"
 const gameData = require("../assets/data.json")
 
 export const handleInitialSetup = (level, stage) => {
-    const data = gameData[level][stage - 1]
+    const data = gameData[level].stages[stage - 1]
+    const gold = gameData[level].gold
 
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 
@@ -16,6 +17,7 @@ export const handleInitialSetup = (level, stage) => {
 
         dispatch({ type: "VICTORY", victory: null})
         dispatch({ type: "DATA", data })
+        dispatch({ type: "GOLD", gold })
         dispatch({ type: "WORD", word })
         dispatch({ type: "LETTERS", letters })
     }

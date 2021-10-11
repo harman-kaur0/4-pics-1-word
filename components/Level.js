@@ -23,9 +23,9 @@ const Level = ({ level, levels, navigation }) => {
                 style={styles.image}
             >
             {
-                levelData.stars ?
+                levelData ?
                 <Image
-                    source={stars[levelData.stars]}
+                    source={stars[levelData]}
                     style={styles.stars}
                 /> : null
             }
