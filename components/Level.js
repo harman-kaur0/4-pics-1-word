@@ -6,14 +6,14 @@ import { useDispatch } from "react-redux"
 const Level = ({ level, levels, navigation }) => {
     const dispatch = useDispatch()
 
-    const levelData = levels ? levels[level] : null
+    const levelData = levels ? levels[level] : undefined
 
     const handlePress = () => {
         dispatch(setLevel(level, navigation))
     }
 
     return (
-        levelData ? 
+        levelData || levelData === null ? 
         <TouchableOpacity
             onPress={handlePress}
             style={styles.box}

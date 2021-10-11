@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, coins }) => {
     const dispatch = useDispatch()
 
     const handleExit = () => {
@@ -57,7 +57,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                     source={require("../assets/game/coin.png")}
                                     style={styles.coin}
                                 />
-                                <Text style={styles.text2}>You've earned 250 coins!</Text>
+                                <Text style={styles.text2}>You've earned {coins} coins!</Text>
                             </> :
                             <Text style={styles.text2}>{10 - stage} stages to go! 2 seconds added.</Text>
                         }

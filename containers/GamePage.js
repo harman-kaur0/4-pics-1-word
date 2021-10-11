@@ -15,7 +15,7 @@ const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
 
     const [stage, setStage] = useState(1)
-    const [time, setTime] = useState(5)
+    const [time, setTime] = useState(120)
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)
@@ -39,9 +39,8 @@ const GamePage = ({ navigation }) => {
             if (word.join("").toLowerCase() === answer) {
                 dispatch(handleVictory(true))
                 setActive(false)
-                console.log(updatedUserInfo())
                 if (stage === 10) {
-                    // dispatch(updateUserData(updatedUserInfo()))
+                    dispatch(updateUserData(updatedUserInfo()))
                 }
             } else {
                 shake()
@@ -95,29 +94,35 @@ const GamePage = ({ navigation }) => {
             }
         }
 
-        if (!allLevelData[level + 1]) {
+        if (!allLevelData[parseInt(level) + 1]) {
             let levels = updatedUser.levels
 
-            updatedUser = {...updatedUser, levels: {...levels, [level + 1]: null}}
+            updatedUser = {...updatedUser, levels: {...levels, [parseInt(level) + 1]: null}}
         }
 
         return updatedUser
     }
 
     const calculateCoins = (newStars, currentStars) => {
-        switch([newStars, currentStars]) {
-            case [3, 0]:
-                return levelCoins
-            case [3, 1]:
-                return levelCoins * 0.75
-            case [3, 2]:
-                return levelCoins * 0.5
-            case [2, 0]:
-                return levelCoins * 0.5
-            case [2, 1]:
-                return levelCoins * 0.25
-            case [1, 0]:
-                return levelCoins * 0.25
+        const hash = {
+            3: levelCoins,
+            2: levelCoins * 0.5,
+            1: Math.round(levelCoins * 0.25)
+        }
+        
+        switch("" + [newStars, currentStars]) {
+            case "3,0":
+                return hash[3]
+            case "3,1":
+                return hash[3] - hash[1]
+            case "3,2":
+                return hash[3] - hash[2]
+            case "2,0":
+                return hash[2]
+            case "2,1":
+                return hash[2] - hash[1]
+            case "1,0":
+                return hash[1]
             default:
                 return
         }
@@ -175,6 +180,7 @@ const GamePage = ({ navigation }) => {
                     setTime={setTime}
                     time={time}
                     setActive={setActive}
+                    coins={calculateCoins(newStars, currentStars)}
                 />
             }
         </>

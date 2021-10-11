@@ -3,7 +3,7 @@ const gameData = require("../assets/data.json")
 
 export const handleInitialSetup = (level, stage) => {
     const data = gameData[level].stages[stage - 1]
-    const gold = gameData[level].gold
+    const coins = gameData[level].coins
 
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 
@@ -17,7 +17,7 @@ export const handleInitialSetup = (level, stage) => {
 
         dispatch({ type: "VICTORY", victory: null})
         dispatch({ type: "DATA", data })
-        dispatch({ type: "GOLD", gold })
+        dispatch({ type: "COINS", coins })
         dispatch({ type: "WORD", word })
         dispatch({ type: "LETTERS", letters })
     }
