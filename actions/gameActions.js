@@ -20,6 +20,7 @@ export const handleInitialSetup = (level, stage) => {
         dispatch({ type: "COINS", coins })
         dispatch({ type: "WORD", word })
         dispatch({ type: "LETTERS", letters })
+        dispatch({ type: "LEVEL", level })
     }
 }
 

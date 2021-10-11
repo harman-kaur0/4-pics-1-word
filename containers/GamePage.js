@@ -29,6 +29,9 @@ const GamePage = ({ navigation }) => {
     const level = gameData.level
     const allLevelData = user.levels
     const currentStars = allLevelData[level] || 0
+    const userCoins = user.coins
+    const newStars = time > 89 ? 3 : (time > 59 ? 2 : 1)
+    
 
     useEffect(() => {
         dispatch(handleInitialSetup(level, stage))
@@ -55,7 +58,7 @@ const GamePage = ({ navigation }) => {
                     setTime(time - 1)
                 } 
                 else {
-                    const coins = user.coins - 10 > 0 ? user.coins - 10 : 0
+                    const coins = userCoins - 10 > 0 ? userCoins - 10 : 0
                     dispatch(handleVictory(false))
                     dispatch(updateUserData({ coins }))
                 }
@@ -83,27 +86,25 @@ const GamePage = ({ navigation }) => {
     }
 
     const updatedUserInfo = () => {
-        const coins = user.coins
-        let newStars = time > 89 ? 3 : (time > 59 ? 2 : 1)
         let updatedUser
 
         if (newStars > currentStars) {
             updatedUser = { 
-                coins: coins + calculateCoins(newStars, currentStars), 
+                coins: userCoins + calculateCoins(newStars, currentStars), 
                 levels: {...allLevelData, [level]: newStars} 
+            }
+            
+            if (!allLevelData[parseInt(level) + 1]) {
+                let levels = updatedUser.levels
+                updatedUser = {...updatedUser, levels: {...levels, [parseInt(level) + 1]: null}}
             }
         }
 
-        if (!allLevelData[parseInt(level) + 1]) {
-            let levels = updatedUser.levels
-
-            updatedUser = {...updatedUser, levels: {...levels, [parseInt(level) + 1]: null}}
-        }
 
         return updatedUser
     }
 
-    const calculateCoins = (newStars, currentStars) => {
+    const calculateCoins = () => {
         const hash = {
             3: levelCoins,
             2: levelCoins * 0.5,
@@ -124,7 +125,7 @@ const GamePage = ({ navigation }) => {
             case "1,0":
                 return hash[1]
             default:
-                return
+                return 0
         }
     }
 
@@ -180,7 +181,7 @@ const GamePage = ({ navigation }) => {
                     setTime={setTime}
                     time={time}
                     setActive={setActive}
-                    coins={calculateCoins(newStars, currentStars)}
+                    calculateCoins={calculateCoins}
                 />
             }
         </>

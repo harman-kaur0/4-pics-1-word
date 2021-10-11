@@ -63,13 +63,13 @@
                 "answer": "worm",
                 "image1": "https://m.media-amazon.com/images/I/61ZqKqmwAJL._AC_.jpg",
                 "image2": "https://i1.sndcdn.com/avatars-000621159561-mal9oa-t500x500.jpg",
-                "image3": "https://lh3.googleusercontent.com/proxy/B98maJssDV2CyCOo_ZJJqjepvviTMbD9wyJZRd3nQH3g0L9NkMXJdMrpCv5y0a0ibBg5pVJH37h7RveuPG3QuJ8AgkDpp9K2Rf2Q",
+                "image3": "https://www.candywarehouse.com/item-images/132663-01_green-and-red-giant-gummy-worm.jpg?resizeid=102&resizeh=500&resizew=500",
                 "image4": "https://i.pinimg.com/564x/7e/87/31/7e8731736020267dee0a29a46469fa7f--book-worms-nursery-decor.jpg"
             },
             {
                 "level": 9,
                 "answer": "zebra",
-                "image1": "https://lh3.googleusercontent.com/proxy/EZZ7NtSyog9_F6juDHOMepQtA8sqFxig4XuDx8T4cLEpGrxhIfnINKe07y3JbZV4xzUsVF-yZqh2Rd0E91iAMxCU7TyvVaA",
+                "image1": "https://smesouthafrica.co.za/wp-content/uploads/2018/04/Zebra-500x500.jpg",
                 "image2": "https://i.ebayimg.com/images/g/QbgAAOSwzoZdKmYm/s-l500.jpg",
                 "image3": "https://images.squarespace-cdn.com/content/v1/596eb6988419c20f0107fa08/1512588039296-NB8M6TH4LHRF91HIGUVT/baby-zebra.jpg?format=500w",
                 "image4": "https://www.hospiceofmiamicounty.org/wp-content/uploads/2014/01/zebra.jpg"
@@ -85,7 +85,7 @@
         ]
     },
     "2": {
-        "gold": 250,
+        "coins": 250,
         "stages": [
             {
                 "level": 1,
