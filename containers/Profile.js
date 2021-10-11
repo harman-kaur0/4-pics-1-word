@@ -53,7 +53,10 @@ const Profile = ({ navigation }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.row3Buttons}>
+                <TouchableOpacity 
+                    style={styles.row3Buttons}
+                    onPress={() => navigation.navigate("Wheel")}
+                >
                     <Image
                         source={require("../assets/profile/wheel.png")}
                         style={styles.play}

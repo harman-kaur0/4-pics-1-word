@@ -127,7 +127,9 @@ const styles = StyleSheet.create({
         position: "absolute",
         fontWeight: "900",
         fontSize: 20,
-        color: "white"
+        color: "white",
+        // borderColor: "red",
+        // borderWidth: 1
     },
     textBox: {
         position: "absolute",

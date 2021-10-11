@@ -10,6 +10,7 @@ import Profile from "./containers/Profile"
 import GamePage from "./containers/GamePage"
 import Shop from "./components/Shop"
 import BoosterPage from "./components/BoosterPage"
+import PrizeWheel from "./components/PrizeWheel"
 import LevelSelection from './containers/LevelSelection'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
@@ -50,6 +51,7 @@ const App = () => {
                             <Stack.Screen name="GamePage" component={GamePage} />
                             <Stack.Screen name="Shop" component={Shop} />
                             <Stack.Screen name="Booster" component={BoosterPage} />
+                            <Stack.Screen name="Wheel" component={PrizeWheel} />
                         </Stack.Navigator>
                     </ImageBackground>
                 </NavigationContainer>

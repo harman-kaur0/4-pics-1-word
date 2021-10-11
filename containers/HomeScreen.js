@@ -20,7 +20,10 @@ const HomeScreen = ({ navigation }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable2}>
+                <TouchableOpacity 
+                    style={styles.touchable2}
+                    onPress={() => navigation.navigate("Wheel")}
+                >
                     <Image 
                         source={require("../assets/main/prize_wheel.png")}
                         style={styles.row1} 
