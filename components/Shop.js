@@ -16,10 +16,12 @@ const Shop = ({ navigation }) => {
                         <Text 
                             style={{
                                 fontWeight: "700",
-                                width: "100%",
-                                height: "38%",
-                                paddingTop: "5%",
-                                left: 25
+                                width: "40%",
+                                height: "30%",
+                                left: 25,
+                                // borderColor: "blue",
+                                // borderWidth: 2,
+                                textAlign: "center"
                             }}
                         >
                             You have
@@ -30,9 +32,13 @@ const Shop = ({ navigation }) => {
                                 fontSize: 20, 
                                 fontWeight: "900", 
                                 color: "white",
-                                width: "100%",
-                                height: "62%",
-                                textAlign: "center"
+                                width: "80%",
+                                height: "70%",
+                                textAlign: "center",
+                                // borderWidth: 2,
+                                // borderColor: "white",
+                                left: 30,
+                                padding: "1%"
                             }}
                         >
                             200 coins
@@ -88,7 +94,7 @@ const Shop = ({ navigation }) => {
                         style={{width: "100%", height: "110%", position: "absolute", zIndex: -1}}
                         resizeMode="contain"
                     />
-                    <Text style={{...styles.coinText2, width: "80%", fontSize: 10, marginTop: "85%"}}>Get 10 lives</Text>
+                    <Text style={{...styles.coinText2, width: "80%", fontSize: 12, marginTop: "80%"}}>Get 10 lives</Text>
                     <TouchableOpacity
                         style={styles.button}
                     >
@@ -117,9 +123,10 @@ const Shop = ({ navigation }) => {
                         style={{width: "100%", height: "110%", position: "absolute", zIndex: -1}}
                         resizeMode="contain"
                     />
-                    <Text style={{...styles.coinText2, color: "white", width: "80%", fontSize: 15}}>Get boosters</Text>
+                    <Text style={{...styles.coinText2, color: "white", width: "80%", fontSize: 13}}>Get boosters</Text>
                     <TouchableOpacity
                         style={styles.button}
+                        onPress={() => navigation.navigate("Booster")}
                     >
                         <Image
                             source={require("../assets/shop/go_button.png")}
@@ -155,7 +162,7 @@ const styles = StyleSheet.create({
         width: "60%",
         marginTop: "35%",
         height: "10%",
-        // borderColor: "red",
+        // borderColor: "black",
         // borderWidth: 1,
         alignSelf: "center",
         alignItems: "center",
@@ -165,18 +172,18 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         borderRadius: 20,
-        borderWidth: 1,
-        borderColor: "red",
-        position: "relative"
+        // borderWidth: 1,
+        // borderColor: "red",
     },
     coinText: {
-        position: "absolute",
-        borderColor: "black",
-        borderWidth: 1,
-        width: "50%",
-        height: "80%",
+        // borderColor: "purple",
+        // borderWidth: 2,
+        width: "100%",
+        height: "100%",
         right: 20,
-        zIndex: 1
+        zIndex: 1,
+        alignItems: "center",
+        justifyContent: "center"
     },
     row2: {
         width: "75%",
