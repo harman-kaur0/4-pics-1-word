@@ -1,6 +1,6 @@
 {
     "1": {
-        "coins": 250,
+        "coins": 100,
         "stages": [
             {
                 "level": 1,
@@ -85,7 +85,92 @@
         ]
     },
     "2": {
-        "coins": 250,
+        "coins": 100,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "https://everfreshfruit.com/wp-content/uploads/2018/05/Fuji-Apple_1000-400x400.jpg",
+                "image2": "https://images-na.ssl-images-amazon.com/images/I/613cPQdHIKS._AC_UL500_SR500,400_.jpg",
+                "image3": "https://m.media-amazon.com/images/I/71Jsiqz0aiL._SX522_.jpg",
+                "image4": "https://www.motorlegend.com/images-voiture/med/infiniti-q60-ii-3-0t-405-ch-114260.jpg"
+            },
+            {
+                "level": 2,
+                "answer": "blue",
+                "image1": "https://pbs.twimg.com/profile_images/1631073023/Atlantic_Ocean_1__400x400.jpg",
+                "image2": "https://babcockdairystore.wisc.edu/wp-content/uploads/2017/07/babcock_icecream_blue-moon-400x400.png",
+                "image3": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blueberry_400-423c31a.jpg?quality=90&resize=504,458?quality=90&webp=true&resize=504,458",
+                "image4": "https://static.vecteezy.com/system/resources/thumbnails/002/224/132/small_2x/bright-sunny-day-with-blue-sky-with-white-clouds-free-photo.jpg"
+            },
+            {
+                "level": 3,
+                "answer": "pink",
+                "image1": "https://cdn11.bigcommerce.com/s-croon/products/211/images/537/candy_floss__99321.1499016691.1000.1200.jpg?c=2",
+                "image2": "https://barnebys.imgix.net/https%3A%2F%2Fcudoni-photo.s3.amazonaws.com%2Fpictures%2Fimages%2F000%2F087%2F686%2Flarge%2F91991007-052a-44d0-bb18-e5edd4369a1d.jpg%3F1622540485?auto=format%2Ccompress&crop=0&cs=tinysrgb&fit=crop&h=400&ixlib=php-2.3.0&trim=auto&w=400&s=688d0e72951061c566d82d5f864aa3d9",
+                "image3": "https://i5.walmartimages.com/asr/5dd2bff0-a280-49bc-be99-9ef7814a6019_1.dad6113b9f6b24c32cb2f8440c9edc7e.jpeg",
+                "image4": "https://i2.wp.com/www.omgthatsdope.com/wp-content/uploads/2017/10/Champion-Christian-Dior-1.jpg?fit=400%2C400&ssl=1"
+            },
+            {
+                "level": 4,
+                "answer": "white",
+                "image1": "https://s1.1zoom.me/prev/566/Foxes_Arctic_fox_Snow_White_565681_600x400.jpg",
+                "image2": "https://cottagegardengoldadors.com/wp-content/uploads/2018/08/dsc-0364_1_orig-400x400.jpg",
+                "image3": "https://36.media.tumblr.com/9c3b38c83f7c0dbc2aaefbe614b7b911/tumblr_mxig5uwLgp1stlkgho1_400.jpg",
+                "image4": "https://m.media-amazon.com/images/I/51v5bRCxLDL._AC_SS450_.jpg"
+            },
+            {
+                "level": 5,
+                "answer": "green",
+                "image1": "https://image.made-in-china.com/202f0j00afZYujmRRGpE/Colored-Artificial-Grass-Mat-Rainbow-Grass-for-Home-Decoration.jpg",
+                "image2": "https://pbs.twimg.com/profile_images/1065132283844313089/zlB3IMBp_400x400.jpg",
+                "image3": "https://images.assetsdelivery.com/compings_v2/iimages/iimages1510/iimages151000228.jpg",
+                "image4": "https://www.3dquakers.com/wp-content/uploads/2015/09/Forester-cork-tree-400x400.jpg"
+            },
+            {
+                "level": 6,
+                "answer": "black",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "violet",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "yellow",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "orange",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "beige",
+                "image1": "https://m.media-amazon.com/images/I/612DtYeHhhL._AC_SY450_.jpg",
+                "image2": "https://i.pinimg.com/564x/7c/d3/2d/7cd32d1f8efc397ab2e1d09014f0d4b3.jpg",
+                "image3": "https://images.thdstatic.com/productImages/aebec27b-c6dd-45b6-915a-e32609d9176a/svn/platinum-msi-travertine-tile-ttplat1818hf-64_400.jpg",
+                "image4": "https://target.scene7.com/is/image/Target/GUEST_857aeabf-37a2-4529-8c65-91a0d09a7e8c"
+            }
+        ]
+    },
+    "3": {
+        "coins": 200,
         "stages": [
             {
                 "level": 1,
@@ -94,28 +179,589 @@
                 "image2": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_44/1626501/518pgfxlqdl-5f997387c6e07.jpg",
                 "image3": "https://5.imimg.com/data5/HI/OQ/MY-22659923/ladies-sports-shoes-500x500.jpg",
                 "image4": "https://cdn.shopify.com/s/files/1/2448/8213/products/mt-emey-502-c-black-9e-width-mens-charcot-shoes-casual-dress-over-150-size-10-11-5-apisfootwear-com-bignwideshoes_277_1200x1200.jpg?v=1535055384"
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
             }
         ]
     },
-    "3": [
-
-    ],
-    "4": [
-
-    ],
-    "5": [
-
-    ],
-    "6": [
-
-    ],
-    "7": [
-
-    ],
-    "8": [
-
-    ],
-    "9": [
-
-    ]
+    "4": {        
+        "coins": 200,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
+        ]    
+    },
+    "5": {
+        "coins": 300,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }        
+        ]
+    },
+    "6": {
+        "coins": 300,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }            
+        ]
+    },
+    "7": {
+        "coins": 400,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }            
+        ]
+    },
+    "8": {
+        "coins": 400,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }          
+        ]
+    },
+    "9": {
+        "coins": 500,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "red",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
+        ]
+    }
 }
