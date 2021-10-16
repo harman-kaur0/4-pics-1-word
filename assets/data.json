@@ -169,7 +169,92 @@
             }
         ]
     },
-    "3": {
+    "3": {        
+        "coins": 200,
+        "stages": [
+            {
+                "level": 1,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 2,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 3,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 4,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 5,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 6,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 7,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 8,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 9,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            },
+            {
+                "level": 10,
+                "answer": "",
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
+        ]    
+    },
+    "4": {
         "coins": 200,
         "stages": [
             {
@@ -253,91 +338,6 @@
                 "image4": ""
             }
         ]
-    },
-    "4": {        
-        "coins": 200,
-        "stages": [
-            {
-                "level": 1,
-                "answer": "red",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
-        ]    
     },
     "5": {
         "coins": 300,
