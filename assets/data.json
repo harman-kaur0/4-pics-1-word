@@ -174,11 +174,11 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "answer": "ball",
+                "image1": "https://pbs.twimg.com/media/DfqYNE1XkAAF4l0.jpg",
+                "image2": "https://lh3.googleusercontent.com/proxy/yStsKYipGhknKoEtxUWuorybXsc3oYlrRL_hvpoghWTHR7PfCnaB241DTdBuCmnQQHGISGyKODJWiCzfePLYje7W3a9VXVv8wRUeHCSTYlsG2kzPVcdxtRaDI0BJpA-xPMsa",
+                "image3": "https://media.thenationaldigest.com/wp-content/uploads/2020/01/22150750/Basketball-400x400-1.jpg",
+                "image4": "https://givetogrant.org/wp-content/uploads/2017/09/cricket-tennis-balls-500x500.jpg"
             },
             {
                 "level": 2,
@@ -291,7 +291,7 @@
             },
             {
                 "level": 5,
-                "answer": "",
+                "answer": "sharp",
                 "image1": "",
                 "image2": "",
                 "image3": "",
