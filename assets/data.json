@@ -85,7 +85,7 @@
         ]
     },
     "2": {
-        "coins": 100,
+        "coins": 150,
         "stages": [
             {
                 "level": 1,
@@ -182,27 +182,27 @@
             },
             {
                 "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "answer": "fruit",
+                "image1": "https://everfreshfruit.com/wp-content/uploads/2018/05/Fuji-Apple_1000-400x400.jpg",
+                "image2": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blueberry_400-423c31a.jpg?quality=90&resize=504,458?quality=90&webp=true&resize=504,458",
+                "image3": "https://cdn.shopify.com/s/files/1/2077/6015/products/Clementine_Tangerine_Tree.png?v=1570406140",
+                "image4": "http://www.rop-ltd.com/wp-content/uploads/2014/12/banana.jpg"
             },
             {
                 "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "answer": "pet",
+                "image1": "https://www.vsdogtrainingacademy.com/wp-content/uploads/vik_square_400px_2019.jpg",
+                "image2": "https://cdn11.bigcommerce.com/s-lo8vxi6nee/images/stencil/500x659/products/5342/11616/G7777__85908.1583164946.jpg?c=2",
+                "image3": "https://i.pinimg.com/originals/1b/c6/ce/1bc6ce180ea8d1be63945fac1bf85a47.jpg",
+                "image4": "https://i.pinimg.com/originals/95/af/32/95af32a36fd8c693916ee4697de0048a.jpg"
             },
             {
                 "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "answer": "shoes",
+                "image1": "https://i.pinimg.com/564x/f3/14/e5/f314e514db49d8e5ae52fdd7eb86e83a.jpg",
+                "image2": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_44/1626501/518pgfxlqdl-5f997387c6e07.jpg",
+                "image3": "https://5.imimg.com/data5/HI/OQ/MY-22659923/ladies-sports-shoes-500x500.jpg",
+                "image4": "https://cdn.shopify.com/s/files/1/2448/8213/products/mt-emey-502-c-black-9e-width-mens-charcot-shoes-casual-dress-over-150-size-10-11-5-apisfootwear-com-bignwideshoes_277_1200x1200.jpg?v=1535055384"
             },
             {
                 "level": 5,
@@ -255,15 +255,15 @@
         ]    
     },
     "4": {
-        "coins": 200,
+        "coins": 250,
         "stages": [
             {
                 "level": 1,
-                "answer": "shoes",
-                "image1": "https://i.pinimg.com/564x/f3/14/e5/f314e514db49d8e5ae52fdd7eb86e83a.jpg",
-                "image2": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_44/1626501/518pgfxlqdl-5f997387c6e07.jpg",
-                "image3": "https://5.imimg.com/data5/HI/OQ/MY-22659923/ladies-sports-shoes-500x500.jpg",
-                "image4": "https://cdn.shopify.com/s/files/1/2448/8213/products/mt-emey-502-c-black-9e-width-mens-charcot-shoes-casual-dress-over-150-size-10-11-5-apisfootwear-com-bignwideshoes_277_1200x1200.jpg?v=1535055384"
+                "answer": "round",
+                "image1": "https://veenaazmanov.com/wp-content/uploads/2020/04/Pizza-Margherita14-500x500.jpg",
+                "image2": "https://5.imimg.com/data5/SX/SW/ES/SELLER-92125625/tennis-ball-500x500.png",
+                "image3": "https://www.thehodagstore.com/image/cache/catalog/hodag-store/Product/TOYS/hodag-frisbee-500x500.jpg",
+                "image4": "https://bellerbyandco.com/wp-content/uploads/2017/11/217albion.plane_.aquamarine-500x500.jpg"
             },
             {
                 "level": 2,
@@ -425,7 +425,7 @@
         ]
     },
     "6": {
-        "coins": 300,
+        "coins": 350,
         "stages": [
             {
                 "level": 1,
@@ -595,7 +595,7 @@
         ]
     },
     "8": {
-        "coins": 400,
+        "coins": 450,
         "stages": [
             {
                 "level": 1,
