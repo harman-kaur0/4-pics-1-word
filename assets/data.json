@@ -214,7 +214,7 @@
             },
             {
                 "level": 6,
-                "answer": "",
+                "answer": "upset",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -222,7 +222,7 @@
             },
             {
                 "level": 7,
-                "answer": "",
+                "answer": "teeth",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -230,7 +230,7 @@
             },
             {
                 "level": 8,
-                "answer": "",
+                "answer": "stage",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -238,7 +238,7 @@
             },
             {
                 "level": 9,
-                "answer": "",
+                "answer": "greet",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -299,7 +299,7 @@
             },
             {
                 "level": 6,
-                "answer": "",
+                "answer": "bond",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -307,7 +307,7 @@
             },
             {
                 "level": 7,
-                "answer": "",
+                "answer": "cell",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -315,7 +315,7 @@
             },
             {
                 "level": 8,
-                "answer": "",
+                "answer": "scream",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -323,7 +323,7 @@
             },
             {
                 "level": 9,
-                "answer": "",
+                "answer": "alarm",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -331,7 +331,7 @@
             },
             {
                 "level": 10,
-                "answer": "",
+                "answer": "dance",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -344,7 +344,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "red",
+                "answer": "",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -429,7 +429,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "red",
+                "answer": "",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -514,7 +514,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "red",
+                "answer": "",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -599,7 +599,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "red",
+                "answer": "",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -684,7 +684,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "red",
+                "answer": "",
                 "image1": "",
                 "image2": "",
                 "image3": "",
