@@ -222,19 +222,19 @@
             },
             {
                 "level": 7,
-                "answer": "teeth",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "answer": "smile",
+                "image1": "https://i.pinimg.com/originals/38/53/bf/3853bf5660dbb7abf589cee6d9060ccb.jpg",
+                "image2": "https://www.nicepng.com/png/full/18-181114_smiley-smile-smiley-faces-emojis-pb-logo-geocaching.png",
+                "image3": "https://raisingyourpaws.com/wp-content/uploads/2020/02/smile-and-person-dog.jpg",
+                "image4": "https://www.abilenedentalcare.com/wp-content/uploads/2020/04/Teeth-Whitening-Image.jpg"
             },
             {
                 "level": 8,
                 "answer": "stage",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "https://img1.cgtrader.com/items/2411254/514583c5fe/large/theatre-concert-stage-with-ferm-projectors-and-classic-curtain-3d-model-max-obj-3ds-fbx.jpg",
+                "image2": "https://i.pinimg.com/originals/7a/78/36/7a7836397c0fccc22ca5292589d3d021.jpg",
+                "image3": "https://s3.amazonaws.com/content.ravinia.org/images/VenueMartinTheatre-interiorNear.jpg",
+                "image4": "https://4.imimg.com/data4/PL/OM/MY-15682201/stage-curtains-500x500.jpg"
             },
             {
                 "level": 9,
