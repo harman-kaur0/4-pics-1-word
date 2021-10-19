@@ -238,11 +238,11 @@
             },
             {
                 "level": 9,
-                "answer": "greet",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "answer": "dance",
+                "image1": "https://www.mesaartscenter.com/sysimg/media-box-image-shows-performing-live-26328-media-box-26330-image.jpg",
+                "image2": "https://i1.sndcdn.com/artworks-000054682670-zkp613-t500x500.jpg",
+                "image3": "https://findmyera.files.wordpress.com/2019/09/salsa-dance-500x500.jpg",
+                "image4": "https://images.squarespace-cdn.com/content/v1/5544e114e4b0deabe5554750/1531528643094-C1Q9UGON18UTZ2K4D64H/HCD_Youth.jpg"
             },
             {
                 "level": 10,
@@ -331,7 +331,7 @@
             },
             {
                 "level": 10,
-                "answer": "dance",
+                "answer": "palm",
                 "image1": "",
                 "image2": "",
                 "image3": "",
