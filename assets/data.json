@@ -599,7 +599,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "",
+                "answer": "vowel",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -607,7 +607,7 @@
             },
             {
                 "level": 2,
-                "answer": "",
+                "answer": "letter",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -615,7 +615,7 @@
             },
             {
                 "level": 3,
-                "answer": "",
+                "answer": "bitter",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -623,7 +623,7 @@
             },
             {
                 "level": 4,
-                "answer": "",
+                "answer": "hawaii",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -631,7 +631,7 @@
             },
             {
                 "level": 5,
-                "answer": "",
+                "answer": "drawer",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -639,7 +639,7 @@
             },
             {
                 "level": 6,
-                "answer": "",
+                "answer": "moving",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -647,7 +647,7 @@
             },
             {
                 "level": 7,
-                "answer": "",
+                "answer": "lottery",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -655,7 +655,7 @@
             },
             {
                 "level": 8,
-                "answer": "",
+                "answer": "plastic",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -663,7 +663,7 @@
             },
             {
                 "level": 9,
-                "answer": "",
+                "answer": "package",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -671,7 +671,7 @@
             },
             {
                 "level": 10,
-                "answer": "",
+                "answer": "effects",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -684,7 +684,7 @@
         "stages": [
             {
                 "level": 1,
-                "answer": "",
+                "answer": "sausage",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -692,7 +692,7 @@
             },
             {
                 "level": 2,
-                "answer": "",
+                "answer": "storage",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -700,7 +700,7 @@
             },
             {
                 "level": 3,
-                "answer": "",
+                "answer": "amplify",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -708,7 +708,7 @@
             },
             {
                 "level": 4,
-                "answer": "",
+                "answer": "hydrate",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -716,7 +716,7 @@
             },
             {
                 "level": 5,
-                "answer": "",
+                "answer": "pollute",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -724,7 +724,7 @@
             },
             {
                 "level": 6,
-                "answer": "",
+                "answer": "equator",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -732,7 +732,7 @@
             },
             {
                 "level": 7,
-                "answer": "",
+                "answer": "victory",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -740,7 +740,7 @@
             },
             {
                 "level": 8,
-                "answer": "",
+                "answer": "perform",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -748,7 +748,7 @@
             },
             {
                 "level": 9,
-                "answer": "",
+                "answer": "gesture",
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -756,7 +756,7 @@
             },
             {
                 "level": 10,
-                "answer": "",
+                "answer": "uniform",
                 "image1": "",
                 "image2": "",
                 "image3": "",
