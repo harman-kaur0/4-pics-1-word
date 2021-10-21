@@ -741,18 +741,18 @@
             {
                 "level": 8,
                 "answer": "perform",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F0258f2e8-eb5c-11e9-aefb-a946d2463e4b?source=google-amp&fit=scale-down&width=500",
+                "image2": "https://mesaartscenter.com/sysimg/media-box-image-shows-performing-live-cirque-musica-holiday-spectacular-media-box-26257-image.jpg",
+                "image3": "https://production-next-images-cdn.thumbtack.com/i/345026346915291139/desktop/retina/centered_large_thumb",
+                "image4": "https://ieeecs-media.computer.org/wp-media/2018/09/13224409/concert-crowd-500x500.jpg"
             },
             {
                 "level": 9,
                 "answer": "gesture",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "https://assets.pinshape.com/uploads/image/file/248657/container_thumb-up-hand-sign-gesture-male-3d-printing-248657.jpg",
+                "image2": "https://contents.pep.ph/images2/images2/2019/08/30/ok-1567158262.jpg",
+                "image3": "https://assets.pinshape.com/uploads/image/file/248651/container_pointing-hand-point-gesture-male-3d-printing-248651.jpg",
+                "image4": "https://contents.pep.ph/images2/images2/2019/08/30/peace-1567155788.jpg"
             },
             {
                 "level": 10,
