@@ -531,26 +531,26 @@
             {
                 "level": 3,
                 "answer": "arrest",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "https://www.kroger.com/product/images/large/front/0069821610684",
+                "image2": "https://www.atxbb.com/site/wp-content/uploads/man-in-business-suit-is-handcuffed-e1566936723693.jpg",
+                "image3": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/AG2398-500x500.webp",
+                "image4": "https://i.pinimg.com/564x/83/d0/ab/83d0ab2f7fbff44a3297370dc90d7db1.jpg"
             },
             {
                 "level": 4,
                 "answer": "ballet",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "https://cdn.wallpapersafari.com/7/29/zAWiOl.jpg",
+                "image2": "https://cdn11.bigcommerce.com/s-3327e/products/1384/images/11081/Capezio-Love-Ballet-Full-Sole-Ballet-Shoes-Childrens-2035C__99267.1541812163.500.659.jpg?c=2",
+                "image3": "https://i.pinimg.com/564x/78/58/65/785865ad3059bda634c61240c6ecd2c9.jpg",
+                "image4": "https://www.greatmats.com/images/rosco/rosco-reversible-marley-fouette-500.jpg"
             },
             {
                 "level": 5,
                 "answer": "hiphop",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "http://hw-img.datpiff.com/md8ff127/JAY-Z_Best_Of_Jay-z_Vol1-front-large.jpg",
+                "image2": "https://i1.sndcdn.com/avatars-000233480870-zyw911-t500x500.jpg",
+                "image3": "https://i.pinimg.com/564x/47/2f/16/472f168e6c14e0f94cbe8281181206bd.jpg",
+                "image4": "https://www.triplethreatdc.com/wp-content/uploads/2017/03/Hip-Hop-Dance-1.jpg"
             },
             {
                 "level": 6,
@@ -587,10 +587,10 @@
             {
                 "level": 10,
                 "answer": "escape",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
+                "image1": "https://media.istockphoto.com/photos/prison-inmate-running-away-picture-id174834144?k=20&m=174834144&s=612x612&w=0&h=ksLT7QhiDeCdfiqEyMyxf-mvP3DZfmzMhn2rB7-OHMk=",
+                "image2": "https://i.pinimg.com/originals/19/07/f2/1907f24d59e26072cc403b0d9257b330.jpg",
+                "image3": "https://www.rocknwater.com/wp-content/uploads/fb-product-backpacking-rock-jump-high-canyoneering-500x500.jpg",
+                "image4": "https://i1.sndcdn.com/artworks-000187157087-anw4pu-t500x500.jpg"
             }            
         ]
     },
