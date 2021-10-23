@@ -4,12 +4,17 @@ import { useDispatch } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, setVictory }) => {
     const [coins, setCoins] = useState(0)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        if (calculateCoins() > 0) setCoins(calculateCoins())
+        if (stage === 10) {
+            dispatch(handleInitialSetup(parseInt(level) + 1, 1))
+            if (calculateCoins() > 0) setCoins(calculateCoins())
+        } else {
+            dispatch(handleInitialSetup(level, stage + 1))
+        }
     }, [])
 
     const handleExit = () => {
@@ -18,7 +23,8 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     }
 
     const handleRetry = () => {
-        dispatch(handleVictory())
+        // dispatch(handleVictory())
+        setVictory(null)
         dispatch(handleInitialSetup(level, 1))
         setTime(120)
         setActive(true)
@@ -29,14 +35,16 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
             setTime(120)
             setActive(true)
             setStage(1)
-            dispatch(handleVictory())
-            dispatch(handleInitialSetup(parseInt(level) + 1, 1))
+            // dispatch(handleVictory())
+            setVictory(null)
+            // dispatch(handleInitialSetup(parseInt(level) + 1, 1))
         } else {
             setTime(time + 3)
             setActive(true)
             setStage(stage + 1)
-            dispatch(handleVictory())
-            dispatch(handleInitialSetup(level, stage + 1))
+            // dispatch(handleVictory())
+            setVictory(null)
+            // dispatch(handleInitialSetup(level, stage + 1))
         }
     }
 

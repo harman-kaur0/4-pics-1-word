@@ -15,6 +15,7 @@ const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
 
     const [stage, setStage] = useState(1)
+    const [victory, setVictory] = useState(null)
     const [time, setTime] = useState(120)
     const [active, setActive] = useState(true)
 
@@ -25,7 +26,7 @@ const GamePage = ({ navigation }) => {
     const word = gameData.word
     const letters = gameData.letters
     const answer = levelData.answer
-    const victory = gameData.victory
+    // const victory = gameData.victory
     const level = gameData.level
     const allLevelData = user.levels
     const currentStars = allLevelData[level] || 0
@@ -40,7 +41,8 @@ const GamePage = ({ navigation }) => {
     useEffect(() => {
         if (!word.includes(undefined)) {
             if (word.join("").toLowerCase() === answer) {
-                dispatch(handleVictory(true))
+                // dispatch(handleVictory(true))
+                setVictory(true)
                 setActive(false)
                 if (stage === 10) {
                     dispatch(updateUserData(updatedUserInfo()))
@@ -59,7 +61,8 @@ const GamePage = ({ navigation }) => {
                 } 
                 else {
                     const coins = userCoins - 10 > 0 ? userCoins - 10 : 0
-                    dispatch(handleVictory(false))
+                    // dispatch(handleVictory(false))
+                    setVictory(false)
                     dispatch(updateUserData({ coins }))
                 }
             }
@@ -179,6 +182,7 @@ const GamePage = ({ navigation }) => {
                     stage={stage}
                     setStage={setStage}
                     setTime={setTime}
+                    setVictory={setVictory}
                     time={time}
                     setActive={setActive}
                     calculateCoins={calculateCoins}
