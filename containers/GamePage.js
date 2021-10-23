@@ -110,7 +110,7 @@ const GamePage = ({ navigation }) => {
             2: levelCoins * 0.5,
             1: Math.round(levelCoins * 0.25)
         }
-        
+
         switch("" + [newStars, currentStars]) {
             case "3,0":
                 return hash[3]

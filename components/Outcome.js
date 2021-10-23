@@ -1,11 +1,16 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { View, ImageBackground, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
 import { useDispatch } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
 const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins }) => {
+    const [coins, setCoins] = useState(0)
     const dispatch = useDispatch()
+
+    useEffect(() => {
+        if (calculateCoins() > 0) setCoins(calculateCoins())
+    }, [])
 
     const handleExit = () => {
         handleRetry()
@@ -65,7 +70,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                     source={require("../assets/game/coin.png")}
                                     style={styles.coin}
                                 />
-                                <Text style={styles.text2}>You've earned {calculateCoins()} coins!</Text>
+                                <Text style={styles.text2}>You've earned {coins} coins!</Text>
                             </> :
                             <Text style={styles.text2}>{10 - stage} stages to go! 2 seconds added.</Text>
                         }
