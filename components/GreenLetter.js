@@ -60,12 +60,12 @@ export default GreenLetter
 
 const styles = StyleSheet.create({
     letterTouch: {
-        width: "16%",
+        width: "15%",
         maxWidth: 90,
-        aspectRatio: 1,
+        aspectRatio: 1
     },
     letterContainer: {
-        width: "16%",
+        width: "15%",
         maxWidth: 90,
         aspectRatio: 1,
         alignItems: "center"

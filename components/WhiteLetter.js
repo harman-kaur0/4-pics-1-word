@@ -45,7 +45,7 @@ export default WhiteLetters
 
 const styles = StyleSheet.create({
     letterTouch: {
-        width: "16%",
+        width: "15%",
         maxWidth: 90,
         marginBottom: 5,
         aspectRatio: 1
