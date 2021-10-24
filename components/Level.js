@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground, PixelRatio } from "react-native"
+import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground, Dimensions, PixelRatio } from "react-native"
 import { setLevel } from "../actions/gameActions"
 import { useDispatch } from "react-redux"
 
@@ -45,13 +45,13 @@ const Level = ({ level, levels, navigation }) => {
 
 export default Level
 
-var levelNumber = 150;
+var levelSize = 150;
+const width = Dimensions.get('window').width
 
-if (PixelRatio.get() >= 3) {
-    levelNumber = 90
-}
+if (width < 400) levelSize = 80
+else if (width < 600) levelSize = 90
 
-console.log(PixelRatio.get())
+console.log(width)
 
 const styles = StyleSheet.create({
     box: {
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         width: "100%",
         position: "absolute",
-        fontSize: levelNumber,
+        fontSize: levelSize,
         fontWeight: "600",
         color: "#b7d2dc",
         textAlign: "center",
