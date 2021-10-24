@@ -45,6 +45,7 @@ const GreenLetter = ({ letters, letter, word, index }) => {
         <View style={styles.letterContainer}>
             <Image
                 source={require("../assets/game/box.png")}
+                resizeMode="contain"
                 style={{
                     width: "90%",
                     height: "100%",

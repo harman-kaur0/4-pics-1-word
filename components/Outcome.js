@@ -59,10 +59,12 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                     <ImageBackground
                         source={require("../assets/game/win_image.png")}
                         style={styles.image}
+                        resizeMode="contain"
                     >
                         <Image
                             source={require("../assets/game/win_text.png")}
-                            style={styles.textImage}
+                            style={styles.winImage}
+                            resizeMode="contain"
                         />
                         <Text style={styles.text1}>The word was</Text>
                     </ImageBackground>
@@ -80,6 +82,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                 <Image
                                     source={require("../assets/game/coin.png")}
                                     style={styles.coin}
+                                    resizeMode="contain"
                                 />
                                 <Text style={styles.text2}>You've earned {coins} coins!</Text>
                             </> :
@@ -91,12 +94,14 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                             <Image
                                 source={require("../assets/buttons/exit.png")}
                                 style={styles.button}
+                                resizeMode="contain"
                             />
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.buttonTouch} onPress={handleNextLevel}>
                             <Image
                                 source={require("../assets/buttons/continue.png")}
                                 style={styles.button}
+                                resizeMode="contain"
                             />
                         </TouchableOpacity>
                     </View>
@@ -106,16 +111,19 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                         <Image
                             source={require("../assets/game/lose_image.png")}
                             style={styles.loseImage}
+                            resizeMode="contain"
                         />
                         <Image
                             source={require("../assets/game/lose_text.png")}
-                            style={styles.textImage}
+                            style={styles.timeImage}
+                            resizeMode="contain"
                         />
                     </View>
                     <View style={styles.message}>
                         <Image
                             source={require("../assets/game/coin.png")}
                             style={styles.coin}
+                            resizeMode="contain"
                         />
                         <Text style={styles.text2}>You've lost 10 coins!</Text>
                     </View>
@@ -124,12 +132,14 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                             <Image
                                 source={require("../assets/buttons/exit.png")}
                                 style={styles.button}
+                                resizeMode="contain"
                             />
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.buttonTouch} onPress={handleRetry}>
                             <Image
                                 source={require("../assets/buttons/retry.png")}
                                 style={styles.button}
+                                resizeMode="contain"
                             />
                         </TouchableOpacity>
                     </View>
@@ -145,19 +155,28 @@ const styles = StyleSheet.create({
     outcome: {
         flex: 1,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        borderWidth: 1
     },
     image: {
         width: "100%",
+        maxWidth: 700,
         aspectRatio: 1,
         position: "relative",
         alignItems: "center"
     },
-    textImage: {
+    winImage: {
         width: "90%",
         resizeMode: "contain",
         position: "absolute",
-        bottom: -20,
+        bottom: "7%",
+        alignSelf: "center"
+    },
+    timeImage: {
+        width: "90%",
+        resizeMode: "contain",
+        position: "absolute",
+        bottom: -50,
         alignSelf: "center"
     },
     answerContainer: {
@@ -172,6 +191,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         height: "6%",
         width: "100%",
+        maxWidth: 500,
         justifyContent: "space-around"
     },
     buttonTouch: {
@@ -209,7 +229,8 @@ const styles = StyleSheet.create({
     loseContainer: {
         width: "100%",
         height: "40%",
-        position: "relative"
+        position: "relative",
+        marginBottom: "5%"
     }, 
     loseImage: {
         width: "100%",

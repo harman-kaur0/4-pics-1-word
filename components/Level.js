@@ -20,6 +20,7 @@ const Level = ({ level, levels, navigation }) => {
         >
             <ImageBackground
                 source={require("../assets/game/box.png")}
+                resizeMode="contain"
                 style={styles.image}
             >
             {
@@ -35,6 +36,7 @@ const Level = ({ level, levels, navigation }) => {
         <View style={styles.box}>
             <ImageBackground
                 source={require("../assets/game/locked.png")}
+                resizeMode="contain"
                 style={styles.image}
             />
         </View>
@@ -57,14 +59,11 @@ const styles = StyleSheet.create({
         maxWidth: 200,
         aspectRatio: 1,
         position: "relative",
-        marginTop: 40,
-        borderColor: "red",
-        borderWidth: 1
+        marginTop: 40
     },
     image: {
         width: "100%",
-        height: "100%",
-        resizeMode: "cover"
+        height: "100%"
     },
     stars: {
         position: "absolute",

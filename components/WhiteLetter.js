@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     letterTouch: {
         width: "16%",
         maxWidth: 90,
+        marginBottom: 5,
         aspectRatio: 1
     }
 })
