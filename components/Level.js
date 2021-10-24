@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground, Dimensions, PixelRatio } from "react-native"
+import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground, Dimensions } from "react-native"
 import { setLevel } from "../actions/gameActions"
 import { useDispatch } from "react-redux"
 

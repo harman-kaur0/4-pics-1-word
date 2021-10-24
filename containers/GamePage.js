@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { StyleSheet, Text, View, Animated } from 'react-native'
+import { StyleSheet, Text, View, Animated, Dimensions } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
@@ -194,6 +194,8 @@ const GamePage = ({ navigation }) => {
 
 export default GamePage
 
+const width = Dimensions.get('window').width
+
 const styles = StyleSheet.create({
     whiteContainer: {
         flexDirection: "row",
@@ -214,7 +216,7 @@ const styles = StyleSheet.create({
     },
     time: {
         textAlign: "center",
-        marginTop: 150,
+        marginTop: width < 400 ? 110 : 150,
         fontWeight: "bold",
         fontSize: 20
     }
