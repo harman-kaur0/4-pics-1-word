@@ -16,7 +16,7 @@ const GamePage = ({ navigation }) => {
 
     const [stage, setStage] = useState(1)
     const [victory, setVictory] = useState(null)
-    const [time, setTime] = useState(120)
+    const [time, setTime] = useState(1200)
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)
@@ -198,12 +198,11 @@ const styles = StyleSheet.create({
     whiteContainer: {
         flexDirection: "row",
         flexWrap: "wrap",
-        height: "13%",
         width: "85%",
+        maxWidth: 600,
         alignSelf: "center",
         justifyContent: "space-around",
-        marginTop: 10,
-        marginBottom: 10
+        marginTop: "3%"
     },
     answerContainer: {
         flexDirection: "row",
@@ -215,7 +214,7 @@ const styles = StyleSheet.create({
     },
     time: {
         textAlign: "center",
-        marginTop: "30%",
+        marginTop: 150,
         fontWeight: "bold",
         fontSize: 20
     }
