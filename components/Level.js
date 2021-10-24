@@ -46,13 +46,15 @@ export default Level
 const styles = StyleSheet.create({
     box: {
         width: "30%",
+        maxWidth: 200,
         aspectRatio: 1,
         position: "relative",
-        marginTop: 40
+        marginTop: 40,
     },
     image: {
         width: "100%",
-        height: "100%"
+        height: "100%",
+        resizeMode: "cover"
     },
     stars: {
         position: "absolute",

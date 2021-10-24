@@ -28,14 +28,14 @@ const Header = ({ button, navigation, text }) => {
                 >
                     <Image
                         source={require("../assets/main/close.png")}
-                        style={{width: "100%"}}
+                        style={{width: "100%", flex: 1}}
                         resizeMode="contain"
                     />
                 </TouchableOpacity> :
                 <TouchableOpacity style={styles.closeTouch}>
                     <Image
                         source={require("../assets/main/settings.png")}
-                        style={{width: "100%"}}
+                        style={{width: "100%", flex: 1}}
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     },
     closeTouch: {
         width: "15%",
-        height: "80%",
+        height: "100%",
         justifyContent: "center",
         padding: 10
     },
@@ -91,7 +91,8 @@ const styles = StyleSheet.create({
     coinTouch: {
         width: "20%",
         height: "100%",
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent:  "center"
     },
     closeText: {
         fontSize: 25,
