@@ -6,9 +6,12 @@ import GreenLetter from "./GreenLetter"
 
 const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, setVictory }) => {
     const [coins, setCoins] = useState(0)
+    const [word, setWord] = useState(null)
     const dispatch = useDispatch()
 
     useEffect(() => {
+        if (!word) setWord(data.answer)
+
         if (stage === 10) {
             dispatch(handleInitialSetup(parseInt(level) + 1, 1))
             if (calculateCoins() > 0) setCoins(calculateCoins())
@@ -65,7 +68,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                     </ImageBackground>
                     <View style={styles.answerContainer}>
                         {
-                            data.answer.split("").map((letter, idx) => (
+                            word?.split("").map((letter, idx) => (
                                 <GreenLetter key={idx} letter={letter.toUpperCase()}/>
                             ))
                         }
