@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { View, ImageBackground, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
 import { useDispatch } from "react-redux"
+import { font } from "../helper/functions"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
@@ -54,7 +55,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     return (
         <View style={styles.outcome}>
             {
-                victory ?
+                !victory ?
                 <>
                     <ImageBackground
                         source={require("../assets/game/win_image.png")}
@@ -119,7 +120,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                             resizeMode="contain"
                         />
                     </View>
-                    <View style={styles.message}>
+                    <View style={{...styles.message, marginTop: 10}}>
                         <Image
                             source={require("../assets/game/coin.png")}
                             style={styles.coin}
@@ -205,7 +206,7 @@ const styles = StyleSheet.create({
     },
     text1: {
         fontWeight: "800", 
-        fontSize: 25,
+        fontSize: font(),
         position: "absolute",
         bottom: 0
     },
@@ -218,7 +219,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     text2: {
-        fontSize: 20,
+        fontSize: font() - 5,
         fontWeight: "800",
         marginRight: 20
     },

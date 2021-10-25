@@ -44,6 +44,8 @@ export const font = () => {
             return 25
         case (width < 800):
             return 30
+        case (width < 1000):
+            return 35
         default:
             return 40 
     }
