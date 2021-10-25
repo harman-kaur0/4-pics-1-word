@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-=======
 import React, { useEffect } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import { fetchUserData } from '../actions/userActions'
 import { useDispatch } from 'react-redux'
->>>>>>> 9e099e0d7f63b4660533ade3d3b079b679be51b9
 import Header from "../components/Header"
 
 const HomeScreen = ({ navigation }) => {
@@ -20,11 +14,7 @@ const HomeScreen = ({ navigation }) => {
 
     return (
         <>
-<<<<<<< HEAD
-            <Header navigation={navigation}/>
-=======
-            <Header button="settings"/>
->>>>>>> 9e099e0d7f63b4660533ade3d3b079b679be51b9
+            <Header button="settings" navigation={navigation}/>
             <Image 
                 source={require("../assets/main/logo.png")} 
                 style={styles.logo}
