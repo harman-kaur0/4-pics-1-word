@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { StyleSheet, View, Text } from "react-native"
+import { width } from "../helper/functions"
 import { useDispatch, useSelector } from "react-redux"
 import { updateUserData } from "../actions/userActions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
@@ -10,8 +11,6 @@ const gameData = require("../assets/data.json")
 
 const LevelSelection = ({ navigation }) => {
     const [page, setPage] = useState(1)
-
-    const dispatch = useDispatch()
 
     const user = useSelector(state => state.user.user)
 
@@ -44,12 +43,15 @@ const LevelSelection = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     levelsContainer: {
+        width: "100%",
+        maxWidth: width > 800 ? 900 : 700,
         height: "60%",
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
         marginTop: 150,
-        borderColor: "black"
+        borderColor: "black",
+        alignSelf: "center"
     }
 })
 

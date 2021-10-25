@@ -1,4 +1,4 @@
-import { Image } from "react-native"
+import { Image, Dimensions } from "react-native"
 
 export const shuffleArray = array => {
     let currentIndex = array.length
@@ -32,4 +32,19 @@ export const preloadImages = arr => {
             console.log(err)
         }
     })
+}
+
+export const width = Dimensions.get('window').width
+
+export const font = () => {
+    switch(true) {
+        case (width < 400):
+            return 18
+        case (width < 500):
+            return 25
+        case (width < 800):
+            return 30
+        default:
+            return 40 
+    }
 }
