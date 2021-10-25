@@ -2,6 +2,7 @@ import React from "react"
 import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground } from "react-native"
 import { setLevel } from "../actions/gameActions"
 import { useDispatch } from "react-redux"
+import { width } from "../helper/functions"
 
 const Level = ({ level, levels, navigation }) => {
     const dispatch = useDispatch()
@@ -20,6 +21,7 @@ const Level = ({ level, levels, navigation }) => {
         >
             <ImageBackground
                 source={require("../assets/game/box.png")}
+                resizeMode="contain"
                 style={styles.image}
             >
             {
@@ -27,6 +29,7 @@ const Level = ({ level, levels, navigation }) => {
                 <Image
                     source={stars[levelData]}
                     style={styles.stars}
+                    resizeMode="contain"
                 /> : null
             }
             <Text style={styles.number}>{level}</Text>
@@ -35,6 +38,7 @@ const Level = ({ level, levels, navigation }) => {
         <View style={styles.box}>
             <ImageBackground
                 source={require("../assets/game/locked.png")}
+                resizeMode="contain"
                 style={styles.image}
             />
         </View>
@@ -43,12 +47,27 @@ const Level = ({ level, levels, navigation }) => {
 
 export default Level
 
+const levelFont = () => {
+    switch(true) {
+        case width < 400:
+            return 80
+        case width < 600:
+            return 90
+        case width < 800:
+            return 150
+        case width < 1000:
+            return 175
+        default:
+            return 200
+    }
+}
+
 const styles = StyleSheet.create({
     box: {
-        width: "30%",
+        width: width > 600 ? "27%" : "30%",
         aspectRatio: 1,
         position: "relative",
-        marginTop: 40
+        marginTop: width > 1000 ? "9%" : "6%"
     },
     image: {
         width: "100%",
@@ -56,14 +75,15 @@ const styles = StyleSheet.create({
     },
     stars: {
         position: "absolute",
-        top: -30,
+        top: "-25%",
         width: "100%",
-        height: "50%",
-        resizeMode: "contain"
+        height: "50%"
     },
     number: {
-        marginTop: 10,
-        fontSize: 90,
+        bottom: 0,
+        width: "100%",
+        position: "absolute",
+        fontSize: levelFont(),
         fontWeight: "600",
         color: "#b7d2dc",
         textAlign: "center",

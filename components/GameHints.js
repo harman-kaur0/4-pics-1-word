@@ -2,9 +2,10 @@ import React, { useState } from "react"
 import { StyleSheet, View, Image, TouchableOpacity } from "react-native"
 import { shuffleArray, getRandomItem } from "../helper/functions"
 import { updateWordAndLetters } from "../actions/gameActions"
+import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
 
-const GameHints = ({ word, levelData, letters }) => {
+const GameHints = ({ word, levelData, letters, coins }) => {
     const [trash, setTrash] = useState(false)
     const [wand, setWand] = useState(false)
 
@@ -22,6 +23,7 @@ const GameHints = ({ word, levelData, letters }) => {
         })
 
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
+        dispatch(updateUserData({coins: coins - 100}))
         setWand(true)
     }
 
@@ -55,6 +57,7 @@ const GameHints = ({ word, levelData, letters }) => {
     
             updatedWord = updatedWord.map((letter, idx) => idx === hintIndex ? letterHint.toUpperCase() : letter)
     
+            dispatch(updateUserData({coins: coins - 25}))
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         }
     }
@@ -63,6 +66,7 @@ const GameHints = ({ word, levelData, letters }) => {
         const updatedWord = word.map(_ => undefined)
         const updatedLetters = shuffleArray(answer)
 
+        dispatch(updateUserData({coins: coins - 50}))
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         setTrash(true)
     }
@@ -70,7 +74,7 @@ const GameHints = ({ word, levelData, letters }) => {
     return (
         <View style={styles.hintsContainer}>
             {
-                wand ?
+                wand || coins < 100 ?
                 <View style={styles.wandContainer} onPress={useWandHint}>
                     <Image
                         source={require("../assets/game/hint.png")}
@@ -86,23 +90,35 @@ const GameHints = ({ word, levelData, letters }) => {
                     />
                 </TouchableOpacity>
             }
-            <TouchableOpacity style={styles.letterContainer} onPress={useLetterHint}>
-                <Image
-                    source={require("../assets/game/letter.png")}
-                    style={{height: "100%", aspectRatio: 1}}
-                />
-            </TouchableOpacity>
+            {   coins < 25 ?
+                <View style={styles.letterContainer} onPress={useLetterHint}>
+                    <Image
+                        source={require("../assets/game/letter.png")}
+                        resizeMode="contain"
+                        style={{height: "100%", aspectRatio: 1, opacity: 0.5}}
+                    />
+                </View> :
+                <TouchableOpacity style={styles.letterContainer} onPress={useLetterHint}>
+                    <Image
+                        source={require("../assets/game/letter.png")}
+                        resizeMode="contain"
+                        style={{height: "100%", aspectRatio: 1}}
+                    />
+                </TouchableOpacity>
+            }
             {
-                trash ? 
+                trash || coins < 50 ? 
                 <View style={styles.letterContainer} onPress={useTrashHint}>
                     <Image
                         source={require("../assets/game/trash.png")}
+                        resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1, opacity: 0.5}}
                     />
                 </View> : 
                 <TouchableOpacity style={styles.letterContainer} onPress={useTrashHint}>
                     <Image
                         source={require("../assets/game/trash.png")}
+                        resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1}}
                     />
                 </TouchableOpacity>

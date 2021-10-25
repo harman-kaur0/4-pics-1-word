@@ -1,9 +1,12 @@
-import { shuffleArray, getRandomItem } from "../helper/functions"
+import { shuffleArray, getRandomItem, preloadImages } from "../helper/functions"
 const gameData = require("../assets/data.json")
 
 export const handleInitialSetup = (level, stage) => {
     const data = gameData[level].stages[stage - 1]
     const coins = gameData[level].coins
+
+    let arr = [data.image1, data.image2, data.image3, data.image4]
+    preloadImages(arr)
 
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 

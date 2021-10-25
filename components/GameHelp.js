@@ -52,11 +52,12 @@ const styles = StyleSheet.create({
         height: "8%",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 10,
+        marginTop: "1%",
     },
     actionContainer: {
         height: "70%",
         aspectRatio: 1,
-        marginRight: 10
+        marginRight: 5,
+        marginLeft: 5
     }
 })

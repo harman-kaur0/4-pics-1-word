@@ -45,6 +45,7 @@ const GreenLetter = ({ letters, letter, word, index }) => {
         <View style={styles.letterContainer}>
             <Image
                 source={require("../assets/game/box.png")}
+                resizeMode="contain"
                 style={{
                     width: "90%",
                     height: "100%",
@@ -59,11 +60,13 @@ export default GreenLetter
 
 const styles = StyleSheet.create({
     letterTouch: {
-        width: "16%",
-        aspectRatio: 1,
+        width: "15%",
+        maxWidth: 90,
+        aspectRatio: 1
     },
     letterContainer: {
-        width: "16%",
+        width: "15%",
+        maxWidth: 90,
         aspectRatio: 1,
         alignItems: "center"
     }

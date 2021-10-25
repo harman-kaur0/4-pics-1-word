@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Animated } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
+import { width, font } from "../helper/functions"
 import Header from "../components/Header"
 import GreenLetter from "../components/GreenLetter"
 import WhiteLetter from "../components/WhiteLetter"
@@ -15,7 +16,8 @@ const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
 
     const [stage, setStage] = useState(1)
-    const [time, setTime] = useState(120)
+    const [victory, setVictory] = useState(null)
+    const [time, setTime] = useState(1200)
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)
@@ -25,7 +27,7 @@ const GamePage = ({ navigation }) => {
     const word = gameData.word
     const letters = gameData.letters
     const answer = levelData.answer
-    const victory = gameData.victory
+    // const victory = gameData.victory
     const level = gameData.level
     const allLevelData = user.levels
     const currentStars = allLevelData[level] || 0
@@ -40,7 +42,8 @@ const GamePage = ({ navigation }) => {
     useEffect(() => {
         if (!word.includes(undefined)) {
             if (word.join("").toLowerCase() === answer) {
-                dispatch(handleVictory(true))
+                // dispatch(handleVictory(true))
+                setVictory(true)
                 setActive(false)
                 if (stage === 10) {
                     dispatch(updateUserData(updatedUserInfo()))
@@ -59,7 +62,8 @@ const GamePage = ({ navigation }) => {
                 } 
                 else {
                     const coins = userCoins - 10 > 0 ? userCoins - 10 : 0
-                    dispatch(handleVictory(false))
+                    // dispatch(handleVictory(false))
+                    setVictory(false)
                     dispatch(updateUserData({ coins }))
                 }
             }
@@ -110,7 +114,7 @@ const GamePage = ({ navigation }) => {
             2: levelCoins * 0.5,
             1: Math.round(levelCoins * 0.25)
         }
-        
+
         switch("" + [newStars, currentStars]) {
             case "3,0":
                 return hash[3]
@@ -137,7 +141,7 @@ const GamePage = ({ navigation }) => {
                 <>
                     <Text style={styles.time}>{timeInMinutes()}</Text>
                     <GameImages levelData={levelData}/>
-                    <GameHints word={word} levelData={levelData} letters={letters}/>
+                    <GameHints word={word} levelData={levelData} letters={letters} coins={userCoins}/>
                     <Animated.View 
                         style={{
                             ...styles.answerContainer,
@@ -179,6 +183,7 @@ const GamePage = ({ navigation }) => {
                     stage={stage}
                     setStage={setStage}
                     setTime={setTime}
+                    setVictory={setVictory}
                     time={time}
                     setActive={setActive}
                     calculateCoins={calculateCoins}
@@ -194,12 +199,11 @@ const styles = StyleSheet.create({
     whiteContainer: {
         flexDirection: "row",
         flexWrap: "wrap",
-        height: "13%",
         width: "85%",
+        maxWidth: 600,
         alignSelf: "center",
         justifyContent: "space-around",
-        marginTop: 10,
-        marginBottom: 10
+        marginTop: "3%"
     },
     answerContainer: {
         flexDirection: "row",
@@ -211,8 +215,8 @@ const styles = StyleSheet.create({
     },
     time: {
         textAlign: "center",
-        marginTop: "30%",
+        marginTop: width < 400 ? 110 : 150,
         fontWeight: "bold",
-        fontSize: 20
+        fontSize: font()
     }
 })
