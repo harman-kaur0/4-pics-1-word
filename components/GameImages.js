@@ -29,16 +29,18 @@ export default GameImages
 const styles = StyleSheet.create({
     boxContainer: {
         aspectRatio: 1,
-        height: "40%",
+        height: "35%",
         alignSelf: "center",
         flexWrap: "wrap",
-        justifyContent: "space-between",
-        marginTop: 80
+        justifyContent: "center",
+        alignContent: "center"
     },
     image: {
-        width: "48%",
-        height: "48%",
+        width: "45%",
+        height: "45%",
         margin: 3,
-        borderRadius: 10
+        borderRadius: 10,
+        borderColor: "black",
+        borderWidth: 1
     }
 })

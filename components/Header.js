@@ -2,7 +2,11 @@ import React from "react"
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
 import { useSelector } from "react-redux"
 
+<<<<<<< HEAD
 const Header = ({ button, text, navigation }) => {
+=======
+const Header = ({ button, navigation, text }) => {
+>>>>>>> 9e099e0d7f63b4660533ade3d3b079b679be51b9
     const levelData = useSelector(state => state.game.levelData)
     const user = useSelector(state => state.user.user)
 
@@ -22,7 +26,14 @@ const Header = ({ button, text, navigation }) => {
         <View style={styles.header}>
             {
                 button === "close" ?
+<<<<<<< HEAD
                 <TouchableOpacity style={styles.closeTouch} onPress={() => navigation.goBack()} >
+=======
+                <TouchableOpacity 
+                    onPress={() => navigation.goBack()}
+                    style={styles.closeTouch}
+                >
+>>>>>>> 9e099e0d7f63b4660533ade3d3b079b679be51b9
                     <Image
                         source={require("../assets/main/close.png")}
                         style={{width: "100%"}}
@@ -37,15 +48,9 @@ const Header = ({ button, text, navigation }) => {
                     />
                 </TouchableOpacity>
             }
-            {
-                levelData ? <Text style={styles.closeText}>Level {levelData}</Text> :
-                (
-                    text ?
-                    <Text style={styles.selectionText}>{text}</Text> : null
-                )
-            }
+            { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             <View style={styles.coinsContainer}>
-                <Text style={styles.coinText}>{displayedCoins(user.coins)}</Text>
+                <Text style={styles.coinText}>{displayedCoins(user?.coins)}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
                     <Image
                         source={require("../assets/main/coins.png")}
@@ -68,6 +73,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         top: 70,
         alignItems: "center",
+        zIndex: 999
     },
     closeTouch: {
         width: "15%",
