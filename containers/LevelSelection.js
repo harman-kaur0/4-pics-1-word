@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { StyleSheet, View, Text, TouchableOpacity, Image } from "react-native"
+import { StyleSheet, View, TouchableOpacity, Image } from "react-native"
 import { width } from "../helper/functions"
 import { useDispatch, useSelector } from "react-redux"
 import { updateUserData } from "../actions/userActions"
@@ -27,7 +27,7 @@ const LevelSelection = ({ navigation }) => {
             <Header button="close" text=" Level Selection" navigation={navigation}/>
             <View style={styles.levelsContainer}>
                 {
-                    Object.keys(gameData).slice(((page - 1) * 10), page * 10).map(level => (
+                    Object.keys(gameData).slice(((page - 1) * 9), page * 9).map(level => (
                         <Level 
                             key={level}
                             level={level} 
@@ -37,14 +37,18 @@ const LevelSelection = ({ navigation }) => {
                     ))
                 }
             </View>
-            <Text>{console.log(Object.keys(gameData).slice(page * 10))}</Text>
             <View style={styles.buttonContainer}>
                 {
                     page === 1 ?
-                    <View>
+                    <View style={{position: "relative"}}>
                         <Image
                             source={require("../assets/buttons/left.png")}
-                            style={styles.button}
+                            style={{...styles.button, tintColor: "gray"}}
+                            resizeMode="contain"
+                        />
+                        <Image
+                            source={require("../assets/buttons/left.png")}
+                            style={styles.inactiveButton}
                             resizeMode="contain"
                         />
                     </View> :
@@ -61,7 +65,12 @@ const LevelSelection = ({ navigation }) => {
                     <View>
                         <Image
                             source={require("../assets/buttons/right.png")}
-                            style={styles.button}
+                            style={{...styles.button, tintColor: "gray"}}
+                            resizeMode="contain"
+                        />
+                        <Image
+                            source={require("../assets/buttons/right.png")}
+                            style={styles.inactiveButton}
                             resizeMode="contain"
                         />
                     </View> :
@@ -90,6 +99,7 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     buttonContainer: {
+        marginTop: 20,
         flexDirection: "row",
         justifyContent: "center",
         height: width > 700 ? "10%" : "8%"
@@ -99,6 +109,15 @@ const styles = StyleSheet.create({
         marginRight: 10,
         height: "100%",
         aspectRatio: 1
+    },
+    inactiveButton: {
+        marginLeft: 10,
+        marginRight: 10,
+        height: "100%",
+        aspectRatio: 1,
+        position: "absolute", 
+        opacity: 0.5, 
+        alignSelf: "center"
     }
 })
 
