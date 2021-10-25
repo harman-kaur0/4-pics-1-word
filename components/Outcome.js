@@ -55,7 +55,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     return (
         <View style={styles.outcome}>
             {
-                !victory ?
+                victory ?
                 <>
                     <ImageBackground
                         source={require("../assets/game/win_image.png")}

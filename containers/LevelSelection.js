@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
-        marginTop: 150,
+        marginTop: 170,
         borderColor: "black",
         alignSelf: "center"
     }
