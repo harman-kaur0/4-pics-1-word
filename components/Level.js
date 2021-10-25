@@ -64,7 +64,7 @@ const levelFont = () => {
 
 const styles = StyleSheet.create({
     box: {
-        width: "30%",
+        width: width > 600 ? "27%" : "30%",
         aspectRatio: 1,
         position: "relative",
         marginTop: width > 1000 ? "9%" : "6%"
