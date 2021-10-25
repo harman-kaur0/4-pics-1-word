@@ -40,7 +40,7 @@ const LevelSelection = ({ navigation }) => {
             <View style={styles.buttonContainer}>
                 {
                     page === 1 ?
-                    <View style={{position: "relative"}}>
+                    <View>
                         <Image
                             source={require("../assets/buttons/left.png")}
                             style={{...styles.button, tintColor: "gray"}}
@@ -107,14 +107,12 @@ const styles = StyleSheet.create({
     button: {
         marginLeft: 10,
         marginRight: 10,
-        height: "100%",
-        aspectRatio: 1
+        height: "100%"
     },
     inactiveButton: {
         marginLeft: 10,
         marginRight: 10,
         height: "100%",
-        aspectRatio: 1,
         position: "absolute", 
         opacity: 0.5, 
         alignSelf: "center"
