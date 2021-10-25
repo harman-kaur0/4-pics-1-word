@@ -42,7 +42,7 @@ const Header = ({ button, navigation, text }) => {
             }
             { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             <View style={styles.coinsContainer}>
-                <Text style={styles.coinText}>{displayedCoins(user?.coins)}</Text>
+                <Text style={styles.coinText}>{displayedCoins(user?.coins) || 0}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
                     <Image
                         source={require("../assets/main/coins.png")}

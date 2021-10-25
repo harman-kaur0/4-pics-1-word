@@ -141,7 +141,7 @@ const GamePage = ({ navigation }) => {
                 <>
                     <Text style={styles.time}>{timeInMinutes()}</Text>
                     <GameImages levelData={levelData}/>
-                    <GameHints word={word} levelData={levelData} letters={letters}/>
+                    <GameHints word={word} levelData={levelData} letters={letters} coins={userCoins}/>
                     <Animated.View 
                         style={{
                             ...styles.answerContainer,
