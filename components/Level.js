@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
         width: "30%",
         aspectRatio: 1,
         position: "relative",
-        marginTop: 40
+        marginTop: width > 1000 ? "9%" : "6%"
     },
     image: {
         width: "100%",
