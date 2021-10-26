@@ -27,7 +27,7 @@ const HomeScreen = ({ navigation }) => {
                 >
                     <Image 
                         source={require("../assets/buttons/play.png")}
-                        style={styles.row1} 
+                        style={{...styles.row1, marginLeft: "auto"}} 
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
@@ -37,7 +37,7 @@ const HomeScreen = ({ navigation }) => {
                 >
                     <Image 
                         source={require("../assets/main/prize_wheel.png")}
-                        style={styles.row1} 
+                        style={{...styles.row1, height: "120%"}} 
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
@@ -155,12 +155,12 @@ const styles = StyleSheet.create({
     touchable2: {
         width: "50%",
         height: "75%",
-        marginLeft: 5,
-        marginRight: 5,
+        alignItems: "center",
+        justifyContent: "center"
     },
     row1: {
-        width: "100%",
         height: "100%",
+        width: "100%"
     },
     touchable: {
         width: "100%",
@@ -172,7 +172,8 @@ const styles = StyleSheet.create({
     challengeButton: {
         width: "90%",
         alignSelf: "center",
-        height: "8%"
+        height: "8%",
+        marginTop: 10
     },
     touchable3: {
         width: "30%",
