@@ -8,9 +8,9 @@ import rootReducer from './reducers'
 import HomeScreen from "./containers/HomeScreen"
 import Profile from "./containers/Profile"
 import GamePage from "./containers/GamePage"
-import Shop from "./components/Shop"
-import BoosterPage from "./components/BoosterPage"
-import PrizeWheel from "./components/PrizeWheel"
+import Shop from "./containers/Shop"
+import BoosterPage from "./containers/BoosterPage"
+import PrizeWheel from "./containers/PrizeWheel"
 import LevelSelection from './containers/LevelSelection'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
