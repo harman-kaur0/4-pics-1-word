@@ -7,8 +7,9 @@ import { useDispatch } from "react-redux"
 import { width, font } from "../helper/functions"
 
 const GameHints = ({ word, levelData, letters, coins, boosts }) => {
-    const [trash, setTrash] = useState(false)
-    const [wand, setWand] = useState(false)
+    const [usedTrash, setTrash] = useState(false)
+    const [usedWand, setWand] = useState(false)
+    const { wand, trash, letter } = boosts
 
     const dispatch = useDispatch()
 
@@ -24,7 +25,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
         })
 
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
-        dispatch(updateUserData({coins: coins - 100}))
+        dispatch(updateUserData(wand ? {boosts: {...boosts, wand: wand - 1}} : {coins: coins - 100}))
         setWand(true)
     }
 
@@ -58,7 +59,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
     
             updatedWord = updatedWord.map((letter, idx) => idx === hintIndex ? letterHint.toUpperCase() : letter)
     
-            dispatch(updateUserData({coins: coins - 25}))
+            dispatch(updateUserData(letter ? {boosts: {...boosts, letter: letter - 1}} : {coins: coins - 25}))
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         }
     }
@@ -67,7 +68,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
         const updatedWord = word.map(_ => undefined)
         const updatedLetters = shuffleArray(answer)
 
-        dispatch(updateUserData({coins: coins - 50}))
+        dispatch(updateUserData(trash ? {boosts: {...boosts, trash: trash - 1}} : {coins: coins - 50}))
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         setTrash(true)
     }
@@ -75,14 +76,14 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
     return (
         <View style={styles.hintsContainer}>
             {
-                wand || coins < 100 ?
+                usedWand || !wand && coins < 100 ?
                 <View style={styles.wandContainer} onPress={useWandHint}>
                     <Image
                         source={require("../assets/game/hint.png")}
                         resizeMode="contain"
                         style={{height: "100%", width: "100%", opacity: 0.5}}
                     />
-                    <Text style={styles.boostAmount}>{boosts?.wand}</Text>
+                    <Text style={styles.boostAmount}>{wand}</Text>
                 </View> :
                 <TouchableOpacity style={styles.wandContainer} onPress={useWandHint}>
                     <Image
@@ -90,17 +91,17 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
                         resizeMode="contain"
                         style={{height: "100%", width: "100%"}}
                     />
-                    <Text style={styles.boostAmount}>{boosts?.wand}</Text>
+                    <Text style={styles.boostAmount}>{wand}</Text>
                 </TouchableOpacity>
             }
-            {   coins < 25 ?
+            {   !letter && coins < 25 ?
                 <View style={styles.letterContainer} onPress={useLetterHint}>
                     <Image
                         source={require("../assets/game/letter.png")}
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1, opacity: 0.5}}
                     />
-                    <Text style={styles.boostAmount}>{boosts?.letter}</Text>
+                    <Text style={styles.boostAmount}>{letter}</Text>
                 </View> :
                 <TouchableOpacity style={styles.letterContainer} onPress={useLetterHint}>
                     <Image
@@ -108,18 +109,18 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1}}
                     />
-                    <Text style={styles.boostAmount}>{boosts?.letter}</Text>
+                    <Text style={styles.boostAmount}>{letter}</Text>
                 </TouchableOpacity>
             }
             {
-                trash || coins < 50 ? 
+                usedTrash || !trash && coins < 50 ? 
                 <View style={styles.letterContainer} onPress={useTrashHint}>
                     <Image
                         source={require("../assets/game/trash.png")}
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1, opacity: 0.5}}
                     />
-                    <Text style={styles.boostAmount}>{boosts?.trash}</Text>
+                    <Text style={styles.boostAmount}>{trash}</Text>
                 </View> : 
                 <TouchableOpacity style={styles.letterContainer} onPress={useTrashHint}>
                     <Image
@@ -127,7 +128,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1}}
                     />
-                    <Text style={styles.boostAmount}>{boosts?.trash}</Text>
+                    <Text style={styles.boostAmount}>{trash}</Text>
                 </TouchableOpacity>
             }
         </View>
