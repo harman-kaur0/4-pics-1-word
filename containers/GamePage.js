@@ -17,7 +17,7 @@ const GamePage = ({ navigation }) => {
 
     const [stage, setStage] = useState(1)
     const [victory, setVictory] = useState(null)
-    const [time, setTime] = useState(120)
+    const [time, setTime] = useState(1200)
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)
@@ -141,7 +141,13 @@ const GamePage = ({ navigation }) => {
                 <>
                     <Text style={styles.time}>{timeInMinutes()}</Text>
                     <GameImages levelData={levelData}/>
-                    <GameHints word={word} levelData={levelData} letters={letters} coins={userCoins}/>
+                    <GameHints 
+                        word={word} 
+                        levelData={levelData} 
+                        letters={letters} 
+                        coins={userCoins}
+                        boosts={user.boosts}
+                    />
                     <Animated.View 
                         style={{
                             ...styles.answerContainer,

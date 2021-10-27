@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { StyleSheet, View, TouchableOpacity, Image } from "react-native"
 import { width } from "../helper/functions"
 import { useSelector } from "react-redux"
-import AsyncStorage from "@react-native-async-storage/async-storage"
 import Header from "../components/Header"
 import Level from "../components/Level"
 
@@ -12,14 +11,6 @@ const LevelSelection = ({ navigation }) => {
     const [page, setPage] = useState(1)
 
     const user = useSelector(state => state.user.user)
-
-    const remove = async () => {
-        try {
-            await AsyncStorage.removeItem("user")
-        } catch (err) {
-            alert(err)
-        }
-    }
     
     return (
         <> 

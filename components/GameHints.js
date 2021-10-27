@@ -1,11 +1,12 @@
 import React, { useState } from "react"
-import { StyleSheet, View, Image, TouchableOpacity } from "react-native"
+import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
 import { shuffleArray, getRandomItem } from "../helper/functions"
 import { updateWordAndLetters } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
+import { width, font } from "../helper/functions"
 
-const GameHints = ({ word, levelData, letters, coins }) => {
+const GameHints = ({ word, levelData, letters, coins, boosts }) => {
     const [trash, setTrash] = useState(false)
     const [wand, setWand] = useState(false)
 
@@ -78,16 +79,18 @@ const GameHints = ({ word, levelData, letters, coins }) => {
                 <View style={styles.wandContainer} onPress={useWandHint}>
                     <Image
                         source={require("../assets/game/hint.png")}
-                        style={{height: "100%", width: "100%", opacity: 0.5}}
                         resizeMode="contain"
+                        style={{height: "100%", width: "100%", opacity: 0.5}}
                     />
+                    <Text style={styles.boostAmount}>{boosts?.wand}</Text>
                 </View> :
                 <TouchableOpacity style={styles.wandContainer} onPress={useWandHint}>
                     <Image
                         source={require("../assets/game/hint.png")}
-                        style={{height: "100%", width: "100%"}}
                         resizeMode="contain"
+                        style={{height: "100%", width: "100%"}}
                     />
+                    <Text style={styles.boostAmount}>{boosts?.wand}</Text>
                 </TouchableOpacity>
             }
             {   coins < 25 ?
@@ -97,6 +100,7 @@ const GameHints = ({ word, levelData, letters, coins }) => {
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1, opacity: 0.5}}
                     />
+                    <Text style={styles.boostAmount}>{boosts?.letter}</Text>
                 </View> :
                 <TouchableOpacity style={styles.letterContainer} onPress={useLetterHint}>
                     <Image
@@ -104,6 +108,7 @@ const GameHints = ({ word, levelData, letters, coins }) => {
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1}}
                     />
+                    <Text style={styles.boostAmount}>{boosts?.letter}</Text>
                 </TouchableOpacity>
             }
             {
@@ -114,6 +119,7 @@ const GameHints = ({ word, levelData, letters, coins }) => {
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1, opacity: 0.5}}
                     />
+                    <Text style={styles.boostAmount}>{boosts?.trash}</Text>
                 </View> : 
                 <TouchableOpacity style={styles.letterContainer} onPress={useTrashHint}>
                     <Image
@@ -121,6 +127,7 @@ const GameHints = ({ word, levelData, letters, coins }) => {
                         resizeMode="contain"
                         style={{height: "100%", aspectRatio: 1}}
                     />
+                    <Text style={styles.boostAmount}>{boosts?.trash}</Text>
                 </TouchableOpacity>
             }
         </View>
@@ -132,19 +139,30 @@ export default GameHints
 const styles = StyleSheet.create({
     hintsContainer: {
         flexDirection: "row",
-        height: "8%",
+        height: "6%",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 10,
+        marginTop: 10
     },
     wandContainer: {
-        height: "70%",
-        width: "25%",
-        marginRight: 10
+        height: "100%",
+        width: width > 600 ? "15%" : "25%",
+        marginRight: 10,
+        position: "relative"
     },
     letterContainer: {
-        height: "70%",
+        height: "100%",
         aspectRatio: 1,
-        marginRight: 10
+        marginRight: 10,
+        position: "relative"
+    },
+    boostAmount: {
+        position: "absolute",
+        right: 0,
+        top: -10,
+        fontSize: font() - 8,
+        backgroundColor: "white",
+        borderRadius: 8,
+        overflow: "hidden"
     }
 })
