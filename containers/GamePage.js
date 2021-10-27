@@ -17,7 +17,7 @@ const GamePage = ({ navigation }) => {
 
     const [stage, setStage] = useState(1)
     const [victory, setVictory] = useState(null)
-    const [time, setTime] = useState(1200)
+    const [time, setTime] = useState(120)
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)

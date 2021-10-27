@@ -9,56 +9,54 @@ const PrizeWheel = ({ navigation }) => {
 
     const handleSpin = async () => {
         return await new Promise(resolve => {
-            let time = 72 + getRandomItem(Array.from(Array(36)).map((_, idx) => idx + 1))
-    
+            let time = 90 + getRandomItem(Array.from(Array(45)).map((_, idx) => idx + 1))
+            let newDegree = degree
+
             const interval = setInterval(() => {
-                setDegree(prevDegree => prevDegree + 10)
+                newDegree += 8
+                setDegree(newDegree)
                 time--
                 if (!time) {
+                    newDegree %= 360
                     clearInterval(interval)
-                    setDegree(prevDegree => prevDegree % 360)
-                    resolve()
+                    setDegree(newDegree)
+                    resolve(newDegree)
                 }
             }, 10)
         })
     }
 
     const determinePrize = async () => {
-        await handleSpin()
-        // switch (true) {
-        //     case degree < 50 && degree > 0:
-        //         console.log("2 wand")
-        //         break
-        //     case degree < 90:
-        //         console.log("250 coins")
-        //         break
-        //     case degree < 140:
-        //         console.log("5 letters")
-        //         break
-        //     case degree < 180:
-        //         console.log("2 hearts")
-        //         break
-        //     case degree < 230:
-        //         console.log("300 coins")
-        //         break
-        //     case degree < 280:
-        //         console.log("2 trash")
-        //         break
-        //     case degree < 320:
-        //         console.log("200 coins")
-        //         break
-        //     default:
-        //         console.log("5 hearts")
-        // }
-        // 1,2,3,4
-        // 5,6,7,8
-        // 9,10,11,12,13
-        // 14,15,16,17
-        // 18,19,20,21,22
-        // 23, 24, 25, 26, 27
-        // 28,29,30,31
-        // 32,33,34,35,0
-        console.log(degree)
+        let newDegree = await handleSpin()
+
+        switch (true) {
+            case newDegree > 318 || newDegree === 0:
+                console.log("5 hearts")
+                break
+            case newDegree < 47:
+                console.log("2 wand")
+                break
+            case newDegree < 88:
+                console.log("250 coins")
+                break
+            case newDegree < 135:
+                console.log("5 letters")
+                break
+            case newDegree < 180:
+                console.log("2 hearts")
+                break
+            case newDegree < 227:
+                console.log("300 coins")
+                break
+            case newDegree < 273:
+                console.log("2 trash")
+                break
+            case newDegree < 319:
+                console.log("200 coins")
+                break
+            default:
+                return 
+        }
     }
 
 

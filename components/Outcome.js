@@ -43,7 +43,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
             setVictory(null)
             // dispatch(handleInitialSetup(parseInt(level) + 1, 1))
         } else {
-            setTime(time + 3)
+            setTime(time + 6)
             setActive(true)
             setStage(stage + 1)
             // dispatch(handleVictory())
@@ -87,7 +87,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                 />
                                 <Text style={styles.text2}>You've earned {coins} coins!</Text>
                             </> :
-                            <Text style={styles.text2}>{10 - stage} stages to go! 2 seconds added.</Text>
+                            <Text style={styles.text2}>{10 - stage} stages to go! 5 seconds added.</Text>
                         }
                     </View>
                     <View style={styles.buttonsContainer}>
