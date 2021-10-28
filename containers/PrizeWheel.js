@@ -11,9 +11,14 @@ const PrizeWheel = ({ navigation }) => {
     const [message, setMessage] = useState(null)
 
     const dispatch = useDispatch()
-    const spins = useSelector(state => state.user.user?.spins)
+    const user = useSelector(state => state.user.user)
+    const spins = user?.spins
+    const boosts = user?.boosts
+    const coins = user?.coins
 
     const handleSpin = async () => {
+        dispatch(updateUserData({spins: spins - 1}))
+
         return await new Promise(resolve => {
             let time = 90 + getRandomItem(Array.from(Array(45)).map((_, idx) => idx + 1))
             let newDegree = degree
@@ -40,27 +45,35 @@ const PrizeWheel = ({ navigation }) => {
         switch (true) {
             case newDegree > 318 || newDegree === 0:
                 setMessage("You've received 5 hearts.")
+                // dispatch(updateUserData())
                 break
             case newDegree < 47:
                 setMessage("You've received 2 wands.")
+                dispatch(updateUserData({ boosts: {...boosts, wand: boosts.wand + 2} }))
                 break
             case newDegree < 88:
                 setMessage("You've received 250 coins.")
+                dispatch(updateUserData({ coins: coins + 250 }))
                 break
             case newDegree < 135:
                 setMessage("You've received 5 letter hints.")
+                dispatch(updateUserData({ boosts: {...boosts, letter: boosts.letter + 5} }))
                 break
             case newDegree < 180:
                 setMessage("You've received 2 hearts.")
+                // dispatch(updateUserData())
                 break
             case newDegree < 227:
                 setMessage("You've received 300 coins.")
+                dispatch(updateUserData({ coins: coins + 300 }))
                 break
             case newDegree < 273:
                 setMessage("You've received 2 trash hints.")
+                dispatch(updateUserData({ boosts: {...boosts, trash: boosts.trash + 2} }))
                 break
             case newDegree < 319:
                 setMessage("You've received 200 coins.")
+                dispatch(updateUserData({ coins: coins + 200 }))
                 break
             default:
                 return 
