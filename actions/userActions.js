@@ -12,7 +12,8 @@ export const fetchUserData = () => {
                     name: "New User",
                     coins: 200,
                     levels: { 1: null },
-                    boosts: { wand: 1, letter: 5, trash: 3 }
+                    boosts: { wand: 1, letter: 5, trash: 3 },
+                    spins: 0
                 }
         
                 await AsyncStorage.setItem("user", JSON.stringify(newUser))

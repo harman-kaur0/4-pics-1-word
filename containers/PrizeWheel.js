@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import Header from "../components/Header"
-import { TouchableOpacity, View, Image, StyleSheet } from 'react-native'
-import { width } from '../helper/functions'
-import { getRandomItem } from '../helper/functions'
+import { TouchableOpacity, View, Image, StyleSheet, Text } from 'react-native'
+import { width, font, getRandomItem } from '../helper/functions'
+import { useSelector, useDispatch } from 'react-redux'
+import { updateUserData } from "../actions/userActions"
 
 const PrizeWheel = ({ navigation }) => {
     const [degree, setDegree] = useState(0)
     const [spinning, setSpinning] = useState(false)
+    const [message, setMessage] = useState(null)
+
+    const dispatch = useDispatch()
+    const spins = useSelector(state => state.user.user?.spins)
 
     const handleSpin = async () => {
         return await new Promise(resolve => {
@@ -64,6 +69,14 @@ const PrizeWheel = ({ navigation }) => {
         setSpinning(false)
     }
 
+    useEffect(() => {
+        if (message) {
+            setTimeout(() => {
+                setMessage(null)
+            }, 3000)
+        }
+    }, [message])
+
     return (
         <>
             <Header button="close" text="Prize Wheel" navigation={navigation}/>
@@ -84,13 +97,14 @@ const PrizeWheel = ({ navigation }) => {
             </View>
             <View style={styles.buttonContainer}>
                 {
-                    spinning ?
+                    spinning || !spins ?
                     <View style={styles.buttonTouch} onPress={determinePrize}>
                         <Image
                             style={{...styles.button, opacity: 0.4}}
                             source={require("../assets/buttons/spin.png")}
                             resizeMode="contain"
                         />
+                        <Text style={styles.spinCount}>{spins || 0}</Text>
                     </View> :
                     <TouchableOpacity style={styles.buttonTouch} onPress={determinePrize}>
                         <Image
@@ -98,10 +112,26 @@ const PrizeWheel = ({ navigation }) => {
                             source={require("../assets/buttons/spin.png")}
                             resizeMode="contain"
                         />
+                        <Text style={styles.spinCount}>{spins || 0}</Text>
                     </TouchableOpacity>
 
                 }
             </View>
+            {
+                spinning ?
+                <View style={styles.header}>
+                    <TouchableOpacity
+                        onPress={() => setMessage("Please wait until your spin is done!")}
+                        style={styles.closeTouch}
+                    >
+                        <Image
+                            source={require("../assets/main/close.png")}
+                            style={{width: "100%", flex: 1}}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
+                </View> : null
+            }
         </>
     )
 }
@@ -138,5 +168,29 @@ const styles = StyleSheet.create({
     button: {
         width: "100%",
         height: "100%"
+    },
+    header: {
+        width: "100%",
+        height: "8%",
+        flexDirection: "row",
+        position: "absolute",
+        top: 70,
+        alignItems: "center",
+        zIndex: 999
+    },
+    closeTouch: {
+        width: "15%",
+        height: "100%",
+        justifyContent: "center",
+        padding: 10
+    },
+    spinCount: {
+        position: "absolute",
+        right: "1%",
+        top: "-3%",
+        fontSize: font() - 5,
+        backgroundColor: "white",
+        borderRadius: 5,
+        overflow: "hidden"
     }
 })

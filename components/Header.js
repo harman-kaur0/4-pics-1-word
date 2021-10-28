@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         top: 70,
         alignItems: "center",
-        zIndex: 999
+        zIndex: 998
     },
     closeTouch: {
         width: "15%",

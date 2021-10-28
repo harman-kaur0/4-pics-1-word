@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
         top: -10,
         fontSize: font() - 8,
         backgroundColor: "white",
-        borderRadius: 8,
+        borderRadius: 5,
         overflow: "hidden"
     }
 })
