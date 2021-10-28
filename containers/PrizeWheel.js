@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from "../components/Header"
-import { TouchableOpacity, View, Image, StyleSheet, Text } from 'react-native'
+import { TouchableOpacity, View, Image, StyleSheet, Text, Animated } from 'react-native'
 import { width, font, getRandomItem } from '../helper/functions'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateUserData } from "../actions/userActions"
@@ -39,28 +39,28 @@ const PrizeWheel = ({ navigation }) => {
 
         switch (true) {
             case newDegree > 318 || newDegree === 0:
-                console.log("5 hearts")
+                setMessage("You've received 5 hearts.")
                 break
             case newDegree < 47:
-                console.log("2 wand")
+                setMessage("You've received 2 wands.")
                 break
             case newDegree < 88:
-                console.log("250 coins")
+                setMessage("You've received 250 coins.")
                 break
             case newDegree < 135:
-                console.log("5 letters")
+                setMessage("You've received 5 letter hints.")
                 break
             case newDegree < 180:
-                console.log("2 hearts")
+                setMessage("You've received 2 hearts.")
                 break
             case newDegree < 227:
-                console.log("300 coins")
+                setMessage("You've received 300 coins.")
                 break
             case newDegree < 273:
-                console.log("2 trash")
+                setMessage("You've received 2 trash hints.")
                 break
             case newDegree < 319:
-                console.log("200 coins")
+                setMessage("You've received 200 coins.")
                 break
             default:
                 return 
@@ -69,11 +69,30 @@ const PrizeWheel = ({ navigation }) => {
         setSpinning(false)
     }
 
+    const fadeAnim = useState(new Animated.Value(0))[0]
+
+    const fadeIn = () => {
+        Animated.timing(fadeAnim, {
+            toValue: 1,
+            duration: 1000,
+            useNativeDriver: true
+        }).start()
+    }
+    
+    const fadeOut = () => {
+        Animated.timing(fadeAnim, {
+            toValue: 0,
+            duration: 1000,
+            useNativeDriver: true
+        }).start(() => setMessage(null))
+    }
+
     useEffect(() => {
         if (message) {
-            setTimeout(() => {
-                setMessage(null)
-            }, 3000)
+            fadeIn()
+            setTimeout(async () => {
+                fadeOut()
+            }, 2000)
         }
     }, [message])
 
@@ -98,9 +117,9 @@ const PrizeWheel = ({ navigation }) => {
             <View style={styles.buttonContainer}>
                 {
                     spinning || !spins ?
-                    <View style={styles.buttonTouch} onPress={determinePrize}>
+                    <View style={styles.buttonTouch}>
                         <Image
-                            style={{...styles.button, opacity: 0.4}}
+                            style={[styles.button, {opacity: 0.4}]}
                             source={require("../assets/buttons/spin.png")}
                             resizeMode="contain"
                         />
@@ -114,7 +133,6 @@ const PrizeWheel = ({ navigation }) => {
                         />
                         <Text style={styles.spinCount}>{spins || 0}</Text>
                     </TouchableOpacity>
-
                 }
             </View>
             {
@@ -131,6 +149,15 @@ const PrizeWheel = ({ navigation }) => {
                         />
                     </TouchableOpacity>
                 </View> : null
+            }
+            {
+                message ? 
+                <Animated.Text 
+                    style={[styles.message, { opacity: fadeAnim }]}
+                >
+                    {message}
+                </Animated.Text> 
+                : null
             }
         </>
     )
@@ -192,5 +219,17 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         borderRadius: 5,
         overflow: "hidden"
+    },
+    message: {
+        position: "absolute",
+        top: "15%",
+        fontSize: font() - 8,
+        backgroundColor: "white",
+        borderRadius: 5,
+        overflow: "hidden",
+        borderColor: "black",
+        borderWidth: 1,
+        padding: 10,
+        alignSelf: "center"
     }
 })
