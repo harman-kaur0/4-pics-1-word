@@ -6,11 +6,14 @@ import { getRandomItem } from '../helper/functions'
 
 const PrizeWheel = ({ navigation }) => {
     const [degree, setDegree] = useState(0)
+    const [spinning, setSpinning] = useState(false)
 
     const handleSpin = async () => {
         return await new Promise(resolve => {
             let time = 90 + getRandomItem(Array.from(Array(45)).map((_, idx) => idx + 1))
             let newDegree = degree
+
+            setSpinning(true)
 
             const interval = setInterval(() => {
                 newDegree += 8
@@ -57,9 +60,9 @@ const PrizeWheel = ({ navigation }) => {
             default:
                 return 
         }
+
+        setSpinning(false)
     }
-
-
 
     return (
         <>
@@ -80,13 +83,24 @@ const PrizeWheel = ({ navigation }) => {
                     />
             </View>
             <View style={styles.buttonContainer}>
-                <TouchableOpacity style={styles.buttonTouch} onPress={determinePrize}>
-                    <Image
-                        style={styles.button}
-                        source={require("../assets/buttons/spin.png")}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
+                {
+                    spinning ?
+                    <View style={styles.buttonTouch} onPress={determinePrize}>
+                        <Image
+                            style={{...styles.button, opacity: 0.4}}
+                            source={require("../assets/buttons/spin.png")}
+                            resizeMode="contain"
+                        />
+                    </View> :
+                    <TouchableOpacity style={styles.buttonTouch} onPress={determinePrize}>
+                        <Image
+                            style={styles.button}
+                            source={require("../assets/buttons/spin.png")}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
+
+                }
             </View>
         </>
     )
