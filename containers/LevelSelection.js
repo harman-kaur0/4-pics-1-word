@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import { StyleSheet, View, TouchableOpacity, Image } from "react-native"
 import { width } from "../helper/functions"
 import { useSelector } from "react-redux"
+import gameData from "../assets/data"
 import Header from "../components/Header"
 import Level from "../components/Level"
-
-const gameData = require("../assets/data.json")
 
 const LevelSelection = ({ navigation }) => {
     const [page, setPage] = useState(1)

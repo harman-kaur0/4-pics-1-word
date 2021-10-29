@@ -2,24 +2,31 @@ import React from "react"
 import { StyleSheet, View, Image } from "react-native"
 
 const GameImages = ({ levelData }) => {
+    const { images } = levelData
+
     return (
         <View style={styles.boxContainer}>
-            <Image
-                source={{uri: levelData.image1}}
-                style={styles.image}
-            />
-            <Image
-                source={{uri: levelData.image2}}
-                style={styles.image}
-            />
-            <Image
-                source={{uri: levelData.image3}}
-                style={styles.image}
-            />
-            <Image
-                source={{uri: levelData.image4}}
-                style={styles.image}
-            />
+            {
+                images ?
+                <>
+                    <Image
+                        source={images[0]}
+                        style={styles.image}
+                    />
+                    <Image
+                        source={images[1]}
+                        style={styles.image}
+                    />
+                    <Image
+                        source={images[2]}
+                        style={styles.image}
+                    />
+                    <Image
+                        source={images[3]}
+                        style={styles.image}
+                    />
+                </> : null
+            }
         </View>
     )
 }

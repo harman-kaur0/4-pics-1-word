@@ -1,5 +1,5 @@
 import { shuffleArray, getRandomItem, preloadImages } from "../helper/functions"
-const gameData = require("../assets/data.json")
+import gameData from "../assets/data"
 
 export const handleInitialSetup = (level, stage) => {
     const data = gameData[level].stages[stage - 1]

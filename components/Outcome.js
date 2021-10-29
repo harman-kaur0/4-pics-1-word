@@ -14,10 +14,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
         if (!word) setWord(data.answer)
 
         if (stage === 10) {
-            dispatch(handleInitialSetup(parseInt(level) + 1, 1))
             if (calculateCoins() > 0) setCoins(calculateCoins())
-        } else {
-            dispatch(handleInitialSetup(level, stage + 1))
         }
     }, [])
 
@@ -41,14 +38,14 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
             setStage(1)
             // dispatch(handleVictory())
             setVictory(null)
-            // dispatch(handleInitialSetup(parseInt(level) + 1, 1))
+            dispatch(handleInitialSetup(parseInt(level) + 1, 1))
         } else {
             setTime(time + 6)
             setActive(true)
             setStage(stage + 1)
             // dispatch(handleVictory())
             setVictory(null)
-            // dispatch(handleInitialSetup(level, stage + 1))
+            dispatch(handleInitialSetup(level, stage + 1))
         }
     }
 
