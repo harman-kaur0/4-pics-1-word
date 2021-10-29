@@ -2,1531 +2,271 @@
     "1": {
         "coins": 100,
         "stages": [
-            {
-                "level": 1,
-                "answer": "dog",
-                "image1": "https://www.howitworksdaily.com/wp-content/uploads/2015/08/131216Cute-dog-sticking-out-his-tongue-wallpaper-200x200.jpg",
-                "image2": "https://i.pinimg.com/236x/eb/a3/40/eba340542eab5489dc68073c6c6a43c2.jpg",
-                "image3": "https://dailydoseofpositiveliving.files.wordpress.com/2020/05/dog_samoyed_mobile.jpg?resize=200%2C200",
-                "image4": "https://www.graylinealaska.com/wp-content/uploads/2016/04/Siberian-Husky.jpg"
-            },
-            {
-                "level": 2,
-                "answer": "cat",
-                "image1": "https://cdn-japantimes.com/wp-content/uploads/2020/06/np_file_17403-200x200.jpeg",
-                "image2": "https://gifts.worldwildlife.org/gift-center/Images/multistepcart/cart-black-footed-cat-photo.jpg",
-                "image3": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0012/1152/brand.gif?itok=ZNhik6gG",
-                "image4": "https://i.pinimg.com/564x/a9/39/52/a93952379d9b4f44e413df0118e57b1b.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "cow",
-                "image1": "data:image/jpeg;base64,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",
-                "image2": "https://purepng.com/public/uploads/large/cow-3j7.png",
-                "image3": "https://pixieland.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/front_500.jpg",
-                "image4": "https://proearthanimalhealth.com/wp-content/uploads/2018/08/lodoen-cow-calf-resize-500x500.jpg"
-            },
-            {
-                "level": 4,
-                "answer": "pig",
-                "image1": "http://tryveg.com/wp-content/uploads/2016/01/animals-pigs.jpg",
-                "image2": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/SC959-500x500.webp",
-                "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrfAE13WT0-O5-5VBge2O2xgCXSjDSvjbOg&usqp=CAU",
-                "image4": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/AG645-500x500.webp"
-            },
-            {
-                "level": 5,
-                "answer": "fish",
-                "image1": "https://www.stodels.com/wp-content/uploads/2009/03/Tropical-Fish-Blue-500x500.jpg",
-                "image2": "https://www.bettafish.com/attachments/moon-tail-betta-fish-500x500-jpg.951777/",
-                "image3": "https://www.nano-reef.com/applications/core/interface/imageproxy/imageproxy.php?img=http://www.thatpetplace.com/p30417.jpg&key=3d50d59ead6f2122704088e3f80febd93d3dbaf3efd4aebd0861d40866084b4f",
-                "image4": "https://news-cdn.softpedia.com/images/news2/Great-White-Sharks-in-the-Mediterranean-Came-from-Australia-2.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "lion",
-                "image1": "https://www.autism-products.com/wp-content/uploads/leo-the-talking-lion-2.jpg",
-                "image2": "https://i.pinimg.com/originals/eb/d5/3c/ebd53c6de4eb024aae6cf01eacff528a.jpg",
-                "image3": "https://willbl.com/wp-content/uploads/2020/02/WBL-Liuwa-Plain-Lions-151209050202-500x500.jpg",
-                "image4": "https://cdn.wallpapersafari.com/22/41/HjTMF8.jpg"
-            },
-            {
-                "level": 7,
-                "answer": "crab",
-                "image1": "https://m.media-amazon.com/images/I/41EOW0m-djL.jpg",
-                "image2": "https://i.pinimg.com/564x/30/fe/2f/30fe2f26d05c3e38f96b430e36c01531.jpg",
-                "image3": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0b66f59c-a674-4c8f-8f02-a3308a8bde3c/dd4abjd-bc449665-2594-474c-b9bd-b194e66182bd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMGI2NmY1OWMtYTY3NC00YzhmLThmMDItYTMzMDhhOGJkZTNjXC9kZDRhYmpkLWJjNDQ5NjY1LTI1OTQtNDc0Yy1iOWJkLWIxOTRlNjYxODJiZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.prHGPrtXdXmQ8tfinx1R-JQ8hiHSLZ4CP_Rt2FrRxDc",
-                "image4": "https://m.media-amazon.com/images/I/51NvyFvUFJL.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "worm",
-                "image1": "https://m.media-amazon.com/images/I/61ZqKqmwAJL._AC_.jpg",
-                "image2": "https://i1.sndcdn.com/avatars-000621159561-mal9oa-t500x500.jpg",
-                "image3": "https://www.candywarehouse.com/item-images/132663-01_green-and-red-giant-gummy-worm.jpg?resizeid=102&resizeh=500&resizew=500",
-                "image4": "https://i.pinimg.com/564x/7e/87/31/7e8731736020267dee0a29a46469fa7f--book-worms-nursery-decor.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "zebra",
-                "image1": "https://smesouthafrica.co.za/wp-content/uploads/2018/04/Zebra-500x500.jpg",
-                "image2": "https://i.ebayimg.com/images/g/QbgAAOSwzoZdKmYm/s-l500.jpg",
-                "image3": "https://images.squarespace-cdn.com/content/v1/596eb6988419c20f0107fa08/1512588039296-NB8M6TH4LHRF91HIGUVT/baby-zebra.jpg?format=500w",
-                "image4": "https://www.hospiceofmiamicounty.org/wp-content/uploads/2014/01/zebra.jpg"
-            },
-            {
-                "level": 10,
-                "answer": "whale",
-                "image1": "https://res.cloudinary.com/sailtrilogy/image/upload/w_500,c_scale/v1548298694/wordpress/feature2-12_olt76u.jpg",
-                "image2": "https://i.pinimg.com/originals/50/6c/c6/506cc65427dec24df5eb74b854dcba71.jpg",
-                "image3": "https://i1.sndcdn.com/artworks-000250435807-bnw1z2-t500x500.jpg",
-                "image4": "https://i.pinimg.com/originals/30/73/b8/3073b8183664977766880824394f1d29.png"
-            }
+            { "level": 1, "answer": "dog" },
+            { "level": 2, "answer": "cat" },
+            { "level": 3, "answer": "pig" },
+            { "level": 4, "answer": "ant" },
+            { "level": 5, "answer": "fish" },
+            { "level": 6, "answer": "lion" },
+            { "level": 7, "answer": "crab" },
+            { "level": 8, "answer": "worm" },
+            { "level": 9, "answer": "zebra" },
+            { "level": 10, "answer": "whale" }
         ]
     },
     "2": {
         "coins": 100,
         "stages": [
-            {
-                "level": 1,
-                "answer": "red",
-                "image1": "https://everfreshfruit.com/wp-content/uploads/2018/05/Fuji-Apple_1000-400x400.jpg",
-                "image2": "https://images-na.ssl-images-amazon.com/images/I/613cPQdHIKS._AC_UL500_SR500,400_.jpg",
-                "image3": "https://m.media-amazon.com/images/I/71Jsiqz0aiL._SX522_.jpg",
-                "image4": "https://www.motorlegend.com/images-voiture/med/infiniti-q60-ii-3-0t-405-ch-114260.jpg"
-            },
-            {
-                "level": 2,
-                "answer": "blue",
-                "image1": "https://pbs.twimg.com/profile_images/1631073023/Atlantic_Ocean_1__400x400.jpg",
-                "image2": "https://babcockdairystore.wisc.edu/wp-content/uploads/2017/07/babcock_icecream_blue-moon-400x400.png",
-                "image3": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blueberry_400-423c31a.jpg?quality=90&resize=504,458?quality=90&webp=true&resize=504,458",
-                "image4": "https://static.vecteezy.com/system/resources/thumbnails/002/224/132/small_2x/bright-sunny-day-with-blue-sky-with-white-clouds-free-photo.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "pink",
-                "image1": "https://cdn11.bigcommerce.com/s-croon/products/211/images/537/candy_floss__99321.1499016691.1000.1200.jpg?c=2",
-                "image2": "https://barnebys.imgix.net/https%3A%2F%2Fcudoni-photo.s3.amazonaws.com%2Fpictures%2Fimages%2F000%2F087%2F686%2Flarge%2F91991007-052a-44d0-bb18-e5edd4369a1d.jpg%3F1622540485?auto=format%2Ccompress&crop=0&cs=tinysrgb&fit=crop&h=400&ixlib=php-2.3.0&trim=auto&w=400&s=688d0e72951061c566d82d5f864aa3d9",
-                "image3": "https://i5.walmartimages.com/asr/5dd2bff0-a280-49bc-be99-9ef7814a6019_1.dad6113b9f6b24c32cb2f8440c9edc7e.jpeg",
-                "image4": "https://i2.wp.com/www.omgthatsdope.com/wp-content/uploads/2017/10/Champion-Christian-Dior-1.jpg?fit=400%2C400&ssl=1"
-            },
-            {
-                "level": 4,
-                "answer": "white",
-                "image1": "https://s1.1zoom.me/prev/566/Foxes_Arctic_fox_Snow_White_565681_600x400.jpg",
-                "image2": "https://cottagegardengoldadors.com/wp-content/uploads/2018/08/dsc-0364_1_orig-400x400.jpg",
-                "image3": "https://36.media.tumblr.com/9c3b38c83f7c0dbc2aaefbe614b7b911/tumblr_mxig5uwLgp1stlkgho1_400.jpg",
-                "image4": "https://m.media-amazon.com/images/I/51v5bRCxLDL._AC_SS450_.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "green",
-                "image1": "https://image.made-in-china.com/202f0j00afZYujmRRGpE/Colored-Artificial-Grass-Mat-Rainbow-Grass-for-Home-Decoration.jpg",
-                "image2": "https://pbs.twimg.com/profile_images/1065132283844313089/zlB3IMBp_400x400.jpg",
-                "image3": "https://images.assetsdelivery.com/compings_v2/iimages/iimages1510/iimages151000228.jpg",
-                "image4": "https://www.3dquakers.com/wp-content/uploads/2015/09/Forester-cork-tree-400x400.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "black",
-                "image1": "https://s13.favim.com/orig/160702/beautiful-black-cars-expensive-Favim.com-4482143.jpeg",
-                "image2": "https://cdn.shopify.com/s/files/1/2143/3217/products/500_caec791a-42de-4074-ab4a-c1b95985c7d8_grande.png?v=1620254701",
-                "image3": "https://fruuits.com/wp-content/uploads/2020/09/ripe-blackberry-05-500x500.jpg",
-                "image4": "https://cdn.shopify.com/s/files/1/0008/9296/0821/products/500x500galaxy_s20ultra_7933b336-1473-4d8f-91b0-be01a02cc88b_1024x.jpg?v=1619736691"
-            },
-            {
-                "level": 7,
-                "answer": "yellow",
-                "image1": "http://www.rop-ltd.com/wp-content/uploads/2014/12/banana.jpg",
-                "image2": "https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/suncredibleyellow_0745.jpg",
-                "image3": "https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_500x500_$&$product=PartyCity/909737",
-                "image4": "https://5.imimg.com/data5/YF/YU/MY-25603771/mens-yellow-rain-coat-500x500.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "violet",
-                "image1": "https://cdn11.bigcommerce.com/s-t74b5x/images/stencil/500x500/products/452/1443/ultramarine-violet-pigment__67612.1553111539.jpg?c=2",
-                "image2": "https://www.kroger.com/product/images/large/front/0081002912008",
-                "image3": "https://i.pinimg.com/564x/d0/2a/00/d02a001ca53f86c683ec6dedaacbee14.jpg",
-                "image4": "https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/hibiscus_paraplu_violet_dsc01308.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "orange",
-                "image1": "https://www.fodmapeveryday.com/wp-content/uploads/2020/04/Low-FODMAP-Orange-Carrot-Juice-in-glass-against-aqua-background-500x500.jpg",
-                "image2": "https://i.imgflip.com/uz9f0.jpg",
-                "image3": "https://paramountoutdoors.com/wp-content/uploads/2020/09/WM074-CXX-1-500x500.jpg",
-                "image4": "https://cdn.shopify.com/s/files/1/2077/6015/products/Clementine_Tangerine_Tree.png?v=1570406140"
-            },
-            {
-                "level": 10,
-                "answer": "beige",
-                "image1": "https://m.media-amazon.com/images/I/612DtYeHhhL._AC_SY450_.jpg",
-                "image2": "https://i.pinimg.com/564x/7c/d3/2d/7cd32d1f8efc397ab2e1d09014f0d4b3.jpg",
-                "image3": "https://images.thdstatic.com/productImages/aebec27b-c6dd-45b6-915a-e32609d9176a/svn/platinum-msi-travertine-tile-ttplat1818hf-64_400.jpg",
-                "image4": "https://target.scene7.com/is/image/Target/GUEST_857aeabf-37a2-4529-8c65-91a0d09a7e8c"
-            }
+            { "level": 1, "answer": "red" },
+            { "level": 2, "answer": "blue" },
+            { "level": 3, "answer": "pink" },
+            { "level": 4, "answer": "white" },
+            { "level": 5, "answer": "green" },
+            { "level": 6, "answer": "black" },
+            { "level": 7, "answer": "yellow" },
+            { "level": 8, "answer": "violet" },
+            { "level": 9, "answer": "orange" },
+            { "level": 10, "answer": "beige" }
         ]
     },
     "3": {        
         "coins": 100,
         "stages": [
-            {
-                "level": 1,
-                "answer": "moon",
-                "image1": "https://www.howitworksdaily.com/wp-content/uploads/2015/10/FullMoon2010-200x200.jpg",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "moon" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]    
     },
     "4": {
         "coins": 150,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "5": {
         "coins": 150,
         "stages": [
-            {
-                "level": 1,
-                "answer": "ball",
-                "image1": "https://pbs.twimg.com/media/DfqYNE1XkAAF4l0.jpg",
-                "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/500px-Soccerball.svg.png",
-                "image3": "https://media.thenationaldigest.com/wp-content/uploads/2020/01/22150750/Basketball-400x400-1.jpg",
-                "image4": "https://givetogrant.org/wp-content/uploads/2017/09/cricket-tennis-balls-500x500.jpg"
-            },
-            {
-                "level": 2,
-                "answer": "fruit",
-                "image1": "https://everfreshfruit.com/wp-content/uploads/2018/05/Fuji-Apple_1000-400x400.jpg",
-                "image2": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blueberry_400-423c31a.jpg?quality=90&resize=504,458?quality=90&webp=true&resize=504,458",
-                "image3": "https://cdn.shopify.com/s/files/1/2077/6015/products/Clementine_Tangerine_Tree.png?v=1570406140",
-                "image4": "http://www.rop-ltd.com/wp-content/uploads/2014/12/banana.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "pet",
-                "image1": "https://www.vsdogtrainingacademy.com/wp-content/uploads/vik_square_400px_2019.jpg",
-                "image2": "https://cdn11.bigcommerce.com/s-lo8vxi6nee/images/stencil/500x659/products/5342/11616/G7777__85908.1583164946.jpg?c=2",
-                "image3": "https://i.pinimg.com/originals/1b/c6/ce/1bc6ce180ea8d1be63945fac1bf85a47.jpg",
-                "image4": "https://i.pinimg.com/originals/95/af/32/95af32a36fd8c693916ee4697de0048a.jpg"
-            },
-            {
-                "level": 4,
-                "answer": "shoes",
-                "image1": "https://i.pinimg.com/564x/f3/14/e5/f314e514db49d8e5ae52fdd7eb86e83a.jpg",
-                "image2": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_44/1626501/518pgfxlqdl-5f997387c6e07.jpg",
-                "image3": "https://5.imimg.com/data5/HI/OQ/MY-22659923/ladies-sports-shoes-500x500.jpg",
-                "image4": "https://cdn.shopify.com/s/files/1/2448/8213/products/mt-emey-502-c-black-9e-width-mens-charcot-shoes-casual-dress-over-150-size-10-11-5-apisfootwear-com-bignwideshoes_277_1200x1200.jpg?v=1535055384"
-            },
-            {
-                "level": 5,
-                "answer": "time",
-                "image1": "https://cdn.shopify.com/s/files/1/1159/3118/products/2020clock_05_500x.jpg?v=1623852490",
-                "image2": "https://mma.prnewswire.com/media/1025454/Metro_Elegant_Black_Front_Left.jpg?w=500",
-                "image3": "https://i5.walmartimages.com/asr/d30a591e-3045-4b36-939c-962f01e02be9.83df33263fe934420ed2cbf05421f3c2.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-                "image4": "https://m.media-amazon.com/images/I/41+9Jy68H8L.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "upset",
-                "image1": "https://publicdomainvectors.org/photos/face-of-an-angry-man.png",
-                "image2": "https://render.fineartamerica.com/images/rendered/default/throw-pillow/images/artworkimages/medium/1/angry-girl-screaming-aleksey-tugolukov.jpg?&targetx=0&targety=-119&imagewidth=479&imageheight=718&modelwidth=479&modelheight=479&backgroundcolor=B0B0B0&orientation=0&producttype=throwpillow-14-14",
-                "image3": "https://i.pinimg.com/originals/56/92/d0/5692d096777213a7f713c9841ba04a66.png",
-                "image4": "https://i1.sndcdn.com/artworks-000618694312-5t74bp-t500x500.jpg"
-            },
-            {
-                "level": 7,
-                "answer": "smile",
-                "image1": "https://i.pinimg.com/originals/38/53/bf/3853bf5660dbb7abf589cee6d9060ccb.jpg",
-                "image2": "https://www.nicepng.com/png/full/18-181114_smiley-smile-smiley-faces-emojis-pb-logo-geocaching.png",
-                "image3": "https://raisingyourpaws.com/wp-content/uploads/2020/02/smile-and-person-dog.jpg",
-                "image4": "https://www.abilenedentalcare.com/wp-content/uploads/2020/04/Teeth-Whitening-Image.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "stage",
-                "image1": "https://img1.cgtrader.com/items/2411254/514583c5fe/large/theatre-concert-stage-with-ferm-projectors-and-classic-curtain-3d-model-max-obj-3ds-fbx.jpg",
-                "image2": "https://i.pinimg.com/originals/7a/78/36/7a7836397c0fccc22ca5292589d3d021.jpg",
-                "image3": "https://s3.amazonaws.com/content.ravinia.org/images/VenueMartinTheatre-interiorNear.jpg",
-                "image4": "https://4.imimg.com/data4/PL/OM/MY-15682201/stage-curtains-500x500.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "dance",
-                "image1": "https://www.mesaartscenter.com/sysimg/media-box-image-shows-performing-live-26328-media-box-26330-image.jpg",
-                "image2": "https://i1.sndcdn.com/artworks-000054682670-zkp613-t500x500.jpg",
-                "image3": "https://findmyera.files.wordpress.com/2019/09/salsa-dance-500x500.jpg",
-                "image4": "https://images.squarespace-cdn.com/content/v1/5544e114e4b0deabe5554750/1531528643094-C1Q9UGON18UTZ2K4D64H/HCD_Youth.jpg"
-            },
-            {
-                "level": 10,
-                "answer": "emoji",
-                "image1": "https://emojiprints.com/wp-content/uploads/Pouting-Face-Emoji-Classic-Round-Sticker.jpg",
-                "image2": "https://emojiprints.com/wp-content/uploads/White-Smiling-Face-Emoji-Classic-Round-Sticker.jpg",
-                "image3": "https://emojiprints.com/wp-content/uploads/Confused-Face-Emoji-Classic-Round-Sticker.jpg",
-                "image4": "https://emojiprints.com/wp-content/uploads/Flushed-Face-Emoji-Classic-Round-Sticker.jpg"
-            }      
+            { "level": 1, "answer": "ball" },
+            { "level": 2, "answer": "fruit" },
+            { "level": 3, "answer": "pet" },
+            { "level": 4, "answer": "shoes" },
+            { "level": 5, "answer": "time" },
+            { "level": 6, "answer": "upset" },
+            { "level": 7, "answer": "smile" },
+            { "level": 8, "answer": "stage" },
+            { "level": 9, "answer": "dance" },
+            { "level": 10, "answer": "emoji" }
         ]
     },
     "6": {
         "coins": 150,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            } 
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "7": {
         "coins": 200,
         "stages": [
-            {
-                "level": 1,
-                "answer": "round",
-                "image1": "https://veenaazmanov.com/wp-content/uploads/2020/04/Pizza-Margherita14-500x500.jpg",
-                "image2": "https://5.imimg.com/data5/SX/SW/ES/SELLER-92125625/tennis-ball-500x500.png",
-                "image3": "https://www.thehodagstore.com/image/cache/catalog/hodag-store/Product/TOYS/hodag-frisbee-500x500.jpg",
-                "image4": "https://bellerbyandco.com/wp-content/uploads/2017/11/217albion.plane_.aquamarine-500x500.jpg"
-            },
-            {
-                "level": 2,
-                "answer": "pair",
-                "image1": "https://4.imimg.com/data4/MF/IO/MY-17083057/sport-shoes-500x500.jpg",
-                "image2": "https://ppesupplychains.co.uk/wp-content/uploads/2020/07/nitrile-disposable-gloves-500x500-1.jpg",
-                "image3": "https://cdn11.bigcommerce.com/s-j2hxjs/products/15616/images/65690/50626__45890.1612636924.500.659.jpg?c=2",
-                "image4": "https://www.wallpapertip.com/wmimgs/29-296895_loved-couple-muslim.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "hoops",
-                "image1": "https://cdn.shopify.com/s/files/1/0248/1166/7565/products/FHO001GO_HOLLOWHOOP-2020-09-15-019-f_500x500.jpg?v=1619135450",
-                "image2": "https://i.ebayimg.com/images/g/Cp0AAOSwli9ewWKt/s-l500.jpg",
-                "image3": "https://cdn11.bigcommerce.com/s-7va6f0fjxr/products/50491/images/66730/Hula-Hoop-Girl-Vinyl-Decal-Sticker__20159.1506202659.500.750.jpg?c=2",
-                "image4": "https://i5.walmartimages.com/asr/55f2df11-5962-48a8-891d-1eed0ee69dbf_1.9eaf13b8af0d161a3b229eb8d62f90e5.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-            },
-            {
-                "level": 4,
-                "answer": "story",
-                "image1": "https://uploads.scratch.mit.edu/users/avatars/68079383.png",
-                "image2": "https://buildingradar.com/wp-content/uploads/TN_Top-10-cities-with-the-highest-amount-of-skyscrapers.jpg",
-                "image3": "https://www.cambridgeseven.com/wp-content/uploads/2019/08/thumb-bg-one-dalton.jpg",
-                "image4": "https://carolinatherapyconnection.com/wordpress/wp-content/uploads/2019/08/ms-girl-reading-500x500.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "sharp",
-                "image1": "https://www.pamperedchef.com/iceberg/com/product/1577-lg.jpg",
-                "image2": "https://images-na.ssl-images-amazon.com/images/I/41ptNQW3KuL.jpg",
-                "image3": "https://www.hufriedygroup.com/sites/default/files/styles/500x500/public/S5082__S5082_full_rgb.jpg?itok=4Ns6A0jC",
-                "image4": "https://globalsymbols.com/uploads/production/image/imagefile/17430/17_17431_6730c026-34a9-46ca-ae11-0d2ab2b71df8.png"
-            },
-            {
-                "level": 6,
-                "answer": "bond",
-                "image1": "https://m.media-amazon.com/images/I/71kxM73LqDL._AC_SS450_.jpg",
-                "image2": "https://sciencenotes.org/wp-content/uploads/2020/09/salicylic-acid.png",
-                "image3": "https://familiescanada.ca/wp-content/uploads/2018/04/Guiding-principles-Detail-500x500.jpg",
-                "image4": "https://bellevuechristiancounseling.com/wp-content/uploads/2019/09/5-ways-to-repair-a-broken-relationship-500x500.jpg"
-            },
-            {
-                "level": 7,
-                "answer": "cell",
-                "image1": "https://img1.cgtrader.com/items/2292340/db244d6479/large/prison-cell-3d-model-obj-fbx-stl-blend-dae-abc.jpg",
-                "image2": "https://o.quizlet.com/vUhGZn-STiok0uqDthqVDg_b.jpg",
-                "image3": "https://www.eaieducation.com/images/products/350848_L.jpg",
-                "image4": "https://static.bhphoto.com/images/images500x500/nokia_ta_1282_bk_225_ta_1282_64mb_feature_1606209615_1600757.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "scream",
-                "image1": "https://cdn11.bigcommerce.com/s-bn2nzg98bj/images/stencil/500x659/products/152/407/SCREAM_MASK_FRONT__51924.1603901501.jpg?c=1",
-                "image2": "https://s3.amazonaws.com/orlandi-production/products/110345/large.jpg?1565126115",
-                "image3": "https://i.pinimg.com/564x/38/65/05/38650517298bff928e337f660dab6a58.jpg",
-                "image4": "https://i1.sndcdn.com/avatars-000359285897-ra7hbg-t500x500.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "alarm",
-                "image1": "https://images.americanhotel.com/images/products/1043972_2.jpg?width=500&height=500",
-                "image2": "https://www.thunderpowermegaphones.com/wp-content/uploads/2018/07/THUN450-500x500-1.png",
-                "image3": "https://m.media-amazon.com/images/I/41i1BrfP9JL._SL500_.jpg",
-                "image4": "https://www.universalsecurity.com/images/products/MI3050/MI3050.jpg"
-            },
-            {
-                "level": 10,
-                "answer": "palm",
-                "image1": "https://cdn.wallpapersafari.com/98/76/STyq5D.jpg",
-                "image2": "https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Coconut_Palm_9_grande.jpg?v=1626989090",
-                "image3": "https://taozitreeyoga.files.wordpress.com/2013/02/open-palms.jpg?w=611",
-                "image4": "https://www.mayesh.com/image/cache/catalog/products/palm-leaf-licuala-green-500x500.jpg"
-            }
+            { "level": 1, "answer": "round" },
+            { "level": 2, "answer": "pair" },
+            { "level": 3, "answer": "hoops" },
+            { "level": 4, "answer": "story" },
+            { "level": 5, "answer": "sharp" },
+            { "level": 6, "answer": "bond" },
+            { "level": 7, "answer": "cell" },
+            { "level": 8, "answer": "scream" },
+            { "level": 9, "answer": "alarm" },
+            { "level": 10, "answer": "palm" }
         ]
     },
     "8": {
         "coins": 200,
         "stages": [
-            {
-                "level": 1,
-                "answer": "bow",
-                "image1": "https://partycity.scene7.com/is/image/PartyCity/_sq_?$_500x500_$&$product=PartyCity/281995_full",
-                "image2": "https://pickabow.com/wp-content/uploads/2018/10/infinite-edge-pro-500x500.jpg",
-                "image3": "https://theatreanddance.wayne.edu/thr_graduate/mfa_theatre_acting_artwork_1.jpg",
-                "image4": "https://www.hlj.com/media/catalog/product/m/e/medvcd-174.png"
-            },
-            {
-                "level": 2,
-                "answer": "bat",
-                "image1": "https://5.imimg.com/data5/QP/AP/MY-55127732/cricket-bat-500x500.jpg",
-                "image2": "https://robinsdayspa.com/images/service/Eyelash_extensions1.jpg",
-                "image3": "https://i.pinimg.com/564x/fb/1a/1a/fb1a1a8ac0e89dce6ee3a6ca3c9cd234.jpg",
-                "image4": "https://ugoprobaseball.com/wp-content/uploads/2021/03/SwingRail-3.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "play",
-                "image1": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Play_Prism.max-500x500.png",
-                "image2": "https://www.stagestheatre.org/wp-content/uploads/2020/01/0005_STC_TheDot_Performance_01172020_215.jpg",
-                "image3": "https://9ed48207422fa7fc5013-a6297eb5ec0f30e883355c8680f3b2d6.ssl.cf2.rackcdn.com/AirDog_Lifestyle-20190107183254-20190107183326-500x500.jpg",
-                "image4": "https://www.safewise.com/app/uploads/2017/06/happy-kids-playing-with-garden-sprinkler-picture-id1159180335.jpg"
-            },
-            {
-                "level": 4,
-                "answer": "clip",
-                "image1": "https://dylbs6e8mhm2w.cloudfront.net/productimages/500x500/ESI11966005_ZOOM-CLOSEUP.JPG",
-                "image2": "https://cdn10.bigcommerce.com/s-gafgi0f0m9/products/754/images/2412/black1__91834.1624567424.500.500.png?c=2",
-                "image3": "https://m.media-amazon.com/images/I/41fqcVBPcRL.jpg",
-                "image4": "https://images.squarespace-cdn.com/content/v1/5f528efad48fd416319d3526/1607372789633-S4CSDFDG6QCW2TVT5MX4/vod%2Bthumb.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "lead",
-                "image1": "https://bellamygenngroup.com/wp-content/uploads/2017/12/presidents_0004_Martin-Luther-King-Jr..jpg",
-                "image2": "https://content.directsupplycdn.com/3E20443136A0CD0B5037BE52C802583CC78E24EDB91CFFD166DBB4A3207350C5?h=500&w=500",
-                "image3": "https://4.imimg.com/data4/LK/TM/MY-2465019/lead-metal-sheet-500x500.jpg",
-                "image4": "https://cdn3.volusion.com/stxct.nonrw/v/vspfiles/photos/OFFPE2-2.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "death",
-                "image1": "https://cncfilesharing.com/system/extensions/files/preview.php/2018/09/grim-reaper-4-dxf_preview.jpg",
-                "image2": "https://m.media-amazon.com/images/I/61blhkj0OiL._SS500_.jpg",
-                "image3": "https://image.made-in-china.com/202f0j00tEdYmHCIZsbV/Funeral-Equipment-Wooden-Caskets-Coffin-Caskets-Td-E33.jpg",
-                "image4": "https://3.imimg.com/data3/TK/SL/GLADMIN-106614/gravestone-500x500.jpg"
-            },
-            {
-                "level": 7,
-                "answer": "second",
-                "image1": "https://m.media-amazon.com/images/I/51oHOyQ6daL._AC_.jpg",
-                "image2": "https://i.pinimg.com/564x/c6/e8/7f/c6e87f91700ed1929f2ef6fe2b3e5b9c.jpg",
-                "image3": "https://i1.sndcdn.com/artworks-000186303433-1mfjup-t500x500.jpg",
-                "image4": "https://image.similarpng.com/thumbnail/2020/06/happy-birthday-cake-number-2-with-candle-png-1.png"
-            },
-            {
-                "level": 8,
-                "answer": "nail",
-                "image1": "https://images-na.ssl-images-amazon.com/images/I/41ptNQW3KuL.jpg",
-                "image2": "https://hw.menardc.com/main/items/media/SHAND001/ProductLarge/229-1640_229-1642_229-5800_229-5745.jpg",
-                "image3": "https://m.media-amazon.com/images/I/41fhGnXAlnL._SL500_.jpg",
-                "image4": "https://m.media-amazon.com/images/I/31bTedNhS8L.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "minute",
-                "image1": "https://cdn.shopify.com/s/files/1/1159/3118/products/2020clock_05_500x.jpg?v=1623852490",
-                "image2": "https://i1.sndcdn.com/artworks-000289435619-g4sax6-t500x500.jpg",
-                "image3": "https://www.sereneoaksdental.com/wp-content/uploads/2020/07/Man-looking-at-watch.jpg",
-                "image4": "https://perrypest.net/wp-content/uploads/2020/06/ants.jpg"
-            },
-            {
-                "level": 10,
-                "answer": "project",
-                "image1": "https://cdn.shopify.com/s/files/1/0109/3733/5874/products/41UMicGiS4L.jpg?v=1606662592",
-                "image2": "https://cdn.shopify.com/s/files/1/0063/3041/7211/products/heart-collage_500x500.jpg?v=1554248262",
-                "image3": "https://www.stevensec.com/hs-fs/hubfs/Construction%20Manager%20(1)-4.png?width=400&name=Construction%20Manager%20(1)-4.png",
-                "image4": "https://i.pinimg.com/originals/a1/d6/70/a1d670ea4e2f63912561981d467cee86.jpg"
-            }  
+            { "level": 1, "answer": "bow" },
+            { "level": 2, "answer": "bat" },
+            { "level": 3, "answer": "play" },
+            { "level": 4, "answer": "clip" },
+            { "level": 5, "answer": "lead" },
+            { "level": 6, "answer": "death" },
+            { "level": 7, "answer": "second" },
+            { "level": 8, "answer": "nail" },
+            { "level": 9, "answer": "minute" },
+            { "level": 10, "answer": "project" }
         ]
     },
     "9": {
         "coins": 200,
         "stages": [
-            {
-                "level": 1,
-                "answer": "wind",
-                "image1": "https://cdn3.volusion.com/zdsjj.aemfk/v/vspfiles/photos/WG500W-AP-2.jpg?v-cache=1557309196",
-                "image2": "https://cdn.shopify.com/s/files/1/0558/2081/articles/Avatarexcerptimage_grande_f4e16670-683a-47a6-9ab7-be07541b211a_1920x640_crop_center.progressive.jpg?v=1581592772",
-                "image3": "https://thecatinstitute.com/wp-content/uploads/2019/07/Adjuster-Training-101-tornado.jpg",
-                "image4": "https://images-na.ssl-images-amazon.com/images/I/41g3zoofDzL.jpg"
-            },
-            {
-                "level": 2,
-                "answer": "object",
-                "image1": "https://as2.ftcdn.net/v2/jpg/00/93/74/93/500_F_93749394_JKajEjPHjvJdYpI9hToz5kYZSPPunPvw.jpg",
-                "image2": "https://c.neh.tw/thumb/f/720/24e805d3a94d42b9a9ea.jpg",
-                "image3": "https://static.nieuwsblad.be/Assets/Images_Upload/2017/12/14/bcb8ea3a-e0cd-11e7-9ed3-134d55309331_web_scale_0.0607639_0.0607639__.jpg?maxheight=550&maxwidth=550&scale=both",
-                "image4": "https://pbs.twimg.com/profile_images/745604660/twothumbsdown.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "season",
-                "image1": "https://www.thenewdealer.org/wp-content/uploads/2016/10/38_When-Autumn-Leaves-Start-To-Fall-500x500.jpg",
-                "image2": "https://i1.sndcdn.com/artworks-000381738771-sy59mh-t500x500.jpg",
-                "image3": "https://www.monticello.org/files/pages/square-xsml-garden-winding-walk-monticello-jlooney-26aug2013-0.jpg",
-                "image4": "https://cdn.wallpapersafari.com/86/60/ONJcdC.png"
-            },
-            {
-                "level": 4,
-                "answer": "squash",
-                "image1": "https://st4.depositphotos.com/4111759/20337/v/600/depositphotos_203373638-stock-illustration-big-foot-stepping-on-businessman.jpg",
-                "image2": "https://i5.walmartimages.com/asr/711ad88c-6299-46db-9281-868b819c11c6_1.81e6d5477978b392bcb5c90a3a278388.jpeg",
-                "image3": "https://d11jpnl4uum05e.cloudfront.net/fit-in/500x500/images/newproducts/cimage5c8941ed54274.jpg",
-                "image4": "https://theforkedspoon.com/wp-content/uploads/2015/10/how-to-roast-acorn-squash-2-500x500.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "mine",
-                "image1": "https://tiermaker.com/images/templates/5555791598206538.png",
-                "image2": "https://dnitt.com/wp-content/uploads/2019/02/Pickaxe.jpg",
-                "image3": "https://miro.medium.com/max/500/1*0m-qUk9LUTj9LQw5rVFCfQ.png",
-                "image4": "https://assets-production.mochi.media/products/6894/photos/square_thumbnail_51075-minesweeper-postcard-429771.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "row",
-                "image1": "https://www.whitehallrow.com/wp-content/uploads/2016/09/Diana-Lesieur-Oar-Board-SUP-Rower-Fitness-Outdoor-Recreation-Sports-Whitehall-Rowing-and-Sail-500x500.jpg",
-                "image2": "https://i.pinimg.com/564x/00/73/8a/00738a3d8f979a34c99dc0190d749534.jpg",
-                "image3": "https://witheyshealthfoods.com/portals/142/Content/Graphics/Withey-Health-Foods-Kalispell-Organic_Supplements_IMG.jpg",
-                "image4": "https://www.rowingcrazy.com/wp-content/uploads/2020/04/41IJwtqhqUL-2.jpg"
-            },
-            {
-                "level": 7,
-                "answer": "park",
-                "image1": "https://s3.amazonaws.com/images.hamlethub.com/hhresized/500/67/202109/governor-street-lot-1631566425.JPG",
-                "image2": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3302798_ac0fb_hd.jpeg",
-                "image3": "https://c1.vgtstatic.com/thumb/2/4/242811-v1-xl/temple-street-parking-garage-by-paul-rudolph.jpg",
-                "image4": "https://www.bylinebank.com/wp-content/uploads/2020/08/wickerpark-lg-500x500-1-500x500.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "powder",
-                "image1": "https://www.shefinds.com/files/2018/06/makeup-right-order.jpg",
-                "image2": "https://m.media-amazon.com/images/I/51TjQfS-gfL.jpg",
-                "image3": "https://cdn11.bigcommerce.com/s-1kqh9qmybo/products/30468/images/156079/sw170231-a_2_hr__64616.1588870911.500.750.jpg?c=2",
-                "image4": "https://cdn.intotherainforest.com/cache/catalog/product-image/a-f/ecuadorian-rainforest-clove-powder-500x500-500x500.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "quiet",
-                "image1": "https://i.pinimg.com/originals/f6/15/22/f61522b075d5b6b497e9d2541622cc67.jpg",
-                "image2": "https://www.library.jhu.edu/wp-content/uploads/sites/3/2021/01/mse-jhu-stacks-500x500.jpg",
-                "image3": "https://i.pinimg.com/564x/71/7b/88/717b883e8288ecae8677b100dc64bd0f.jpg",
-                "image4": "https://m.media-amazon.com/images/I/61k-OGE-JiL._SS500_.jpg"
-            },
-            {
-                "level": 10,
-                "answer": "spiral",
-                "image1": "https://images.globalindustrial.com/images/500x500/Reroute-42in-Galv-Vinyl_HR.jpg?t=1615438800000",
-                "image2": "https://img-new.cgtrader.com/items/2529415/d44c34adcd/large/dna-double-helix-3d-model-low-poly-max-obj-3ds-fbx-dxf-blend.jpg",
-                "image3": "https://i5.walmartimages.com/asr/58fb9b0e-faa5-47ea-af1e-6a7921fe07f6_1.aefa97701149b763d784e0f0a91b6417.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-                "image4": "https://m.media-amazon.com/images/I/51lwOHgtbZS._AC_.jpg"
-            }  
+            { "level": 1, "answer": "wind" },
+            { "level": 2, "answer": "object" },
+            { "level": 3, "answer": "squash" },
+            { "level": 4, "answer": "season" },
+            { "level": 5, "answer": "mine" },
+            { "level": 6, "answer": "row" },
+            { "level": 7, "answer": "park" },
+            { "level": 8, "answer": "powder" },
+            { "level": 9, "answer": "quiet" },
+            { "level": 10, "answer": "spiral" }
         ]
     },
     "10": {
         "coins": 300,
         "stages": [
-            {
-                "level": 1,
-                "answer": "type",
-                "image1": "https://assets2.razerzone.com/images/pnx.assets/9732ff8f142d1addf175aca151a7192d/razer-cynosa-v2-500x500.png",
-                "image2": "https://sherpasforlife.com/wp-content/uploads/2019/03/personalitytypes500x500web.png",
-                "image3": "https://i.ebayimg.com/images/g/PKEAAOSw5Clfxx05/s-l640.png",
-                "image4": "https://miro.medium.com/max/500/1*nw77UxuIhKkBJ88tJf3GoQ.jpeg"
-            },
-            {
-                "level": 2,
-                "answer": "racket",
-                "image1": "https://i5.walmartimages.com/asr/711ad88c-6299-46db-9281-868b819c11c6_1.81e6d5477978b392bcb5c90a3a278388.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-                "image2": "https://i.pinimg.com/474x/b9/cc/9d/b9cc9d60f90a320f28baa3335083fc1d.jpg",
-                "image3": "https://badmintonoceania.org/wp-content/uploads/2020/06/20180502-IMG_0945-Alyssa-Tagle-Credit-Jonathon-Stone-Badminton-New-Zealand-2-500x500.jpg",
-                "image4": "https://images-na.ssl-images-amazon.com/images/I/51Af0K08neL.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "arrest",
-                "image1": "https://www.kroger.com/product/images/large/front/0069821610684",
-                "image2": "https://www.atxbb.com/site/wp-content/uploads/man-in-business-suit-is-handcuffed-e1566936723693.jpg",
-                "image3": "https://images.lifesizecustomcutouts.com/image/cache/catalog/incoming/image/data/incoming/scott/AG2398-500x500.webp",
-                "image4": "https://i.pinimg.com/564x/83/d0/ab/83d0ab2f7fbff44a3297370dc90d7db1.jpg"
-            },
-            {
-                "level": 4,
-                "answer": "ballet",
-                "image1": "https://cdn.wallpapersafari.com/7/29/zAWiOl.jpg",
-                "image2": "https://cdn11.bigcommerce.com/s-3327e/products/1384/images/11081/Capezio-Love-Ballet-Full-Sole-Ballet-Shoes-Childrens-2035C__99267.1541812163.500.659.jpg?c=2",
-                "image3": "https://i.pinimg.com/564x/78/58/65/785865ad3059bda634c61240c6ecd2c9.jpg",
-                "image4": "https://www.greatmats.com/images/rosco/rosco-reversible-marley-fouette-500.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "hiphop",
-                "image1": "http://hw-img.datpiff.com/md8ff127/JAY-Z_Best_Of_Jay-z_Vol1-front-large.jpg",
-                "image2": "https://i1.sndcdn.com/avatars-000233480870-zyw911-t500x500.jpg",
-                "image3": "https://i.pinimg.com/564x/47/2f/16/472f168e6c14e0f94cbe8281181206bd.jpg",
-                "image4": "https://www.triplethreatdc.com/wp-content/uploads/2017/03/Hip-Hop-Dance-1.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "lucky",
-                "image1": "https://res.cloudinary.com/general-mills/image/upload/q_auto,f_auto/luckyCharmsUS/wp-content/uploads/2020/08/Webp.net-resizeimage-24-500x500.jpg",
-                "image2": "https://cdn.shopify.com/s/files/1/0153/9276/8100/products/pnd-9621__1.jpg?v=1575511258",
-                "image3": "https://partycity.scene7.com/is/image/PartyCity/_sq_?$_500x500_$&$product=PartyCity/814399_full",
-                "image4": "https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_500x500_$&$product=PartyCity/815643"
-            },
-            {
-                "level": 7,
-                "answer": "remove",
-                "image1": "https://m.media-amazon.com/images/I/41qn-awSs1L.jpg",
-                "image2": "https://thumbs.dreamstime.com/b/claw-hammer-shown-removing-large-galvanized-nail-piece-wood-claw-hammer-removing-nail-100310529.jpg",
-                "image3": "https://freesvg.org/img/TzeenieWheenie_red_green_OK_not_OK_Icons_1.png",
-                "image4": "https://m.media-amazon.com/images/I/41+-Jrf4VQL.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "lawyer",
-                "image1": "https://webcdn.ultimatesoftware.com/static/images/webcasts/working-from-home.jpg",
-                "image2": "https://www.law.ufl.edu/law/wp-content/uploads/2017/10/negotiation-competition.jpg",
-                "image3": "https://www.ivybound.net/wp-content/uploads/2020/04/LSAT-Logo.png",
-                "image4": "https://debruinlawfirm.com/wp-content/uploads/2016/07/lawyer-and-attorney-having-team-meeting-at-law-firm_t20_wQxQzL-500x500.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "waiter",
-                "image1": "https://hips.hearstapps.com/del.h-cdn.co/assets/cm/15/10/54f96061d824e_-_waiter-del0912-def.jpg",
-                "image2": "https://www.sereneoaksdental.com/wp-content/uploads/2020/07/Man-looking-at-watch.jpg",
-                "image3": "https://www.datacubed.com/wp-content/uploads/2020/11/Young-Man-in-Doctor-Waiting-Room-500x500.png",
-                "image4": "https://cdn.shopify.com/s/files/1/1216/2612/products/5139E_Dt84L_grande.jpg?v=1610797035"
-            },
-            {
-                "level": 10,
-                "answer": "escape",
-                "image1": "https://media.istockphoto.com/photos/prison-inmate-running-away-picture-id174834144?k=20&m=174834144&s=612x612&w=0&h=ksLT7QhiDeCdfiqEyMyxf-mvP3DZfmzMhn2rB7-OHMk=",
-                "image2": "https://i.pinimg.com/originals/19/07/f2/1907f24d59e26072cc403b0d9257b330.jpg",
-                "image3": "https://www.rocknwater.com/wp-content/uploads/fb-product-backpacking-rock-jump-high-canyoneering-500x500.jpg",
-                "image4": "https://i1.sndcdn.com/artworks-000187157087-anw4pu-t500x500.jpg"
-            }  
+            { "level": 1, "answer": "type" },
+            { "level": 2, "answer": "racket" },
+            { "level": 3, "answer": "arrest" },
+            { "level": 4, "answer": "ballet" },
+            { "level": 5, "answer": "hiphop" },
+            { "level": 6, "answer": "lucky" },
+            { "level": 7, "answer": "remove" },
+            { "level": 8, "answer": "lawyer" },
+            { "level": 9, "answer": "waiter" },
+            { "level": 10, "answer": "escape" }
         ]
     },
     "11": {
         "coins": 300,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "12": {
         "coins": 300,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "13": {
         "coins": 350,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "14": {
         "coins": 350,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "15": {
         "coins": 350,
         "stages": [
-            {
-                "level": 1,
-                "answer": "vowel",
-                "image1": "https://www.wallpapertip.com/wmimgs/11-113641_cool-profile-picture-letter.jpg",
-                "image2": "https://s3.amazonaws.com/static.graphemica.com/glyphs/i500s/000/001/345/original/0069-500x500.png?1275289919",
-                "image3": "https://cdn.shopify.com/s/files/1/0034/1282/products/varsity-letter-E-cookie-cutter_grande_577eadbc-223d-4d90-8f74-ff9cb1b76544_grande.png?v=1501677716",
-                "image4": "https://s3.amazonaws.com/static.graphemica.com/glyphs/i500s/000/013/010/original/004F-500x500.png?1275335954"
-            },
-            {
-                "level": 2,
-                "answer": "letter",
-                "image1": "https://s3.amazonaws.com/static.graphemica.com/glyphs/i500s/000/002/004/original/0058-500x500.png?1275291789",
-                "image2": "https://static.lcipaper.com/img/cache/EUROGCL7E-SNWmed.png",
-                "image3": "https://render.fineartamerica.com/images/rendered/default/throw-pillow/images/artworkimages/medium/1/1-the-victory-of-death-letter-written-by-the-alamo-commander-william-barret-travis-1836-william-barret-travis.jpg?&targetx=-71&targety=0&imagewidth=621&imageheight=479&modelwidth=479&modelheight=479&backgroundcolor=C7C7C7&orientation=0&producttype=throwpillow-14-14",
-                "image4": "https://www.hrwebadvisor.com/media/catalog/product/cache/a5ae640b026d09d8960bbbda9c675d6f/b/u/business_writing__easy_tips_and_tricks_to_improve_your_skills.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "bitter",
-                "image1": "https://desibasket.com/image/cache/catalog/vegetables-fruits/vegetables/indian-specialities/bitter-gourd-500x500.jpg",
-                "image2": "https://i1.sndcdn.com/artworks-qcb8Gvqj5ck7oyic-uh2zbw-t500x500.jpg",
-                "image3": "https://www.jessicagavin.com/wp-content/uploads/2019/10/how-to-cook-kale-9-1200-500x500.jpg",
-                "image4": "https://www.statnews.com/wp-content/uploads/2017/09/AP6925286-645x645.jpg"
-            },
-            {
-                "level": 4,
-                "answer": "hawaii",
-                "image1": "https://epichawaiirealestate.com/wp-content/uploads/2019/11/Hawaii-sunset-500x500.jpg",
-                "image2": "https://i.ebayimg.com/images/g/5B0AAOSwPPxeT1k4/s-l500.jpg",
-                "image3": "https://dishcrawl.com/wp-content/uploads/2021/08/hawaiian-pizza-recipe-500x500.jpg",
-                "image4": "https://i1.sndcdn.com/artworks-UkecbIeTKlm1xZ4T-zk334w-t500x500.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "drawer",
-                "image1": "https://cdn11.bigcommerce.com/s-3co51jazb3/images/stencil/500x659/products/250/467/09007__44469.1525810210.jpg?c=2",
-                "image2": "https://edgewatergallery.co/wp-content/uploads/2018/01/twals-artistimage-500x500.jpg",
-                "image3": "https://cdn.shopify.com/s/files/1/0257/4827/5266/products/NS105G6399-OpenDrawerAngle_24cc8549-3c07-4976-8f4b-c87e48e8ec74_2048x.jpg?v=1610652980",
-                "image4": "https://www.speedballart.com/wp-content/uploads/2018/09/Untitled10-e1537276841369-500x500.png"
-            },
-            {
-                "level": 6,
-                "answer": "moving",
-                "image1": "https://runtrimag.com/wp-content/uploads/2021/04/Cheryl2-500x500.jpg",
-                "image2": "https://mma.prnewswire.com/media/1394308/U_Haul_Growth_Cities_North_Port_Fla.jpg?w=500",
-                "image3": "https://s3.envato.com/files/231159101/DSC_3079.jpg",
-                "image4": "https://images.globalindustrial.com/images/500x500/191700_12.jpg?t=1631868211020"
-            },
-            {
-                "level": 7,
-                "answer": "lottery",
-                "image1": "https://www.casinous.com/wp-content/uploads/2020/09/do-slots-pay-at-night.jpg",
-                "image2": "https://hoosierlottery.com/getmedia/fcc247c9-ebf4-4d8c-877e-095145bd5914/2381-$500-Grand_384x356.png?width=384&height=356&ext=.png",
-                "image3": "https://lottery.sd.gov/img/Sliders/GiveMeFivePrizeHunt.png",
-                "image4": "https://m.media-amazon.com/images/I/516C7bz4THS._AC_.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "plastic",
-                "image1": "https://5.imimg.com/data5/FS/HL/MY-37756976/500ml-water-bottle-500x500.jpg",
-                "image2": "https://5.imimg.com/data5/TestImages/NP/FH/ZK/SELLER-22715468/nilkamal-plastic-crates-500x500.jpg",
-                "image3": "https://m.media-amazon.com/images/I/51NE9gMLpHL.jpg",
-                "image4": "https://i5.walmartimages.com/asr/1dcfeed4-a729-4a58-ba5e-4d5459adc8b3.e55d50b04b10ff42a4b6c25ebbef3293.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-            },
-            {
-                "level": 9,
-                "answer": "package",
-                "image1": "https://i5.walmartimages.com/asr/bfbb9fd1-8256-4626-a471-6ba7a0928e2d.274435a62ebc15f003cff24849e74b6b.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
-                "image2": "https://www.centralmosquitocontrol.com/-/media/Images/CentralMosquitoControl-NA/US/Product%20Images/FourStar/FourStar180dayBriquets_product_500x500%20jpg.jpg",
-                "image3": "https://cdn.shopify.com/s/files/1/0164/3616/6710/products/4-25x6-75-Premium-Labels5_500x500.jpg?v=1589580548",
-                "image4": "https://i.pinimg.com/originals/9b/9e/31/9b9e31f6cb5f4cfcc19e90ef3f761061.png"
-            },
-            {
-                "level": 10,
-                "answer": "effects",
-                "image1": "https://m.media-amazon.com/images/I/413h7rsTJcS._SL500_.jpg",
-                "image2": "d4/f028d46214f16903fb4845a7b71141eb",
-                "image3": "https://pbs.twimg.com/media/DZkQOKVX0AAlnXL.jpg",
-                "image4": "https://i5.walmartimages.com/asr/19bd46f2-dd0b-4e2c-b9ac-4659ac6d43ec_1.785c1d9e4a65aecee93eb9c9dfb8ec88.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-            }    
+            { "level": 1, "answer": "vowel" },
+            { "level": 2, "answer": "letter" },
+            { "level": 3, "answer": "bitter" },
+            { "level": 4, "answer": "hawaii" },
+            { "level": 5, "answer": "drawer" },
+            { "level": 6, "answer": "moving" },
+            { "level": 7, "answer": "lottery" },
+            { "level": 8, "answer": "plastic" },
+            { "level": 9, "answer": "package" },
+            { "level": 10, "answer": "effects" }
         ]
     },
     "16": {
         "coins": 400,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "17": {
         "coins": 400,
         "stages": [
-            {
-                "level": 1,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 2,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 3,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 4,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 5,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 6,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 7,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 8,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 9,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            },
-            {
-                "level": 10,
-                "answer": "",
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
+            { "level": 1, "answer": "" },
+            { "level": 2, "answer": "" },
+            { "level": 3, "answer": "" },
+            { "level": 4, "answer": "" },
+            { "level": 5, "answer": "" },
+            { "level": 6, "answer": "" },
+            { "level": 7, "answer": "" },
+            { "level": 8, "answer": "" },
+            { "level": 9, "answer": "" },
+            { "level": 10, "answer": "" }
         ]
     },
     "18": {
         "coins": 400,
         "stages": [
-            {
-                "level": 1,
-                "answer": "sausage",
-                "image1": "https://www.cajun.com/image/cache/catalog/product/MaBell's-Hot-Smoked-Sausage-10-lbs-500x500.png",
-                "image2": "http://www.hot-dog.org/sites/default/files/gallery/regional/regional-B6-Grilled-Hot-Dog-Naked-LR.jpg",
-                "image3": "https://borrowedbites.com/wp-content/uploads/2020/10/Square-Piece-of-Chicken-Apple-Sausage-in-Maple-Mustard-Glaze-on-Toothpick-500x500.jpg",
-                "image4": "https://cdn.shopify.com/s/files/1/2344/4835/products/TuscanBasilSausage_500x500_crop_center.jpg?v=1594232590"
-            },
-            {
-                "level": 2,
-                "answer": "storage",
-                "image1": "https://cdn11.bigcommerce.com/s-4iwwq93j/products/3603/images/9197/WD15600-2__11349.1478280124.500.659.jpg?c=2",
-                "image2": "https://m.media-amazon.com/images/I/51-qXRjQxZL.jpg",
-                "image3": "https://www.texasqualitybuildings.com/uploads/1/0/8/9/108927431/new-garage-500x500-tqb-062718-cmprsd-49k_1_orig.jpg",
-                "image4": "https://images.homify.com/image/upload/c_scale,h_500,w_500/v1438467850/p/photo/image/333272/P1020083.jpg"
-            },
-            {
-                "level": 3,
-                "answer": "amplify",
-                "image1": "https://media.guitarcenter.com/is/image/MMGS7/SM7B-Cardioid-Dynamic-Microphone/270247000000000-00-500x500.jpg",
-                "image2": "https://www.bhphotovideo.com/images/images500x500/RSQ_Audio_SR_500_SR_500_Professional_Karaoke_Speaker_810040.jpg",
-                "image3": "https://www.encoredataproducts.com/images/products/preview/pa-8.jpg",
-                "image4": "https://i.pinimg.com/originals/cc/90/8e/cc908ec008399457767b1d49d72455b3.jpg"
-            },
-            {
-                "level": 4,
-                "answer": "hydrate",
-                "image1": "https://m.media-amazon.com/images/I/41PeVR6BHtL.jpg",
-                "image2": "https://5.imimg.com/data5/GV/DP/MY-3831378/500ml-plastic-water-bottle-500x500.jpg",
-                "image3": "https://alexongroup.com/image/cache/catalog/product/31-020-500x500.jpg",
-                "image4": "https://yebilo.com/wp-content/uploads/2020/07/Gatorade.jpg"
-            },
-            {
-                "level": 5,
-                "answer": "pollute",
-                "image1": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/132/2020/04/12210304/air-pollution_marshall.jpg",
-                "image2": "https://grandstrandmag.com/sites/default/files/styles/500x500/public/Mar-SQUARE.jpg?itok=fPyaVfkQ",
-                "image3": "https://haulaways.net/wp-content/uploads/2021/01/HOME_JUNK_REMOVAL.jpg",
-                "image4": "https://i1.sndcdn.com/artworks-000178388498-7g6zzo-t500x500.jpg"
-            },
-            {
-                "level": 6,
-                "answer": "equator",
-                "image1": "https://d39qw52yhr4bcj.cloudfront.net/catalog/product/cache/9/image/500x500/9df78eab33525d08d6e5fb8d27136e95/b/0/b0734tw6p5.jpg",
-                "image2": "https://m.media-amazon.com/images/I/61SZT8FthyL._AC_SY580_.jpg",
-                "image3": "https://post.healthline.com/wp-content/uploads/2018/10/Sweat_Female_Face-732x549-Thumbnail.jpg",
-                "image4": "https://i1.sndcdn.com/artworks-000559281531-6d0l2y-t500x500.jpg"
-            },
-            {
-                "level": 7,
-                "answer": "victory",
-                "image1": "https://img-new.cgtrader.com/items/667014/e0e13426d3/large/checkered-flag-for-finish-line-or-race-3d-model-max-obj-3ds-fbx-mtl.jpg",
-                "image2": "https://cdn10.bigcommerce.com/s-aub1q7pn32/products/15148/images/40643/WCM861-CUSTOM__10172.1553197946.500.750.jpg?c=2",
-                "image3": "https://medialibrarycdn.entrata.com/media_library/12876/sports_bar_goodyear_az-1574289306.jpg",
-                "image4": "https://i1.sndcdn.com/artworks-000096734734-fed4bw-t500x500.jpg"
-            },
-            {
-                "level": 8,
-                "answer": "perform",
-                "image1": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F0258f2e8-eb5c-11e9-aefb-a946d2463e4b?source=google-amp&fit=scale-down&width=500",
-                "image2": "https://mesaartscenter.com/sysimg/media-box-image-shows-performing-live-cirque-musica-holiday-spectacular-media-box-26257-image.jpg",
-                "image3": "https://production-next-images-cdn.thumbtack.com/i/345026346915291139/desktop/retina/centered_large_thumb",
-                "image4": "https://ieeecs-media.computer.org/wp-media/2018/09/13224409/concert-crowd-500x500.jpg"
-            },
-            {
-                "level": 9,
-                "answer": "gesture",
-                "image1": "https://assets.pinshape.com/uploads/image/file/248657/container_thumb-up-hand-sign-gesture-male-3d-printing-248657.jpg",
-                "image2": "https://contents.pep.ph/images2/images2/2019/08/30/ok-1567158262.jpg",
-                "image3": "https://assets.pinshape.com/uploads/image/file/248651/container_pointing-hand-point-gesture-male-3d-printing-248651.jpg",
-                "image4": "https://contents.pep.ph/images2/images2/2019/08/30/peace-1567155788.jpg"
-            },
-            {
-                "level": 10,
-                "answer": "uniform",
-                "image1": "https://5.imimg.com/data5/HH/SQ/FA/SELLER-90861833/school-uniform-500x500.jpg",
-                "image2": "https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_500x500_$&$product=PartyCity/P178115_02",
-                "image3": "https://i5.walmartimages.com/asr/5428cb67-9882-4287-9b0a-e1e988ab0465_1.8fb0ea4d49ec7d777cbf5d3a5c0b5265.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-                "image4": "https://img.24sata.hr/QeILYIqtryLopFay6LTZYrMnTCk=/622x0/smart/media/images/2017-48/pxl_reu_271117_18848927.jpg"
-            }
+            { "level": 1, "answer": "sausage" },
+            { "level": 2, "answer": "storage" },
+            { "level": 3, "answer": "amplify" },
+            { "level": 4, "answer": "hydrate" },
+            { "level": 5, "answer": "pollute" },
+            { "level": 6, "answer": "equator" },
+            { "level": 7, "answer": "victory" },
+            { "level": 8, "answer": "perform" },
+            { "level": 9, "answer": "gesture" },
+            { "level": 10, "answer": "uniform" }
         ]
     }
 }
