@@ -5,18 +5,18 @@
             {
                 "level": 1,
                 "answer": "dog",
-                "image1": "https://images.squarespace-cdn.com/content/v1/55a2bffae4b037baec79f96e/1573668974810-VPJEUFYJBQQMJLAMUEB4/Norbio.jpeg",
-                "image2": "https://spiritdogtraining.com/wp-content/uploads/2021/02/samoyed.jpg",
-                "image3": "https://i1.sndcdn.com/avatars-000560768412-fgpz9h-t500x500.jpg",
-                "image4": "https://live.staticflickr.com/7480/16287774216_e1a44c09c5.jpg"
+                "image1": "https://www.howitworksdaily.com/wp-content/uploads/2015/08/131216Cute-dog-sticking-out-his-tongue-wallpaper-200x200.jpg",
+                "image2": "https://i.pinimg.com/236x/eb/a3/40/eba340542eab5489dc68073c6c6a43c2.jpg",
+                "image3": "https://dailydoseofpositiveliving.files.wordpress.com/2020/05/dog_samoyed_mobile.jpg?resize=200%2C200",
+                "image4": "https://www.graylinealaska.com/wp-content/uploads/2016/04/Siberian-Husky.jpg"
             },
             {
                 "level": 2,
                 "answer": "cat",
-                "image1": "https://www.guildinsurance.com.au/images/librariesprovider3/breed-images/500x500/tabby-(1)-(1).jpg?sfvrsn=b28f650b_2",
-                "image2": "https://images-na.ssl-images-amazon.com/images/I/81BES+tsVvL.png",
-                "image3": "https://pawsitivepotential.com/wp-content/uploads/2016/05/Tongue-Kitten-500x500_t.jpg",
-                "image4": "https://uploads.scratch.mit.edu/users/avatars/65809176.png"
+                "image1": "https://cdn-japantimes.com/wp-content/uploads/2020/06/np_file_17403-200x200.jpeg",
+                "image2": "https://gifts.worldwildlife.org/gift-center/Images/multistepcart/cart-black-footed-cat-photo.jpg",
+                "image3": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0012/1152/brand.gif?itok=ZNhik6gG",
+                "image4": "https://i.pinimg.com/564x/a9/39/52/a93952379d9b4f44e413df0118e57b1b.jpg"
             },
             {
                 "level": 3,
@@ -85,7 +85,7 @@
         ]
     },
     "2": {
-        "coins": 150,
+        "coins": 100,
         "stages": [
             {
                 "level": 1,
@@ -170,12 +170,12 @@
         ]
     },
     "3": {        
-        "coins": 200,
+        "coins": 100,
         "stages": [
             {
                 "level": 1,
-                "answer": "",
-                "image1": "",
+                "answer": "moon",
+                "image1": "https://www.howitworksdaily.com/wp-content/uploads/2015/10/FullMoon2010-200x200.jpg",
                 "image2": "",
                 "image3": "",
                 "image4": ""
@@ -255,7 +255,7 @@
         ]    
     },
     "4": {
-        "coins": 250,
+        "coins": 150,
         "stages": [
             {
                 "level": 1,
@@ -340,7 +340,7 @@
         ]
     },
     "5": {
-        "coins": 300,
+        "coins": 150,
         "stages": [
             {
                 "level": 1,
@@ -425,7 +425,7 @@
         ]
     },
     "6": {
-        "coins": 350,
+        "coins": 150,
         "stages": [
             {
                 "level": 1,
@@ -510,7 +510,7 @@
         ]
     },
     "7": {
-        "coins": 400,
+        "coins": 200,
         "stages": [
             {
                 "level": 1,
@@ -595,7 +595,7 @@
         ]
     },
     "8": {
-        "coins": 450,
+        "coins": 200,
         "stages": [
             {
                 "level": 1,
@@ -680,7 +680,7 @@
         ]
     },
     "9": {
-        "coins": 500,
+        "coins": 200,
         "stages": [
             {
                 "level": 1,
@@ -765,7 +765,7 @@
         ]
     },
     "10": {
-        "coins": "",
+        "coins": 300,
         "stages": [
             {
                 "level": 1,
@@ -850,7 +850,7 @@
         ]
     },
     "11": {
-        "coins": "",
+        "coins": 300,
         "stages": [
             {
                 "level": 1,
@@ -935,7 +935,7 @@
         ]
     },
     "12": {
-        "coins": "",
+        "coins": 300,
         "stages": [
             {
                 "level": 1,
@@ -1020,7 +1020,7 @@
         ]
     },
     "13": {
-        "coins": "",
+        "coins": 350,
         "stages": [
             {
                 "level": 1,
@@ -1105,7 +1105,7 @@
         ]
     },
     "14": {
-        "coins": "",
+        "coins": 350,
         "stages": [
             {
                 "level": 1,
@@ -1190,7 +1190,7 @@
         ]
     },
     "15": {
-        "coins": "",
+        "coins": 350,
         "stages": [
             {
                 "level": 1,
@@ -1275,7 +1275,7 @@
         ]
     },
     "16": {
-        "coins": "",
+        "coins": 400,
         "stages": [
             {
                 "level": 1,
@@ -1360,7 +1360,7 @@
         ]
     },
     "17": {
-        "coins": "",
+        "coins": 400,
         "stages": [
             {
                 "level": 1,
@@ -1445,7 +1445,7 @@
         ]
     },
     "18": {
-        "coins": "",
+        "coins": 400,
         "stages": [
             {
                 "level": 1,
