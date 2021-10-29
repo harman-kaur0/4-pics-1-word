@@ -145,7 +145,7 @@ const data = {
                 require("../assets/images/3/star/4.png")
             ]},
             { "level": 3, "answer": "sun", "images": [
-                require("../assets/images/3/sun/1.png"),
+                require("../assets/images/2/star/2.png"),
                 require("../assets/images/3/sun/2.png"),
                 require("../assets/images/3/sun/3.png"),
                 require("../assets/images/3/sun/4.png")
@@ -157,7 +157,7 @@ const data = {
                 require("../assets/images/3/space/4.png")
             ]},
             { "level": 5, "answer": "milky", "images": [
-                require("../assets/images/3/milky/1.png"),
+                require("../assets/images/3/space/2.png"),
                 require("../assets/images/3/milky/2.png"),
                 require("../assets/images/3/milky/3.png"),
                 require("../assets/images/3/milky/4.png")
@@ -175,20 +175,20 @@ const data = {
                 require("../assets/images/3/alien/4.png")
             ]},
             { "level": 8, "answer": "planet", "images": [
-                require("../assets/images/3/planet/1.png"),
+                require("../assets/images/3/dwarf/2.png"),
                 require("../assets/images/3/planet/2.png"),
                 require("../assets/images/3/planet/3.png"),
-                require("../assets/images/3/planet/4.png")
+                require("../assets/images/3/milky/4.png")
             ]},
             { "level": 9, "answer": "meteor", "images": [
                 require("../assets/images/3/meteor/1.png"),
                 require("../assets/images/3/meteor/2.png"),
-                require("../assets/images/3/meteor/3.png"),
+                require("../assets/images/3/space/3.png"),
                 require("../assets/images/3/meteor/4.png")
             ]},
             { "level": 10, "answer": "earth", "images": [
                 require("../assets/images/3/earth/1.png"),
-                require("../assets/images/3/earth/2.png"),
+                require("../assets/images/3/planet/2.png"),
                 require("../assets/images/3/earth/3.png"),
                 require("../assets/images/3/earth/4.png")
             ]}
