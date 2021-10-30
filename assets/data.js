@@ -145,7 +145,7 @@ const data = {
                 require("../assets/images/3/star/4.png")
             ]},
             { "level": 3, "answer": "sun", "images": [
-                require("../assets/images/2/star/2.png"),
+                require("../assets/images/3/star/2.png"),
                 require("../assets/images/3/sun/2.png"),
                 require("../assets/images/3/sun/3.png"),
                 require("../assets/images/3/sun/4.png")
