@@ -263,64 +263,64 @@ const data = {
         "coins": 150,
         "stages": [
             { "level": 1, "answer": "ball", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/ball/1.png"),
+                require("../assets/images/5/ball/2.png"),
+                require("../assets/images/5/ball/3.png"),
+                require("../assets/images/5/ball/4.png")
             ]},
             { "level": 2, "answer": "fruit", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/2/violet/2.png"),
+                require("../assets/images/2/red/2.png"),
+                require("../assets/images/2/black/2.png"),
+                require("../assets/images/2/blue/4.png")
             ]},
             { "level": 3, "answer": "pet", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/1/cat/1.png"),
+                require("../assets/images/1/dog/2.png"),
+                require("../assets/images/5/pet/1.png"),
+                require("../assets/images/5/pet/2.png")
             ]},
             { "level": 4, "answer": "shoes", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/shoes/1.png"),
+                require("../assets/images/5/shoes/2.png"),
+                require("../assets/images/5/shoes/3.png"),
+                require("../assets/images/5/shoes/4.png")
             ]},
             { "level": 5, "answer": "time", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/time/1.png"),
+                require("../assets/images/10/waiter/2.png"),
+                require("../assets/images/5/time/3.png"),
+                require("../assets/images/5/time/4.png")
             ]},
             { "level": 6, "answer": "upset", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/upset/1.png"),
+                require("../assets/images/5/upset/2.png"),
+                require("../assets/images/5/upset/3.png"),
+                require("../assets/images/5/emoji/4.png")
             ]},
             { "level": 7, "answer": "smile", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/emoji/1.png"),
+                require("../assets/images/5/smile/2.png"),
+                require("../assets/images/5/smile/3.png"),
+                require("../assets/images/5/smile/4.png")
             ]},
             { "level": 8, "answer": "stage", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/stage/1.png"),
+                require("../assets/images/5/stage/2.png"),
+                require("../assets/images/5/stage/3.png"),
+                require("../assets/images/5/stage/4.png")
             ]},
             { "level": 9, "answer": "dance", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/10/ballet/1.png"),
+                require("../assets/images/5/dance/2.png"),
+                require("../assets/images/10/hiphop/3.png"),
+                require("../assets/images/5/dance/4.png")
             ]},
             { "level": 10, "answer": "emoji", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/5/emoji/1.png"),
+                require("../assets/images/5/emoji/2.png"),
+                require("../assets/images/5/emoji/3.png"),
+                require("../assets/images/5/emoji/4.png")
             ]}
         ]
     },
@@ -624,7 +624,7 @@ const data = {
                 require("../assets/images/10/lucky/4.png")
             ]},
             { "level": 7, "answer": "remove", "images": [
-                require("../assets/images/10/remove/1.png"),
+                require("../assets/images/2/red/1.png"),
                 require("../assets/images/10/remove/2.png"),
                 require("../assets/images/10/remove/3.png"),
                 require("../assets/images/10/remove/4.png")
@@ -1151,7 +1151,7 @@ const data = {
             ]},
             { "level": 8, "answer": "perform", "images": [
                 require("../assets/images/18/perform/1.png"),
-                require("../assets/images/18/perform/2.png"),
+                require("../assets/images/5/stage/4.png"),
                 require("../assets/images/18/perform/3.png"),
                 require("../assets/images/18/perform/4.png")
             ]},
