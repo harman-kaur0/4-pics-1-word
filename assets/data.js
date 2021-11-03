@@ -458,64 +458,64 @@ const data = {
         "coins": 200,
         "stages": [
             { "level": 1, "answer": "bow", "images": [
-                // require("../assets/images/8/bow/1.png"),
-                // require("../assets/images/8/bow/2.png"),
-                // require("../assets/images/8/bow/3.png"),
-                // require("../assets/images/8/bow/4.png")
+                require("../assets/images/2/pink/1.png"),
+                require("../assets/images/8/bow/2.png"),
+                require("../assets/images/8/bow/3.png"),
+                require("../assets/images/8/bow/4.png")
             ]},
             { "level": 2, "answer": "bat", "images": [
-                // require("../assets/images/8/bat/1.png"),
-                // require("../assets/images/8/bat/2.png"),
-                // require("../assets/images/8/bat/3.png"),
-                // require("../assets/images/8/bat/4.png")
+                require("../assets/images/8/bat/1.png"),
+                require("../assets/images/8/bat/2.png"),
+                require("../assets/images/8/bat/3.png"),
+                require("../assets/images/8/bat/4.png")
             ]},
             { "level": 3, "answer": "play", "images": [
-                // require("../assets/images/8/play/1.png"),
-                // require("../assets/images/8/play/2.png"),
-                // require("../assets/images/8/play/3.png"),
-                // require("../assets/images/8/play/4.png")
+                require("../assets/images/8/play/1.png"),
+                require("../assets/images/18/perform/2.png"),
+                require("../assets/images/8/play/3.png"),
+                require("../assets/images/8/play/4.png")
             ]},
             { "level": 4, "answer": "clip", "images": [
-                // require("../assets/images/8/clip/1.png"),
-                // require("../assets/images/8/clip/2.png"),
-                // require("../assets/images/8/clip/3.png"),
-                // require("../assets/images/8/clip/4.png")
+                require("../assets/images/8/clip/1.png"),
+                require("../assets/images/8/clip/2.png"),
+                require("../assets/images/8/clip/3.png"),
+                require("../assets/images/8/clip/4.png")
             ]},
             { "level": 5, "answer": "lead", "images": [
-                // require("../assets/images/8/lead/1.png"),
-                // require("../assets/images/8/lead/2.png"),
-                // require("../assets/images/8/lead/3.png"),
-                // require("../assets/images/8/lead/4.png")
+                require("../assets/images/8/lead/1.png"),
+                require("../assets/images/8/lead/2.png"),
+                require("../assets/images/8/lead/3.png"),
+                require("../assets/images/8/lead/4.png")
             ]},
             { "level": 6, "answer": "death", "images": [
-                // require("../assets/images/8/death/1.png"),
-                // require("../assets/images/8/death/2.png"),
-                // require("../assets/images/8/death/3.png"),
-                // require("../assets/images/8/death/4.png")
+                require("../assets/images/8/death/1.png"),
+                require("../assets/images/8/death/2.png"),
+                require("../assets/images/8/death/3.png"),
+                require("../assets/images/8/death/4.png")
             ]},
             { "level": 7, "answer": "second", "images": [
-                // require("../assets/images/8/second/1.png"),
-                // require("../assets/images/8/second/2.png"),
-                // require("../assets/images/8/second/3.png"),
-                // require("../assets/images/8/second/4.png")
+                require("../assets/images/8/second/1.png"),
+                require("../assets/images/8/second/2.png"),
+                require("../assets/images/8/second/3.png"),
+                require("../assets/images/5/time/3.png")
             ]},
             { "level": 8, "answer": "nail", "images": [
-                // require("../assets/images/8/nail/1.png"),
-                // require("../assets/images/8/nail/2.png"),
-                // require("../assets/images/7/sharp/3.png"),
-                // require("../assets/images/8/nail/4.png")
+                require("../assets/images/8/nail/1.png"),
+                require("../assets/images/8/nail/2.png"),
+                require("../assets/images/7/sharp/3.png"),
+                require("../assets/images/8/nail/4.png")
             ]},
             { "level": 9, "answer": "minute", "images": [
-                // require("../assets/images/8/minute/1.png"),
-                // require("../assets/images/8/minute/2.png"),
-                // require("../assets/images/8/minute/3.png"),
-                // require("../assets/images/8/minute/4.png")
+                require("../assets/images/8/minute/1.png"),
+                require("../assets/images/10/waiter/2.png"),
+                require("../assets/images/5/time/3.png"),
+                require("../assets/images/8/minute/4.png")
             ]},
             { "level": 10, "answer": "project", "images": [
-                // require("../assets/images/8/project/1.png"),
-                // require("../assets/images/8/project/2.png"),
-                // require("../assets/images/8/project/3.png"),
-                // require("../assets/images/8/project/4.png")
+                require("../assets/images/8/project/1.png"),
+                require("../assets/images/8/project/2.png"),
+                require("../assets/images/8/project/3.png"),
+                require("../assets/images/8/project/4.png")
             ]}
         ]
     },
