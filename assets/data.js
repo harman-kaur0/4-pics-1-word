@@ -423,34 +423,34 @@ const data = {
                 require("../assets/images/7/sharp/4.png")
             ]},
             { "level": 6, "answer": "bond", "images": [
-                // require("../assets/images/7/bond/1.png"),
-                // require("../assets/images/7/bond/2.png"),
-                // require("../assets/images/7/bond/3.png"),
-                // require("../assets/images/7/bond/4.png")
+                require("../assets/images/7/bond/1.png"),
+                require("../assets/images/7/bond/2.png"),
+                require("../assets/images/7/bond/3.png"),
+                require("../assets/images/7/bond/4.png")
             ]},
             { "level": 7, "answer": "cell", "images": [
-                // require("../assets/images/7/cell/1.png"),
-                // require("../assets/images/7/cell/2.png"),
-                // require("../assets/images/7/cell/3.png"),
-                // require("../assets/images/7/cell/4.png")
+                require("../assets/images/10/escape/1.png"),
+                require("../assets/images/7/cell/2.png"),
+                require("../assets/images/7/cell/3.png"),
+                require("../assets/images/7/cell/4.png")
             ]},
             { "level": 8, "answer": "scream", "images": [
-                // require("../assets/images/7/scream/1.png"),
-                // require("../assets/images/7/scream/2.png"),
-                // require("../assets/images/7/scream/3.png"),
-                // require("../assets/images/7/scream/4.png")
+                require("../assets/images/5/upset/1.png"),
+                require("../assets/images/7/scream/2.png"),
+                require("../assets/images/7/scream/3.png"),
+                require("../assets/images/7/scream/4.png")
             ]},
             { "level": 9, "answer": "alarm", "images": [
-                // require("../assets/images/7/alarm/1.png"),
-                // require("../assets/images/7/alarm/2.png"),
-                // require("../assets/images/7/alarm/3.png"),
-                // require("../assets/images/7/alarm/4.png")
+                require("../assets/images/5/time/1.png"),
+                require("../assets/images/7/alarm/2.png"),
+                require("../assets/images/7/alarm/3.png"),
+                require("../assets/images/7/alarm/4.png")
             ]},
             { "level": 10, "answer": "palm", "images": [
-                // require("../assets/images/7/palm/1.png"),
-                // require("../assets/images/7/palm/2.png"),
-                // require("../assets/images/7/palm/3.png"),
-                // require("../assets/images/7/palm/4.png")
+                require("../assets/images/7/palm/1.png"),
+                require("../assets/images/7/palm/2.png"),
+                require("../assets/images/7/palm/3.png"),
+                require("../assets/images/7/palm/4.png")
             ]}
         ]
     },
