@@ -5,7 +5,7 @@ import { font } from "../helper/functions"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, setVictory }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins }) => {
     const [coins, setCoins] = useState(0)
     const [word, setWord] = useState(null)
     const dispatch = useDispatch()
@@ -24,8 +24,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     }
 
     const handleRetry = () => {
-        // dispatch(handleVictory())
-        setVictory(null)
+        dispatch(handleVictory())
         dispatch(handleInitialSetup(level, 1))
         setTime(120)
         setActive(true)
@@ -36,15 +35,13 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
             setTime(120)
             setActive(true)
             setStage(1)
-            // dispatch(handleVictory())
-            setVictory(null)
+            dispatch(handleVictory())
             dispatch(handleInitialSetup(parseInt(level) + 1, 1))
         } else {
             setTime(time + 6)
             setActive(true)
             setStage(stage + 1)
-            // dispatch(handleVictory())
-            setVictory(null)
+            dispatch(handleVictory())
             dispatch(handleInitialSetup(level, stage + 1))
         }
     }
