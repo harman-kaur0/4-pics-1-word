@@ -164,6 +164,7 @@ const styles = StyleSheet.create({
         fontSize: font() - 8,
         backgroundColor: "white",
         borderRadius: 5,
+        padding: 2,
         overflow: "hidden"
     }
 })
