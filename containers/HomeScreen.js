@@ -1,26 +1,9 @@
-import React, { useEffect } from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import React from 'react'
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import { fetchUserData } from '../actions/userActions'
-import { useDispatch } from 'react-redux'
-import AsyncStorage from "@react-native-async-storage/async-storage"
 import Header from "../components/Header"
 
 const HomeScreen = ({ navigation }) => {
-    const dispatch = useDispatch()
-
-    const remove = async () => {
-        try {
-            await AsyncStorage.removeItem("user")
-        } catch (err) {
-            alert(err)
-        }
-    }
-
-    useEffect(() => {
-        dispatch(fetchUserData())
-    }, [])
-
     return (
         <>
             <Header button="settings" navigation={navigation}/>

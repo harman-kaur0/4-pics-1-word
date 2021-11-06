@@ -328,64 +328,64 @@ const data = {
         "coins": 150,
         "stages": [
             { "level": 1, "answer": "fuzzy", "images": [
-                // require("../assets/images/6/fuzzy/1.png"),
-                // require("../assets/images/6/fuzzy/2.png"),
-                // require("../assets/images/6/fuzzy/3.png"),
-                // require("../assets/images/6/fuzzy/4.png")
+                require("../assets/images/6/fuzzy/1.png"),
+                require("../assets/images/6/fuzzy/2.png"),
+                require("../assets/images/6/fuzzy/3.png"),
+                require("../assets/images/6/fuzzy/4.png")
             ]},
             { "level": 2, "answer": "jacks", "images": [
-                // require("../assets/images/6/jacks/1.png"),
-                // require("../assets/images/6/jacks/2.png"),
-                // require("../assets/images/6/jacks/3.png"),
-                // require("../assets/images/6/jacks/4.png")
+                require("../assets/images/6/jacks/1.png"),
+                require("../assets/images/6/jacks/2.png"),
+                require("../assets/images/6/jacks/3.png"),
+                require("../assets/images/6/jacks/4.png")
             ]},
             { "level": 3, "answer": "shady", "images": [
-                // require("../assets/images/6/shady/1.png"),
-                // require("../assets/images/6/shady/2.png"),
-                // require("../assets/images/6/shady/3.png"),
-                // require("../assets/images/6/shady/4.png")
+                require("../assets/images/6/shady/1.png"),
+                require("../assets/images/6/shady/2.png"),
+                require("../assets/images/6/shady/3.png"),
+                require("../assets/images/6/shady/4.png")
             ]},
             { "level": 4, "answer": "sizes", "images": [
-                // require("../assets/images/6/sizes/1.png"),
-                // require("../assets/images/6/sizes/2.png"),
-                // require("../assets/images/6/sizes/3.png"),
-                // require("../assets/images/6/sizes/4.png")
+                require("../assets/images/6/sizes/1.png"),
+                require("../assets/images/6/sizes/2.png"),
+                require("../assets/images/6/sizes/3.png"),
+                require("../assets/images/6/sizes/4.png")
             ]},
-            { "level": 5, "answer": "flies", "images": [
-                // require("../assets/images/6/flies/1.png"),
-                // require("../assets/images/6/flies/2.png"),
-                // require("../assets/images/6/flies/3.png"),
-                // require("../assets/images/6/flies/4.png")
+            { "level": 5, "answer": "slime", "images": [
+                require("../assets/images/6/slime/1.png"),
+                require("../assets/images/6/slime/2.png"),
+                require("../assets/images/6/slime/3.png"),
+                require("../assets/images/6/anime/1.png")
             ]},
-            { "level": 6, "answer": "gamer", "images": [
-                // require("../assets/images/6/gamer/1.png"),
-                // require("../assets/images/6/gamer/2.png"),
-                // require("../assets/images/6/gamer/3.png"),
-                // require("../assets/images/6/gamer/4.png")
+            { "level": 6, "answer": "flies", "images": [
+                require("../assets/images/6/flies/1.png"),
+                require("../assets/images/6/flies/2.png"),
+                require("../assets/images/6/flies/3.png"),
+                require("../assets/images/6/flies/4.png")
             ]},
-            { "level": 7, "answer": "slime", "images": [
-                // require("../assets/images/6/slime/1.png"),
-                // require("../assets/images/6/slime/2.png"),
-                // require("../assets/images/6/slime/3.png"),
-                // require("../assets/images/6/slime/4.png")
+            { "level": 7, "answer": "gamer", "images": [
+                require("../assets/images/6/gamer/1.png"),
+                require("../assets/images/9/mine/1.png"),
+                require("../assets/images/6/gamer/3.png"),
+                require("../assets/images/6/gamer/4.png")
             ]},
             { "level": 8, "answer": "anime", "images": [
-                // require("../assets/images/6/anime/1.png"),
-                // require("../assets/images/6/anime/2.png"),
-                // require("../assets/images/6/anime/3.png"),
-                // require("../assets/images/6/anime/4.png")
+                require("../assets/images/6/anime/1.png"),
+                require("../assets/images/6/anime/2.png"),
+                require("../assets/images/6/anime/3.png"),
+                require("../assets/images/6/anime/4.png")
             ]},
             { "level": 9, "answer": "seven", "images": [
-                // require("../assets/images/6/seven/1.png"),
-                // require("../assets/images/6/seven/2.png"),
-                // require("../assets/images/6/seven/3.png"),
-                // require("../assets/images/6/seven/4.png")
+                require("../assets/images/6/seven/1.png"),
+                require("../assets/images/6/seven/2.png"),
+                require("../assets/images/10/lucky/3.png"),
+                require("../assets/images/6/seven/4.png")
             ]},
             { "level": 10, "answer": "agony", "images": [
-                // require("../assets/images/6/agony/1.png"),
-                // require("../assets/images/6/agony/2.png"),
-                // require("../assets/images/6/agony/3.png"),
-                // require("../assets/images/6/agony/4.png")
+                require("../assets/images/6/agony/1.png"),
+                require("../assets/images/6/agony/2.png"),
+                require("../assets/images/5/upset/3.png"),
+                require("../assets/images/6/agony/4.png")
             ]}
         ]
     },
@@ -951,7 +951,7 @@ const data = {
             { "level": 7, "answer": "lottery", "images": [
                 require("../assets/images/15/lottery/1.png"),
                 require("../assets/images/15/lottery/2.png"),
-                require("../assets/images/15/lottery/3.png"),
+                require("../assets/images/10/lucky/3.png"),
                 require("../assets/images/15/lottery/4.png")
             ]},
             { "level": 8, "answer": "plastic", "images": [
@@ -1172,6 +1172,71 @@ const data = {
    "19": {
        "coins": 450,
        "stages": [
+           { "level": 1, "answer": "control", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images/6/gamer/1.png")
+           ]},
+           { "level": 2, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 3, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 4, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 5, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 6, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 7, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 8, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 9, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 10, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]}
+       ]
+   },
+   "20": {
+       "coins": 450,
+       "stages": [
            { "level": 1, "answer": "", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
@@ -1233,7 +1298,72 @@ const data = {
                // require("../assets/images///4.png")
            ]}
        ]
-   }
+   },
+   "21": {
+       "coins": 450,
+       "stages": [
+           { "level": 1, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 2, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 3, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 4, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 5, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 6, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 7, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 8, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 9, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]},
+           { "level": 10, "answer": "", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
+           ]}
+       ]
+   },
 }
 
 export default data

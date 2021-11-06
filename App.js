@@ -69,7 +69,7 @@ const App = () => {
                         scale: next ?
                             next.progress.interpolate({
                                 inputRange: [0, 1],
-                                outputRange: [1, 0.01],
+                                outputRange: [1, 0],
                             }) : 1
                     },
                 ],
