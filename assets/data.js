@@ -718,64 +718,64 @@ const data = {
         "coins": 300,
         "stages": [
             { "level": 1, "answer": "spring", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/9/season/4.png"),
+                require("../assets/images/12/spring/2.png"),
+                require("../assets/images/12/spring/3.png"),
+                require("../assets/images/12/spring/4.png")
             ]},
             { "level": 2, "answer": "blanket", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/blanket/1.png"),
+                require("../assets/images/12/blanket/2.png"),
+                require("../assets/images/12/blanket/3.png"),
+                require("../assets/images/12/blanket/4.png")
             ]},
             { "level": 3, "answer": "snow", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/snow/1.png"),
+                require("../assets/images/12/snow/2.png"),
+                require("../assets/images/12/skiing/1.png"),
+                require("../assets/images/12/winter/1.png")
             ]},
             { "level": 4, "answer": "winter", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/winter/1.png"),
+                require("../assets/images/12/winter/2.png"),
+                require("../assets/images/6/fuzzy/4.png"),
+                require("../assets/images/9/season/2.png")
             ]},
             { "level": 5, "answer": "easter", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/easter/1.png"),
+                require("../assets/images/12/easter/2.png"),
+                require("../assets/images/12/easter/3.png"),
+                require("../assets/images/12/easter/4.png")
             ]},
             { "level": 6, "answer": "beach", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/beach/1.png"),
+                require("../assets/images/12/beach/2.png"),
+                require("../assets/images/12/beach/3.png"),
+                require("../assets/images/12/summer/3.png")
             ]},
             { "level": 7, "answer": "camp", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/camp/1.png"),
+                require("../assets/images/12/camp/2.png"),
+                require("../assets/images/12/camp/3.png"),
+                require("../assets/images/12/camp/4.png")
             ]},
             { "level": 8, "answer": "autumn", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/autumn/1.png"),
+                require("../assets/images/12/autumn/2.png"),
+                require("../assets/images/9/season/1.png"),
+                require("../assets/images/12/autumn/4.png")
             ]},
             { "level": 9, "answer": "skiing", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/skiing/1.png"),
+                require("../assets/images/12/skiing/2.png"),
+                require("../assets/images/12/skiing/3.png"),
+                require("../assets/images/12/skiing/4.png")
             ]},
             { "level": 10, "answer": "summer", "images": [
-                // require("../assets/images///1.png"),
-                // require("../assets/images///2.png"),
-                // require("../assets/images///3.png"),
-                // require("../assets/images///4.png")
+                require("../assets/images/12/summer/1.png"),
+                require("../assets/images/12/summer/2.png"),
+                require("../assets/images/12/summer/3.png"),
+                require("../assets/images/12/summer/4.png")
             ]}
         ]
     },
@@ -1178,11 +1178,11 @@ const data = {
                // require("../assets/images///3.png"),
                // require("../assets/images/6/gamer/1.png")
            ]},
-           { "level": 2, "answer": "", "images": [
+           { "level": 2, "answer": "besties", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
-               // require("../assets/images///4.png")
+               // require("../assets/images/12/snow/2.png")
            ]},
            { "level": 3, "answer": "", "images": [
                // require("../assets/images///1.png"),
