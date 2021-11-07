@@ -3,10 +3,10 @@ const data = {
         "coins": 100,
         "stages": [
             { "level": 1, "answer": "dog", "images": [
-                require("../assets/images/1/dog/1.png"),
-                require("../assets/images/1/dog/2.png"),
-                require("../assets/images/1/dog/3.png"),
-                require("../assets/images/1/dog/4.png")
+                // require("../assets/images/1/dog/1.png"),
+                // require("../assets/images/1/dog/2.png"),
+                // require("../assets/images/1/dog/3.png"),
+                // require("../assets/images/1/dog/4.png")
             ]},
             { "level": 2, "answer": "cat", "images": [
                 require("../assets/images/1/cat/1.png"),
@@ -683,34 +683,34 @@ const data = {
                 require("../assets/images/11/travel/4.png")
             ]},
             { "level": 6, "answer": "comedy", "images": [
-                // require("../assets/images/11/comedy/1.png"),
-                // require("../assets/images/11/comedy/2.png"),
-                // require("../assets/images/11/comedy/3.png"),
-                // require("../assets/images/11/comedy/4.png")
+                require("../assets/images/11/comedy/1.png"),
+                require("../assets/images/11/comedy/2.png"),
+                require("../assets/images/11/comedy/3.png"),
+                require("../assets/images/11/comedy/4.png")
             ]},
             { "level": 7, "answer": "animal", "images": [
-                // require("../assets/images/11/animal/1.png"),
-                // require("../assets/images/11/animal/2.png"),
-                // require("../assets/images/11/animal/3.png"),
-                // require("../assets/images/11/animal/4.png")
+                require("../assets/images/1/zebra/4.png"),
+                require("../assets/images/11/roar/1.png"),
+                require("../assets/images/1/pig/1.png"),
+                require("../assets/images/1/dog/1.png")
             ]},
             { "level": 8, "answer": "popcorn", "images": [
-                // require("../assets/images/11/popcorn/1.png"),
-                // require("../assets/images/11/popcorn/2.png"),
-                // require("../assets/images/11/popcorn/3.png"),
-                // require("../assets/images/11/popcorn/4.png")
+                require("../assets/images/11/popcorn/1.png"),
+                require("../assets/images/11/popcorn/2.png"),
+                require("../assets/images/11/popcorn/3.png"),
+                require("../assets/images/11/popcorn/4.png")
             ]},
             { "level": 9, "answer": "roar", "images": [
-                // require("../assets/images/11/roar/1.png"),
-                // require("../assets/images/11/roar/2.png"),
-                // require("../assets/images/11/roar/3.png"),
-                // require("../assets/images/11/roar/4.png")
+                require("../assets/images/11/roar/1.png"),
+                require("../assets/images/11/roar/2.png"),
+                require("../assets/images/11/roar/3.png"),
+                require("../assets/images/11/roar/4.png")
             ]},
             { "level": 10, "answer": "ticket", "images": [
-                // require("../assets/images/11/ticket/1.png"),
-                // require("../assets/images/11/ticket/2.png"),
-                // require("../assets/images/11/ticket/3.png"),
-                // require("../assets/images/11/ticket/4.png")
+                require("../assets/images/11/ticket/1.png"),
+                require("../assets/images/11/ticket/2.png"),
+                require("../assets/images/11/ticket/3.png"),
+                require("../assets/images/11/ticket/4.png")
             ]}
         ]
     },
