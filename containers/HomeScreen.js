@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
+import { width } from '../helper/functions'
 import Header from "../components/Header"
 
 const HomeScreen = ({ navigation }) => {
@@ -113,19 +114,11 @@ const HomeScreen = ({ navigation }) => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-    header: {
-        width: "100%",
-        height: "8%",
-        flexDirection: "row",
-        position: "absolute",
-        top: 70,
-        alignItems: "center",
-    },
     logo: {
         width: "100%",
         height: "33%",
         marginBottom: 15,
-        marginTop: "30%",
+        marginTop: width > 800 ? "25%" : "30%",
         marginBottom: "10%"
     },
     buttonContainer: {

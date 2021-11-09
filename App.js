@@ -12,6 +12,7 @@ import Shop from "./containers/Shop"
 import BoosterPage from "./containers/BoosterPage"
 import PrizeWheel from "./containers/PrizeWheel"
 import LevelSelection from "./containers/LevelSelection"
+import Header from "./components/Header"
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
 import { createStackNavigator, TransitionSpecs } from "@react-navigation/stack"
 

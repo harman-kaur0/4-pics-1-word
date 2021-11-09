@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     wheelContainer: {
         width: "90%",
         height: width > 600 ? "75%" : "60%",
-        marginTop: 100,
+        marginTop: width > 600 ? 160 : 100,
         alignSelf: "center",
         alignItems: "center",
         justifyContent: "center"
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
         width: width > 600 ? "30%" : "35%",
         alignSelf: "center",
         marginBottom: "auto",
-        marginTop: "5%"
+        marginTop: width > 600 ? "-1%" : "5%"
     },
     buttonTouch: {
         height: "100%",

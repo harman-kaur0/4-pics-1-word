@@ -20,27 +20,29 @@ const Header = ({ button, navigation, text }) => {
 
     return (
         <View style={styles.header}>
-            {
-                button === "close" ?
-                <TouchableOpacity 
-                    onPress={() => navigation.goBack()}
-                    style={styles.closeTouch}
-                >
-                    <Image
-                        source={require("../assets/main/close.png")}
-                        style={{width: "100%", flex: 1}}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity> :
-                <TouchableOpacity style={styles.closeTouch}>
-                    <Image
-                        source={require("../assets/main/settings.png")}
-                        style={{width: "100%", flex: 1}}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-            }
-            { text ? <Text style={styles.selectionText}>{text}</Text> : null }
+            <View style={styles.textContainer}>
+                {
+                    button === "close" ?
+                    <TouchableOpacity 
+                        onPress={() => navigation.goBack()}
+                        style={styles.closeTouch}
+                    >
+                        <Image
+                            source={require("../assets/main/close.png")}
+                            style={{width: "100%", flex: 1}}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity> :
+                    <TouchableOpacity style={styles.closeTouch}>
+                        <Image
+                            source={require("../assets/main/settings.png")}
+                            style={{width: "100%", flex: 1}}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
+                }
+                { text ? <Text style={styles.selectionText}>{text}</Text> : null }
+            </View>
             <View style={styles.coinsContainer}>
                 <Text style={styles.coinText}>{displayedCoins(user?.coins) || 0}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
@@ -78,17 +80,27 @@ const styles = StyleSheet.create({
         alignItems: "center",
         zIndex: 998
     },
+    textContainer: {
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: -1
+    },
     closeTouch: {
         width: "15%",
         height: "100%",
         justifyContent: "center",
-        padding: 10
+        padding: 10,
+        marginRight: "auto"
     },
     coinsContainer: {
         flexDirection: "row",
         alignItems: "center",
-        width: "80%",
-        height: "80%",
+        width: "85%",
+        height: "100%",
         position: "absolute",
         right: 0
     },
@@ -105,15 +117,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent:  "center"
     },
-    closeText: {
-        fontSize: font(),
-        fontWeight: "900",
-        color: "black",
-        zIndex: 1
-    },
     selectionText: {
         fontSize: font() - 3,
         fontWeight: "900",
-        zIndex: 1
+        position: "absolute",
+        bottom: "-20%",
     }
 })

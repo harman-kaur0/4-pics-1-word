@@ -849,21 +849,21 @@ const data = {
         "stages": [
             { "level": 1, "answer": "ship", "images": [
                 require("../assets/images/14/ship/1.png"),
-                require("../assets/images/14/ship/2.png"),
+                require("../assets/images/14/crash/3.png"),
                 require("../assets/images/4/land/3.png"),
                 require("../assets/images/14/ship/4.png")
             ]},
             { "level": 2, "answer": "crash", "images": [
-                // require("../assets/images/14/crash/1.png"),
-                // require("../assets/images/14/crash/2.png"),
-                // require("../assets/images/14/crash/3.png"),
-                // require("../assets/images/14/crash/4.png")
+                require("../assets/images/14/crash/1.png"),
+                require("../assets/images/14/crash/2.png"),
+                require("../assets/images/14/crash/3.png"),
+                require("../assets/images/14/crash/4.png")
             ]},
             { "level": 3, "answer": "explore", "images": [
-                // require("../assets/images/14/explore/1.png"),
-                // require("../assets/images/14/explore/2.png"),
-                // require("../assets/images/14/explore/3.png"),
-                // require("../assets/images/14/explore/4.png")
+                require("../assets/images/4/land/3.png"),
+                require("../assets/images/14/explore/2.png"),
+                require("../assets/images/14/explore/3.png"),
+                require("../assets/images/14/explore/4.png")
             ]},
             { "level": 4, "answer": "pilgram", "images": [
                 require("../assets/images/14/ship/4.png"),
@@ -902,10 +902,10 @@ const data = {
                 // require("../assets/images/14/sailor/4.png")
             ]},
             { "level": 10, "answer": "sparrow", "images": [
-                // require("../assets/images/14/sparrow/1.png"),
-                // require("../assets/images/14/sparrow/2.png"),
-                // require("../assets/images/14/sparrow/3.png"),
-                // require("../assets/images/14/sparrow/4.png")
+                require("../assets/images/14/sparrow/1.png"),
+                require("../assets/images/14/sparrow/2.png"),
+                require("../assets/images/14/sparrow/3.png"),
+                require("../assets/images/14/sparrow/4.png")
             ]}
         ]
     },
