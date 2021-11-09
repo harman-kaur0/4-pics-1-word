@@ -10,6 +10,7 @@ export const fetchUserData = () => {
             } else {
                 const newUser = {
                     name: "New User",
+                    hearts: 5,
                     coins: 200,
                     levels: { 1: null },
                     boosts: { wand: 1, letter: 5, trash: 3 },

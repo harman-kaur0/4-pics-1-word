@@ -49,7 +49,7 @@ const App = () => {
         gestureDirection: "horizontal",
         transitionSpec: {
             open: TransitionSpecs.TransitionIOSSpec,
-            close: TransitionSpecs.TransitionIOSSpec,
+            close: TransitionSpecs.TransitionIOSSpec
         },
         cardStyleInterpolator: ({ current, next, layouts }) => ({
             cardStyle: {

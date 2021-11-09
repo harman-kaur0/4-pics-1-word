@@ -44,6 +44,14 @@ const Header = ({ button, navigation, text }) => {
                 { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             </View>
             <View style={styles.coinsContainer}>
+                <Text style={styles.coinText}>{user?.hearts}</Text>
+                <TouchableOpacity style={styles.coinTouch}>
+                    <Image
+                        source={require("../assets/wheel/heart.png")}
+                        style={{width: "80%", height: width > 600 ? "85%" : "60%", marginRight: 10}}
+                        resizeMode="contain"
+                    />
+                </TouchableOpacity>
                 <Text style={styles.coinText}>{displayedCoins(user?.coins) || 0}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
                     <Image
@@ -102,25 +110,27 @@ const styles = StyleSheet.create({
         width: "85%",
         height: "100%",
         position: "absolute",
-        right: 0
+        right: 0,
+        justifyContent: "flex-end"
     },
     coinText: {
-        marginLeft: "auto",
         marginRight: 5,
         fontSize: font(),
         fontWeight: "900",
         color: "white",
+        marginLeft: "5%"
     },
     coinTouch: {
         width: "20%",
         height: "100%",
         alignItems: "center",
-        justifyContent:  "center"
+        justifyContent: "center",
+        marginRight: 0
     },
     selectionText: {
-        fontSize: font() - 3,
+        fontSize: font(),
         fontWeight: "900",
         position: "absolute",
-        bottom: "-20%",
+        bottom: "-40%"
     }
 })
