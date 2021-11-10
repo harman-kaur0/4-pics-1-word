@@ -1,16 +1,18 @@
 import React from "react"
 import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground } from "react-native"
 import { setLevel } from "../actions/gameActions"
+import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
 import { width } from "../helper/functions"
 
-const Level = ({ level, levels, navigation }) => {
+const Level = ({ level, levels, navigation, user }) => {
     const dispatch = useDispatch()
 
     const levelData = levels ? levels[level] : undefined
 
     const handlePress = () => {
         dispatch(setLevel(level, navigation))
+        dispatch(updateUserData({ hearts: user.hearts - 1 }))
     }
 
     return (

@@ -22,6 +22,7 @@ const LevelSelection = ({ navigation }) => {
                             level={level} 
                             levels={user.levels}
                             navigation={navigation}
+                            user={user}
                         />
                     ))
                 }

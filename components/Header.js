@@ -1,10 +1,19 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import { width } from "../helper/functions"
+import { setRefreshTime, setTime } from "../actions/headerActions"
+import { updateUserData } from "../actions/userActions"
+import AsyncStorage from "@react-native-async-storage/async-storage"
 
 const Header = ({ button, navigation, text }) => {
+    const dispatch = useDispatch()
+
     const user = useSelector(state => state.user.user)
+    const { hearts, coins } = user
+
+    const header = useSelector(state => state.header)
+    const { time, refreshTime } = header
 
     const displayedCoins = coins => {
         if (coins) {
@@ -17,6 +26,48 @@ const Header = ({ button, navigation, text }) => {
             return coins
         }
     }
+
+    useEffect(() => {
+        if (typeof time !== "number" && hearts < 5) {
+            dispatch(setTime(Date.now()))
+        }
+    }, [time, hearts])
+
+    const minutes = 30
+
+    const calculateRefresh = () => {
+        if (time) {
+            let diff = Math.floor((Date.now() - time)/1000)
+            
+            const extraHearts = Math.floor(diff/(60 * minutes))
+
+            let newHearts = hearts + extraHearts
+            
+            if (extraHearts) {
+                if (newHearts < 5) {
+                    dispatch(updateUserData({ hearts: newHearts }))
+                    dispatch(setTime(time + extraHearts * (60000 * minutes)))
+                } else {
+                    dispatch(updateUserData({ hearts: 5}))
+                    dispatch(setTime(null))
+                    AsyncStorage.removeItem("time")
+                }
+            }
+            dispatch(setRefreshTime((minutes * 60) - (diff - extraHearts * (60 * minutes))))
+        }
+    }
+
+    useEffect(() => {
+        calculateRefresh(refreshTime)
+        if (time) {
+            const interval = setInterval(() => {
+                console.log(refreshTime - 1)
+            }, 1000)
+
+            return () => clearInterval(interval)
+        }
+    }, [])
+
 
     return (
         <View style={styles.header}>
@@ -44,7 +95,10 @@ const Header = ({ button, navigation, text }) => {
                 { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             </View>
             <View style={styles.coinsContainer}>
-                <Text style={styles.coinText}>{user?.hearts}</Text>
+                <Text style={styles.coinText}>
+                    {refreshTime ? new Date(refreshTime * 1000).toISOString().substr(14, 5) : null}
+                </Text>
+                <Text style={styles.coinText}>{hearts}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
                     <Image
                         source={require("../assets/wheel/heart.png")}
@@ -52,7 +106,7 @@ const Header = ({ button, navigation, text }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <Text style={styles.coinText}>{displayedCoins(user?.coins) || 0}</Text>
+                <Text style={styles.coinText}>{displayedCoins(coins) || 0}</Text>
                 <TouchableOpacity style={styles.coinTouch}>
                     <Image
                         source={require("../assets/main/coins.png")}
@@ -94,7 +148,6 @@ const styles = StyleSheet.create({
         position: "absolute",
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "center",
         zIndex: -1
     },
     closeTouch: {
@@ -131,6 +184,7 @@ const styles = StyleSheet.create({
         fontSize: font(),
         fontWeight: "900",
         position: "absolute",
-        bottom: "-40%"
+        bottom: "-40%",
+        marginLeft: "5%"
     }
 })
