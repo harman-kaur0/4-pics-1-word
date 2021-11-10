@@ -59,13 +59,6 @@ const Header = ({ button, navigation, text }) => {
 
     useEffect(() => {
         calculateRefresh(refreshTime)
-        if (time) {
-            const interval = setInterval(() => {
-                console.log(refreshTime - 1)
-            }, 1000)
-
-            return () => clearInterval(interval)
-        }
     }, [])
 
 
