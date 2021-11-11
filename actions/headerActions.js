@@ -11,7 +11,7 @@ export const getTime = () => {
     return async dispatch => {
         try {
             const time = await AsyncStorage.getItem("time")
-            if (time) dispatch({ type: "TIME", time: +time })
+            dispatch({ type: "TIME", time: time ?+time : false })
         } catch (err) {
             alert(err)
         }
@@ -35,6 +35,16 @@ export const setRefreshTime = refreshTime => {
     return async dispatch => {
         try {
             dispatch({ type: "REFRESH", refreshTime })
+        } catch (err) {
+            alert(err)
+        }
+    }
+}
+
+export const setCounting = counting => {
+    return dispatch => {
+        try {
+            dispatch({ type: "COUNT", counting })
         } catch (err) {
             alert(err)
         }

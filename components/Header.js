@@ -1,19 +1,12 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 import { width } from "../helper/functions"
-import { setRefreshTime, setTime } from "../actions/headerActions"
-import { updateUserData } from "../actions/userActions"
-import AsyncStorage from "@react-native-async-storage/async-storage"
 
 const Header = ({ button, navigation, text }) => {
-    const dispatch = useDispatch()
-
     const user = useSelector(state => state.user.user)
     const { hearts, coins } = user
-
-    const header = useSelector(state => state.header)
-    const { time, refreshTime } = header
+    const refreshTime = useSelector(state => state.header.refreshTime)
 
     const displayedCoins = coins => {
         if (coins) {
@@ -26,41 +19,6 @@ const Header = ({ button, navigation, text }) => {
             return coins
         }
     }
-
-    useEffect(() => {
-        if (typeof time !== "number" && hearts < 5) {
-            dispatch(setTime(Date.now()))
-        }
-    }, [time, hearts])
-
-    const minutes = 30
-
-    const calculateRefresh = () => {
-        if (time) {
-            let diff = Math.floor((Date.now() - time)/1000)
-            
-            const extraHearts = Math.floor(diff/(60 * minutes))
-
-            let newHearts = hearts + extraHearts
-            
-            if (extraHearts) {
-                if (newHearts < 5) {
-                    dispatch(updateUserData({ hearts: newHearts }))
-                    dispatch(setTime(time + extraHearts * (60000 * minutes)))
-                } else {
-                    dispatch(updateUserData({ hearts: 5}))
-                    dispatch(setTime(null))
-                    AsyncStorage.removeItem("time")
-                }
-            }
-            dispatch(setRefreshTime((minutes * 60) - (diff - extraHearts * (60 * minutes))))
-        }
-    }
-
-    useEffect(() => {
-        calculateRefresh(refreshTime)
-    }, [])
-
 
     return (
         <View style={styles.header}>

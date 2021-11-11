@@ -2,7 +2,8 @@ const initialState = {
     button: "settings",
     text: null,
     time: null,
-    refreshTime: null
+    refreshTime: null,
+    counting: false
 }
 
 export const header = (state = initialState, action) => {
@@ -17,6 +18,8 @@ export const header = (state = initialState, action) => {
             return {...state, time: action.time}
         case "REFRESH":
             return {...state, refreshTime: action.refreshTime}
+        case "COUNT":
+            return {...state, counting: action.counting}
         default:
             return state
     }
