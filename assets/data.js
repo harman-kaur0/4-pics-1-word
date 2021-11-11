@@ -872,34 +872,34 @@ const data = {
                 require("../assets/images/14/pilgram/4.png")
             ]},
             { "level": 5, "answer": "shipping", "images": [
-                // require("../assets/images/14/shipping/1.png"),
-                // require("../assets/images/14/shipping/2.png"),
-                // require("../assets/images/14/shipping/3.png"),
-                // require("../assets/images/14/shipping/4.png")
+                require("../assets/images/14/crash/3.png"),
+                require("../assets/images/15/package/4.png"),
+                require("../assets/images/14/shipping/3.png"),
+                require("../assets/images/14/shipping/4.png")
             ]},
             { "level": 6, "answer": "trading", "images": [
-                // require("../assets/images/14/trading/1.png"),
-                // require("../assets/images/14/trading/2.png"),
-                // require("../assets/images/14/trading/3.png"),
-                // require("../assets/images/14/trading/4.png")
+                require("../assets/images/14/trading/1.png"),
+                require("../assets/images/14/trading/2.png"),
+                require("../assets/images/14/shipping/4.png"),
+                require("../assets/images/14/trading/4.png")
             ]},
             { "level": 7, "answer": "marine", "images": [
-                // require("../assets/images/14/marine/1.png"),
-                // require("../assets/images/14/marine/2.png"),
-                // require("../assets/images/14/marine/3.png"),
-                // require("../assets/images/14/marine/4.png")
+                require("../assets/images/14/marine/1.png"),
+                require("../assets/images/14/marine/2.png"),
+                require("../assets/images/14/marine/3.png"),
+                require("../assets/images/2/blue/2.png")
             ]},
             { "level": 8, "answer": "pirate", "images": [
-                // require("../assets/images/14/pirate/1.png"),
-                // require("../assets/images/14/pirate/2.png"),
-                // require("../assets/images/14/pirate/3.png"),
-                // require("../assets/images/14/pirate/4.png")
+                require("../assets/images/4/land/3.png"),
+                require("../assets/images/14/pirate/2.png"),
+                require("../assets/images/14/pirate/3.png"),
+                require("../assets/images/14/sparrow/1.png")
             ]},
             { "level": 9, "answer": "sailor", "images": [
-                // require("../assets/images/14/sailor/1.png"),
-                // require("../assets/images/14/sailor/2.png"),
-                // require("../assets/images/14/sailor/3.png"),
-                // require("../assets/images/14/sailor/4.png")
+                require("../assets/images/14/pilgram/4.png"),
+                require("../assets/images/14/sailor/2.png"),
+                require("../assets/images/14/sailor/3.png"),
+                require("../assets/images/14/sailor/4.png")
             ]},
             { "level": 10, "answer": "sparrow", "images": [
                 require("../assets/images/14/sparrow/1.png"),
