@@ -3,10 +3,10 @@ const data = {
         "coins": 100,
         "stages": [
             { "level": 1, "answer": "dog", "images": [
-                // require("../assets/images/1/dog/1.png"),
-                // require("../assets/images/1/dog/2.png"),
-                // require("../assets/images/1/dog/3.png"),
-                // require("../assets/images/1/dog/4.png")
+                require("../assets/images/1/dog/1.png"),
+                require("../assets/images/1/dog/2.png"),
+                require("../assets/images/1/dog/3.png"),
+                require("../assets/images/1/dog/4.png")
             ]},
             { "level": 2, "answer": "cat", "images": [
                 require("../assets/images/1/cat/1.png"),

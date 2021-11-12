@@ -40,13 +40,3 @@ export const setRefreshTime = refreshTime => {
         }
     }
 }
-
-export const setCounting = counting => {
-    return dispatch => {
-        try {
-            dispatch({ type: "COUNT", counting })
-        } catch (err) {
-            alert(err)
-        }
-    }
-}

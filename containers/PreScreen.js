@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { fetchUserData } from "../actions/userActions"
 import { getTime } from "../actions/headerActions"
 import { updateUserData } from "../actions/userActions"
-import { setTime, setRefreshTime, setCounting } from "../actions/headerActions"
+import { setTime, setRefreshTime } from "../actions/headerActions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 
 const PreScreen = ({ navigation }) => {
@@ -22,8 +22,8 @@ const PreScreen = ({ navigation }) => {
     }
 
     useEffect(() => {
-        dispatch(fetchUserData())
         dispatch(getTime())
+        dispatch(fetchUserData())
 
         setTimeout(() => {
             navigation.navigate("Home")
@@ -37,6 +37,8 @@ const PreScreen = ({ navigation }) => {
             dispatch(setTime(null))
             dispatch(setRefreshTime(null))
             AsyncStorage.removeItem("time")
+        } else if (time === null) {
+            dispatch(getTime())
         }
     }, [time, hearts])
 
