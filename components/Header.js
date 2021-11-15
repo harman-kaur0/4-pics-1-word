@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
         fontSize: font(),
         fontWeight: "900",
         position: "absolute",
-        bottom: "-40%",
+        bottom: width > 600 ? "-45%" : "-40%",
         marginLeft: "5%"
     }
 })
