@@ -243,6 +243,7 @@ const styles = StyleSheet.create({
         borderColor: "black",
         borderWidth: 1,
         padding: 10,
-        alignSelf: "center"
+        alignSelf: "center",
+        zIndex: 999
     }
 })

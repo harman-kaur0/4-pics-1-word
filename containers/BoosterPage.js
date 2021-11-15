@@ -1,34 +1,42 @@
 import React from 'react'
 import { TouchableOpacity, View, Image, ImageBackground, StyleSheet, Text } from 'react-native'
 import { width, font } from '../helper/functions'
+import { updateUserData } from "../actions/userActions"
+import { useDispatch, useSelector } from 'react-redux'
 import Header from "../components/Header"
 
 const BoosterPage = ({ navigation }) => {
-    const data = [
-        {
-            image: require("../assets/shop/letter_boost.png"),
-            text: "10 letter hints",
-            coins: 45
-        },
-        {
-            image: require("../assets/shop/trash_boost.png"),
-            text: "5 trash hints",
-            coins: 200
-        },
-        {
-            image: require("../assets/shop/wand_boost.png"),
-            text: "3 wands",
-            coins: 250
-        },
-        {
-            image: require("../assets/shop/video_boost.png"),
-            text: "Earn coins",
-            coins: 50
-        }
-    ]
+    const dispatch = useDispatch()
+    const user = useSelector(state => state.user.user)
+    const { coins, boosts } = user
 
-    const purchaseItem = () => {
-        
+    const determineSelection = price => {
+        switch(price) {
+            case 45:
+                purchaseItem(price, 10, "letter")
+                break
+            case 200:
+                purchaseItem(price, 5, "trash")
+                break
+            case 250:
+                purchaseItem(price, 3, "wand")
+                break
+            default:
+                watchVideo()
+        }
+    }
+
+    const purchaseItem = (price, amount, item) => {
+        if (coins >= price) {
+            dispatch(updateUserData({ 
+                coins: coins - price, 
+                boosts: {...boosts, [item]: boosts[item] + amount} 
+            }))
+        }
+    }
+
+    const watchVideo = () => {
+
     }
 
     return (
@@ -36,7 +44,7 @@ const BoosterPage = ({ navigation }) => {
         <Header navigation={navigation} button="close" text="Booster Shop"/>
         <View style={styles.contentContainer}>
             {
-                data.map(boost => (
+                data.map((boost, idx) => (
                     <View style={styles.booster} key={boost.coins}>
                         <ImageBackground 
                             source={boost.image}
@@ -44,14 +52,30 @@ const BoosterPage = ({ navigation }) => {
                             resizeMode="contain"
                         >
                             <Text style={styles.boostText}>{boost.text}</Text>
-                            <TouchableOpacity style={styles.coinContainer}>
-                                <Image
-                                    source={require("../assets/shop/coin.png")}
-                                    style={styles.coinImage}
-                                    resizeMode="contain"
-                                />
-                                <Text style={styles.coinText}>{boost.coins}</Text>
-                            </TouchableOpacity>
+                            {
+                                coins >= boost.coins || idx === 3 ?
+                                <TouchableOpacity style={styles.coinContainer} onPress={() => determineSelection(boost.coins)}>
+                                    <Image
+                                        source={require("../assets/shop/coin.png")}
+                                        style={styles.coinImage}
+                                        resizeMode="contain"
+                                    />
+                                    <Text style={styles.coinText}>{boost.coins}</Text>
+                                </TouchableOpacity> :
+                                <View style={styles.coinContainer}>
+                                    <Image
+                                        source={require("../assets/shop/coin.png")}
+                                        style={{...styles.coinImage, tintColor: "gray"}}
+                                        resizeMode="contain"
+                                    />
+                                    <Image
+                                        source={require("../assets/shop/coin.png")}
+                                        style={{...styles.coinImage, opacity: 0.3}}
+                                        resizeMode="contain"
+                                    />
+                                    <Text style={styles.coinText}>{boost.coins}</Text>
+                                </View>
+                            }
                         </ImageBackground>
                     </View>
                 ))
@@ -106,3 +130,26 @@ const styles = StyleSheet.create({
         marginTop: "3%"
     }
 })
+
+const data = [
+    {
+        image: require("../assets/shop/letter_boost.png"),
+        text: "10 letter hints",
+        coins: 45
+    },
+    {
+        image: require("../assets/shop/trash_boost.png"),
+        text: "5 trash hints",
+        coins: 200
+    },
+    {
+        image: require("../assets/shop/wand_boost.png"),
+        text: "3 wands",
+        coins: 250
+    },
+    {
+        image: require("../assets/shop/video_boost.png"),
+        text: "Earn coins",
+        coins: 50
+    }
+]

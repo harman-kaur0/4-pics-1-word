@@ -43,7 +43,7 @@ const PreScreen = ({ navigation }) => {
         }
     }, [time, hearts])
 
-    const minutes = 30
+    const minutes = 10
 
     const calculateRefresh = useCallback(async () => {
         if (time) {
