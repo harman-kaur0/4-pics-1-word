@@ -1,5 +1,5 @@
-import React from 'react'
-import { TouchableOpacity, View, Image, ImageBackground, StyleSheet, Text } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { TouchableOpacity, View, Image, ImageBackground, StyleSheet, Text, Animated } from 'react-native'
 import { width, font } from '../helper/functions'
 import { updateUserData } from "../actions/userActions"
 import { useDispatch, useSelector } from 'react-redux'
@@ -9,6 +9,8 @@ const BoosterPage = ({ navigation }) => {
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.user)
     const { coins, boosts } = user
+
+    const [message, setMessage] = useState(null)
 
     const determineSelection = price => {
         switch(price) {
@@ -26,18 +28,46 @@ const BoosterPage = ({ navigation }) => {
         }
     }
 
-    const purchaseItem = (price, amount, item) => {
+    const purchaseItem = async (price, amount, item) => {
         if (coins >= price) {
-            dispatch(updateUserData({ 
+            await dispatch(updateUserData({ 
                 coins: coins - price, 
                 boosts: {...boosts, [item]: boosts[item] + amount} 
             }))
+            setMessage(`You've purchased ${amount} ${item} hints.`)
         }
     }
 
     const watchVideo = () => {
 
     }
+
+    const fadeAnim = useState(new Animated.Value(0))[0]
+
+    const fadeIn = () => {
+        Animated.timing(fadeAnim, {
+            toValue: 1,
+            duration: 100,
+            useNativeDriver: true
+        }).start()
+    }
+    
+    const fadeOut = () => {
+        Animated.timing(fadeAnim, {
+            toValue: 0,
+            duration: 200,
+            useNativeDriver: true
+        }).start(() => setMessage(null))
+    }
+
+    useEffect(() => {
+        if (message) {
+            fadeIn()
+            setTimeout(async () => {
+                fadeOut()
+            }, 1000)
+        }
+    }, [message])
 
     return (
         <>
@@ -81,6 +111,15 @@ const BoosterPage = ({ navigation }) => {
                 ))
             }
         </View>
+        {
+            message ? 
+            <Animated.Text 
+                style={[styles.message, { opacity: fadeAnim }]}
+            >
+                {message}
+            </Animated.Text> 
+            : null
+        }
     </>
     )
 }
@@ -128,6 +167,19 @@ const styles = StyleSheet.create({
         fontSize: font() - 5,
         alignSelf: "center",
         marginTop: "3%"
+    },
+    message: {
+        position: "absolute",
+        top: "15%",
+        fontSize: font() - 8,
+        backgroundColor: "white",
+        borderRadius: 5,
+        overflow: "hidden",
+        borderColor: "black",
+        borderWidth: 1,
+        padding: 10,
+        alignSelf: "center",
+        zIndex: 999
     }
 })
 
