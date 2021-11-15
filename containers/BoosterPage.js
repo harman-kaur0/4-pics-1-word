@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { TouchableOpacity, View, Image, ImageBackground, StyleSheet, Text, Animated } from 'react-native'
+import React from 'react'
+import { TouchableOpacity, View, Image, ImageBackground, StyleSheet, Text } from 'react-native'
 import { width, font } from '../helper/functions'
 import { updateUserData } from "../actions/userActions"
 import { useDispatch, useSelector } from 'react-redux'
@@ -9,8 +9,6 @@ const BoosterPage = ({ navigation }) => {
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.user)
     const { coins, boosts } = user
-
-    const [message, setMessage] = useState(null)
 
     const determineSelection = price => {
         switch(price) {
@@ -41,33 +39,6 @@ const BoosterPage = ({ navigation }) => {
     const watchVideo = () => {
 
     }
-
-    const fadeAnim = useState(new Animated.Value(0))[0]
-
-    const fadeIn = () => {
-        Animated.timing(fadeAnim, {
-            toValue: 1,
-            duration: 100,
-            useNativeDriver: true
-        }).start()
-    }
-    
-    const fadeOut = () => {
-        Animated.timing(fadeAnim, {
-            toValue: 0,
-            duration: 200,
-            useNativeDriver: true
-        }).start(() => setMessage(null))
-    }
-
-    useEffect(() => {
-        if (message) {
-            fadeIn()
-            setTimeout(async () => {
-                fadeOut()
-            }, 1000)
-        }
-    }, [message])
 
     return (
         <>
@@ -106,20 +77,20 @@ const BoosterPage = ({ navigation }) => {
                                     <Text style={styles.coinText}>{boost.coins}</Text>
                                 </View>
                             }
+                            {
+                                idx === 3 ? null : 
+                                <Text style={styles.boostAmount}>
+                                    <Text>You have: </Text> 
+                                    <Text style={{fontWeight: "bold"}}>
+                                        {boosts[boost.text.split(" ")[1]]}
+                                    </Text>
+                                </Text>
+                            }
                         </ImageBackground>
                     </View>
                 ))
             }
         </View>
-        {
-            message ? 
-            <Animated.Text 
-                style={[styles.message, { opacity: fadeAnim }]}
-            >
-                {message}
-            </Animated.Text> 
-            : null
-        }
     </>
     )
 }
@@ -168,18 +139,11 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         marginTop: "3%"
     },
-    message: {
+    boostAmount: {
         position: "absolute",
-        top: "15%",
         fontSize: font() - 8,
-        backgroundColor: "white",
-        borderRadius: 5,
-        overflow: "hidden",
-        borderColor: "black",
-        borderWidth: 1,
-        padding: 10,
-        alignSelf: "center",
-        zIndex: 999
+        bottom: "-25%",
+        padding: 5
     }
 })
 
@@ -196,7 +160,7 @@ const data = [
     },
     {
         image: require("../assets/shop/wand_boost.png"),
-        text: "3 wands",
+        text: "3 wand hints",
         coins: 250
     },
     {
