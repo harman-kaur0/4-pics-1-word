@@ -24,6 +24,7 @@ const PreScreen = ({ navigation }) => {
     useEffect(() => {
         dispatch(getTime())
         dispatch(fetchUserData())
+        // remove()
 
         setTimeout(() => {
             navigation.navigate("Home")
