@@ -1172,19 +1172,19 @@ const data = {
    "19": {
        "coins": 450,
        "stages": [
-           { "level": 1, "answer": "control", "images": [
+           { "level": 1, "answer": "barbuda", "images": [
                // require("../assets/images/19/control/1.png"),
                // require("../assets/images/19/control/2.png"),
                // require("../assets/images/19/control/3.png"),
                // require("../assets/images/6/gamer/1.png")
            ]},
-           { "level": 2, "answer": "besties", "images": [
+           { "level": 2, "answer": "austria", "images": [
                // require("../assets/images/19/besties/1.png"),
                // require("../assets/images/19/besties/2.png"),
                // require("../assets/images/19/besties/3.png"),
                // require("../assets/images/12/snow/2.png")
            ]},
-           { "level": 3, "answer": "", "images": [
+           { "level": 3, "answer": "belgium", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
@@ -1226,7 +1226,7 @@ const data = {
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 10, "answer": "", "images": [
+           { "level": 10, "answer": "finland", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
@@ -1237,61 +1237,61 @@ const data = {
    "20": {
        "coins": 450,
        "stages": [
-           { "level": 1, "answer": "", "images": [
+           { "level": 1, "answer": "control", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 2, "answer": "", "images": [
+           { "level": 2, "answer": "balance", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 3, "answer": "", "images": [
+           { "level": 3, "answer": "present", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 4, "answer": "", "images": [
+           { "level": 4, "answer": "babysit", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 5, "answer": "", "images": [
+           { "level": 5, "answer": "besties", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 6, "answer": "", "images": [
+           { "level": 6, "answer": "physics", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 7, "answer": "", "images": [
+           { "level": 7, "answer": "dolphin", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 8, "answer": "", "images": [
+           { "level": 8, "answer": "glacier", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 9, "answer": "", "images": [
+           { "level": 9, "answer": "divorce", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 10, "answer": "", "images": [
+           { "level": 10, "answer": "ancient", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
@@ -1364,6 +1364,71 @@ const data = {
            ]}
        ]
    },
+   "22": {
+    "coins": 450,
+    "stages": [
+            { "level": 1, "answer": "france", "images": [
+                // require("../assets/images/22/france/1.png"),
+                // require("../assets/images/22/france/2.png"),
+                // require("../assets/images/22/france/3.png"),
+                // require("../assets/images/22/france/4.png")
+            ]},
+            { "level": 2, "answer": "russia", "images": [
+                // require("../assets/images/22/russia/1.png"),
+                // require("../assets/images/22/russia/2.png"),
+                // require("../assets/images/22/russia/3.png"),
+                // require("../assets/images/22/russia/4.png")
+            ]},
+            { "level": 3, "answer": "belgium", "images": [
+                // require("../assets/images/22/belgium/1.png"),
+                // require("../assets/images/22/belgium/2.png"),
+                // require("../assets/images/22/belgium/3.png"),
+                // require("../assets/images/22/belgium/4.png")
+            ]},
+            { "level": 4, "answer": "england", "images": [
+                // require("../assets/images/22/england/1.png"),
+                // require("../assets/images/22/england/2.png"),
+                // require("../assets/images/22/england/3.png"),
+                // require("../assets/images/22/england/4.png")
+            ]},
+            { "level": 5, "answer": "serbia", "images": [
+                // require("../assets/images/22/serbia/1.png"),
+                // require("../assets/images/22/serbia/2.png"),
+                // require("../assets/images/22/serbia/3.png"),
+                // require("../assets/images/22/serbia/4.png")
+            ]},
+            { "level": 6, "answer": "austria", "images": [
+                // require("../assets/images/22/austria/1.png"),
+                // require("../assets/images/22/austria/2.png"),
+                // require("../assets/images/22/austria/3.png"),
+                // require("../assets/images/22/austria/4.png")
+            ]},
+            { "level": 7, "answer": "barbuda", "images": [
+                // require("../assets/images/22/barbuda/1.png"),
+                // require("../assets/images/22/barbuda/2.png"),
+                // require("../assets/images/22/barbuda/3.png"),
+                // require("../assets/images/22/barbuda/4.png")
+            ]},
+            { "level": 8, "answer": "germany", "images": [
+                // require("../assets/images/22/germany/1.png"),
+                // require("../assets/images/22/germany/2.png"),
+                // require("../assets/images/22/germany/3.png"),
+                // require("../assets/images/22/germany/4.png")
+            ]},
+            { "level": 9, "answer": "georgia", "images": [
+                // require("../assets/images/22/georgia/1.png"),
+                // require("../assets/images/22/georgia/2.png"),
+                // require("../assets/images/22/georgia/3.png"),
+                // require("../assets/images/22/georgia/4.png")
+            ]},
+            { "level": 10, "answer": "finland", "images": [
+                // require("../assets/images/22/finland/1.png"),
+                // require("../assets/images/22/finland/2.png"),
+                // require("../assets/images/22/finland/3.png"),
+                // require("../assets/images/22/finland/4.png")
+            ]}
+        ]
+    }
 }
 
 export default data
