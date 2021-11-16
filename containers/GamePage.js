@@ -16,7 +16,7 @@ const GamePage = ({ navigation }) => {
     const dispatch = useDispatch()
 
     const [stage, setStage] = useState(1)
-    const [time, setTime] = useState(1200)
+    const [time, setTime] = useState(180)
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)
@@ -31,7 +31,7 @@ const GamePage = ({ navigation }) => {
     const allLevelData = user.levels
     const currentStars = allLevelData[level] || 0
     const userCoins = user.coins
-    const newStars = time > 89 ? 3 : (time > 59 ? 2 : 1)
+    const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
     
 
     useEffect(() => {

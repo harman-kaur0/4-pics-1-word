@@ -26,19 +26,19 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     const handleRetry = () => {
         dispatch(handleVictory())
         dispatch(handleInitialSetup(level, 1))
-        setTime(120)
+        setTime(180)
         setActive(true)
     }
 
     const handleNextLevel = () => {
         if (stage === 10) {
-            setTime(120)
+            setTime(180)
             setActive(true)
             setStage(1)
             dispatch(handleVictory())
             dispatch(handleInitialSetup(parseInt(level) + 1, 1))
         } else {
-            setTime(time + 6)
+            setTime(time + 30)
             setActive(true)
             setStage(stage + 1)
             dispatch(handleVictory())
@@ -81,7 +81,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                 />
                                 <Text style={styles.text2}>You've earned {coins} coins!</Text>
                             </> :
-                            <Text style={styles.text2}>{10 - stage} stages to go! 5 seconds added.</Text>
+                            <Text style={styles.text2}>{10 - stage} stages to go! 30 seconds added.</Text>
                         }
                     </View>
                     <View style={styles.buttonsContainer}>
