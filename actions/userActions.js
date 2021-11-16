@@ -10,6 +10,7 @@ export const fetchUserData = () => {
             } else {
                 const newUser = {
                     name: "New User",
+                    sprite: { active: "james", owned: ["james", "isabella"] },
                     hearts: 5,
                     coins: 200,
                     levels: { 1: null },

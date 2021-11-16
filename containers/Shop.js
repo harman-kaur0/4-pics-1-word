@@ -138,7 +138,7 @@ const Shop = ({ navigation }) => {
             <View style={styles.row4}>
                 <TouchableOpacity style={{...styles.row4Buttons, width: "40%"}}>
                     <Image
-                        source={require("../assets/profile/play.png")}
+                        source={require("../assets/buttons/play.png")}
                         style={styles.play}
                         resizeMode="contain"
                     />
@@ -148,7 +148,7 @@ const Shop = ({ navigation }) => {
                     onPress={() => navigation.navigate("Wheel")}
                 >
                     <Image
-                        source={require("../assets/profile/wheel.png")}
+                        source={require("../assets/main/prize_wheel.png")}
                         style={styles.play}
                         resizeMode="contain"
                     />
