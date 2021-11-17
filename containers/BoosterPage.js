@@ -137,7 +137,8 @@ const styles = StyleSheet.create({
     boostText: {
         fontSize: font() - 5,
         alignSelf: "center",
-        marginTop: "3%"
+        marginTop: "3%",
+        fontWeight: "bold"
     },
     boostAmount: {
         position: "absolute",

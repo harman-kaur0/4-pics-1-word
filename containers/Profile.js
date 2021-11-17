@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { charData, font, width } from "../helper/functions"
 import { updateUserData } from "../actions/userActions"
 import Header from "../components/Header"
+import CharacterShop from "../components/CharacterShop"
 
 const Profile = ({ navigation }) => {
     const dispatch = useDispatch()
@@ -76,58 +77,63 @@ const Profile = ({ navigation }) => {
     return (
         <>
             <Header navigation={navigation} button="close" text="Profile"/>
-            <View style={styles.spriteContainer}>
-                <TouchableOpacity style={styles.spriteTouch}>
-                    <Image
-                        source={charData[active].default}
-                        style={styles.sprite}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                {
-                    editing ?
-                    <TextInput 
-                        placeholder="Username" 
-                        value={username} 
-                        style={{
-                            ...styles.nameContainer, 
-                            borderColor: "black",
-                            borderWidth: 1
-                        }}
-                        autoFocus={true}
-                        onChangeText={setUsername}
-                        onSubmitEditing={handleSubmit}
-                    /> :
-                    <View style={styles.nameContainer}>
-                        <Text style={styles.name}>{user.name}</Text>
-                        <TouchableOpacity style={styles.pencil} onPress={() => setEditing(true)}>
+            {
+                shop ? <CharacterShop setShop={setShop} active={active} owned={owned}/> :
+                <>
+                    <View style={styles.spriteContainer}>
+                        <TouchableOpacity style={styles.spriteTouch} onPress={() => setShop(true)}>
                             <Image
-                                source={require("../assets/profile/pencil.png")}
-                                style={{width: "100%", height: "100%"}}
+                                source={charData[active].default}
+                                style={styles.sprite}
                                 resizeMode="contain"
                             />
                         </TouchableOpacity>
+                        {
+                            editing ?
+                            <TextInput 
+                                placeholder="Username" 
+                                value={username} 
+                                style={{
+                                    ...styles.nameContainer, 
+                                    borderColor: "black",
+                                    borderWidth: 1
+                                }}
+                                autoFocus={true}
+                                onChangeText={setUsername}
+                                onSubmitEditing={handleSubmit}
+                            /> :
+                            <View style={styles.nameContainer}>
+                                <Text style={styles.name}>{user.name}</Text>
+                                <TouchableOpacity style={styles.pencil} onPress={() => setEditing(true)}>
+                                    <Image
+                                        source={require("../assets/profile/pencil.png")}
+                                        style={{width: "100%", height: "100%"}}
+                                        resizeMode="contain"
+                                    />
+                                </TouchableOpacity>
+                            </View>
+                        }
                     </View>
-                }
-            </View>
-            <View style={styles.statsContainer}>
-                {
-                    stats.map(stat => (
-                        <View style={styles.stats} key={stat.stat}>
-                            <Image
-                                source={stat.image}
-                                style={styles.statsImage}
-                                resizeMode="contain"
-                            />
-                            <Text style={styles.textContainer}>
-                                <Text>{stat.text}</Text>
-                                {"\n"}
-                                <Text style={{fontWeight: "bold"}}>{stat.stat}</Text>
-                            </Text>
-                        </View>
-                    ))
-                }
-            </View>
+                    <View style={styles.statsContainer}>
+                        {
+                            stats.map(stat => (
+                                <View style={styles.stats} key={stat.stat}>
+                                    <Image
+                                        source={stat.image}
+                                        style={styles.statsImage}
+                                        resizeMode="contain"
+                                    />
+                                    <Text style={styles.textContainer}>
+                                        <Text>{stat.text}</Text>
+                                        {"\n"}
+                                        <Text style={{fontWeight: "bold"}}>{stat.stat}</Text>
+                                    </Text>
+                                </View>
+                            ))
+                        }
+                    </View>
+                </>
+            }
             {
                 message ? 
                 <Animated.Text 

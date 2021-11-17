@@ -53,7 +53,7 @@ const Shop = ({ navigation }) => {
                         style={{width: "100%", height: "110%", position: "absolute", zIndex: -1}}
                         resizeMode="contain"
                     />
-                    <Text style={styles.coinText2}>1,000</Text>
+                    <Text style={styles.coinText2}>500</Text>
                     <TouchableOpacity
                         style={styles.button}
                     >
@@ -66,7 +66,7 @@ const Shop = ({ navigation }) => {
                         style={{width: "100%", height: "110%", position: "absolute", zIndex: -1}}
                         resizeMode="contain"
                     />
-                    <Text style={styles.coinText2}>2,500</Text>
+                    <Text style={styles.coinText2}>1,000</Text>
                     <TouchableOpacity
                         style={styles.button}
                     >
@@ -79,7 +79,7 @@ const Shop = ({ navigation }) => {
                         style={{width: "100%", height: "110%", position: "absolute", zIndex: -1}}
                         resizeMode="contain"
                     />
-                    <Text style={styles.coinText2}>5,000</Text>
+                    <Text style={styles.coinText2}>2,000</Text>
                     <TouchableOpacity
                         style={styles.button}
                     >
