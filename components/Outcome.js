@@ -87,7 +87,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                     <View style={styles.buttonsContainer}>
                         <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
                             <Image
-                                source={require("../assets/buttons/exit.png")}
+                                source={require("../assets/buttons/quit.png")}
                                 style={styles.button}
                                 resizeMode="contain"
                             />

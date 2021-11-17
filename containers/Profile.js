@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
         fontSize: font() - 5
     },
     statsContainer: {
-        height: "30%",
+        height: "25%",
         alignItems: "center"
     },
     stats: {
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
         height: "65%",
         width: "50%",
         fontSize: font() - 5,
-        paddingTop: width > 600 ? "2.5%" : "4%",
+        paddingTop: width > 600 ? "1.5%" : "3%",
         textAlign: "center"
     },
     message: {
