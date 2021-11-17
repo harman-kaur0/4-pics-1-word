@@ -15,6 +15,10 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
     const handleChangeProfile = item => {
         dispatch(updateUserData({ sprite: {...sprite, active: item}}))
     }
+
+    const purchaseCharacter = item => {
+        dispatch(updateUserData({ sprite: {...sprite, owned: [...sprite.owned, item]}}))
+    }
     
     return (
         <>
@@ -85,7 +89,10 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
                                         ) :
                                         (
                                             charData[item].cost < coins ?
-                                            <TouchableOpacity style={{...styles.selectTouch, width: width > 600 ? "35%" : "40%"}}>
+                                            <TouchableOpacity 
+                                                style={{...styles.selectTouch, width: width > 600 ? "35%" : "40%"}}
+                                                onPress={() => purchaseCharacter(item)}
+                                            >
                                                 <Image
                                                     source={require("../assets/buttons/unlock.png")}
                                                     style={styles.select}
@@ -171,18 +178,21 @@ const styles = StyleSheet.create({
     },
     cost: {
         fontSize: font() - 2,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginLeft: 5
     }, 
     costContainer: {
         position: "absolute",
         flexDirection: "row",
         bottom: "3%",
         height: "10%",
+        width: "100%",
         alignItems: "center",
         justifyContent: "center"
     },
     coin: {
         height: "100%",
-        width: "40%"
+        width: "15%",
+        marginRight: 5
     }
 })
