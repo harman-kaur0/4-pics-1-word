@@ -1,13 +1,20 @@
 import React, { useState, useRef } from "react"
-import { View, StyleSheet, Image, Animated, FlatList, Text, TouchableOpacity, Platform } from "react-native"
+import { View, StyleSheet, Image, Animated, Text, TouchableOpacity, Platform } from "react-native"
 import { font, width } from "../helper/functions"
 import { charData } from "../helper/functions"
+import { useDispatch } from "react-redux"
+import { updateUserData } from "../actions/userActions"
 
 const cardWidth = width > 600 ? width * 0.5 : width * 0.72
 const spacerWidth = (width - cardWidth)/2 - 10
 
-const CharacterShop = ({ setShop, active, owned }) => {
+const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
+    const dispatch = useDispatch()
     const scrollX = useRef(new Animated.Value(0)).current
+
+    const handleChangeProfile = item => {
+        dispatch(updateUserData({ sprite: {...sprite, active: item}}))
+    }
     
     return (
         <>
@@ -41,7 +48,7 @@ const CharacterShop = ({ setShop, active, owned }) => {
 
                         const translateY = scrollX.interpolate({
                             inputRange,
-                            outputRange: [0, -50, 0]
+                            outputRange: [0, width > 600 ? -100 : -50, 0]
                         })
 
                         return (
@@ -52,13 +59,63 @@ const CharacterShop = ({ setShop, active, owned }) => {
                                     style={styles.avatar}
                                     resizeMode="contain"
                                 />
-                                <TouchableOpacity style={styles.selectTouch}>
-                                    <Image
-                                        source={require("../assets/buttons/select.png")}
-                                        style={styles.select}
-                                        resizeMode="contain"
-                                    />
-                                </TouchableOpacity>
+                                {
+                                    owned.includes(item) ?
+                                        (
+                                            active !== item ?
+                                            <TouchableOpacity style={styles.selectTouch} onPress={() => handleChangeProfile(item)}>
+                                                <Image
+                                                    source={require("../assets/buttons/select.png")}
+                                                    style={styles.select}
+                                                    resizeMode="contain"
+                                                />
+                                            </TouchableOpacity> :
+                                            <View style={styles.selectTouch}>
+                                                <Image
+                                                    source={require("../assets/buttons/select.png")}
+                                                    style={styles.select}
+                                                    resizeMode="contain"
+                                                />
+                                                <Image
+                                                    source={require("../assets/buttons/select.png")}
+                                                    style={{...styles.select, position: "absolute", tintColor: "gray", opacity: 0.7}}
+                                                    resizeMode="contain"
+                                                />
+                                            </View>
+                                        ) :
+                                        (
+                                            charData[item].cost < coins ?
+                                            <TouchableOpacity style={{...styles.selectTouch, width: width > 600 ? "35%" : "40%"}}>
+                                                <Image
+                                                    source={require("../assets/buttons/unlock.png")}
+                                                    style={styles.select}
+                                                    resizeMode="contain"
+                                                />
+                                            </TouchableOpacity> :
+                                            <>
+                                                <View style={{...styles.selectTouch, width: width > 600 ? "40%" : "45%"}}>
+                                                    <Image
+                                                        source={require("../assets/buttons/unlock.png")}
+                                                        style={styles.select}
+                                                        resizeMode="contain"
+                                                    />
+                                                    <Image
+                                                        source={require("../assets/buttons/unlock.png")}
+                                                        style={{...styles.select, position: "absolute", tintColor: "red", opacity: 0.5}}
+                                                        resizeMode="contain"
+                                                    />
+                                                </View>
+                                                <View style={styles.costContainer}>
+                                                    <Image
+                                                        source={require("../assets/shop/coin.png")}
+                                                        style={styles.coin}
+                                                        resizeMode="contain"
+                                                    />
+                                                    <Text style={styles.cost}>{charData[item].cost}</Text>
+                                                </View>
+                                            </>
+                                        )
+                                }
                             </Animated.View>
                         )
                     }}
@@ -98,7 +155,8 @@ const styles = StyleSheet.create({
     },
     selectTouch: {
         height: "10%",
-        width: width > 600 ? "30%" : "35%"
+        width: width > 600 ? "30%" : "35%",
+        marginBottom: width > 600 ? 30 : 20
     },
     select: {
         width: "100%",
@@ -110,5 +168,21 @@ const styles = StyleSheet.create({
         right: "5%",
         height: "10%",
         width: width > 600 ? "15%" : "25%"
+    },
+    cost: {
+        fontSize: font() - 2,
+        fontWeight: "bold"
+    }, 
+    costContainer: {
+        position: "absolute",
+        flexDirection: "row",
+        bottom: "3%",
+        height: "10%",
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    coin: {
+        height: "100%",
+        width: "40%"
     }
 })

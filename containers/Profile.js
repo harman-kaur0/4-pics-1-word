@@ -78,7 +78,14 @@ const Profile = ({ navigation }) => {
         <>
             <Header navigation={navigation} button="close" text="Profile"/>
             {
-                shop ? <CharacterShop setShop={setShop} active={active} owned={owned}/> :
+                shop ? 
+                    <CharacterShop 
+                    setShop={setShop} 
+                    active={active} 
+                    owned={owned} 
+                    coins={user.coins}
+                    sprite={user.sprite}
+                /> :
                 <>
                     <View style={styles.spriteContainer}>
                         <TouchableOpacity style={styles.spriteTouch} onPress={() => setShop(true)}>
@@ -159,7 +166,7 @@ const styles = StyleSheet.create({
         marginTop: width > 600 ? "25%" : "45%",
         backgroundColor: "rgb(236,237,239)",
         borderRadius: 30,
-        borderColor: "black",
+        borderColor: "gray",
         borderWidth: 1
     },
     spriteTouch: {
@@ -206,7 +213,7 @@ const styles = StyleSheet.create({
         marginTop: "3%",
         borderRadius: 30,
         backgroundColor: "rgb(236,237,239)",
-        borderColor: "black",
+        borderColor: "gray",
         borderWidth: 1
     },
     statsImage: {
