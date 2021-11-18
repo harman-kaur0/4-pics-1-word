@@ -32,7 +32,8 @@ const GamePage = ({ navigation }) => {
     const currentStars = allLevelData[level] || 0
     const userCoins = user.coins
     const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
-    
+
+    console.log(gameData)
 
     useEffect(() => {
         dispatch(handleInitialSetup(level, stage))
