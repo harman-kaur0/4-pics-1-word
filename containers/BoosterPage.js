@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     boostAmount: {
         position: "absolute",
         fontSize: font() - 8,
-        bottom: "-25%",
+        bottom: "-30%",
         padding: 5
     }
 })

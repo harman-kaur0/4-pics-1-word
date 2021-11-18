@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
+import { StyleSheet, View, Image, TouchableOpacity, Text, Platform } from "react-native"
 import { useSelector } from "react-redux"
 import { width } from "../helper/functions"
 
@@ -83,6 +83,8 @@ const font = () => {
     }
 }
 
+const weight = Platform.OS === "ios" ? "900" : "bold"
+
 const styles = StyleSheet.create({
     header: {
         width: "100%",
@@ -120,7 +122,7 @@ const styles = StyleSheet.create({
     coinText: {
         marginRight: 5,
         fontSize: font(),
-        fontWeight: "900",
+        fontWeight: weight,
         color: "white",
         marginLeft: "5%"
     },
@@ -133,7 +135,7 @@ const styles = StyleSheet.create({
     },
     selectionText: {
         fontSize: font(),
-        fontWeight: "900",
+        fontWeight: weight,
         position: "absolute",
         bottom: width > 600 ? "-45%" : "-35%",
         marginLeft: "5%"
@@ -146,7 +148,7 @@ const styles = StyleSheet.create({
     },
     heartText: {
         fontSize: font() - 5,
-        fontWeight: "900",
+        fontWeight: weight,
         color: "white",
         position: "absolute",
         zIndex: 999

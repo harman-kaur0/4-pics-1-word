@@ -45,7 +45,7 @@ const PrizeWheel = ({ navigation }) => {
         switch (true) {
             case newDegree > 318 || newDegree === 0:
                 setMessage("You've received 5 hearts.")
-                dispatch(updateUserData({ hearts: user.hearts + 5 }))
+                dispatch(updateUserData({ hearts: user.hearts + 5 > 99 ? 99 : user.hearts + 5 }))
                 break
             case newDegree < 47:
                 setMessage("You've received 2 wands.")
@@ -61,7 +61,7 @@ const PrizeWheel = ({ navigation }) => {
                 break
             case newDegree < 180:
                 setMessage("You've received 2 hearts.")
-                dispatch(updateUserData({ hearts: user.hearts + 2 }))
+                dispatch(updateUserData({ hearts: user.hearts + 2 > 99 ? 99 : user.hearts + 2 }))
                 break
             case newDegree < 227:
                 setMessage("You've received 300 coins.")

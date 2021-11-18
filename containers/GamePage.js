@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { StyleSheet, Text, View, Animated } from 'react-native'
+import { StyleSheet, Text, View, Animated, Platform } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     time: {
         textAlign: "center",
         marginTop: width < 400 ? 110 : 150,
-        fontWeight: "800",
+        fontWeight: Platform.OS === "ios" ? "800" : "bold",
         fontSize: font()
     }
 })

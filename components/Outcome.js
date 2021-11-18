@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { View, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
+import { View, Image, Text, StyleSheet, TouchableOpacity, Platform } from "react-native"
 import { useDispatch } from "react-redux"
 import { font, width } from "../helper/functions"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
@@ -17,11 +17,6 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
             if (calculateCoins() > 0) setCoins(calculateCoins())
         }
     }, [])
-
-    const handleExit = () => {
-        handleRetry()
-        navigation.goBack()
-    }
 
     const handleRetry = () => {
         dispatch(handleVictory())
@@ -86,7 +81,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                         }
                     </View>
                     <View style={styles.buttonsContainer}>
-                        <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={() => navigation.goBack()}>
                             <Image
                                 source={require("../assets/buttons/quit.png")}
                                 style={styles.button}
@@ -124,7 +119,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                         <Text style={styles.text2}>You've lost 10 coins!</Text>
                     </View>
                     <View style={styles.buttonsContainer}>
-                        <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={() => navigation.goBack()}>
                             <Image
                                 source={require("../assets/buttons/exit.png")}
                                 style={styles.button}
@@ -191,7 +186,7 @@ const styles = StyleSheet.create({
         height: "100%",
     },
     text1: {
-        fontWeight: "800", 
+        fontWeight: Platform.OS === "ios" ? "800" : "bold", 
         fontSize: font(),
         position: "absolute",
         bottom: 0
@@ -206,7 +201,7 @@ const styles = StyleSheet.create({
     },
     text2: {
         fontSize: font() - 5,
-        fontWeight: "800",
+        fontWeight: Platform.OS === "ios" ? "800" : "bold",
         marginRight: 20
     },
     coin: {

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useRef } from "react"
 import { View, StyleSheet, Image, Animated, Text, TouchableOpacity, Platform } from "react-native"
 import { font, width } from "../helper/functions"
 import { charData } from "../helper/functions"

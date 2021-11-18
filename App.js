@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, View, ImageBackground } from "react-native"
+import { StyleSheet, View, ImageBackground, Platform } from "react-native"
 import { Provider } from "react-redux"
 import { createStore, applyMiddleware, compose } from "redux"
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
@@ -43,12 +43,18 @@ const App = () => {
         }
     })
 
+    const config = {
+        animation: 'timing',
+        config: {
+            duration: 400
+        },
+      }
      
-    const cardFlip = {
+    const transition = {
         gestureDirection: "horizontal",
         transitionSpec: {
-            open: TransitionSpecs.TransitionIOSSpec,
-            close: TransitionSpecs.TransitionIOSSpec
+            open: config,
+            close: config
         },
         cardStyleInterpolator: ({ current, next, layouts }) => ({
             cardStyle: {
@@ -57,12 +63,6 @@ const App = () => {
                         translateX: current.progress.interpolate({
                             inputRange: [0, 1],
                             outputRange: [layouts.screen.width * 1.5, 0]
-                        })
-                    },
-                    {
-                        rotate: current.progress.interpolate({
-                            inputRange: [0, 1],
-                            outputRange: [1, 0],
                         })
                     },
                     {
@@ -83,6 +83,8 @@ const App = () => {
         })
     }
 
+    const options = Platform.OS === "ios" ? { gestureEnabled: false, headerShown: false, ...transition } : { gestureEnabled: false, headerShown: false }
+
     return (
         <Provider store={store}>
             <NavigationContainer theme={MyTheme}>
@@ -93,7 +95,7 @@ const App = () => {
                         resizeMode="cover" 
                     >
                         <Stack.Navigator 
-                            screenOptions={{ gestureEnabled: false, headerShown: false, ...cardFlip }}
+                            screenOptions={options}
                         >
                             <Stack.Screen name="PreScreen" component={PreScreen}/>
                             <Stack.Screen name="Home" component={HomeScreen}/>
