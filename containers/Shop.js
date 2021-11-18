@@ -4,11 +4,11 @@ import { width } from '../helper/functions'
 import Header from "../components/Header"
 import SaleContainer from '../components/SaleContainer'
 
-const Shop = ({ navigation }) => {
+const Shop = ({ navigation, playSound }) => {
 
     return (
         <>
-            <Header navigation={navigation} button="close" text="Shop"/>
+            <Header navigation={navigation} button="close" text="Shop" playSound={playSound}/>
             <View style={{...styles.saleContainer, marginTop: width > 600 ? "25%" : "45%"}}>
                 {
                     row1Data.map(item => (

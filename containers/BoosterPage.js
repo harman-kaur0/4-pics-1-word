@@ -5,7 +5,7 @@ import { updateUserData } from "../actions/userActions"
 import { useDispatch, useSelector } from 'react-redux'
 import Header from "../components/Header"
 
-const BoosterPage = ({ navigation }) => {
+const BoosterPage = ({ navigation, playSound }) => {
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.user)
     const { coins, boosts } = user
@@ -42,7 +42,7 @@ const BoosterPage = ({ navigation }) => {
 
     return (
         <>
-        <Header navigation={navigation} button="close" text="Booster Shop"/>
+        <Header navigation={navigation} button="close" text="Booster Shop" playSound={playSound}/>
         <View style={styles.contentContainer}>
             {
                 data.map((boost, idx) => (

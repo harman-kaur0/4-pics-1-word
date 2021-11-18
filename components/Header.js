@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, TouchableOpacity, Text, Platform } from "react
 import { useSelector } from "react-redux"
 import { width } from "../helper/functions"
 
-const Header = ({ button, navigation, text }) => {
+const Header = ({ button, navigation, text, playSound }) => {
     const user = useSelector(state => state.user.user)
     const { hearts, coins } = user
     const refreshTime = useSelector(state => state.header.refreshTime)
@@ -20,13 +20,18 @@ const Header = ({ button, navigation, text }) => {
         }
     }
 
+    const handlePress = () => {
+        playSound("button")
+        navigation.goBack()
+    }
+
     return (
         <View style={styles.header}>
             <View style={styles.textContainer}>
                 {
                     button === "close" ?
                     <TouchableOpacity 
-                        onPress={() => navigation.goBack()}
+                        onPress={handlePress}
                         style={styles.closeTouch}
                     >
                         <Image

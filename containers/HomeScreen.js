@@ -1,13 +1,18 @@
 import React from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
-import { StatusBar } from 'expo-status-bar'
 import { width } from '../helper/functions'
 import Header from "../components/Header"
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = ({ navigation, playSound }) => {
+    
+    const handlePress = page => {
+        playSound("button")
+        navigation.navigate(page)
+    }
+
     return (
         <>
-            <Header button="settings" navigation={navigation}/>
+            <Header button="settings" navigation={navigation} playSound={playSound}/>
             <Image 
                 source={require("../assets/main/logo.png")} 
                 style={styles.logo}
@@ -15,7 +20,7 @@ const HomeScreen = ({ navigation }) => {
             />
             <View style={styles.buttonContainer}>
                 <TouchableOpacity 
-                    onPress={() => navigation.navigate("LevelSelection")}
+                    onPress={() => handlePress("LevelSelection")}
                     style={styles.touchable2}
                 >
                     <Image 
@@ -26,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity 
                     style={styles.touchable2}
-                    onPress={() => navigation.navigate("Wheel")}
+                    onPress={() => handlePress("Wheel")}
                 >
                     <Image 
                         source={require("../assets/main/prize_wheel.png")}
@@ -44,26 +49,10 @@ const HomeScreen = ({ navigation }) => {
                     />
                 </TouchableOpacity>
             </View>
-            {/* <View style={styles.loginContainer}>
-                <TouchableOpacity style={styles.touchable3}>
-                    <Image 
-                        source={require("../assets/main/facebook.png")}
-                        style={styles.row2}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable3}>
-                    <Image 
-                        source={require("../assets/main/google.png")}
-                        style={styles.row2}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-            </View> */}
             <View style={styles.actionContainer}>
                 <TouchableOpacity 
                     style={styles.touchable4}
-                    onPress={() => navigation.navigate("Profile")}
+                    onPress={() => handlePress("Profile")}
                 >
                     <Image
                         source={require("../assets/main/profile.png")}
@@ -73,7 +62,7 @@ const HomeScreen = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity 
                     style={styles.touchable4}
-                    onPress={() => navigation.navigate("Shop")}
+                    onPress={() => handlePress("Shop")}
                 >
                     <Image
                         source={require("../assets/main/shop.png")}
@@ -83,7 +72,7 @@ const HomeScreen = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity 
                     style={styles.touchable4}
-                    onPress={() => navigation.navigate("Booster")}
+                    onPress={() => handlePress("Booster")}
                 >
                     <Image
                         source={require("../assets/main/boosters.png")}
@@ -106,7 +95,6 @@ const HomeScreen = ({ navigation }) => {
                     />
                 </TouchableOpacity>
             </View>
-            <StatusBar style="auto" />
         </>
     )
 }
@@ -200,9 +188,7 @@ const styles = StyleSheet.create({
         height: "100%",
         width: "50%",
         alignItems: "center",
-        marginRight: 10,
-        // borderColor: "orange",
-        // borderWidth: 1
+        marginRight: 10
     },
     coins: {
         width: "100%",
@@ -216,8 +202,6 @@ const styles = StyleSheet.create({
     },
     touchable1: {
         width: "13%",
-        // borderWidth: 1,
-        // borderColor: "black",
         height: "100%",
         justifyContent: "center",
         alignItems: "center",
@@ -225,11 +209,9 @@ const styles = StyleSheet.create({
     },
     touchableCoin: {
         width: "30%",
-        // borderWidth: 1,
-        // borderColor: "black",
         height: "100%",
         justifyContent: "center",
         alignItems: "center",
         marginLeft: 10
     }
-});
+})

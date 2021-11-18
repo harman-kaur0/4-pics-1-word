@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { StyleSheet, View, ImageBackground, Platform } from "react-native"
 import { Provider } from "react-redux"
 import { createStore, applyMiddleware, compose } from "redux"
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
+import { Audio } from "expo-av"
 import thunk from "redux-thunk"
 import rootReducer from "./reducers"
 import PreScreen from "./containers/PreScreen"
@@ -14,6 +15,7 @@ import Shop from "./containers/Shop"
 import BoosterPage from "./containers/BoosterPage"
 import PrizeWheel from "./containers/PrizeWheel"
 import LevelSelection from "./containers/LevelSelection"
+import Records from "./containers/Records"
 
 const MyTheme = {
     ...DefaultTheme,
@@ -36,54 +38,17 @@ const store = createStore(rootReducer, enhancer)
 const Stack = createStackNavigator()
 
 const App = () => {
+    const [sound, setSound] = useState()
 
-    const forFade = ({ current }) => ({
-        cardStyle: {
-            opacity: current.progress,
-        }
-    })
-
-    const config = {
-        animation: 'timing',
-        config: {
-            duration: 400
-        },
-      }
-     
-    const transition = {
-        gestureDirection: "horizontal",
-        transitionSpec: {
-            open: config,
-            close: config
-        },
-        cardStyleInterpolator: ({ current, next, layouts }) => ({
-            cardStyle: {
-                transform: [
-                    {
-                        translateX: current.progress.interpolate({
-                            inputRange: [0, 1],
-                            outputRange: [layouts.screen.width * 1.5, 0]
-                        })
-                    },
-                    {
-                        scale: next ?
-                            next.progress.interpolate({
-                                inputRange: [0, 1],
-                                outputRange: [1, 0],
-                            }) : 1
-                    },
-                ],
-            },
-            overlayStyle: {
-                opacity: current.progress.interpolate({
-                    inputRange: [0, 1],
-                    outputRange: [0, 0.5]
-                })
-            }
-        })
+    const playSound = async (type) => {
+        const { sound } = await Audio.Sound.createAsync(tap[type])
+        setSound(sound)
+        await sound.playAsync()
     }
 
-    const options = Platform.OS === "ios" ? { gestureEnabled: false, headerShown: false, ...transition } : { gestureEnabled: false, headerShown: false }
+    useEffect(() => {
+        return () => sound ? () => sound.unloadAsync() : undefined
+    }, [sound])
 
     return (
         <Provider store={store}>
@@ -98,13 +63,28 @@ const App = () => {
                             screenOptions={options}
                         >
                             <Stack.Screen name="PreScreen" component={PreScreen}/>
-                            <Stack.Screen name="Home" component={HomeScreen}/>
-                            <Stack.Screen name="Profile" component={Profile}/>
-                            <Stack.Screen name="GamePage" component={GamePage}/>
-                            <Stack.Screen name="Shop" component={Shop}/>
-                            <Stack.Screen name="Booster" component={BoosterPage}/>
-                            <Stack.Screen name="Wheel" component={PrizeWheel}/>
-                            <Stack.Screen name="LevelSelection" component={LevelSelection}/>
+                            <Stack.Screen name="Home">
+                                { props => <HomeScreen {...props} playSound={playSound}/> }
+                            </Stack.Screen>
+                            <Stack.Screen name="Profile">
+                                { props => <Profile {...props} playSound={playSound}/>}
+                            </Stack.Screen>
+                            <Stack.Screen name="Shop">
+                                { props => <Shop {...props} playSound={playSound}/> }
+                            </Stack.Screen>
+                            <Stack.Screen name="GamePage">
+                                { props => <GamePage {...props} playSound={playSound}/>}
+                            </Stack.Screen>
+                            <Stack.Screen name="Booster">
+                                { props => <BoosterPage {...props} playSound={playSound}/> }
+                            </Stack.Screen>
+                            <Stack.Screen name="Wheel">
+                                { props => <PrizeWheel {...props} playSound={playSound}/>}
+                            </Stack.Screen>
+                            <Stack.Screen name="LevelSelection">
+                                { props => <LevelSelection {...props} playSound={playSound}/> }
+                            </Stack.Screen>
+                            <Stack.Screen name="Records" component={Records}/>
                         </Stack.Navigator>
                     </ImageBackground>
                 </View>
@@ -125,3 +105,56 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     }
 })
+
+// const forFade = ({ current }) => ({
+//     cardStyle: {
+//         opacity: current.progress,
+//     }
+// })
+
+const config = {
+    animation: 'timing',
+    config: {
+        duration: 400
+    },
+  }
+ 
+const transition = {
+    gestureDirection: "horizontal",
+    transitionSpec: {
+        open: config,
+        close: config
+    },
+    cardStyleInterpolator: ({ current, next, layouts }) => ({
+        cardStyle: {
+            transform: [
+                {
+                    translateX: current.progress.interpolate({
+                        inputRange: [0, 1],
+                        outputRange: [layouts.screen.width * 1.5, 0]
+                    })
+                },
+                {
+                    scale: next ?
+                        next.progress.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: [1, 0],
+                        }) : 1
+                },
+            ],
+        },
+        overlayStyle: {
+            opacity: current.progress.interpolate({
+                inputRange: [0, 1],
+                outputRange: [0, 0.5]
+            })
+        }
+    })
+}
+
+const options = Platform.OS === "ios" ? { gestureEnabled: false, headerShown: false, ...transition } : { gestureEnabled: false, headerShown: false }
+
+const tap = {
+    button: require("./assets/sounds/button.mp3"),
+    letter: require("./assets/sounds/letter.mp3"),
+}

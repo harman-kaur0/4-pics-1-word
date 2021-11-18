@@ -28,7 +28,7 @@ const PreScreen = ({ navigation }) => {
 
         setTimeout(() => {
             navigation.navigate("Home")
-        }, 2000)
+        }, 3000)
     }, [])
 
     useEffect(() => {

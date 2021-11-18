@@ -12,7 +12,7 @@ import GameHints from "../components/GameHints"
 import GameHelp from "../components/GameHelp"
 import Outcome from "../components/Outcome"
 
-const GamePage = ({ navigation }) => {
+const GamePage = ({ navigation, playSound }) => {
     const dispatch = useDispatch()
 
     const [stage, setStage] = useState(1)
@@ -133,7 +133,7 @@ const GamePage = ({ navigation }) => {
 
     return (
         <>
-            <Header button="close" navigation={navigation} text={`Level ${level}-${stage}`}/>
+            <Header button="close" navigation={navigation} text={`Level ${level}-${stage}`} playSound={playSound}/>
             {
                 victory === null ?
                 <>
@@ -160,6 +160,7 @@ const GamePage = ({ navigation }) => {
                                     letter={letter} 
                                     word={word}
                                     index={index}
+                                    playSound={playSound}
                                 />
                             ))
                         }
@@ -173,6 +174,7 @@ const GamePage = ({ navigation }) => {
                                     letter={letter} 
                                     word={word} 
                                     index={index}
+                                    playSound={playSound}
                                 />
                             ))
                         }

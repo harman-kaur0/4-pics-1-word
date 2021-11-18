@@ -6,14 +6,14 @@ import gameData from "../assets/data"
 import Header from "../components/Header"
 import Level from "../components/Level"
 
-const LevelSelection = ({ navigation }) => {
+const LevelSelection = ({ navigation, playSound }) => {
     const [page, setPage] = useState(1)
 
     const user = useSelector(state => state.user.user)
     
     return (
         <> 
-            <Header button="close" text=" Level Selection" navigation={navigation}/>
+            <Header button="close" text=" Level Selection" navigation={navigation} playSound={playSound}/>
             <View style={styles.levelsContainer}>
                 {
                     Object.keys(gameData).slice(((page - 1) * 9), page * 9).map(level => (

@@ -6,7 +6,7 @@ import { updateUserData } from "../actions/userActions"
 import Header from "../components/Header"
 import CharacterShop from "../components/CharacterShop"
 
-const Profile = ({ navigation }) => {
+const Profile = ({ navigation, playSound }) => {
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.user)
     const levels = user.levels
@@ -76,7 +76,7 @@ const Profile = ({ navigation }) => {
 
     return (
         <>
-            <Header navigation={navigation} button="close" text="Profile"/>
+            <Header navigation={navigation} button="close" text="Profile" playSound={playSound}/>
             {
                 shop ? 
                     <CharacterShop 

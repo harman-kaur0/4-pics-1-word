@@ -5,7 +5,7 @@ import { width, font, getRandomItem } from '../helper/functions'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateUserData } from "../actions/userActions"
 
-const PrizeWheel = ({ navigation }) => {
+const PrizeWheel = ({ navigation, playSound }) => {
     const [degree, setDegree] = useState(0)
     const [spinning, setSpinning] = useState(false)
     const [message, setMessage] = useState(null)
@@ -111,7 +111,7 @@ const PrizeWheel = ({ navigation }) => {
 
     return (
         <>
-            <Header button="close" text="Prize Wheel" navigation={navigation}/>
+            <Header button="close" text="Prize Wheel" navigation={navigation} playSound={playSound}/>
             <View style={styles.wheelContainer}>
                 <Image
                     style={{
