@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
-        marginTop: width < 380 ? 140 : 170,
+        marginTop: width < 380 ? 140 : 180,
         borderColor: "black",
         alignSelf: "center"
     },

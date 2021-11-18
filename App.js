@@ -2,6 +2,8 @@ import React from "react"
 import { StyleSheet, View, ImageBackground } from "react-native"
 import { Provider } from "react-redux"
 import { createStore, applyMiddleware, compose } from "redux"
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
+import { createStackNavigator, TransitionSpecs } from "@react-navigation/stack"
 import thunk from "redux-thunk"
 import rootReducer from "./reducers"
 import PreScreen from "./containers/PreScreen"
@@ -12,9 +14,6 @@ import Shop from "./containers/Shop"
 import BoosterPage from "./containers/BoosterPage"
 import PrizeWheel from "./containers/PrizeWheel"
 import LevelSelection from "./containers/LevelSelection"
-import Header from "./components/Header"
-import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
-import { createStackNavigator, TransitionSpecs } from "@react-navigation/stack"
 
 const MyTheme = {
     ...DefaultTheme,
@@ -93,7 +92,9 @@ const App = () => {
                         style={styles.background} 
                         resizeMode="cover" 
                     >
-                        <Stack.Navigator screenOptions={{ headerShown: false, ...cardFlip }}>
+                        <Stack.Navigator 
+                            screenOptions={{ gestureEnabled: false, headerShown: false, ...cardFlip }}
+                        >
                             <Stack.Screen name="PreScreen" component={PreScreen}/>
                             <Stack.Screen name="Home" component={HomeScreen}/>
                             <Stack.Screen name="Profile" component={Profile}/>

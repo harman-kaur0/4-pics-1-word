@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { View, ImageBackground, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
+import { View, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
 import { useDispatch } from "react-redux"
-import { font } from "../helper/functions"
+import { font, width } from "../helper/functions"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
@@ -47,22 +47,23 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     }
 
     return (
-        <View style={styles.outcome}>
+        <>
             {
                 victory ?
                 <>
-                    <ImageBackground
-                        source={require("../assets/game/win_image.png")}
-                        style={styles.image}
-                        resizeMode="contain"
-                    >
+                    <View style={styles.imageContainer}>
+                        <Image
+                            source={require("../assets/game/win_image.png")}
+                            style={styles.background}
+                            resizeMode="contain"
+                        />
                         <Image
                             source={require("../assets/game/win_text.png")}
-                            style={styles.winImage}
+                            style={styles.textImage}
                             resizeMode="contain"
                         />
                         <Text style={styles.text1}>The word was</Text>
-                    </ImageBackground>
+                    </View>
                     <View style={styles.answerContainer}>
                         {
                             word?.split("").map((letter, idx) => (
@@ -102,19 +103,19 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                     </View>
                 </> : 
                 <>
-                    <View style={styles.loseContainer}>
+                    <View style={styles.imageContainer}>
                         <Image
                             source={require("../assets/game/lose_image.png")}
-                            style={styles.loseImage}
+                            style={styles.background}
                             resizeMode="contain"
                         />
                         <Image
                             source={require("../assets/game/lose_text.png")}
-                            style={styles.timeImage}
+                            style={{...styles.textImage, bottom: "-10%"}}
                             resizeMode="contain"
                         />
                     </View>
-                    <View style={{...styles.message, marginTop: 10}}>
+                    <View style={{...styles.message, marginTop: "10%"}}>
                         <Image
                             source={require("../assets/game/coin.png")}
                             style={styles.coin}
@@ -140,38 +141,30 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                     </View>
                 </>
             }
-        </View>
+        </>
     )
 }
 
 export default Outcome
 
 const styles = StyleSheet.create({
-    outcome: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        borderWidth: 1
-    },
-    image: {
+    imageContainer: {
+        marginTop: width > 600 ? "25%" : "45%",
         width: "100%",
-        maxWidth: 700,
-        aspectRatio: 1,
+        height: width > 600? "50%" : "40%",
         position: "relative",
         alignItems: "center"
     },
-    winImage: {
-        width: "90%",
-        resizeMode: "contain",
+    background: {
+        width: "100%", 
+        height: "100%", 
+        position: "absolute"
+    },
+    textImage: {
+        width: "60%",
+        height: "25%",
         position: "absolute",
         bottom: "7%",
-        alignSelf: "center"
-    },
-    timeImage: {
-        width: "90%",
-        resizeMode: "contain",
-        position: "absolute",
-        bottom: -50,
         alignSelf: "center"
     },
     answerContainer: {
@@ -186,8 +179,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         height: "6%",
         width: "100%",
-        maxWidth: 500,
-        justifyContent: "space-around"
+        alignItems: "center",
+        justifyContent: "center"
     },
     buttonTouch: {
         width: "40%",
@@ -196,7 +189,6 @@ const styles = StyleSheet.create({
     button: {
         width: "100%",
         height: "100%",
-        borderRadius: 20
     },
     text1: {
         fontWeight: "800", 
@@ -220,17 +212,5 @@ const styles = StyleSheet.create({
     coin: {
         height: "100%",
         resizeMode: "contain"
-    },
-    loseContainer: {
-        width: "100%",
-        height: "40%",
-        position: "relative",
-        marginBottom: "5%"
-    }, 
-    loseImage: {
-        width: "100%",
-        height: "70%",
-        resizeMode: "contain",
-        position: "absolute"
     }
 })

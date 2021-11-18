@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     time: {
         textAlign: "center",
         marginTop: width < 400 ? 110 : 150,
-        fontWeight: "bold",
+        fontWeight: "800",
         fontSize: font()
     }
 })

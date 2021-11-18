@@ -11,8 +11,12 @@ const Level = ({ level, levels, navigation, user }) => {
     const levelData = levels ? levels[level] : undefined
 
     const handlePress = () => {
-        dispatch(setLevel(level, navigation))
-        dispatch(updateUserData({ hearts: user.hearts - 1 }))
+        if (user.hearts > 0) {
+            dispatch(setLevel(level, navigation))
+            dispatch(updateUserData({ hearts: user.hearts - 1 }))
+        } else {
+            
+        }
     }
 
     return (
@@ -44,7 +48,7 @@ const Level = ({ level, levels, navigation, user }) => {
                 style={styles.image}
             />
         </View>
-)
+    )
 }
 
 export default Level

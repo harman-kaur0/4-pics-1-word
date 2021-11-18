@@ -46,19 +46,19 @@ const Header = ({ button, navigation, text }) => {
                 { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             </View>
             <View style={styles.coinsContainer}>
-                <Text style={styles.coinText}>
+                <Text style={{...styles.coinText, fontSize: font() - 10}}>
                     {refreshTime ? new Date(refreshTime * 1000).toISOString().substr(14, 5) : null}
                 </Text>
-                <Text style={styles.coinText}>{hearts}</Text>
-                <TouchableOpacity style={styles.coinTouch}>
+                <View style={styles.heart}>
+                    <Text style={styles.heartText}>{hearts}</Text>
                     <Image
                         source={require("../assets/wheel/heart.png")}
-                        style={{width: "80%", height: width > 600 ? "85%" : "60%", marginRight: 10}}
+                        style={{width: "100%", height: "100%"}}
                         resizeMode="contain"
                     />
-                </TouchableOpacity>
+                </View>
                 <Text style={styles.coinText}>{displayedCoins(coins) || 0}</Text>
-                <TouchableOpacity style={styles.coinTouch}>
+                <TouchableOpacity style={styles.coinTouch} onPress={() => navigation.navigate("Shop")}>
                     <Image
                         source={require("../assets/main/coins.png")}
                         style={{width: "80%", height: "90%", marginRight: 10}}
@@ -137,5 +137,18 @@ const styles = StyleSheet.create({
         position: "absolute",
         bottom: width > 600 ? "-45%" : "-35%",
         marginLeft: "5%"
+    },
+    heart: {
+        alignItems: "center",
+        justifyContent: "center",
+        width: "15%", 
+        height: width > 600 ? "85%" : "60%"
+    },
+    heartText: {
+        fontSize: font() - 5,
+        fontWeight: "900",
+        color: "white",
+        position: "absolute",
+        zIndex: 999
     }
 })
