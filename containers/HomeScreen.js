@@ -50,50 +50,17 @@ const HomeScreen = ({ navigation, playSound }) => {
                 </TouchableOpacity>
             </View>
             <View style={styles.actionContainer}>
-                <TouchableOpacity 
-                    style={styles.touchable4}
-                    onPress={() => handlePress("Profile")}
-                >
-                    <Image
-                        source={require("../assets/main/profile.png")}
-                        style={styles.row3}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity 
-                    style={styles.touchable4}
-                    onPress={() => handlePress("Shop")}
-                >
-                    <Image
-                        source={require("../assets/main/shop.png")}
-                        style={styles.row3}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity 
-                    style={styles.touchable4}
-                    onPress={() => handlePress("Booster")}
-                >
-                    <Image
-                        source={require("../assets/main/boosters.png")}
-                        style={styles.row3}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable4} onPress={() => handlePress("Records")}>
-                    <Image
-                        source={require("../assets/main/scores.png")}
-                        style={styles.row3}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable4}>
-                    <Image
-                        source={require("../assets/main/rate.png")}
-                        style={styles.row3}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
+                {
+                    routes.map((route, idx) => (
+                        <TouchableOpacity style={styles.touchable4} key={idx}>
+                            <Image
+                                source={route.image}
+                                style={styles.row3}
+                                resizeMode="contain"
+                            />
+                        </TouchableOpacity>
+                    ))
+                }
             </View>
         </>
     )
@@ -126,21 +93,22 @@ const styles = StyleSheet.create({
         alignSelf: "center",
     },
     touchable2: {
-        width: "50%",
+        width: width > 600 ? "30%" : "50%",
         height: "75%",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        marginHorizontal: "3%"
     },
     row1: {
         height: "100%",
         width: "100%"
     },
     touchable: {
-        width: "100%",
+        width: width > 600 ? "60%": "95%",
         justifyContent: "center",
         alignItems: "center",
         alignSelf: "center",
-        height: "100%",
+        height: "100%"
     },
     challengeButton: {
         width: "90%",
@@ -165,18 +133,17 @@ const styles = StyleSheet.create({
     },
     actionContainer: {
         flexDirection: "row",
-        width: "90%",
+        width: width > 600 ? "80%" : "90%",
         height: "8%",
         justifyContent: "center",
         alignItems: "center",
         alignSelf: "center",
         position: "absolute",
-        bottom: 50,
+        bottom: 50
     },
     touchable4: {
-        width: "20%",
-        marginRight: 5,
-        marginLeft: 5
+        width: width > 600 ? "13%" : "20%",
+        marginHorizontal: "1%"
     },
     settings: {
         width: "100%",
@@ -215,3 +182,25 @@ const styles = StyleSheet.create({
         marginLeft: 10
     }
 })
+
+const routes = [
+    {
+        route: "Profile",
+        image: require("../assets/main/profile.png")
+    },
+    {
+        route: "Shop",
+        image: require("../assets/main/shop.png")
+    },
+    {
+        route: "Booster",
+        image: require("../assets/main/boosters.png")
+    },
+    {
+        route: "Records",
+        image: require("../assets/main/scores.png")
+    },
+    {
+        image: require("../assets/main/rate.png")
+    },
+]
