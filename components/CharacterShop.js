@@ -35,6 +35,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound }) => 
                     data={[null, ...Object.keys(charData), null]}
                     keyExtractor={(_, index) => index.toString()}
                     horizontal
+                    showsHorizontalScrollIndicator={false}
                     contentContainerStyle={{
                         alignItems: "center"
                     }}

@@ -15,7 +15,7 @@ const PrizeWheel = ({ navigation, playSound, sound }) => {
     const spins = user?.spins
     const boosts = user?.boosts
     const coins = user?.coins
-
+    
     const handleSpin = async () => {
         dispatch(updateUserData({spins: spins - 1}))
         playSound("spin")

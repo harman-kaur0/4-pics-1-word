@@ -51,6 +51,21 @@ export const font = () => {
     }
 }
 
+export const levelFont = () => {
+    switch(true) {
+        case width < 400:
+            return 80
+        case width < 600:
+            return 90
+        case width < 800:
+            return 150
+        case width < 1000:
+            return 175
+        default:
+            return 200
+    }
+}
+
 export const charData = {
     james: {
         cost: 500,

@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity, View, Text, Image, ImageBackground } from
 import { setLevel } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
-import { width } from "../helper/functions"
+import { width, levelFont } from "../helper/functions"
 
 const Level = ({ level, levels, navigation, user, playSound }) => {
     const dispatch = useDispatch()
@@ -53,21 +53,6 @@ const Level = ({ level, levels, navigation, user, playSound }) => {
 }
 
 export default Level
-
-const levelFont = () => {
-    switch(true) {
-        case width < 400:
-            return 80
-        case width < 600:
-            return 90
-        case width < 800:
-            return 150
-        case width < 1000:
-            return 175
-        default:
-            return 200
-    }
-}
 
 const styles = StyleSheet.create({
     box: {

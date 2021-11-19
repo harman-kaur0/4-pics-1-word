@@ -20,17 +20,13 @@ const GamePage = ({ navigation, playSound }) => {
     const [active, setActive] = useState(true)
 
     const user = useSelector(state => state.user.user)
-    const gameData = useSelector(state => state.game)
-    const levelData = gameData.data
-    const levelCoins = gameData.coins
-    const word = gameData.word
-    const letters = gameData.letters
-    const answer = levelData.answer
-    const victory = gameData.victory
-    const level = gameData.level
-    const allLevelData = user.levels
-    const currentStars = allLevelData[level] || 0
+    const { levels, records } = user
+    const currentStars = levels[level] || 0
     const userCoins = user.coins
+
+    const gameData = useSelector(state => state.game)
+    const { data, coins, word, letters, victory, level } = gameData
+    const answer = data.answer
     const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
 
     useEffect(() => {
@@ -95,24 +91,25 @@ const GamePage = ({ navigation, playSound }) => {
         if (newStars > currentStars) {
             updatedUser = { 
                 coins: userCoins + calculateCoins(newStars, currentStars), 
-                levels: {...allLevelData, [level]: newStars} 
+                levels: {...levels, [level]: newStars} 
             }
             
-            if (!allLevelData[parseInt(level) + 1]) {
+            if (!levels[parseInt(level) + 1]) {
                 let levels = updatedUser.levels
                 updatedUser = {...updatedUser, levels: {...levels, [parseInt(level) + 1]: null}}
             }
         }
 
+        if (!records[level] || time > !records[level]) updatedUser.records = {...records, [level]: time}
 
         return updatedUser
     }
 
     const calculateCoins = () => {
         const hash = {
-            3: levelCoins,
-            2: levelCoins * 0.5,
-            1: Math.round(levelCoins * 0.25)
+            3: coins,
+            2: coins * 0.5,
+            1: Math.round(coins * 0.25)
         }
 
         switch("" + [newStars, currentStars]) {
@@ -140,10 +137,10 @@ const GamePage = ({ navigation, playSound }) => {
                 victory === null ?
                 <>
                     <Text style={styles.time}>{timeInMinutes()}</Text>
-                    <GameImages levelData={levelData}/>
+                    <GameImages levelData={data}/>
                     <GameHints 
                         word={word} 
-                        levelData={levelData} 
+                        levelData={data} 
                         letters={letters} 
                         coins={userCoins}
                         boosts={user.boosts}
@@ -188,7 +185,7 @@ const GamePage = ({ navigation, playSound }) => {
                     navigation={navigation} 
                     victory={victory}
                     level={level}
-                    data={levelData} 
+                    data={data} 
                     stage={stage}
                     setStage={setStage}
                     setTime={setTime}
