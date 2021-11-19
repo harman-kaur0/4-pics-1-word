@@ -33,22 +33,23 @@ const GamePage = ({ navigation, playSound }) => {
     const userCoins = user.coins
     const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
 
-    console.log(gameData)
-
     useEffect(() => {
         dispatch(handleInitialSetup(level, stage))
     }, [level])
 
     useEffect(() => {
         if (!word.includes(undefined)) {
-            if (word.join("").toLowerCase() === answer) {
+            let joined = word.join("").toLowerCase()
+            if (joined === answer) {
                 dispatch(handleVictory(true))
+                playSound("correct")
                 setActive(false)
                 if (stage === 10) {
                     dispatch(updateUserData(updatedUserInfo()))
                 }
-            } else {
+            } else if (joined && joined !== answer) {
                 shake()
+                playSound("wrong")
             }
         }
     }, [word])
@@ -62,6 +63,7 @@ const GamePage = ({ navigation, playSound }) => {
                 else {
                     const coins = userCoins - 10 > 0 ? userCoins - 10 : 0
                     dispatch(handleVictory(false))
+                    playSound("lose")
                     dispatch(updateUserData({ coins }))
                 }
             }
@@ -145,6 +147,7 @@ const GamePage = ({ navigation, playSound }) => {
                         letters={letters} 
                         coins={userCoins}
                         boosts={user.boosts}
+                        playSound={playSound}
                     />
                     <Animated.View 
                         style={{
@@ -179,7 +182,7 @@ const GamePage = ({ navigation, playSound }) => {
                             ))
                         }
                     </View>
-                    <GameHelp word={word} letters={letters}/>
+                    <GameHelp word={word} letters={letters} playSound={playSound}/>
                 </> :
                 <Outcome 
                     navigation={navigation} 
@@ -192,6 +195,7 @@ const GamePage = ({ navigation, playSound }) => {
                     time={time}
                     setActive={setActive}
                     calculateCoins={calculateCoins}
+                    playSound={playSound}
                 />
             }
         </>

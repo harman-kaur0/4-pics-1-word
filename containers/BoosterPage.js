@@ -32,6 +32,7 @@ const BoosterPage = ({ navigation, playSound }) => {
                 coins: coins - price, 
                 boosts: {...boosts, [item]: boosts[item] + amount} 
             }))
+            playSound("buy")
             setMessage(`You've purchased ${amount} ${item} hints.`)
         }
     }

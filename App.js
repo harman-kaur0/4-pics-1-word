@@ -79,7 +79,7 @@ const App = () => {
                                 { props => <BoosterPage {...props} playSound={playSound}/> }
                             </Stack.Screen>
                             <Stack.Screen name="Wheel">
-                                { props => <PrizeWheel {...props} playSound={playSound}/>}
+                                { props => <PrizeWheel {...props} playSound={playSound} sound={sound}/>}
                             </Stack.Screen>
                             <Stack.Screen name="LevelSelection">
                                 { props => <LevelSelection {...props} playSound={playSound}/> }
@@ -156,5 +156,12 @@ const options = Platform.OS === "ios" ? { gestureEnabled: false, headerShown: fa
 
 const tap = {
     button: require("./assets/sounds/button.mp3"),
+    buy: require("./assets/sounds/buy.mp3"),
+    correct: require("./assets/sounds/correct.mp3"),
+    hint: require("./assets/sounds/hint.mp3"),
     letter: require("./assets/sounds/letter.mp3"),
+    lose: require("./assets/sounds/lose.mp3"),
+    page: require("./assets/sounds/page.mp3"),
+    spin: require("./assets/sounds/spin.mp3"),
+    wrong: require("./assets/sounds/wrong.mp3"),
 }

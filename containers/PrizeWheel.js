@@ -5,7 +5,7 @@ import { width, font, getRandomItem } from '../helper/functions'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateUserData } from "../actions/userActions"
 
-const PrizeWheel = ({ navigation, playSound }) => {
+const PrizeWheel = ({ navigation, playSound, sound }) => {
     const [degree, setDegree] = useState(0)
     const [spinning, setSpinning] = useState(false)
     const [message, setMessage] = useState(null)
@@ -18,15 +18,16 @@ const PrizeWheel = ({ navigation, playSound }) => {
 
     const handleSpin = async () => {
         dispatch(updateUserData({spins: spins - 1}))
+        playSound("spin")
 
         return await new Promise(resolve => {
-            let time = 90 + getRandomItem(Array.from(Array(45)).map((_, idx) => idx + 1))
+            let time = 254 + getRandomItem(Array.from(Array(45)).map((_, idx) => idx + 1))
             let newDegree = degree
 
             setSpinning(true)
 
             const interval = setInterval(() => {
-                newDegree += 8
+                newDegree += time < 13 ? 2 : (time < 25) ? 4 : (time < 37) ? 6 : 8
                 setDegree(newDegree)
                 time--
                 if (!time) {
@@ -79,6 +80,7 @@ const PrizeWheel = ({ navigation, playSound }) => {
                 return 
         }
 
+        sound.unloadAsync()
         setSpinning(false)
     }
 

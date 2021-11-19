@@ -5,7 +5,7 @@ import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
 import { width } from "../helper/functions"
 
-const Level = ({ level, levels, navigation, user }) => {
+const Level = ({ level, levels, navigation, user, playSound }) => {
     const dispatch = useDispatch()
 
     const levelData = levels ? levels[level] : undefined
@@ -14,6 +14,7 @@ const Level = ({ level, levels, navigation, user }) => {
         if (user.hearts > 0) {
             dispatch(setLevel(level, navigation))
             dispatch(updateUserData({ hearts: user.hearts - 1 }))
+            playSound("button")
         } else {
             
         }

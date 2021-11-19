@@ -6,7 +6,7 @@ import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
 import { width, font } from "../helper/functions"
 
-const GameHints = ({ word, levelData, letters, coins, boosts }) => {
+const GameHints = ({ word, levelData, letters, coins, boosts, playSound }) => {
     const [usedTrash, setTrash] = useState(false)
     const [usedWand, setWand] = useState(false)
     const { wand, trash, letter } = boosts
@@ -27,6 +27,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         dispatch(updateUserData(wand ? {boosts: {...boosts, wand: wand - 1}} : {coins: coins - 100}))
         setWand(true)
+        playSound("hint")
     }
 
     const useLetterHint = () => {
@@ -61,6 +62,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
     
             dispatch(updateUserData(letter ? {boosts: {...boosts, letter: letter - 1}} : {coins: coins - 25}))
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))
+            playSound("hint")
         }
     }
 
@@ -71,6 +73,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts }) => {
         dispatch(updateUserData(trash ? {boosts: {...boosts, trash: trash - 1}} : {coins: coins - 50}))
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         setTrash(true)
+        playSound("hint")
     }
 
     return (

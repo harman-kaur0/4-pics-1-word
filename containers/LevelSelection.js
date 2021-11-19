@@ -10,6 +10,11 @@ const LevelSelection = ({ navigation, playSound }) => {
     const [page, setPage] = useState(1)
 
     const user = useSelector(state => state.user.user)
+
+    const handlePageChange = nextPage => {
+        setPage(nextPage)
+        playSound("page")
+    }
     
     return (
         <> 
@@ -23,6 +28,7 @@ const LevelSelection = ({ navigation, playSound }) => {
                             levels={user.levels}
                             navigation={navigation}
                             user={user}
+                            playSound={playSound}
                         />
                     ))
                 }
@@ -42,7 +48,7 @@ const LevelSelection = ({ navigation, playSound }) => {
                             resizeMode="contain"
                         />
                     </View> :
-                    <TouchableOpacity onPress={ () => setPage(page - 1)}>
+                    <TouchableOpacity onPress={ () => handlePageChange(page - 1)}>
                         <Image
                             source={require("../assets/buttons/left.png")}
                             style={styles.button}
@@ -64,7 +70,7 @@ const LevelSelection = ({ navigation, playSound }) => {
                             resizeMode="contain"
                         />
                     </View> :
-                    <TouchableOpacity onPress={() => setPage(page + 1)}>
+                    <TouchableOpacity onPress={() => handlePageChange(page + 1)}>
                         <Image
                             source={require("../assets/buttons/right.png")}
                             style={styles.button}

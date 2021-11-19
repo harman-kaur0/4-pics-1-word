@@ -3,13 +3,14 @@ import { View, Image, StyleSheet, TouchableOpacity } from "react-native"
 import { updateWordAndLetters } from "../actions/gameActions"
 import { useDispatch } from "react-redux"
 
-const GreenLetter = ({ letters, letter, word, index }) => {
+const GreenLetter = ({ letters, letter, word, index, playSound }) => {
     const dispatch = useDispatch()
 
     const handlePress = () => {
         let ind = word.indexOf(letter)
         let idx = letters.indexOf(letter.toUpperCase())
         if (ind !== -1) {
+            playSound("letter")
             let updatedWord = word.map((l,i) => i === index ? undefined : l)
             let updatedLetters = letters.map((l,i) => i === idx ? letter : l)
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))
