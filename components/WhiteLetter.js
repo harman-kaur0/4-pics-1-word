@@ -9,7 +9,7 @@ const WhiteLetters = ({ letters, letter, word, index, playSound }) => {
     const handlePress = () => {
         let ind = word.indexOf(undefined)
         if (ind !== -1 && letter === letter.toLowerCase()) {
-            playSound("letter")
+            playSound("tile")
             let updatedWord = word.map((l,i) => i === ind ? letter : l)
             let updatedLetters = letters.map((l,i) => i === index ? l.toUpperCase() : l)
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))

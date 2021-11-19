@@ -10,7 +10,7 @@ const GreenLetter = ({ letters, letter, word, index, playSound }) => {
         let ind = word.indexOf(letter)
         let idx = letters.indexOf(letter.toUpperCase())
         if (ind !== -1) {
-            playSound("letter")
+            playSound("tile")
             let updatedWord = word.map((l,i) => i === index ? undefined : l)
             let updatedLetters = letters.map((l,i) => i === idx ? letter : l)
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))

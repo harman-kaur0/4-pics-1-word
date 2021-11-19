@@ -31,6 +31,11 @@ const Profile = ({ navigation, playSound }) => {
         }
     ]
 
+    const handlePress = () => {
+        setShop(true)
+        playSound("button")
+    }
+
     const handleSubmit = async () => {
         try {
             if (username.length < 14) {
@@ -85,10 +90,11 @@ const Profile = ({ navigation, playSound }) => {
                     owned={owned} 
                     coins={user.coins}
                     sprite={user.sprite}
+                    playSound={playSound}
                 /> :
                 <>
                     <View style={styles.spriteContainer}>
-                        <TouchableOpacity style={styles.spriteTouch} onPress={() => setShop(true)}>
+                        <TouchableOpacity style={styles.spriteTouch} onPress={handlePress}>
                             <Image
                                 source={charData[active].default}
                                 style={styles.sprite}

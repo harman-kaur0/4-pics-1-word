@@ -5,7 +5,7 @@ import { font, width } from "../helper/functions"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, playSound }) => {
     const [coins, setCoins] = useState(0)
     const [word, setWord] = useState(null)
     const dispatch = useDispatch()
@@ -23,22 +23,28 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
         dispatch(handleInitialSetup(level, 1))
         setTime(180)
         setActive(true)
+        playSound("button")
     }
 
     const handleNextLevel = () => {
         if (stage === 10) {
             setTime(180)
-            setActive(true)
             setStage(1)
             dispatch(handleVictory())
             dispatch(handleInitialSetup(parseInt(level) + 1, 1))
         } else {
-            setTime(time + 30)
-            setActive(true)
+            setTime(time + 15)
             setStage(stage + 1)
             dispatch(handleVictory())
             dispatch(handleInitialSetup(level, stage + 1))
         }
+        setActive(true)
+        playSound("button")
+    }
+
+    const handleExit = () => {
+        navigation.goBack()
+        playSound("button")
     }
 
     return (
@@ -77,11 +83,11 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                 />
                                 <Text style={styles.text2}>You've earned {coins} coins!</Text>
                             </> :
-                            <Text style={styles.text2}>{10 - stage} stages to go! 30 seconds added.</Text>
+                            <Text style={styles.text2}>{10 - stage} stages to go! 15 seconds added.</Text>
                         }
                     </View>
                     <View style={styles.buttonsContainer}>
-                        <TouchableOpacity style={styles.buttonTouch} onPress={() => navigation.goBack()}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
                             <Image
                                 source={require("../assets/buttons/quit.png")}
                                 style={styles.button}
@@ -119,9 +125,9 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                         <Text style={styles.text2}>You've lost 10 coins!</Text>
                     </View>
                     <View style={styles.buttonsContainer}>
-                        <TouchableOpacity style={styles.buttonTouch} onPress={() => navigation.goBack()}>
+                        <TouchableOpacity style={styles.buttonTouch} onPress={handleExit}>
                             <Image
-                                source={require("../assets/buttons/exit.png")}
+                                source={require("../assets/buttons/quit.png")}
                                 style={styles.button}
                                 resizeMode="contain"
                             />

@@ -27,7 +27,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts, playSound }) => {
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         dispatch(updateUserData(wand ? {boosts: {...boosts, wand: wand - 1}} : {coins: coins - 100}))
         setWand(true)
-        playSound("hint")
+        playSound("wand")
     }
 
     const useLetterHint = () => {
@@ -62,7 +62,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts, playSound }) => {
     
             dispatch(updateUserData(letter ? {boosts: {...boosts, letter: letter - 1}} : {coins: coins - 25}))
             dispatch(updateWordAndLetters(updatedWord, updatedLetters))
-            playSound("hint")
+            playSound("button")
         }
     }
 
@@ -73,7 +73,7 @@ const GameHints = ({ word, levelData, letters, coins, boosts, playSound }) => {
         dispatch(updateUserData(trash ? {boosts: {...boosts, trash: trash - 1}} : {coins: coins - 50}))
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         setTrash(true)
-        playSound("hint")
+        playSound("trash")
     }
 
     return (

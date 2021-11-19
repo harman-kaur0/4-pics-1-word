@@ -84,7 +84,9 @@ const App = () => {
                             <Stack.Screen name="LevelSelection">
                                 { props => <LevelSelection {...props} playSound={playSound}/> }
                             </Stack.Screen>
-                            <Stack.Screen name="Records" component={Records}/>
+                            <Stack.Screen name="Records">
+                                { props => <Records {...props} playSound={playSound}/> }
+                            </Stack.Screen>
                         </Stack.Navigator>
                     </ImageBackground>
                 </View>
@@ -158,10 +160,12 @@ const tap = {
     button: require("./assets/sounds/button.mp3"),
     buy: require("./assets/sounds/buy.mp3"),
     correct: require("./assets/sounds/correct.mp3"),
-    hint: require("./assets/sounds/hint.mp3"),
-    letter: require("./assets/sounds/letter.mp3"),
+    tile: require("./assets/sounds/tile.mp3"),
     lose: require("./assets/sounds/lose.mp3"),
     page: require("./assets/sounds/page.mp3"),
+    shuffle: require("./assets/sounds/shuffle.mp3"),
     spin: require("./assets/sounds/spin.mp3"),
+    trash: require("./assets/sounds/trash.mp3"),
+    wand: require("./assets/sounds/wand.mp3"),
     wrong: require("./assets/sounds/wrong.mp3"),
 }

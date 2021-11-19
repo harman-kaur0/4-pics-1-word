@@ -4,12 +4,13 @@ import { useDispatch } from "react-redux"
 import { shuffleArray } from "../helper/functions"
 import { updateWordAndLetters } from "../actions/gameActions"
 
-const GameHelp = ({ word, letters }) => {
+const GameHelp = ({ word, letters, playSound }) => {
 
     const dispatch = useDispatch()
 
     const handleShuffle = () => {
         dispatch(updateWordAndLetters(word, shuffleArray(letters)))
+        playSound("shuffle")
     }
 
     const handleReset = () => {
@@ -24,6 +25,7 @@ const GameHelp = ({ word, letters }) => {
             }
         })
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
+        playSound("button")
     }
 
     return (

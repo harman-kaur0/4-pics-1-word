@@ -80,7 +80,7 @@ const HomeScreen = ({ navigation, playSound }) => {
                         resizeMode="contain"
                     />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.touchable4}>
+                <TouchableOpacity style={styles.touchable4} onPress={() => handlePress("Records")}>
                     <Image
                         source={require("../assets/main/scores.png")}
                         style={styles.row3}

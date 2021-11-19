@@ -8,18 +8,25 @@ import { updateUserData } from "../actions/userActions"
 const cardWidth = width > 600 ? width * 0.5 : width * 0.72
 const spacerWidth = (width - cardWidth)/2 - 10
 
-const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
+const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound }) => {
     const dispatch = useDispatch()
     const scrollX = useRef(new Animated.Value(0)).current
 
     const handleChangeProfile = item => {
         dispatch(updateUserData({ sprite: {...sprite, active: item}}))
+        playSound("button")
     }
 
     const purchaseCharacter = item => {
         dispatch(updateUserData({ sprite: {...sprite, owned: [...sprite.owned, item]}}))
+        playSound("buy")
     }
     
+    const handleExit = () => {
+        setShop(false)
+        playSound("button")
+    }
+
     return (
         <>
             <View style={styles.shopContainer}>
@@ -38,7 +45,9 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
                         [{ nativeEvent: {contentOffset: {x: scrollX}}}],
                         { useNativeDriver: true }
                     )}
+                    getItemLayout = {(_, index) => ({ length: cardWidth + 20, offset: (cardWidth + 20) * index, index })}
                     scrollEventThrottle={16}
+                    initialScrollIndex={Object.keys(charData).indexOf(active)}
                     renderItem={({ item, index }) => {
                         if (!item) {
                             return <View style={{width: spacerWidth}}></View>
@@ -89,16 +98,26 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
                                         ) :
                                         (
                                             charData[item].cost < coins ?
-                                            <TouchableOpacity 
-                                                style={{...styles.selectTouch, width: width > 600 ? "35%" : "40%"}}
-                                                onPress={() => purchaseCharacter(item)}
-                                            >
-                                                <Image
-                                                    source={require("../assets/buttons/unlock.png")}
-                                                    style={styles.select}
-                                                    resizeMode="contain"
-                                                />
-                                            </TouchableOpacity> :
+                                            <>
+                                                <TouchableOpacity 
+                                                    style={{...styles.selectTouch, width: width > 600 ? "35%" : "40%"}}
+                                                    onPress={() => purchaseCharacter(item)}
+                                                >
+                                                    <Image
+                                                        source={require("../assets/buttons/unlock.png")}
+                                                        style={styles.select}
+                                                        resizeMode="contain"
+                                                    />
+                                                </TouchableOpacity>
+                                                <View style={styles.costContainer}>
+                                                    <Image
+                                                        source={require("../assets/shop/coin.png")}
+                                                        style={styles.coin}
+                                                        resizeMode="contain"
+                                                    />
+                                                    <Text style={styles.cost}>{charData[item].cost}</Text>
+                                                </View>
+                                            </> :
                                             <>
                                                 <View style={{...styles.selectTouch, width: width > 600 ? "40%" : "45%"}}>
                                                     <Image
@@ -108,7 +127,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
                                                     />
                                                     <Image
                                                         source={require("../assets/buttons/unlock.png")}
-                                                        style={{...styles.select, position: "absolute", tintColor: "red", opacity: 0.5}}
+                                                        style={{...styles.select, position: "absolute", tintColor: "gray", opacity: 0.7}}
                                                         resizeMode="contain"
                                                     />
                                                 </View>
@@ -118,7 +137,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
                                                         style={styles.coin}
                                                         resizeMode="contain"
                                                     />
-                                                    <Text style={styles.cost}>{charData[item].cost}</Text>
+                                                    <Text style={{...styles.cost, color: "red"}}>{charData[item].cost}</Text>
                                                 </View>
                                             </>
                                         )
@@ -127,7 +146,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite }) => {
                         )
                     }}
                 />
-                <TouchableOpacity style={styles.back} onPress={() => setShop(false)}>
+                <TouchableOpacity style={styles.back} onPress={handleExit}>
                     <Image
                         source={require("../assets/buttons/exit.png")}
                         style={styles.select}
@@ -158,7 +177,7 @@ const styles = StyleSheet.create({
     },
     avatar: {
         height: "50%",
-        width: "50%"
+        width: "70%"
     },
     selectTouch: {
         height: "10%",
