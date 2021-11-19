@@ -7,7 +7,8 @@ const HomeScreen = ({ navigation, playSound }) => {
     
     const handlePress = page => {
         playSound("button")
-        navigation.navigate(page)
+        if (page) navigation.navigate(page)
+        else null
     }
 
     return (
@@ -41,7 +42,7 @@ const HomeScreen = ({ navigation, playSound }) => {
                 </TouchableOpacity>
             </View>
             <View style={styles.challengeButton}>
-                <TouchableOpacity style={styles.touchable}>
+                <TouchableOpacity style={styles.touchable} onPress={() => handlePress(null)}>
                     <Image 
                         source={require("../assets/buttons/challenge.png")}
                         style={styles.row1}
@@ -52,7 +53,11 @@ const HomeScreen = ({ navigation, playSound }) => {
             <View style={styles.actionContainer}>
                 {
                     routes.map((route, idx) => (
-                        <TouchableOpacity style={styles.touchable4} key={idx}>
+                        <TouchableOpacity 
+                            key={idx}
+                            style={styles.touchable4}
+                            onPress={() => handlePress(route.route)}
+                        >
                             <Image
                                 source={route.image}
                                 style={styles.row3}

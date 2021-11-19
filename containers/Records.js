@@ -17,6 +17,7 @@ const Records = ({ navigation, playSound }) => {
                 alignSelf: "center",
                 marginTop: width > 600 ? "25%" : "45%",
                 borderRadius: 30,
+                borderColor: "gray",
                 borderWidth: 1,
                 backgroundColor: "rgb(236,237,239)"
             }}>

@@ -18,7 +18,10 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound }) => 
     }
 
     const purchaseCharacter = item => {
-        dispatch(updateUserData({ sprite: {...sprite, owned: [...sprite.owned, item]}}))
+        dispatch(updateUserData({ 
+            sprite: {...sprite, owned: [...sprite.owned, item]}, 
+            coins: coins - charData[item].cost
+        }))
         playSound("buy")
     }
     
