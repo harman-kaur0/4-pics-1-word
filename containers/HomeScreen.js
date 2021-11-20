@@ -42,7 +42,7 @@ const HomeScreen = ({ navigation, playSound }) => {
                 </TouchableOpacity>
             </View>
             <View style={styles.challengeButton}>
-                <TouchableOpacity style={styles.touchable} onPress={() => handlePress(null)}>
+                <TouchableOpacity style={styles.touchable} onPress={() => handlePress("Challenge")}>
                     <Image 
                         source={require("../assets/buttons/challenge.png")}
                         style={styles.row1}

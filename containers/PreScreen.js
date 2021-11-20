@@ -1,11 +1,9 @@
 import React, { useEffect, useCallback, useRef } from "react"
+import AsyncStorage from "@react-native-async-storage/async-storage"
 import { View } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchUserData } from "../actions/userActions"
-import { getTime } from "../actions/headerActions"
-import { updateUserData } from "../actions/userActions"
-import { setTime, setRefreshTime } from "../actions/headerActions"
-import AsyncStorage from "@react-native-async-storage/async-storage"
+import { fetchUserData, updateUserData } from "../actions/userActions"
+import { getTime, setCurrentDate, setTime, setRefreshTime } from "../actions/headerActions"
 
 const PreScreen = ({ navigation }) => {
     const dispatch = useDispatch()
@@ -24,6 +22,7 @@ const PreScreen = ({ navigation }) => {
     useEffect(() => {
         dispatch(getTime())
         dispatch(fetchUserData())
+        dispatch(setCurrentDate())
         // remove()
 
         setTimeout(() => {

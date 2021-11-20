@@ -16,6 +16,7 @@ import BoosterPage from "./containers/BoosterPage"
 import PrizeWheel from "./containers/PrizeWheel"
 import LevelSelection from "./containers/LevelSelection"
 import Records from "./containers/Records"
+import Challenge from "./containers/Challenge"
 
 const MyTheme = {
     ...DefaultTheme,
@@ -86,6 +87,9 @@ const App = () => {
                             </Stack.Screen>
                             <Stack.Screen name="Records">
                                 { props => <Records {...props} playSound={playSound}/> }
+                            </Stack.Screen>
+                            <Stack.Screen name="Challenge">
+                                { props => <Challenge {...props} playSound={playSound}/> }
                             </Stack.Screen>
                         </Stack.Navigator>
                     </ImageBackground>

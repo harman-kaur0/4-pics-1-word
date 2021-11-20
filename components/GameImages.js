@@ -1,8 +1,7 @@
 import React from "react"
 import { StyleSheet, View, Image } from "react-native"
 
-const GameImages = ({ levelData }) => {
-    const { images } = levelData
+const GameImages = ({ images }) => {
 
     return (
         <View style={styles.boxContainer}>

@@ -1,18 +1,13 @@
 const initialState = {
-    button: "settings",
-    text: null,
+    day: null,
     time: null,
     refreshTime: null
 }
 
 export const header = (state = initialState, action) => {
     switch(action.type) {
-        case "HEADER":
-            return {
-                ...state, 
-                button: action.header.button,
-                text: action.header.text
-            }
+        case "DAY":
+            return {...state, day: action.day}
         case "TIME":
             return {...state, time: action.time}
         case "REFRESH":

@@ -5,12 +5,12 @@ import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
 import { width, font } from "../helper/functions"
 import Header from "../components/Header"
-import GreenLetter from "../components/GreenLetter"
-import WhiteLetter from "../components/WhiteLetter"
 import GameImages from "../components/GameImages"
 import GameHints from "../components/GameHints"
 import GameHelp from "../components/GameHelp"
 import Outcome from "../components/Outcome"
+import AnswerContainer from "../components/AnswerContainer"
+import LetterBank from "../components/LetterBank"
 
 const GamePage = ({ navigation, playSound }) => {
     const dispatch = useDispatch()
@@ -26,6 +26,7 @@ const GamePage = ({ navigation, playSound }) => {
 
     const gameData = useSelector(state => state.game)
     const { data, coins, word, letters, victory, level } = gameData
+    const joined = word.join("").toLowerCase()
     const answer = data.answer
     const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
 
@@ -35,7 +36,6 @@ const GamePage = ({ navigation, playSound }) => {
 
     useEffect(() => {
         if (!word.includes(undefined)) {
-            let joined = word.join("").toLowerCase()
             if (joined === answer) {
                 dispatch(handleVictory(true))
                 playSound("correct")
@@ -43,9 +43,6 @@ const GamePage = ({ navigation, playSound }) => {
                 if (stage === 10) {
                     dispatch(updateUserData(updatedUserInfo()))
                 }
-            } else if (joined && joined !== answer) {
-                shake()
-                playSound("wrong")
             }
         }
     }, [word])
@@ -67,17 +64,6 @@ const GamePage = ({ navigation, playSound }) => {
 
         return () => clearInterval(interval)
     }, [time])
-
-    const shakeAnimation = new Animated.Value(0)
-
-    const shake = () => {
-        Animated.sequence([
-            Animated.timing(shakeAnimation, { toValue: 10, duration: 50, useNativeDriver: true }),
-            Animated.timing(shakeAnimation, { toValue: -10, duration: 50, useNativeDriver: true }),
-            Animated.timing(shakeAnimation, { toValue: 10, duration: 50, useNativeDriver: true }),
-            Animated.timing(shakeAnimation, { toValue: 0, duration: 50, useNativeDriver: true })
-          ]).start()
-    }
 
     const timeInMinutes = () => {
         let minutes = Math.floor(time / 60)
@@ -137,48 +123,17 @@ const GamePage = ({ navigation, playSound }) => {
                 victory === null ?
                 <>
                     <Text style={styles.time}>{timeInMinutes()}</Text>
-                    <GameImages levelData={data}/>
+                    <GameImages images={data.images}/>
                     <GameHints 
                         word={word} 
-                        levelData={data} 
+                        data={data} 
                         letters={letters} 
                         coins={userCoins}
                         boosts={user.boosts}
                         playSound={playSound}
                     />
-                    <Animated.View 
-                        style={{
-                            ...styles.answerContainer,
-                            transform: [{translateX: shakeAnimation}]
-                        }}
-                    >
-                        {
-                            word.map((letter, index) => (
-                                <GreenLetter 
-                                    key={index}
-                                    letters={letters}
-                                    letter={letter} 
-                                    word={word}
-                                    index={index}
-                                    playSound={playSound}
-                                />
-                            ))
-                        }
-                    </Animated.View>
-                    <View style={styles.whiteContainer}>
-                        {
-                            letters.map((letter, index) => (
-                                <WhiteLetter 
-                                    key={index} 
-                                    letters={letters}
-                                    letter={letter} 
-                                    word={word} 
-                                    index={index}
-                                    playSound={playSound}
-                                />
-                            ))
-                        }
-                    </View>
+                    <AnswerContainer word={word} letters={letters} playSound={playSound} joined={joined} answer={answer}/>
+                    <LetterBank letters={letters} word={word} playSound={playSound}/>
                     <GameHelp word={word} letters={letters} playSound={playSound}/>
                 </> :
                 <Outcome 
@@ -202,23 +157,6 @@ const GamePage = ({ navigation, playSound }) => {
 export default GamePage
 
 const styles = StyleSheet.create({
-    whiteContainer: {
-        flexDirection: "row",
-        flexWrap: "wrap",
-        width: "85%",
-        maxWidth: 600,
-        alignSelf: "center",
-        justifyContent: "space-around",
-        marginTop: "3%"
-    },
-    answerContainer: {
-        flexDirection: "row",
-        height: "8%",
-        width: "90%",
-        alignSelf: "center",
-        justifyContent: "center",
-        marginTop: 10
-    },
     time: {
         textAlign: "center",
         marginTop: width < 400 ? 110 : 150,

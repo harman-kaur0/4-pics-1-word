@@ -1,12 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage"
 
-export const updateHeader = (text, button) => {
-    const header = { text, button }
-    return dispatch => {
-        dispatch({ type: "HEADER", header })
-    }
-}
-
 export const getTime = () => {
     return async dispatch => {
         try {
@@ -38,5 +31,16 @@ export const setRefreshTime = refreshTime => {
         } catch (err) {
             alert(err)
         }
+    }
+}
+
+export const setCurrentDate = () => {
+    return async dispatch => {
+        const now = new Date()
+        const start = new Date(now.getFullYear(), 0, 0)
+        const diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000)
+        const oneDay = 1000 * 60 * 60 * 24
+        const day = Math.floor(diff / oneDay)
+        dispatch({ type: "DAY", day })
     }
 }

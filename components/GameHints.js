@@ -6,14 +6,14 @@ import { updateUserData } from "../actions/userActions"
 import { useDispatch } from "react-redux"
 import { width, font } from "../helper/functions"
 
-const GameHints = ({ word, levelData, letters, coins, boosts, playSound }) => {
+const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
     const [usedTrash, setTrash] = useState(false)
     const [usedWand, setWand] = useState(false)
     const { wand, trash, letter } = boosts
 
     const dispatch = useDispatch()
 
-    let answer = levelData.answer ? levelData.answer.split("") : null
+    let answer = data.answer ? data.answer.split("") : null
 
     const useWandHint = () => {
         const updatedWord = answer.map(letter => letter.toUpperCase())

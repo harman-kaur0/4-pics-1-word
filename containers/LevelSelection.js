@@ -18,7 +18,7 @@ const LevelSelection = ({ navigation, playSound }) => {
     
     return (
         <> 
-            <Header button="close" text=" Level Selection" navigation={navigation} playSound={playSound}/>
+            <Header button="close" text="Level Selection" navigation={navigation} playSound={playSound}/>
             <View style={styles.levelsContainer}>
                 {
                     Object.keys(gameData).slice(((page - 1) * 9), page * 9).map(level => (
