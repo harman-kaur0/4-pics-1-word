@@ -35,15 +35,11 @@ const GamePage = ({ navigation, playSound }) => {
     }, [level])
 
     useEffect(() => {
-        if (!word.includes(undefined)) {
-            if (joined === answer) {
-                dispatch(handleVictory(true))
-                playSound("correct")
-                setActive(false)
-                if (stage === 10) {
-                    dispatch(updateUserData(updatedUserInfo()))
-                }
-            }
+        if (!word.includes(undefined) && joined === answer) {
+            dispatch(handleVictory(true))
+            playSound("correct")
+            setActive(false)
+            if (stage === 10) dispatch(updateUserData(updatedUserInfo()))
         }
     }, [word])
 
