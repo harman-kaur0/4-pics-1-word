@@ -42,9 +42,12 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
         playSound("button")
     }
 
-    const handleExit = () => {
-        navigation.goBack()
+    const handleExit = async () => {
+        await navigation.goBack()
         playSound("button")
+        setTimeout(() => {
+            dispatch({ type: "RESET" })
+        }, 1000)
     }
 
     return (

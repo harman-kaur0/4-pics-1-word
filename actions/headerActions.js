@@ -44,3 +44,9 @@ export const setCurrentDate = () => {
         dispatch({ type: "DAY", day })
     }
 }
+
+export const setMessage = message => {
+    return dispatch => {
+        dispatch({ type: "MESSAGE", message })
+    }
+}

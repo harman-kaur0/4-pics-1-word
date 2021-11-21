@@ -1,7 +1,8 @@
 const initialState = {
     day: null,
     time: null,
-    refreshTime: null
+    refreshTime: null,
+    message: null
 }
 
 export const header = (state = initialState, action) => {
@@ -12,6 +13,8 @@ export const header = (state = initialState, action) => {
             return {...state, time: action.time}
         case "REFRESH":
             return {...state, refreshTime: action.refreshTime}
+        case "MESSAGE":
+            return {...state, message: action.message}
         default:
             return state
     }

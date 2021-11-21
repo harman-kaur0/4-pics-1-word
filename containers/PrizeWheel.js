@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Header from "../components/Header"
-import { TouchableOpacity, View, Image, StyleSheet, Text, Animated } from 'react-native'
+import { TouchableOpacity, View, Image, StyleSheet, Text } from 'react-native'
 import { width, font, getRandomItem } from '../helper/functions'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateUserData } from "../actions/userActions"
+import { setMessage } from '../actions/headerActions'
 
 const PrizeWheel = ({ navigation, playSound }) => {
     const [degree, setDegree] = useState(0)
     const [spinning, setSpinning] = useState(false)
-    const [message, setMessage] = useState(null)
 
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.user)
@@ -45,35 +45,35 @@ const PrizeWheel = ({ navigation, playSound }) => {
 
         switch (true) {
             case newDegree > 318 || newDegree === 0:
-                setMessage("You've received 5 hearts.")
+                dispatch(setMessage("You've received 5 hearts."))
                 dispatch(updateUserData({ hearts: user.hearts + 5 > 99 ? 99 : user.hearts + 5 }))
                 break
             case newDegree < 47:
-                setMessage("You've received 2 wands.")
+                dispatch(setMessage("You've received 2 wands."))
                 dispatch(updateUserData({ boosts: {...boosts, wand: boosts.wand + 2} }))
                 break
             case newDegree < 88:
-                setMessage("You've received 250 coins.")
+                dispatch(setMessage("You've received 250 coins."))
                 dispatch(updateUserData({ coins: coins + 250 }))
                 break
             case newDegree < 135:
-                setMessage("You've received 5 letter hints.")
+                dispatch(setMessage("You've received 5 letter hints."))
                 dispatch(updateUserData({ boosts: {...boosts, letter: boosts.letter + 5} }))
                 break
             case newDegree < 180:
-                setMessage("You've received 2 hearts.")
+                dispatch(setMessage("You've received 2 hearts."))
                 dispatch(updateUserData({ hearts: user.hearts + 2 > 99 ? 99 : user.hearts + 2 }))
                 break
             case newDegree < 227:
-                setMessage("You've received 300 coins.")
+                dispatch(setMessage("You've received 300 coins."))
                 dispatch(updateUserData({ coins: coins + 300 }))
                 break
             case newDegree < 273:
-                setMessage("You've received 2 trash hints.")
+                dispatch(setMessage("You've received 2 trash hints."))
                 dispatch(updateUserData({ boosts: {...boosts, trash: boosts.trash + 2} }))
                 break
             case newDegree < 319:
-                setMessage("You've received 200 coins.")
+                dispatch(setMessage("You've received 200 coins."))
                 dispatch(updateUserData({ coins: coins + 200 }))
                 break
             default:
@@ -83,33 +83,6 @@ const PrizeWheel = ({ navigation, playSound }) => {
         playSound("reward")
         setSpinning(false)
     }
-
-    const fadeAnim = useState(new Animated.Value(0))[0]
-
-    const fadeIn = () => {
-        Animated.timing(fadeAnim, {
-            toValue: 1,
-            duration: 1000,
-            useNativeDriver: true
-        }).start()
-    }
-    
-    const fadeOut = () => {
-        Animated.timing(fadeAnim, {
-            toValue: 0,
-            duration: 1000,
-            useNativeDriver: true
-        }).start(() => setMessage(null))
-    }
-
-    useEffect(() => {
-        if (message) {
-            fadeIn()
-            setTimeout(async () => {
-                fadeOut()
-            }, 2000)
-        }
-    }, [message])
 
     return (
         <>
@@ -164,15 +137,6 @@ const PrizeWheel = ({ navigation, playSound }) => {
                         />
                     </TouchableOpacity>
                 </View> : null
-            }
-            {
-                message ? 
-                <Animated.Text 
-                    style={[styles.message, { opacity: fadeAnim }]}
-                >
-                    {message}
-                </Animated.Text> 
-                : null
             }
         </>
     )
@@ -234,18 +198,5 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         borderRadius: 5,
         overflow: "hidden"
-    },
-    message: {
-        position: "absolute",
-        top: "15%",
-        fontSize: font() - 8,
-        backgroundColor: "white",
-        borderRadius: 5,
-        overflow: "hidden",
-        borderColor: "black",
-        borderWidth: 1,
-        padding: 10,
-        alignSelf: "center",
-        zIndex: 999
     }
 })

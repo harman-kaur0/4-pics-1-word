@@ -1,12 +1,17 @@
-import React from "react"
-import { StyleSheet, View, Image, TouchableOpacity, Text, Platform } from "react-native"
-import { useSelector } from "react-redux"
+import React, { useState, useEffect } from "react"
+import { StyleSheet, View, Image, TouchableOpacity, Text, Platform, Animated } from "react-native"
+import { useSelector, useDispatch } from "react-redux"
 import { width } from "../helper/functions"
+import { setMessage } from "../actions/headerActions"
 
 const Header = ({ button, navigation, text, playSound }) => {
+    const dispatch = useDispatch()
+
     const user = useSelector(state => state.user.user)
     const { hearts, coins } = user
-    const refreshTime = useSelector(state => state.header.refreshTime)
+    
+    const header = useSelector(state => state.header)
+    const { refreshTime, message } = header
 
     const displayedCoins = coins => {
         if (coins) {
@@ -24,6 +29,33 @@ const Header = ({ button, navigation, text, playSound }) => {
         playSound("button")
         navigation.goBack()
     }
+
+    const fadeAnim = useState(new Animated.Value(0))[0]
+
+    const fadeIn = () => {
+        Animated.timing(fadeAnim, {
+            toValue: 1,
+            duration: 1000,
+            useNativeDriver: true
+        }).start()
+    }
+    
+    const fadeOut = () => {
+        Animated.timing(fadeAnim, {
+            toValue: 0,
+            duration: 2000,
+            useNativeDriver: true
+        }).start(() => dispatch(setMessage(null)))
+    }
+
+    useEffect(() => {
+        if (message) {
+            fadeIn()
+            setTimeout(async () => {
+                fadeOut()
+            }, 3000)
+        }
+    }, [message])
 
     return (
         <View style={styles.header}>
@@ -71,6 +103,15 @@ const Header = ({ button, navigation, text, playSound }) => {
                     />
                 </TouchableOpacity>
             </View>
+            {
+                message ? 
+                <Animated.Text 
+                    style={[styles.message, { opacity: fadeAnim }]}
+                >
+                    {message}
+                </Animated.Text> 
+                : null
+            }
         </View>
     )
 }
@@ -98,6 +139,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         top: 70,
         alignItems: "center",
+        justifyContent: "center",
         zIndex: 998
     },
     textContainer: {
@@ -157,5 +199,18 @@ const styles = StyleSheet.create({
         color: "white",
         position: "absolute",
         zIndex: 999
+    },
+    message: {
+        position: "absolute",
+        bottom: "-100%",
+        fontSize: font() - 8,
+        backgroundColor: "white",
+        borderRadius: 5,
+        overflow: "hidden",
+        borderColor: "black",
+        borderWidth: 1,
+        padding: 10,
+        alignSelf: "center",
+        zIndex: 999,
     }
 })
