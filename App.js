@@ -80,7 +80,7 @@ const App = () => {
                                 { props => <BoosterPage {...props} playSound={playSound}/> }
                             </Stack.Screen>
                             <Stack.Screen name="Wheel">
-                                { props => <PrizeWheel {...props} playSound={playSound} sound={sound}/>}
+                                { props => <PrizeWheel {...props} playSound={playSound}/>}
                             </Stack.Screen>
                             <Stack.Screen name="LevelSelection">
                                 { props => <LevelSelection {...props} playSound={playSound}/> }
@@ -167,6 +167,7 @@ const tap = {
     tile: require("./assets/sounds/tile.mp3"),
     lose: require("./assets/sounds/lose.mp3"),
     page: require("./assets/sounds/page.mp3"),
+    reward: require("./assets/sounds/reward.mp3"),
     shuffle: require("./assets/sounds/shuffle.mp3"),
     spin: require("./assets/sounds/spin.mp3"),
     trash: require("./assets/sounds/trash.mp3"),

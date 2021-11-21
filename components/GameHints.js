@@ -13,7 +13,7 @@ const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
 
     const dispatch = useDispatch()
 
-    let answer = data.answer ? data.answer.split("") : null
+    const answer = data?.answer?.split("") || null
 
     const useWandHint = () => {
         const updatedWord = answer.map(letter => letter.toUpperCase())
@@ -67,9 +67,14 @@ const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
     }
 
     const useTrashHint = () => {
-        const updatedWord = word.map(_ => undefined)
-        const updatedLetters = shuffleArray(answer)
-
+        const updatedWord = word.map(letter => letter === letter?.toUpperCase() ? letter : undefined)
+        let updatedLetters = shuffleArray(answer)
+        updatedWord.forEach(letter => {
+            if (letter) {
+                const index = updatedLetters.indexOf(letter.toLowerCase())
+                updatedLetters[index] = letter
+            }
+        })
         dispatch(updateUserData(trash ? {boosts: {...boosts, trash: trash - 1}} : {coins: coins - 50}))
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
         setTrash(true)
