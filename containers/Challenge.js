@@ -19,6 +19,7 @@ const Challenge = ({ navigation, playSound }) => {
 
     const user = useSelector(state => state.user.user)
     const { coins, boosts, spins } = user
+    const challengeData = user.challenges
     const gameData = useSelector(state => state.game)
     const { victory, data, word, letters } = gameData
     const joined = word.join("").toLowerCase()
@@ -39,7 +40,7 @@ const Challenge = ({ navigation, playSound }) => {
     useEffect(() => {
         if (victory) {
             dispatch(setMessage("You've received 1 spin on the prize wheel!"))
-            dispatch(updateUserData({ spins: spins + 1 }))
+            dispatch(updateUserData({ spins: spins + 1, challenges: {...challengeData, [day]: true} }))
             navigation.goBack()
             setTimeout(() => {
                 dispatch({ type: "RESET" })

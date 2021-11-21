@@ -25,7 +25,7 @@ const BoosterPage = ({ navigation, playSound }) => {
                 watchVideo()
         }
     }
-
+    
     const purchaseItem = async (price, amount, item) => {
         if (coins >= price) {
             await dispatch(updateUserData({ 
@@ -33,7 +33,6 @@ const BoosterPage = ({ navigation, playSound }) => {
                 boosts: {...boosts, [item]: boosts[item] + amount} 
             }))
             playSound("buy")
-            setMessage(`You've purchased ${amount} ${item} hints.`)
         }
     }
 

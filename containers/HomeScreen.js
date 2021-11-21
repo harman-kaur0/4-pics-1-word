@@ -1,15 +1,20 @@
 import React from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { width } from '../helper/functions'
+import { useSelector } from 'react-redux'
 import Header from "../components/Header"
 
 const HomeScreen = ({ navigation, playSound }) => {
+    const challenges = useSelector(state => state.user.user.challenges) || {}
+    const day = useSelector(state => state.header.day)
     
     const handlePress = page => {
         playSound("button")
         if (page) navigation.navigate(page)
         else null
     }
+
+    console.log(challenges[day])
 
     return (
         <>
@@ -42,13 +47,28 @@ const HomeScreen = ({ navigation, playSound }) => {
                 </TouchableOpacity>
             </View>
             <View style={styles.challengeButton}>
-                <TouchableOpacity style={styles.touchable} onPress={() => handlePress("Challenge")}>
-                    <Image 
-                        source={require("../assets/buttons/challenge.png")}
-                        style={styles.row1}
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
+                {
+                    challenges[day] ?
+                    <View style={styles.touchable} onPress={() => handlePress("Challenge")}>
+                        <Image 
+                            source={require("../assets/buttons/challenge.png")}
+                            style={styles.row1}
+                            resizeMode="contain"
+                        />
+                        <Image 
+                            source={require("../assets/buttons/challenge.png")}
+                            style={{...styles.row1, tintColor: "gray", position: "absolute", opacity: 0.5}}
+                            resizeMode="contain"
+                        />
+                    </View> :
+                    <TouchableOpacity style={styles.touchable} onPress={() => handlePress("Challenge")}>
+                        <Image 
+                            source={require("../assets/buttons/challenge.png")}
+                            style={styles.row1}
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
+                }
             </View>
             <View style={styles.actionContainer}>
                 {

@@ -16,7 +16,8 @@ export const fetchUserData = () => {
                     levels: { 1: null },
                     boosts: { wand: 1, letter: 5, trash: 3 },
                     spins: 0,
-                    records: {}
+                    records: {},
+                    challenges: {}
                 }
         
                 await AsyncStorage.setItem("user", JSON.stringify(newUser))
