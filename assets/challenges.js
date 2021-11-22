@@ -281,19 +281,19 @@ export const challenges = {
     336: {
         answer: "holiday",
         images: [
-            // require("../assets/challenges/holiday/1.png"),
-            // require("../assets/challenges/holiday/2.png"),
-            // require("../assets/challenges/holiday/3.png"),
-            // require("../assets/challenges/holiday/4.png")    
+            require("../assets/challenges/holiday/1.png"),
+            require("../assets/images/12/easter/1.png"),
+            require("../assets/challenges/holiday/3.png"),
+            require("../assets/challenges/holiday/4.png")    
         ]
     },
     337: {
         answer: "chimney",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")    
+            require("../assets/challenges/chimney/1.png"),
+            require("../assets/challenges/chimney/2.png"),
+            require("../assets/challenges/chimney/3.png"),
+            require("../assets/challenges/chimney/4.png")    
         ]
     },
     338: {
@@ -551,10 +551,10 @@ export const challenges = {
     366: {
         answer: "leapfrog",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")    
+            require("../assets/challenges/leapfrog/1.png"),
+            require("../assets/challenges/leapfrog/2.png"),
+            require("../assets/challenges/leapfrog/3.png"),
+            require("../assets/challenges/leapfrog/4.png")    
         ]
     }
 }
