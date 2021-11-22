@@ -542,10 +542,10 @@ export const challenges = {
     365: {
         answer: "miracle",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")    
+            require("../assets/challenges/miracle/1.png"),
+            require("../assets/challenges/miracle/2.png"),
+            require("../assets/challenges/miracle/3.png"),
+            require("../assets/challenges/miracle/4.png")
         ]
     },
     366: {
@@ -554,7 +554,7 @@ export const challenges = {
             require("../assets/challenges/leapfrog/1.png"),
             require("../assets/challenges/leapfrog/2.png"),
             require("../assets/challenges/leapfrog/3.png"),
-            require("../assets/challenges/leapfrog/4.png")    
+            require("../assets/challenges/leapfrog/4.png")
         ]
     }
 }
