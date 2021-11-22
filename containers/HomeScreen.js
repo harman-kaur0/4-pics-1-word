@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
-import { width } from '../helper/functions'
+import { width, checkForDuplicate } from '../helper/functions'
 import { useSelector } from 'react-redux'
 import Header from "../components/Header"
 
@@ -14,7 +14,7 @@ const HomeScreen = ({ navigation, playSound }) => {
         else null
     }
 
-    console.log(challenges[day])
+    checkForDuplicate()
 
     return (
         <>

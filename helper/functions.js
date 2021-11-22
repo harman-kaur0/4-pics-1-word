@@ -1,4 +1,30 @@
 import { Image, Dimensions } from "react-native"
+import { challenges } from "../assets/challenges"
+import gameData from "../assets/data"
+
+export const checkForDuplicate = word => {
+    let wordBank = new Set()
+
+    const dataKeys = Object.keys(gameData)
+    dataKeys.forEach(key => {
+        gameData[key].stages.forEach(data => {
+            if (data.answer) {
+                if (wordBank.has(data.answer)) {
+                    alert(`${data.answer} is repeated from data(${key, Object.keys(data)[0]}).`)
+                } else wordBank.add(data.answer)
+            }
+        })
+    })
+
+    const challengeKeys = Object.keys(challenges)
+    challengeKeys.forEach(key => {
+        if (challenges[key].answer) {
+            if (wordBank.has(challenges[key].answer)) {
+                alert(`${challenges[key].answer} challenges(${key})`)
+            } else wordBank.add(challenges[key].answer)
+        }
+    })
+}
 
 export const shuffleArray = array => {
     let currentIndex = array.length

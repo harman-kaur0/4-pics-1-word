@@ -1172,19 +1172,19 @@ const data = {
    "19": {
        "coins": 450,
        "stages": [
-           { "level": 1, "answer": "barbuda", "images": [
+           { "level": 1, "answer": "", "images": [
                // require("../assets/images/19/control/1.png"),
                // require("../assets/images/19/control/2.png"),
                // require("../assets/images/19/control/3.png"),
                // require("../assets/images/6/gamer/1.png")
            ]},
-           { "level": 2, "answer": "austria", "images": [
+           { "level": 2, "answer": "", "images": [
                // require("../assets/images/19/besties/1.png"),
                // require("../assets/images/19/besties/2.png"),
                // require("../assets/images/19/besties/3.png"),
                // require("../assets/images/12/snow/2.png")
            ]},
-           { "level": 3, "answer": "belgium", "images": [
+           { "level": 3, "answer": "", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
@@ -1226,7 +1226,7 @@ const data = {
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 10, "answer": "finland", "images": [
+           { "level": 10, "answer": "", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),

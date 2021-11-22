@@ -30,6 +30,7 @@ const AnswerContainer = ({ word, letters, joined, playSound, answer }) => {
                 width: "90%",
                 alignSelf: "center",
                 justifyContent: "center",
+                alignItems: "center",
                 marginTop: 10,
                 transform: [{translateX: shakeAnimation}]
             }}

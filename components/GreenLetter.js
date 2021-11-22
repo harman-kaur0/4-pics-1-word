@@ -2,9 +2,12 @@ import React from "react"
 import { View, Image, StyleSheet, TouchableOpacity } from "react-native"
 import { updateWordAndLetters } from "../actions/gameActions"
 import { useDispatch } from "react-redux"
+import { width } from "../helper/functions"
 
 const GreenLetter = ({ letters, letter, word, index, playSound }) => {
     const dispatch = useDispatch()
+    const length = word.length
+    const tileWidth = width > 600 ? "15%" : (length === 9 ? "12%" : (length === 8 ? "13%" : "15%"))
 
     const handlePress = () => {
         let ind = word.indexOf(letter)
@@ -21,7 +24,7 @@ const GreenLetter = ({ letters, letter, word, index, playSound }) => {
         letter ?
         (
             letter === letter.toUpperCase() ?
-            <View style={styles.letterTouch}>
+            <View style={{...styles.letterContainer, width: tileWidth}}>
                 <Image
                     source={green[letter.toLowerCase()]}
                     style={{
@@ -32,7 +35,7 @@ const GreenLetter = ({ letters, letter, word, index, playSound }) => {
                     resizeMode="contain"
                 />
             </View> :
-            <TouchableOpacity style={styles.letterTouch} onPress={handlePress}>
+            <TouchableOpacity style={{...styles.letterContainer, width: tileWidth}} onPress={handlePress}>
                 <Image
                     source={green[letter]}
                     style={{
@@ -43,7 +46,7 @@ const GreenLetter = ({ letters, letter, word, index, playSound }) => {
                 />
             </TouchableOpacity>
          ) :
-        <View style={styles.letterContainer}>
+        <View style={{...styles.letterContainer, alignItems: "center", width: tileWidth}}>
             <Image
                 source={require("../assets/game/box.png")}
                 resizeMode="contain"
@@ -60,16 +63,9 @@ const GreenLetter = ({ letters, letter, word, index, playSound }) => {
 export default GreenLetter
 
 const styles = StyleSheet.create({
-    letterTouch: {
-        width: "15%",
+    letterContainer: {
         maxWidth: 90,
         aspectRatio: 1
-    },
-    letterContainer: {
-        width: "15%",
-        maxWidth: 90,
-        aspectRatio: 1,
-        alignItems: "center"
     }
 })
 
