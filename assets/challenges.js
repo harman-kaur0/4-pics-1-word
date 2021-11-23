@@ -29,10 +29,10 @@ export const challenges = {
     307: {
         answer: "recipe",
         images: [
-            // require("../assets/challenges/recipe/1.png"),
-            // require("../assets/challenges/recipe/2.png"),
-            // require("../assets/challenges/recipe/3.png"),
-            // require("../assets/challenges/recipe/4.png")    
+            require("../assets/challenges/recipe/1.png"),
+            require("../assets/challenges/recipe/2.png"),
+            require("../assets/challenges/eggnog/4.png"),
+            require("../assets/challenges/chestnut/3.png")    
         ]
     },
     308: {
@@ -119,10 +119,10 @@ export const challenges = {
     317: {
         answer: "nacho",
         images: [
-            // require("../assets/challenges/nacho/1.png"),
-            // require("../assets/challenges/nacho/2.png"),
-            // require("../assets/challenges/nacho/3.png"),
-            // require("../assets/challenges/nacho/4.png")    
+            require("../assets/challenges/nacho/1.png"),
+            require("../assets/challenges/nacho/2.png"),
+            require("../assets/challenges/nacho/3.png"),
+            require("../assets/challenges/nacho/4.png")    
         ]
     },
     318: {
@@ -137,37 +137,37 @@ export const challenges = {
     319: {
         answer: "drumstick",
         images: [
-            // require("../assets/challenges/drumstick/1.png"),
-            // require("../assets/challenges/drumstick/2.png"),
-            // require("../assets/challenges/drumstick/3.png"),
-            // require("../assets/challenges/drumstick/4.png")    
+            require("../assets/challenges/drumstick/1.png"),
+            require("../assets/challenges/drumstick/2.png"),
+            require("../assets/challenges/drumstick/3.png"),
+            require("../assets/challenges/drumstick/4.png")    
         ]
     },
     320: {
         answer: "election",
         images: [
-            // require("../assets/challenges/election/1.png"),
-            // require("../assets/challenges/election/2.png"),
-            // require("../assets/challenges/election/3.png"),
-            // require("../assets/challenges/election/4.png")    
+            require("../assets/challenges/election/1.png"),
+            require("../assets/challenges/election/2.png"),
+            require("../assets/challenges/election/3.png"),
+            require("../assets/challenges/election/4.png")    
         ]
     },
     321: {
         answer: "stuffing",
         images: [
-            // require("../assets/challenges/stuffing/1.png"),
-            // require("../assets/challenges/stuffing/2.png"),
-            // require("../assets/challenges/stuffing/3.png"),
-            // require("../assets/challenges/stuffing/4.png")    
+            require("../assets/challenges/stuffing/1.png"),
+            require("../assets/challenges/stuffing/2.png"),
+            require("../assets/challenges/stuffing/3.png"),
+            require("../assets/challenges/turkey/1.png")    
         ]
     },
     322: {
         answer: "wishbone",
         images: [
-            // require("../assets/challenges/wishbone/1.png"),
-            // require("../assets/challenges/wishbone/2.png"),
-            // require("../assets/challenges/wishbone/3.png"),
-            // require("../assets/challenges/wishbone/4.png")    
+            require("../assets/challenges/wishbone/1.png"),
+            require("../assets/challenges/miracle/3.png"),
+            require("../assets/challenges/wishbone/3.png"),
+            require("../assets/challenges/wishbone/4.png")    
         ]
     },
     323: {
@@ -201,8 +201,8 @@ export const challenges = {
         answer: "turkey",
         images: [
             require("../assets/challenges/turkey/1.png"),
-            require("../assets/challenges/turkey/1.png"),    
-            require("../assets/challenges/turkey/3.png"),
+            require("../assets/challenges/turkey/2.png"),    
+            require("../assets/challenges/wishbone/1.png"),
             require("../assets/challenges/gobble/1.png")
         ]
     },
