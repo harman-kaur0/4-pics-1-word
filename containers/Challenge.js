@@ -51,7 +51,7 @@ const Challenge = ({ navigation, playSound }) => {
     return (
         <>
             <Header button="close" text="Daily Challenge" navigation={navigation} playSound={playSound}/>
-            <Text style={{marginTop: width > 600 ? "25%" : "45%"}}></Text>
+            <Text style={{marginTop: width > 600 ? "25%" : "35%"}}></Text>
             <GameImages images={images}/>
             <GameHints
                 word={word}

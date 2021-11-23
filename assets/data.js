@@ -107,7 +107,7 @@ const data = {
                 require("../assets/images/2/yellow/1.png"),
                 require("../assets/images/2/yellow/2.png"),
                 require("../assets/images/2/yellow/3.png"),
-                require("../assets/images/2/yellow/4.png")
+                require("../assets/challenges/pepper/2.png"),
             ]},
             { "level": 8, "answer": "violet", "images": [
                 require("../assets/images/2/violet/1.png"),

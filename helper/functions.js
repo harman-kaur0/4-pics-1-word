@@ -4,6 +4,15 @@ import gameData from "../assets/data"
 
 export const checkForDuplicate = word => {
     let wordBank = new Set()
+    
+    const challengeKeys = Object.keys(challenges)
+    challengeKeys.forEach(key => {
+        if (challenges[key].answer) {
+            if (wordBank.has(challenges[key].answer)) {
+                alert(`${challenges[key].answer} challenges(${key})`)
+            } else wordBank.add(challenges[key].answer)
+        }
+    })
 
     const dataKeys = Object.keys(gameData)
     dataKeys.forEach(key => {
@@ -14,15 +23,6 @@ export const checkForDuplicate = word => {
                 } else wordBank.add(data.answer)
             }
         })
-    })
-
-    const challengeKeys = Object.keys(challenges)
-    challengeKeys.forEach(key => {
-        if (challenges[key].answer) {
-            if (wordBank.has(challenges[key].answer)) {
-                alert(`${challenges[key].answer} challenges(${key})`)
-            } else wordBank.add(challenges[key].answer)
-        }
     })
 }
 
