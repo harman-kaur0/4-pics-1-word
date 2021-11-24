@@ -38,82 +38,82 @@ export const challenges = {
     308: {
         answer: "diwali",
         images: [
-            // require("../assets/challenges/diwali/1.png"),
-            // require("../assets/challenges/diwali/2.png"),
-            // require("../assets/challenges/diwali/3.png"),
-            // require("../assets/challenges/diwali/4.png")    
+            require("../assets/challenges/diwali/1.png"),
+            require("../assets/challenges/diwali/2.png"),
+            require("../assets/challenges/diwali/3.png"),
+            require("../assets/challenges/diwali/4.png")    
         ]
     },
     309: {
         answer: "bombard",
         images: [
-            // require("../assets/challenges/bombard/1.png"),
-            // require("../assets/challenges/bombard/2.png"),
-            // require("../assets/challenges/bombard/3.png"),
-            // require("../assets/challenges/bombard/4.png")    
+            require("../assets/challenges/bombard/1.png"),
+            require("../assets/images/17/cannons/2.png"),
+            require("../assets/challenges/bombard/2.png"),
+            require("../assets/images/17/cannons/4.png")
         ]
     },
     310: {
         answer: "typhoon",
         images: [
-            // require("../assets/challenges/typhoon/1.png"),
-            // require("../assets/challenges/typhoon/2.png"),
-            // require("../assets/challenges/typhoon/3.png"),
-            // require("../assets/challenges/typhoon/4.png")    
+            require("../assets/challenges/typhoon/1.png"),
+            require("../assets/challenges/typhoon/2.png"),
+            require("../assets/challenges/typhoon/3.png"),
+            require("../assets/challenges/typhoon/4.png")    
         ]
     },
     311: {
         answer: "november",
         images: [
-            // require("../assets/challenges/november/1.png"),
-            // require("../assets/challenges/november/2.png"),
-            // require("../assets/challenges/november/3.png"),
-            // require("../assets/challenges/november/4.png")    
+            require("../assets/challenges/election/2.png"),
+            require("../assets/challenges/turkey/1.png"),
+            require("../assets/images/12/autumn/1.png"),
+            require("../assets/images/12/autumn/4.png")
         ]
     },
     312: {
         answer: "resign",
         images: [
-            // require("../assets/challenges/resign/1.png"),
-            // require("../assets/challenges/resign/2.png"),
-            // require("../assets/challenges/resign/3.png"),
-            // require("../assets/challenges/resign/4.png")    
+            require("../assets/challenges/resign/1.png"),
+            require("../assets/challenges/resign/2.png"),
+            require("../assets/challenges/resign/3.png"),
+            require("../assets/images/2/red/1.png")    
         ]
     },
     313: {
         answer: "tasty",
         images: [
-            // require("../assets/challenges/tasty/1.png"),
-            // require("../assets/challenges/tasty/2.png"),
-            // require("../assets/challenges/tasty/3.png"),
-            // require("../assets/challenges/tasty/4.png")    
+            require("../assets/challenges/tasty/1.png"),
+            require("../assets/challenges/parfait/3.png"),
+            require("../assets/challenges/chestnut/3.png"),
+            require("../assets/challenges/drumstick/2.png")    
         ]
     },
     314: {
         answer: "beggar",
         images: [
-            // require("../assets/challenges/beggar/1.png"),
-            // require("../assets/challenges/beggar/2.png"),
-            // require("../assets/challenges/beggar/3.png"),
-            // require("../assets/challenges/beggar/4.png")    
+            require("../assets/challenges/beggar/1.png"),
+            require("../assets/challenges/beggar/2.png"),
+            require("../assets/challenges/beggar/3.png"),
+            require("../assets/challenges/beggar/4.png")    
         ]
     },
     315: {
         answer: "veterans",
         images: [
-            // require("../assets/challenges/veterans/1.png"),
-            // require("../assets/challenges/veterans/2.png"),
-            // require("../assets/challenges/veterans/3.png"),
-            // require("../assets/challenges/veterans/4.png")    
+            require("../assets/challenges/veterans/1.png"),
+            require("../assets/challenges/veterans/2.png"),
+            require("../assets/challenges/veterans/3.png"),
+            require("../assets/challenges/veterans/4.png")    
         ]
     },
     316: {
         answer: "armistice",
         images: [
-            // require("../assets/challenges/armistice/1.png"),
-            // require("../assets/challenges/armistice/2.png"),
-            // require("../assets/challenges/armistice/3.png"),
-            // require("../assets/challenges/armistice/4.png")    
+            require("../assets/challenges/armistice/1.png"),
+            require("../assets/challenges/armistice/2.png"),
+            require("../assets/challenges/armistice/3.png"),
+            require("../assets/challenges/armistice/4.png")    
         ]
     },
     317: {
@@ -128,10 +128,10 @@ export const challenges = {
     318: {
         answer: "native",
         images: [
-            // require("../assets/challenges/native/1.png"),
-            // require("../assets/challenges/native/2.png"),
-            // require("../assets/challenges/native/3.png"),
-            // require("../assets/challenges/native/4.png")    
+            require("../assets/challenges/native/1.png"),
+            require("../assets/challenges/native/2.png"),
+            require("../assets/challenges/native/3.png"),
+            require("../assets/images/14/pilgrim/3.png")    
         ]
     },
     319: {

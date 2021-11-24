@@ -865,11 +865,11 @@ const data = {
                 require("../assets/images/14/explore/3.png"),
                 require("../assets/images/14/explore/4.png")
             ]},
-            { "level": 4, "answer": "pilgram", "images": [
+            { "level": 4, "answer": "pilgrim", "images": [
                 require("../assets/images/14/ship/4.png"),
-                require("../assets/images/14/pilgram/2.png"),
-                require("../assets/images/14/pilgram/3.png"),
-                require("../assets/images/14/pilgram/4.png")
+                require("../assets/images/14/pilgrim/2.png"),
+                require("../assets/images/14/pilgrim/3.png"),
+                require("../assets/images/14/pilgrim/4.png")
             ]},
             { "level": 5, "answer": "shipping", "images": [
                 require("../assets/images/14/crash/3.png"),
@@ -896,7 +896,7 @@ const data = {
                 require("../assets/images/14/sparrow/1.png")
             ]},
             { "level": 9, "answer": "sailor", "images": [
-                require("../assets/images/14/pilgram/4.png"),
+                require("../assets/images/14/pilgrim/4.png"),
                 require("../assets/images/14/sailor/2.png"),
                 require("../assets/images/14/sailor/3.png"),
                 require("../assets/images/14/sailor/4.png")
