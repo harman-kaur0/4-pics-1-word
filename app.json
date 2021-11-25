@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "4-pics-1-word",
+    "desciption": "A word guessing name using 4 pictures relating to the word.",
     "slug": "4-pics-1-word",
     "version": "1.0.0",
     "orientation": "portrait",
