@@ -2331,7 +2331,7 @@ export const challenges = {
         ]
     },
     260: {
-        answer: "",
+        answer: "octagon",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2340,7 +2340,7 @@ export const challenges = {
         ]
     },
     261: {
-        answer: "",
+        answer: "program",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2349,7 +2349,7 @@ export const challenges = {
         ]
     },
     262: {
-        answer: "",
+        answer: "universe",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2358,7 +2358,7 @@ export const challenges = {
         ]
     },
     263: {
-        answer: "",
+        answer: "labyrinth",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2367,7 +2367,7 @@ export const challenges = {
         ]
     },
     264: {
-        answer: "",
+        answer: "jackknife",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2376,7 +2376,7 @@ export const challenges = {
         ]
     },
     265: {
-        answer: "",
+        answer: "kinetic",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2385,7 +2385,7 @@ export const challenges = {
         ]
     },
     266: {
-        answer: "",
+        answer: "arcane",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2394,7 +2394,7 @@ export const challenges = {
         ]
     },
     267: {
-        answer: "",
+        answer: "intercept",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2403,7 +2403,7 @@ export const challenges = {
         ]
     },
     268: {
-        answer: "",
+        answer: "occipital",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -2412,7 +2412,7 @@ export const challenges = {
         ]
     },
     269: {
-        answer: "",
+        answer: "maestro",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
