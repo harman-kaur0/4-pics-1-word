@@ -657,7 +657,7 @@ export const challenges = {
         ]
     },
     74: {
-        answer: "",
+        answer: "evacuate",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -666,7 +666,7 @@ export const challenges = {
         ]
     },
     75: {
-        answer: "",
+        answer: "irish",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -675,7 +675,7 @@ export const challenges = {
         ]
     },
     76: {
-        answer: "",
+        answer: "awkward",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -684,7 +684,7 @@ export const challenges = {
         ]
     },
     77: {
-        answer: "",
+        answer: "sleepy",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -693,7 +693,7 @@ export const challenges = {
         ]
     },
     78: {
-        answer: "",
+        answer: "laughter",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -702,7 +702,7 @@ export const challenges = {
         ]
     },
     79: {
-        answer: "",
+        answer: "proposal",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -711,7 +711,7 @@ export const challenges = {
         ]
     },
     80: {
-        answer: "",
+        answer: "poetry",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -720,7 +720,7 @@ export const challenges = {
         ]
     },
     81: {
-        answer: "",
+        answer: "fragrance",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -729,7 +729,7 @@ export const challenges = {
         ]
     },
     82: {
-        answer: "",
+        answer: "water",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -738,7 +738,7 @@ export const challenges = {
         ]
     },
     83: {
-        answer: "water",
+        answer: "goofy",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -810,7 +810,7 @@ export const challenges = {
         ]
     },
     91: {
-        answer: "backup",
+        answer: "fool",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -819,7 +819,7 @@ export const challenges = {
         ]
     },
     92: {
-        answer: "",
+        answer: "backup",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -828,7 +828,7 @@ export const challenges = {
         ]
     },
     93: {
-        answer: "",
+        answer: "rainbow",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -837,7 +837,7 @@ export const challenges = {
         ]
     },
     94: {
-        answer: "",
+        answer: "vitamin",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -846,7 +846,7 @@ export const challenges = {
         ]
     },
     95: {
-        answer: "",
+        answer: "flash",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -855,7 +855,7 @@ export const challenges = {
         ]
     },
     96: {
-        answer: "",
+        answer: "hopeful",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -864,7 +864,7 @@ export const challenges = {
         ]
     },
     97: {
-        answer: "",
+        answer: "coffee",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -873,7 +873,7 @@ export const challenges = {
         ]
     },
     98: {
-        answer: "",
+        answer: "housework",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -882,7 +882,7 @@ export const challenges = {
         ]
     },
     99: {
-        answer: "",
+        answer: "antique",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -891,7 +891,7 @@ export const challenges = {
         ]
     },
     100: {
-        answer: "",
+        answer: "farmer",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -900,7 +900,7 @@ export const challenges = {
         ]
     },
     101: {
-        answer: "",
+        answer: "submarine",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -909,7 +909,7 @@ export const challenges = {
         ]
     },
     102: {
-        answer: "",
+        answer: "educate",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -918,7 +918,7 @@ export const challenges = {
         ]
     },
     103: {
-        answer: "",
+        answer: "record",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -927,7 +927,7 @@ export const challenges = {
         ]
     },
     104: {
-        answer: "",
+        answer: "gardener",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -936,7 +936,7 @@ export const challenges = {
         ]
     },
     105: {
-        answer: "",
+        answer: "titanic",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -945,7 +945,7 @@ export const challenges = {
         ]
     },
     106: {
-        answer: "",
+        answer: "orchid",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -954,7 +954,7 @@ export const challenges = {
         ]
     },
     107: {
-        answer: "",
+        answer: "scavenge",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -963,7 +963,7 @@ export const challenges = {
         ]
     },
     108: {
-        answer: "",
+        answer: "lineman",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -972,7 +972,7 @@ export const challenges = {
         ]
     },
     109: {
-        answer: "",
+        answer: "hanging",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -981,7 +981,7 @@ export const challenges = {
         ]
     },
     110: {
-        answer: "",
+        answer: "clone",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -990,7 +990,7 @@ export const challenges = {
         ]
     },
     111: {
-        answer: "",
+        answer: "quarter",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -999,7 +999,7 @@ export const challenges = {
         ]
     },
     112: {
-        answer: "",
+        answer: "recycle",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1008,7 +1008,7 @@ export const challenges = {
         ]
     },
     113: {
-        answer: "",
+        answer: "picnic",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1017,7 +1017,7 @@ export const challenges = {
         ]
     },
     114: {
-        answer: "",
+        answer: "parents",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1026,7 +1026,7 @@ export const challenges = {
         ]
     },
     115: {
-        answer: "",
+        answer: "telephone",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1035,7 +1035,7 @@ export const challenges = {
         ]
     },
     116: {
-        answer: "",
+        answer: "scaled",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1044,7 +1044,7 @@ export const challenges = {
         ]
     },
     117: {
-        answer: "",
+        answer: "prime",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1053,7 +1053,7 @@ export const challenges = {
         ]
     },
     118: {
-        answer: "",
+        answer: "superhero",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1062,7 +1062,7 @@ export const challenges = {
         ]
     },
     119: {
-        answer: "",
+        answer: "peace",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1071,7 +1071,7 @@ export const challenges = {
         ]
     },
     120: {
-        answer: "",
+        answer: "military",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),
@@ -1080,7 +1080,7 @@ export const challenges = {
         ]
     },
     121: {
-        answer: "",
+        answer: "hairstyle",
         images: [
             // require("../assets/challenges//1.png"),
             // require("../assets/challenges//2.png"),

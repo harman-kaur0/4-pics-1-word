@@ -19,7 +19,7 @@ export const checkForDuplicate = word => {
         gameData[key].stages.forEach(data => {
             if (data.answer) {
                 if (wordBank.has(data.answer)) {
-                    alert(`${data.answer} is repeated from data(${key, Object.keys(data)[0]}).`)
+                    alert(`${data.answer} is repeated from data(${key}-${data.level}).`)
                 } else wordBank.add(data.answer)
             }
         })
