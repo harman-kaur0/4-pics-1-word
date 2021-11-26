@@ -3,6 +3,7 @@ import { View, Image, Text, StyleSheet, TouchableOpacity, Platform } from "react
 import { useDispatch } from "react-redux"
 import { font, width } from "../helper/functions"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
+import gameData from "../assets/data"
 import GreenLetter from "./GreenLetter"
 
 const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, playSound }) => {
@@ -71,7 +72,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                     <View style={styles.answerContainer}>
                         {
                             word?.split("").map((letter, idx) => (
-                                <GreenLetter key={idx} letter={letter.toUpperCase()}/>
+                                <GreenLetter key={idx} word={word} letter={letter.toUpperCase()}/>
                             ))
                         }
                     </View>
@@ -97,13 +98,16 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
                                 resizeMode="contain"
                             />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.buttonTouch} onPress={handleNextLevel}>
-                            <Image
-                                source={require("../assets/buttons/continue.png")}
-                                style={styles.button}
-                                resizeMode="contain"
-                            />
-                        </TouchableOpacity>
+                        {
+                            !gameData[+level + 1] && stage === 10 ? null :
+                            <TouchableOpacity style={styles.buttonTouch} onPress={handleNextLevel}>
+                                <Image
+                                    source={require("../assets/buttons/continue.png")}
+                                    style={styles.button}
+                                    resizeMode="contain"
+                                />
+                            </TouchableOpacity>
+                        }
                     </View>
                 </> : 
                 <>

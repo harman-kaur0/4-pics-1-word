@@ -1172,25 +1172,25 @@ const data = {
    "19": {
        "coins": 450,
        "stages": [
-           { "level": 1, "answer": "", "images": [
-               // require("../assets/images/19/control/1.png"),
-               // require("../assets/images/19/control/2.png"),
-               // require("../assets/images/19/control/3.png"),
-               // require("../assets/images/6/gamer/1.png")
+           { "level": 1, "answer": "caves", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
            ]},
-           { "level": 2, "answer": "", "images": [
-               // require("../assets/images/19/besties/1.png"),
-               // require("../assets/images/19/besties/2.png"),
-               // require("../assets/images/19/besties/3.png"),
-               // require("../assets/images/12/snow/2.png")
+           { "level": 2, "answer": "forest", "images": [
+               // require("../assets/images///1.png"),
+               // require("../assets/images///2.png"),
+               // require("../assets/images///3.png"),
+               // require("../assets/images///4.png")
            ]},
-           { "level": 3, "answer": "", "images": [
+           { "level": 3, "answer": "desert", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 4, "answer": "", "images": [
+           { "level": 4, "answer": "tundra", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
@@ -1202,31 +1202,31 @@ const data = {
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 6, "answer": "", "images": [
+           { "level": 6, "answer": "savanna", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 7, "answer": "", "images": [
+           { "level": 7, "answer": "wetlands", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 8, "answer": "", "images": [
+           { "level": 8, "answer": "subarctic", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 9, "answer": "", "images": [
+           { "level": 9, "answer": "grassland", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 10, "answer": "", "images": [
+           { "level": 10, "answer": "shrubland", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
@@ -1235,13 +1235,13 @@ const data = {
        ]
    },
    "20": {
-       "coins": 450,
+       "coins": 500,
        "stages": [
            { "level": 1, "answer": "control", "images": [
-               // require("../assets/images///1.png"),
-               // require("../assets/images///2.png"),
-               // require("../assets/images///3.png"),
-               // require("../assets/images///4.png")
+               // require("../assets/images/19/control/1.png"),
+               // require("../assets/images/19/control/2.png"),
+               // require("../assets/images/19/control/3.png"),
+               // require("../assets/images/6/gamer/1.png")
            ]},
            { "level": 2, "answer": "balance", "images": [
                // require("../assets/images///1.png"),
@@ -1262,10 +1262,10 @@ const data = {
                // require("../assets/images///4.png")
            ]},
            { "level": 5, "answer": "besties", "images": [
-               // require("../assets/images///1.png"),
-               // require("../assets/images///2.png"),
-               // require("../assets/images///3.png"),
-               // require("../assets/images///4.png")
+               // require("../assets/images/19/besties/1.png"),
+               // require("../assets/images/19/besties/2.png"),
+               // require("../assets/images/19/besties/3.png"),
+               // require("../assets/images/12/snow/2.png")
            ]},
            { "level": 6, "answer": "physics", "images": [
                // require("../assets/images///1.png"),
@@ -1300,63 +1300,63 @@ const data = {
        ]
    },
    "21": {
-       "coins": 450,
+       "coins": 500,
        "stages": [
-           { "level": 1, "answer": "", "images": [
+           { "level": 1, "answer": "floods", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 2, "answer": "", "images": [
+           { "level": 2, "answer": "drought", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 3, "answer": "", "images": [
+           { "level": 3, "answer": "tornado", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 4, "answer": "", "images": [
+           { "level": 4, "answer": "tsunami", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 5, "answer": "", "images": [
+           { "level": 5, "answer": "landslide", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 6, "answer": "", "images": [
+           { "level": 6, "answer": "wildfire", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 7, "answer": "", "images": [
+           { "level": 7, "answer": "heatwave", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 8, "answer": "", "images": [
+           { "level": 8, "answer": "eruption", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 9, "answer": "", "images": [
+           { "level": 9, "answer": "avalanche", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
                // require("../assets/images///4.png")
            ]},
-           { "level": 10, "answer": "", "images": [
+           { "level": 10, "answer": "hurricane", "images": [
                // require("../assets/images///1.png"),
                // require("../assets/images///2.png"),
                // require("../assets/images///3.png"),
@@ -1365,7 +1365,7 @@ const data = {
        ]
    },
    "22": {
-    "coins": 450,
+    "coins": 550,
     "stages": [
             { "level": 1, "answer": "france", "images": [
                 // require("../assets/images/22/france/1.png"),
@@ -1428,7 +1428,332 @@ const data = {
                 // require("../assets/images/22/finland/4.png")
             ]}
         ]
-    }
+    },
+    "23": {
+        "coins": 450,
+        "stages": [
+            { "level": 1, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 2, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 3, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 4, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 5, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 6, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 7, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 8, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 9, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]},
+            { "level": 10, "answer": "", "images": [
+                // require("../assets/images/23//1.png"),
+                // require("../assets/images/23//2.png"),
+                // require("../assets/images/23//3.png"),
+                // require("../assets/images/23//4.png")
+            ]}
+        ]
+    },
+    "24": {
+        "coins": 450,
+        "stages": [
+            { "level": 1, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 2, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 3, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 4, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 5, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 6, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 7, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 8, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 9, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]},
+            { "level": 10, "answer": "", "images": [
+                // require("../assets/images/24//1.png"),
+                // require("../assets/images/24//2.png"),
+                // require("../assets/images/24//3.png"),
+                // require("../assets/images/24//4.png")
+            ]}
+        ]
+    },
+    "25": {
+        "coins": 450,
+        "stages": [
+            { "level": 1, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 2, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 3, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 4, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 5, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 6, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 7, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 8, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 9, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]},
+            { "level": 10, "answer": "", "images": [
+                // require("../assets/images/25//1.png"),
+                // require("../assets/images/25//2.png"),
+                // require("../assets/images/25//3.png"),
+                // require("../assets/images/25//4.png")
+            ]}
+        ]
+    },
+    "26": {
+        "coins": 450,
+        "stages": [
+            { "level": 1, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 2, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 3, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 4, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 5, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 6, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 7, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 8, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 9, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]},
+            { "level": 10, "answer": "", "images": [
+                // require("../assets/images/26//1.png"),
+                // require("../assets/images/26//2.png"),
+                // require("../assets/images/26//3.png"),
+                // require("../assets/images/26//4.png")
+            ]}
+        ]
+    },
+    "27": {
+        "coins": 450,
+        "stages": [
+            { "level": 1, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 2, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 3, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 4, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 5, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 6, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 7, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 8, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 9, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]},
+            { "level": 10, "answer": "", "images": [
+                // require("../assets/images/27//1.png"),
+                // require("../assets/images/27//2.png"),
+                // require("../assets/images/27//3.png"),
+                // require("../assets/images/27//4.png")
+            ]}
+        ]
+    },
 }
 
 export default data
