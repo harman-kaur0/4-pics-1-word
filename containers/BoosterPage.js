@@ -13,12 +13,12 @@ const BoosterPage = ({ navigation, playSound }) => {
     const determineSelection = price => {
         switch(price) {
             case 45:
-                purchaseItem(price, 10, "letter")
+                purchaseItem(price, 5, "letter")
                 break
-            case 200:
+            case 225:
                 purchaseItem(price, 5, "trash")
                 break
-            case 250:
+            case 275:
                 purchaseItem(price, 3, "wand")
                 break
             default:
@@ -151,18 +151,18 @@ const styles = StyleSheet.create({
 const data = [
     {
         image: require("../assets/shop/letter_boost.png"),
-        text: "10 letter hints",
+        text: "5 letter hints",
         coins: 45
     },
     {
         image: require("../assets/shop/trash_boost.png"),
         text: "5 trash hints",
-        coins: 200
+        coins: 225
     },
     {
         image: require("../assets/shop/wand_boost.png"),
         text: "3 wand hints",
-        coins: 250
+        coins: 275
     },
     {
         image: require("../assets/shop/video_boost.png"),

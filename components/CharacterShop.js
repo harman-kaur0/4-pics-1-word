@@ -76,6 +76,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound }) => 
                                     style={styles.avatar}
                                     resizeMode="contain"
                                 />
+                                <Text style={styles.perk}>{charData[item].perk}</Text>
                                 {
                                     owned.includes(item) ?
                                         (
@@ -186,7 +187,7 @@ const styles = StyleSheet.create({
     selectTouch: {
         height: "10%",
         width: width > 600 ? "30%" : "35%",
-        marginBottom: width > 600 ? 30 : 20
+        marginBottom: "15%"
     },
     select: {
         width: "100%",
@@ -217,5 +218,12 @@ const styles = StyleSheet.create({
         height: "100%",
         width: "15%",
         marginRight: 5
+    },
+    perk: {
+        fontSize: font() - 10, 
+        fontWeight: "bold",
+        borderWidth: 1,
+        width: "95%",
+        textAlign: "center"
     }
 })
