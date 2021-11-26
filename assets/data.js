@@ -1170,7 +1170,7 @@ const data = {
         ]
    },
    "19": {
-       "coins": 450,
+       "coins": 500,
        "stages": [
            { "level": 1, "answer": "caves", "images": [
                // require("../assets/images///1.png"),
@@ -1196,7 +1196,7 @@ const data = {
                // require("../assets/images/19//3.png"),
                // require("../assets/images/19//4.png")
            ]},
-           { "level": 5, "answer": "", "images": [
+           { "level": 5, "answer": "plains", "images": [
                // require("../assets/images/19//1.png"),
                // require("../assets/images/19//2.png"),
                // require("../assets/images/19//3.png"),
@@ -1430,63 +1430,63 @@ const data = {
         ]
     },
     "23": {
-        "coins": 450,
+        "coins": 550,
         "stages": [
-            { "level": 1, "answer": "", "images": [
+            { "level": 1, "answer": "address", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 2, "answer": "", "images": [
+            { "level": 2, "answer": "achieve", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 3, "answer": "", "images": [
+            { "level": 3, "answer": "attempt", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 4, "answer": "", "images": [
+            { "level": 4, "answer": "approve", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 5, "answer": "", "images": [
+            { "level": 5, "answer": "advance", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 6, "answer": "", "images": [
+            { "level": 6, "answer": "airport", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 7, "answer": "", "images": [
+            { "level": 7, "answer": "account", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 8, "answer": "", "images": [
+            { "level": 8, "answer": "athlete", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 9, "answer": "", "images": [
+            { "level": 9, "answer": "average", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
                 // require("../assets/images/23//4.png")
             ]},
-            { "level": 10, "answer": "", "images": [
+            { "level": 10, "answer": "article", "images": [
                 // require("../assets/images/23//1.png"),
                 // require("../assets/images/23//2.png"),
                 // require("../assets/images/23//3.png"),
@@ -1495,63 +1495,63 @@ const data = {
         ]
     },
     "24": {
-        "coins": 450,
+        "coins": 550,
         "stages": [
-            { "level": 1, "answer": "", "images": [
+            { "level": 1, "answer": "chamber", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 2, "answer": "", "images": [
+            { "level": 2, "answer": "courage", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 3, "answer": "", "images": [
+            { "level": 3, "answer": "century", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 4, "answer": "", "images": [
+            { "level": 4, "answer": "country", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 5, "answer": "", "images": [
+            { "level": 5, "answer": "clothes", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 6, "answer": "", "images": [
+            { "level": 6, "answer": "comment", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 7, "answer": "", "images": [
+            { "level": 7, "answer": "combine", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 8, "answer": "", "images": [
+            { "level": 8, "answer": "conduct", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 9, "answer": "", "images": [
+            { "level": 9, "answer": "captain", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
                 // require("../assets/images/24//4.png")
             ]},
-            { "level": 10, "answer": "", "images": [
+            { "level": 10, "answer": "curious", "images": [
                 // require("../assets/images/24//1.png"),
                 // require("../assets/images/24//2.png"),
                 // require("../assets/images/24//3.png"),
@@ -1560,63 +1560,63 @@ const data = {
         ]
     },
     "25": {
-        "coins": 450,
+        "coins": 600,
         "stages": [
-            { "level": 1, "answer": "", "images": [
+            { "level": 1, "answer": "squeeze", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 2, "answer": "", "images": [
+            { "level": 2, "answer": "complex", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 3, "answer": "", "images": [
+            { "level": 3, "answer": "example", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 4, "answer": "", "images": [
+            { "level": 4, "answer": "warning", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 5, "answer": "", "images": [
+            { "level": 5, "answer": "destroy", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 6, "answer": "", "images": [
+            { "level": 6, "answer": "produce", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 7, "answer": "", "images": [
+            { "level": 7, "answer": "journal", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 8, "answer": "", "images": [
+            { "level": 8, "answer": "offense", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 9, "answer": "", "images": [
+            { "level": 9, "answer": "fitness", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
                 // require("../assets/images/25//4.png")
             ]},
-            { "level": 10, "answer": "", "images": [
+            { "level": 10, "answer": "defense", "images": [
                 // require("../assets/images/25//1.png"),
                 // require("../assets/images/25//2.png"),
                 // require("../assets/images/25//3.png"),
@@ -1625,63 +1625,63 @@ const data = {
         ]
     },
     "26": {
-        "coins": 450,
+        "coins": 600,
         "stages": [
-            { "level": 1, "answer": "", "images": [
+            { "level": 1, "answer": "bottle", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 2, "answer": "", "images": [
+            { "level": 2, "answer": "benefit", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 3, "answer": "", "images": [
+            { "level": 3, "answer": "besides", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 4, "answer": "", "images": [
+            { "level": 4, "answer": "breathe", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 5, "answer": "", "images": [
+            { "level": 5, "answer": "beneath", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 6, "answer": "", "images": [
+            { "level": 6, "answer": "bedroom", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 7, "answer": "", "images": [
+            { "level": 7, "answer": "between", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 8, "answer": "", "images": [
+            { "level": 8, "answer": "business", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 9, "answer": "", "images": [
+            { "level": 9, "answer": "behavior", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
                 // require("../assets/images/26//4.png")
             ]},
-            { "level": 10, "answer": "", "images": [
+            { "level": 10, "answer": "boundary", "images": [
                 // require("../assets/images/26//1.png"),
                 // require("../assets/images/26//2.png"),
                 // require("../assets/images/26//3.png"),
@@ -1690,63 +1690,63 @@ const data = {
         ]
     },
     "27": {
-        "coins": 450,
+        "coins": 600,
         "stages": [
-            { "level": 1, "answer": "", "images": [
+            { "level": 1, "answer": "children", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 2, "answer": "", "images": [
+            { "level": 2, "answer": "entrance", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 3, "answer": "", "images": [
+            { "level": 3, "answer": "register", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 4, "answer": "", "images": [
+            { "level": 4, "answer": "opponent", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 5, "answer": "", "images": [
+            { "level": 5, "answer": "greatest", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 6, "answer": "", "images": [
+            { "level": 6, "answer": "champion", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 7, "answer": "", "images": [
+            { "level": 7, "answer": "learning", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 8, "answer": "", "images": [
+            { "level": 8, "answer": "workshop", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 9, "answer": "", "images": [
+            { "level": 9, "answer": "internet", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
                 // require("../assets/images/27//4.png")
             ]},
-            { "level": 10, "answer": "", "images": [
+            { "level": 10, "answer": "negative", "images": [
                 // require("../assets/images/27//1.png"),
                 // require("../assets/images/27//2.png"),
                 // require("../assets/images/27//3.png"),
