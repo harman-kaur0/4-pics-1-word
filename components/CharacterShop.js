@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import { View, StyleSheet, Image, Animated, Text, TouchableOpacity, Platform } from "react-native"
 import { font, width } from "../helper/functions"
-import { charData } from "../helper/functions"
+import { charData } from "../assets/characters"
 import { useDispatch } from "react-redux"
 import { updateUserData } from "../actions/userActions"
 

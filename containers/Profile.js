@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { TouchableOpacity, View, Image, StyleSheet, TextInput, Text, Animated } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
-import { charData, font, width } from "../helper/functions"
+import { font, width } from "../helper/functions"
 import { updateUserData } from "../actions/userActions"
+import { charData } from "../assets/characters"
 import Header from "../components/Header"
 import CharacterShop from "../components/CharacterShop"
 
