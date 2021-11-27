@@ -222,7 +222,6 @@ const styles = StyleSheet.create({
     perk: {
         fontSize: font() - 10, 
         fontWeight: "bold",
-        borderWidth: 1,
         width: "95%",
         textAlign: "center"
     }

@@ -1173,64 +1173,64 @@ const data = {
        "coins": 500,
        "stages": [
            { "level": 1, "answer": "caves", "images": [
-               // require("../assets/images///1.png"),
-               // require("../assets/images///2.png"),
-               // require("../assets/images///3.png"),
-               // require("../assets/images///4.png")
+               require("../assets/images/19/caves/1.png"),
+               require("../assets/images/19/caves/2.png"),
+               require("../assets/images/19/caves/3.png"),
+               require("../assets/images/19/caves/4.png")
            ]},
            { "level": 2, "answer": "forest", "images": [
-               // require("../assets/images///1.png"),
-               // require("../assets/images///2.png"),
-               // require("../assets/images///3.png"),
-               // require("../assets/images///4.png")
+               require("../assets/images/19/forest/1.png"),
+               require("../assets/images/19/forest/2.png"),
+               require("../assets/images/19/forest/3.png"),
+               require("../assets/images/19/forest/4.png")
            ]},
            { "level": 3, "answer": "desert", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+               // require("../assets/images/19/desert/1.png"),
+               // require("../assets/images/19/desert/2.png"),
+               // require("../assets/images/19/desert/3.png"),
+               // require("../assets/images/19/desert/4.png")
            ]},
            { "level": 4, "answer": "tundra", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+               // require("../assets/images/19/tundra/1.png"),
+               // require("../assets/images/19/tundra/2.png"),
+               // require("../assets/images/19/tundra/3.png"),
+               // require("../assets/images/19/tundra/4.png")
            ]},
-           { "level": 5, "answer": "plains", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+           { "level": 5, "answer": "savanna", "images": [
+               // require("../assets/images/19/savanna/1.png"),
+               // require("../assets/images/19/savanna/2.png"),
+               // require("../assets/images/19/savanna/3.png"),
+               // require("../assets/images/19/savanna/4.png")
            ]},
-           { "level": 6, "answer": "savanna", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+           { "level": 6, "answer": "mountain", "images": [
+               // require("../assets/images/19/mountain/1.png"),
+               // require("../assets/images/19/mountain/2.png"),
+               // require("../assets/images/19/mountain/3.png"),
+               // require("../assets/images/19/mountain/4.png")
            ]},
            { "level": 7, "answer": "wetlands", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+               // require("../assets/images/19/wetlands/1.png"),
+               // require("../assets/images/19/wetlands/2.png"),
+               // require("../assets/images/19/wetlands/3.png"),
+               // require("../assets/images/19/wetlands/4.png")
            ]},
            { "level": 8, "answer": "subarctic", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+               // require("../assets/images/19/subarctic/1.png"),
+               // require("../assets/images/19/subarctic/2.png"),
+               // require("../assets/images/19/subarctic/3.png"),
+               // require("../assets/images/19/subarctic/4.png")
            ]},
            { "level": 9, "answer": "grassland", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+               require("../assets/images/19/grassland/1.png"),
+               require("../assets/images/19/grassland/2.png"),
+               require("../assets/images/19/grassland/3.png"),
+               require("../assets/images/19/grassland/4.png")
            ]},
            { "level": 10, "answer": "shrubland", "images": [
-               // require("../assets/images/19//1.png"),
-               // require("../assets/images/19//2.png"),
-               // require("../assets/images/19//3.png"),
-               // require("../assets/images/19//4.png")
+               require("../assets/images/19/shrubland/1.png"),
+               require("../assets/images/19/shrubland/2.png"),
+               require("../assets/images/19/shrubland/3.png"),
+               require("../assets/images/19/shrubland/4.png")
            ]}
        ]
    },
