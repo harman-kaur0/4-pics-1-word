@@ -2,280 +2,280 @@ export const challenges = {
     1: {
         answer: "beginning",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")
+            require("../assets/challenges/beginning/1.png"),
+            require("../assets/challenges/beginning/2.png"),
+            require("../assets/challenges/beginning/3.png"),
+            require("../assets/challenges/miracle/2.png")
         ]
     },
     2: {
         answer: "buffet",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/buffet/1.png"),
+            require("../assets/challenges/buffet/2.png"),
+            require("../assets/challenges/buffet/3.png"),
+            require("../assets/challenges/banquet/3.png")         
         ]
     },
     3: {
         answer: "january",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/january/1.png"),
+            // require("../assets/challenges/january/2.png"),
+            // require("../assets/challenges/january/3.png"),
+            // require("../assets/challenges/january/4.png")         
         ]
     },
     4: {
         answer: "trivia",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/trivia/1.png"),
+            // require("../assets/challenges/trivia/2.png"),
+            // require("../assets/challenges/trivia/3.png"),
+            // require("../assets/challenges/trivia/4.png")         
         ]
     },
     5: {
         answer: "whipped",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/whipped/1.png"),
+            // require("../assets/challenges/whipped/2.png"),
+            // require("../assets/challenges/whipped/3.png"),
+            // require("../assets/challenges/whipped/4.png")         
         ]
     },
     6: {
         answer: "cuddling",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/cuddling/1.png"),
+            // require("../assets/challenges/cuddling/2.png"),
+            // require("../assets/challenges/cuddling/3.png"),
+            // require("../assets/challenges/cuddling/4.png")         
         ]
     },
     7: {
         answer: "tempura",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/tempura/1.png"),
+            // require("../assets/challenges/tempura/2.png"),
+            // require("../assets/challenges/tempura/3.png"),
+            // require("../assets/challenges/tempura/4.png")         
         ]
     },
     8: {
         answer: "bubbles",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/bubbles/1.png"),
+            // require("../assets/challenges/bubbles/2.png"),
+            // require("../assets/challenges/bubbles/3.png"),
+            // require("../assets/challenges/bubbles/4.png")         
         ]
     },
     9: {
         answer: "supper",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/supper/1.png"),
+            // require("../assets/challenges/supper/2.png"),
+            // require("../assets/challenges/supper/3.png"),
+            // require("../assets/challenges/supper/4.png")         
         ]
     },
     10: {
         answer: "energize",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/energize/1.png"),
+            // require("../assets/challenges/energize/2.png"),
+            // require("../assets/challenges/energize/3.png"),
+            // require("../assets/challenges/energize/4.png")         
         ]
     },
     11: {
         answer: "humanity",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/humanity/1.png"),
+            // require("../assets/challenges/humanity/2.png"),
+            // require("../assets/challenges/humanity/3.png"),
+            // require("../assets/challenges/humanity/4.png")         
         ]
     },
     12: {
         answer: "pharmacy",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/pharmacy/1.png"),
+            // require("../assets/challenges/pharmacy/2.png"),
+            // require("../assets/challenges/pharmacy/3.png"),
+            // require("../assets/challenges/pharmacy/4.png")         
         ]
     },
     13: {
         answer: "rubber",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/rubber/1.png"),
+            // require("../assets/challenges/rubber/2.png"),
+            // require("../assets/challenges/rubber/3.png"),
+            // require("../assets/challenges/rubber/4.png")         
         ]
     },
     14: {
         answer: "dressing",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/dressing/1.png"),
+            // require("../assets/challenges/dressing/2.png"),
+            // require("../assets/challenges/dressing/3.png"),
+            // require("../assets/challenges/dressing/4.png")         
         ]
     },
     15: {
         answer: "bagels",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/bagels/1.png"),
+            // require("../assets/challenges/bagels/2.png"),
+            // require("../assets/challenges/bagels/3.png"),
+            // require("../assets/challenges/bagels/4.png")         
         ]
     },
     16: {
         answer: "nothing",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/nothing/1.png"),
+            // require("../assets/challenges/nothing/2.png"),
+            // require("../assets/challenges/nothing/3.png"),
+            // require("../assets/challenges/nothing/4.png")         
         ]
     },
     17: {
         answer: "activist",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/activist/1.png"),
+            // require("../assets/challenges/activist/2.png"),
+            // require("../assets/challenges/activist/3.png"),
+            // require("../assets/challenges/activist/4.png")         
         ]
     },
     18: {
         answer: "bootleg",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/bootleg/1.png"),
+            // require("../assets/challenges/bootleg/2.png"),
+            // require("../assets/challenges/bootleg/3.png"),
+            // require("../assets/challenges/bootleg/4.png")         
         ]
     },
     19: {
         answer: "minister",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/minister/1.png"),
+            // require("../assets/challenges/minister/2.png"),
+            // require("../assets/challenges/minister/3.png"),
+            // require("../assets/challenges/minister/4.png")         
         ]
     },
     20: {
         answer: "cheesy",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/cheesy/1.png"),
+            // require("../assets/challenges/cheesy/2.png"),
+            // require("../assets/challenges/cheesy/3.png"),
+            // require("../assets/challenges/cheesy/4.png")         
         ]
     },
     21: {
         answer: "granola",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/granola/1.png"),
+            // require("../assets/challenges/granola/2.png"),
+            // require("../assets/challenges/granola/3.png"),
+            // require("../assets/challenges/granola/4.png")         
         ]
     },
     22: {
         answer: "brownie",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/brownie/1.png"),
+            // require("../assets/challenges/brownie/2.png"),
+            // require("../assets/challenges/brownie/3.png"),
+            // require("../assets/challenges/brownie/4.png")         
         ]
     },
     23: {
         answer: "discount",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/discount/1.png"),
+            // require("../assets/challenges/discount/2.png"),
+            // require("../assets/challenges/discount/3.png"),
+            // require("../assets/challenges/discount/4.png")         
         ]
     },
     24: {
         answer: "alcohol",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/alcohol/1.png"),
+            // require("../assets/challenges/alcohol/2.png"),
+            // require("../assets/challenges/alcohol/3.png"),
+            // require("../assets/challenges/alcohol/4.png")         
         ]
     },
     25: {
         answer: "opposite",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/opposite/1.png"),
+            // require("../assets/challenges/opposite/2.png"),
+            // require("../assets/challenges/opposite/3.png"),
+            // require("../assets/challenges/opposite/4.png")         
         ]
     },
     26: {
         answer: "brittle",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/brittle/1.png"),
+            // require("../assets/challenges/brittle/2.png"),
+            // require("../assets/challenges/brittle/3.png"),
+            // require("../assets/challenges/brittle/4.png")         
         ]
     },
     27: {
         answer: "dessert",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/dessert/1.png"),
+            // require("../assets/challenges/dessert/2.png"),
+            // require("../assets/challenges/dessert/3.png"),
+            // require("../assets/challenges/dessert/4.png")         
         ]
     },
     28: {
         answer: "private",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/private/1.png"),
+            // require("../assets/challenges/private/2.png"),
+            // require("../assets/challenges/private/3.png"),
+            // require("../assets/challenges/private/4.png")         
         ]
     },
     29: {
         answer: "tortilla",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/tortilla/1.png"),
+            // require("../assets/challenges/tortilla/2.png"),
+            // require("../assets/challenges/tortilla/3.png"),
+            // require("../assets/challenges/tortilla/4.png")         
         ]
     },
     30: {
         answer: "croissant",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/croissant/1.png"),
+            // require("../assets/challenges/croissant/2.png"),
+            // require("../assets/challenges/croissant/3.png"),
+            // require("../assets/challenges/croissant/4.png")         
         ]
     },
     31: {
         answer: "wrapping",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/wrapping/1.png"),
+            require("../assets/challenges/wrapping/2.png"),
+            require("../assets/challenges/wrapping/3.png"),
+            require("../assets/challenges/gifts/1.png")         
         ]
     },
     32: {
