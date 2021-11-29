@@ -171,6 +171,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         right: 0,
         top: -10,
+        fontFamily: "P22Bangersfield-Bold",
         fontSize: font() - 8,
         backgroundColor: "white",
         borderRadius: 5,

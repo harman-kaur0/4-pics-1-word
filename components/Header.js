@@ -121,15 +121,13 @@ export default Header
 const font = () => {
     switch(true) {
         case (width < 400):
-            return 20
-        case (width < 600):
             return 25
+        case (width < 600):
+            return 30
         default:
-            return 40 
+            return 45 
     }
 }
-
-const weight = Platform.OS === "ios" ? "900" : "bold"
 
 const styles = StyleSheet.create({
     header: {
@@ -137,7 +135,7 @@ const styles = StyleSheet.create({
         height: "8%",
         flexDirection: "row",
         position: "absolute",
-        top: 70,
+        top: width < 400 ? 10: 70,
         alignItems: "center",
         justifyContent: "center",
         zIndex: 998
@@ -168,8 +166,8 @@ const styles = StyleSheet.create({
     },
     coinText: {
         marginRight: 5,
+        fontFamily: "P22Bangersfield-Bold",
         fontSize: font(),
-        fontWeight: weight,
         color: "white",
         marginLeft: "5%"
     },
@@ -181,8 +179,8 @@ const styles = StyleSheet.create({
         marginRight: 0
     },
     selectionText: {
+        fontFamily: "P22Bangersfield-Bold",
         fontSize: font(),
-        fontWeight: weight,
         position: "absolute",
         bottom: width > 600 ? "-45%" : "-35%",
         marginLeft: "5%"
@@ -194,8 +192,8 @@ const styles = StyleSheet.create({
         height: width > 600 ? "85%" : "60%"
     },
     heartText: {
+        fontFamily: "P22Bangersfield-Bold",
         fontSize: font() - 5,
-        fontWeight: weight,
         color: "white",
         position: "absolute",
         zIndex: 999
@@ -203,7 +201,8 @@ const styles = StyleSheet.create({
     message: {
         position: "absolute",
         bottom: "-100%",
-        fontSize: font() - 8,
+        fontFamily: "P22Bangersfield-Bold",
+        fontSize: font() - 10,
         backgroundColor: "white",
         borderRadius: 5,
         overflow: "hidden",

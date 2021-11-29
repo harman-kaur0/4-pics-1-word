@@ -5,6 +5,7 @@ import { createStore, applyMiddleware, compose } from "redux"
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
 import { Audio } from "expo-av"
+import * as Font from "expo-font"
 import thunk from "redux-thunk"
 import rootReducer from "./reducers"
 import PreScreen from "./containers/PreScreen"
@@ -40,6 +41,7 @@ const Stack = createStackNavigator()
 
 const App = () => {
     const [sound, setSound] = useState()
+    const [fontLoaded, setFontLoaded] = useState(false)
 
     const playSound = async (type) => {
         const { sound } = await Audio.Sound.createAsync(tap[type])
@@ -51,49 +53,61 @@ const App = () => {
         return () => sound ? () => sound.unloadAsync() : undefined
     }, [sound])
 
+    const loadFonts = async () => {
+        await Font.loadAsync(fonts)
+        setFontLoaded(true)
+    }
+    useEffect(() => {   
+        loadFonts()
+    }, [])
+
     return (
         <Provider store={store}>
             <NavigationContainer theme={MyTheme}>
-                <View style={styles.container}>
-                    <ImageBackground 
-                        source={require("./assets/main/background.png")}
-                        style={styles.background} 
-                        resizeMode="cover" 
-                    >
-                        <Stack.Navigator 
-                            screenOptions={options}
+                {
+                    fontLoaded ?
+                    <View style={styles.container}>
+                        <ImageBackground 
+                            source={require("./assets/main/background.png")}
+                            style={styles.background} 
+                            resizeMode="cover" 
                         >
-                            <Stack.Screen name="PreScreen" component={PreScreen}/>
-                            <Stack.Screen name="Home">
-                                { props => <HomeScreen {...props} playSound={playSound}/> }
-                            </Stack.Screen>
-                            <Stack.Screen name="Profile">
-                                { props => <Profile {...props} playSound={playSound}/>}
-                            </Stack.Screen>
-                            <Stack.Screen name="Shop">
-                                { props => <Shop {...props} playSound={playSound}/> }
-                            </Stack.Screen>
-                            <Stack.Screen name="GamePage">
-                                { props => <GamePage {...props} playSound={playSound}/>}
-                            </Stack.Screen>
-                            <Stack.Screen name="Booster">
-                                { props => <BoosterPage {...props} playSound={playSound}/> }
-                            </Stack.Screen>
-                            <Stack.Screen name="Wheel">
-                                { props => <PrizeWheel {...props} playSound={playSound}/>}
-                            </Stack.Screen>
-                            <Stack.Screen name="LevelSelection">
-                                { props => <LevelSelection {...props} playSound={playSound}/> }
-                            </Stack.Screen>
-                            <Stack.Screen name="Records">
-                                { props => <Records {...props} playSound={playSound}/> }
-                            </Stack.Screen>
-                            <Stack.Screen name="Challenge">
-                                { props => <Challenge {...props} playSound={playSound}/> }
-                            </Stack.Screen>
-                        </Stack.Navigator>
-                    </ImageBackground>
-                </View>
+                            <Stack.Navigator 
+                                screenOptions={options}
+                            >
+                                <Stack.Screen name="PreScreen" component={PreScreen}/>
+                                <Stack.Screen name="Home">
+                                    { props => <HomeScreen {...props} playSound={playSound}/> }
+                                </Stack.Screen>
+                                <Stack.Screen name="Profile">
+                                    { props => <Profile {...props} playSound={playSound}/>}
+                                </Stack.Screen>
+                                <Stack.Screen name="Shop">
+                                    { props => <Shop {...props} playSound={playSound}/> }
+                                </Stack.Screen>
+                                <Stack.Screen name="GamePage">
+                                    { props => <GamePage {...props} playSound={playSound}/>}
+                                </Stack.Screen>
+                                <Stack.Screen name="Booster">
+                                    { props => <BoosterPage {...props} playSound={playSound}/> }
+                                </Stack.Screen>
+                                <Stack.Screen name="Wheel">
+                                    { props => <PrizeWheel {...props} playSound={playSound}/>}
+                                </Stack.Screen>
+                                <Stack.Screen name="LevelSelection">
+                                    { props => <LevelSelection {...props} playSound={playSound}/> }
+                                </Stack.Screen>
+                                <Stack.Screen name="Records">
+                                    { props => <Records {...props} playSound={playSound}/> }
+                                </Stack.Screen>
+                                <Stack.Screen name="Challenge">
+                                    { props => <Challenge {...props} playSound={playSound}/> }
+                                </Stack.Screen>
+                            </Stack.Navigator>
+                        </ImageBackground>
+                    </View> :
+                    <View style={{flex: 1, backgroundColor: "black"}}></View>
+                }
             </NavigationContainer>
         </Provider>
     )
@@ -111,12 +125,6 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     }
 })
-
-// const forFade = ({ current }) => ({
-//     cardStyle: {
-//         opacity: current.progress,
-//     }
-// })
 
 const config = {
     animation: 'timing',
@@ -173,4 +181,11 @@ const tap = {
     trash: require("./assets/sounds/trash.mp3"),
     wand: require("./assets/sounds/wand.mp3"),
     wrong: require("./assets/sounds/wrong.mp3"),
+}
+
+const fonts = {
+    "P22Bangersfield-Bold": require("./assets/fonts/P22Bangersfield-Bold.ttf"),
+    "P22Bangersfield-Demi": require("./assets/fonts/P22Bangersfield-Demi.ttf"),
+    "P22Bangersfield-Light": require("./assets/fonts/P22Bangersfield-Light.ttf"),
+    "P22Bangersfield-Regular": require("./assets/fonts/P22Bangersfield-Regular.ttf"),
 }

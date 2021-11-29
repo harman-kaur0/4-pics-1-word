@@ -15,7 +15,7 @@ const Records = ({ navigation, playSound }) => {
                 height: "75%",
                 width: "95%",
                 alignSelf: "center",
-                marginTop: width > 600 ? "25%" : "45%",
+                marginTop: width > 600 ? "25%" : (width > 400 ? "45%" : "30%"),
                 borderRadius: 30,
                 borderColor: "gray",
                 borderWidth: 1,
@@ -58,10 +58,10 @@ const Records = ({ navigation, playSound }) => {
                                     <Text style={{
                                         bottom: 0,
                                         width: "100%",
-                                        height: "95%",
+                                        height: "85%",
                                         position: "absolute",
                                         fontSize: levelFont()/1.5,
-                                        fontWeight: "bold",
+                                        fontFamily: "P22Bangersfield-Bold",
                                         color: "#b7d2dc",
                                         textAlign: "center"
                                     }}>
@@ -79,12 +79,13 @@ const Records = ({ navigation, playSound }) => {
                                     />
                                 </View>
                                 <Text style={{
-                                    fontSize: font() - 5,
+                                    fontSize: font() - 3,
+                                    fontFamily: "P22Bangersfield-Regular",
                                     width: "70%",
                                     textAlign: "center"
                                 }}>
                                     <Text>Time Remaining: </Text>
-                                    <Text style={{fontWeight: "bold"}}>
+                                    <Text style={{fontFamily: "P22Bangersfield-Bold"}}>
                                         {new Date(records[item] * 1000).toISOString().substr(15, 4)}
                                     </Text>
                                 </Text>

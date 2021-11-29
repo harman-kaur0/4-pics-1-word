@@ -9,7 +9,7 @@ const Shop = ({ navigation, playSound }) => {
     return (
         <>
             <Header navigation={navigation} button="close" text="Shop" playSound={playSound}/>
-            <View style={{...styles.saleContainer, marginTop: width > 600 ? "25%" : "45%"}}>
+            <View style={{...styles.saleContainer, marginTop: width > 600 ? "25%" : (width > 400 ? "45%" : "35%")}}>
                 {
                     row1Data.map(item => (
                         <SaleContainer key={item.text} item={item} navigation={navigation}/>

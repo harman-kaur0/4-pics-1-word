@@ -141,7 +141,7 @@ const Profile = ({ navigation, playSound }) => {
                                     <Text style={styles.textContainer}>
                                         <Text>{stat.text}</Text>
                                         {"\n"}
-                                        <Text style={{fontWeight: "bold"}}>{stat.stat}</Text>
+                                        <Text style={{fontFamily: "P22Bangersfield-Bold"}}>{stat.stat}</Text>
                                     </Text>
                                 </View>
                             ))
@@ -187,6 +187,7 @@ const styles = StyleSheet.create({
         height: "100%"
     },
     name: {
+        fontFamily: "P22Bangersfield-Demi",
         fontSize: font() - 5,
         textAlign: "center",
         width: "80%"
@@ -205,8 +206,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         textAlign: "center",
-        borderRadius: 10,
-        fontSize: font() - 5
+        borderRadius: 10
     },
     statsContainer: {
         height: "25%",
@@ -231,6 +231,7 @@ const styles = StyleSheet.create({
     textContainer: {
         height: "65%",
         width: "50%",
+        fontFamily: "P22Bangersfield-Regular",
         fontSize: font() - 5,
         paddingTop: width > 600 ? "1.5%" : "3%",
         textAlign: "center"
@@ -238,7 +239,8 @@ const styles = StyleSheet.create({
     message: {
         position: "absolute",
         top: "15%",
-        fontSize: font() - 8,
+        fontSize: font() - 10,
+        fontFamily: "P22Bangersfield-Bold",
         backgroundColor: "white",
         borderRadius: 5,
         overflow: "hidden",

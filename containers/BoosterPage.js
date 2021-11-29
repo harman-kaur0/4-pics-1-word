@@ -81,7 +81,7 @@ const BoosterPage = ({ navigation, playSound }) => {
                                 idx === 3 ? null : 
                                 <Text style={styles.boostAmount}>
                                     <Text>You have: </Text> 
-                                    <Text style={{fontWeight: "bold"}}>
+                                    <Text style={{fontFamily: "P22Bangersfield-Bold"}}>
                                         {boosts[boost.text.split(" ")[1]]}
                                     </Text>
                                 </Text>
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     contentContainer: {
         width: "100%",
         height: "100%",
-        paddingTop: 200,
+        paddingTop: width < 400 ? 100 : (width < 500 ? 160 : 200),
         paddingBottom: 50,
         justifyContent: "space-around"
     },
@@ -131,18 +131,19 @@ const styles = StyleSheet.create({
         position: "absolute"
     },
     coinText: {
-        fontSize: font(),
-        fontWeight: "bold"
+        fontFamily: "P22Bangersfield-Bold",
+        fontSize: font() + 5,
     },
     boostText: {
         fontSize: font() - 5,
+        fontFamily: "P22Bangersfield-Demi",
         alignSelf: "center",
-        marginTop: "3%",
-        fontWeight: "bold"
+        marginTop: "3%"
     },
     boostAmount: {
         position: "absolute",
-        fontSize: font() - 8,
+        fontSize: font() - 7,
+        fontFamily: "P22Bangersfield-Regular",
         bottom: "-30%",
         padding: 5
     }

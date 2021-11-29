@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
         bottom: 0,
         width: "100%",
         position: "absolute",
-        fontSize: levelFont(),
-        fontWeight: "600",
+        fontSize: width > 600 ? levelFont() : levelFont() + 15,
+        fontFamily: "P22Bangersfield-Bold",
         color: "#b7d2dc",
         textAlign: "center",
     }

@@ -27,7 +27,15 @@ const SaleContainer = ({ item, navigation }) => {
                             style={{width: "100%", height: "100%"}}
                             resizeMode="contain"
                         />
-                        <Text style={{fontWeight: "bold", fontSize: font() - 10, position: "absolute"}}>{item.price}</Text>
+                        <Text 
+                            style={{
+                                fontFamily: "P22Bangersfield-Bold",
+                                fontSize: font() - 5, 
+                                position: "absolute"
+                            }}
+                        >
+                            {item.price}
+                        </Text>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>
@@ -59,8 +67,8 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     coinText: {
+        fontFamily: "P22Bangersfield-Demi",
         fontSize: font() - 5,
-        fontWeight: "bold",
         position: "absolute",
         top: "-70%"
     }

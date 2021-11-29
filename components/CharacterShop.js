@@ -78,7 +78,9 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound, boost
 
                         return (
                             <Animated.View style={{...styles.card, transform: [{ translateY }]}}>
-                                <Text style={{fontSize: font(), fontWeight: "bold"}}>{ item[0].toUpperCase() + item.slice(1) }</Text>
+                                <Text style={{ fontFamily: "P22Bangersfield-Bold", fontSize: font() }}>
+                                    { item[0].toUpperCase() + item.slice(1) }
+                                </Text>
                                 <Image
                                     source={charData[item].default}
                                     style={styles.avatar}
@@ -209,8 +211,8 @@ const styles = StyleSheet.create({
         width: width > 600 ? "15%" : "25%"
     },
     cost: {
+        fontFamily: "P22Bangersfield-Bold",
         fontSize: font() - 2,
-        fontWeight: "bold",
         marginLeft: 5
     }, 
     costContainer: {
@@ -228,9 +230,9 @@ const styles = StyleSheet.create({
         marginRight: 5
     },
     perk: {
-        fontSize: font() - 10, 
-        fontWeight: "bold",
+        fontFamily: "P22Bangersfield-Regular",
+        fontSize: font() - 8,
         width: "95%",
-        textAlign: "center"
+        textAlign: "center",
     }
 })
