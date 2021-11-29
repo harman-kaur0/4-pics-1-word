@@ -20,10 +20,10 @@ export const challenges = {
     3: {
         answer: "january",
         images: [
-            // require("../assets/challenges/january/1.png"),
-            // require("../assets/challenges/january/2.png"),
-            // require("../assets/challenges/january/3.png"),
-            // require("../assets/challenges/january/4.png")         
+            require("../assets/challenges/january/1.png"),
+            require("../assets/challenges/january/2.png"),
+            require("../assets/challenges/january/3.png"),
+            require("../assets/images/19/subarctic/1.png")       
         ]
     },
     4: {
@@ -263,10 +263,10 @@ export const challenges = {
     30: {
         answer: "croissant",
         images: [
-            // require("../assets/challenges/croissant/1.png"),
-            // require("../assets/challenges/croissant/2.png"),
-            // require("../assets/challenges/croissant/3.png"),
-            // require("../assets/challenges/croissant/4.png")         
+            require("../assets/challenges/croissant/1.png"),
+            require("../assets/challenges/croissant/2.png"),
+            require("../assets/challenges/croissant/3.png"),
+            require("../assets/challenges/croissant/4.png")         
         ]
     },
     31: {
