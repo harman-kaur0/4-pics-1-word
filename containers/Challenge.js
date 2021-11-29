@@ -18,7 +18,7 @@ const Challenge = ({ navigation, playSound }) => {
     const day = useSelector(state => state.header.day)
 
     const user = useSelector(state => state.user.user)
-    const { coins, boosts, spins } = user
+    const { coins, boosts, spins, sprite } = user
     const challengeData = user.challenges
     const gameData = useSelector(state => state.game)
     const { victory, data, word, letters } = gameData
@@ -27,7 +27,7 @@ const Challenge = ({ navigation, playSound }) => {
     const { answer, images } = challenges[day]
 
     useEffect(() => {
-        dispatch(handleChallengeSetup(challenges[day]))
+        dispatch(handleChallengeSetup(challenges[day], sprite.owned.includes("chunli")))
     }, [])
 
     useEffect(() => {

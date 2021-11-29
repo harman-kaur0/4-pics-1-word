@@ -109,7 +109,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound, boost
                                             </View>
                                         ) :
                                         (
-                                            charData[item].cost < coins ?
+                                            charData[item].cost <= coins ?
                                             <>
                                                 <TouchableOpacity 
                                                     style={{...styles.selectTouch, width: width > 600 ? "35%" : "40%"}}

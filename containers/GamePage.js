@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { StyleSheet, Text, View, Animated, Platform } from 'react-native'
+import { StyleSheet, Text, Platform } from 'react-native'
 import { useDispatch, useSelector } from "react-redux"
 import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import { updateUserData } from "../actions/userActions"
@@ -20,6 +20,7 @@ const GamePage = ({ navigation, playSound }) => {
     const currentStars = levels[level] || 0
     const userCoins = user.coins
     const initialTime = sprite.owned.includes("matthew") ? 210 : 180
+    const chunli = sprite.owned.includes("chunli")
 
     const gameData = useSelector(state => state.game)
     const { data, coins, word, letters, victory, level } = gameData
@@ -33,7 +34,7 @@ const GamePage = ({ navigation, playSound }) => {
     const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
 
     useEffect(() => {
-        dispatch(handleInitialSetup(level, stage))
+        dispatch(handleInitialSetup(level, stage, chunli))
     }, [level])
 
     useEffect(() => {
@@ -147,6 +148,7 @@ const GamePage = ({ navigation, playSound }) => {
                     calculateCoins={calculateCoins}
                     playSound={playSound}
                     initialTime={initialTime}
+                    chunli={chunli}
                 />
             }
         </>

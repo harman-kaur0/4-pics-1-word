@@ -1,19 +1,27 @@
 import { shuffleArray, getRandomItem } from "../helper/functions"
 import gameData from "../assets/data"
 
-export const handleInitialSetup = (level, stage) => {
+export const handleInitialSetup = (level, stage, chunli) => {
     const data = gameData[level].stages[stage - 1]
     const coins = gameData[level].coins
 
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 
-    let lettersArr = data.answer.split("")
+    const answerArr = data.answer.split("")
+
+    let lettersArr = answerArr.map((letter, idx) => {
+        if (chunli && idx === 0) return letter.toUpperCase()
+        else return letter
+    })
 
     while (lettersArr.length !== 12) lettersArr.push(getRandomItem(alphabet))
     
     return dispatch => {
         const letters = shuffleArray(lettersArr)
-        const word = Array.from(Array(data.answer.length))
+        const word = answerArr.map((letter, idx) => {
+            if (chunli && idx === 0) return letter.toUpperCase()
+            else return undefined
+        })
 
         dispatch({ type: "VICTORY", victory: null})
         dispatch({ type: "DATA", data })
@@ -45,16 +53,24 @@ export const handleVictory = (victory = null) => {
     }
 }
 
-export const handleChallengeSetup = data => {
+export const handleChallengeSetup = (data, chunli) => {
     const alphabet = Array.from(Array(26)).map((l,i) => String.fromCharCode(i+97))
 
-    let lettersArr = data.answer.split("")
+    const answerArr = data.answer.split("")
+
+    let lettersArr = answerArr.map((letter, idx) => {
+        if (chunli && idx === 0) return letter.toUpperCase()
+        else return letter
+    })
 
     while (lettersArr.length !== 12) lettersArr.push(getRandomItem(alphabet))
     
     return dispatch => {
         const letters = shuffleArray(lettersArr)
-        const word = Array.from(Array(data.answer.length))
+        const word = answerArr.map((letter, idx) => {
+            if (chunli && idx === 0) return letter.toUpperCase()
+            else return undefined
+        })
 
         dispatch({ type: "VICTORY", victory: null})
         dispatch({ type: "DATA", data })

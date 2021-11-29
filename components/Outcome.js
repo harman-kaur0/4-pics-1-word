@@ -6,7 +6,7 @@ import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import gameData from "../assets/data"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, playSound, initialTime }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, playSound, initialTime, chunli }) => {
     const [coins, setCoins] = useState(0)
     const [word, setWord] = useState(null)
     const dispatch = useDispatch()
@@ -21,7 +21,7 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
 
     const handleRetry = () => {
         dispatch(handleVictory())
-        dispatch(handleInitialSetup(level, 1))
+        dispatch(handleInitialSetup(level, 1, chunli))
         setTime(initialTime)
         setActive(true)
         playSound("button")
@@ -32,12 +32,12 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
             setTime(initialTime)
             setStage(1)
             dispatch(handleVictory())
-            dispatch(handleInitialSetup(parseInt(level) + 1, 1))
+            dispatch(handleInitialSetup(parseInt(level) + 1, 1, chunli))
         } else {
             setTime(time + 10)
             setStage(stage + 1)
             dispatch(handleVictory())
-            dispatch(handleInitialSetup(level, stage + 1))
+            dispatch(handleInitialSetup(level, stage + 1, chunli))
         }
         setActive(true)
         playSound("button")

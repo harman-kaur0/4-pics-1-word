@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useRef } from "react"
+import React, { useEffect, useCallback, useRef, useState } from "react"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import { View } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
@@ -10,12 +10,42 @@ const PreScreen = ({ navigation }) => {
 
     const hearts = useSelector(state => state.user.user.hearts)
     const time = useSelector(state => state.header.time)
-    const sprites = useSelector(state => state.user.user.sprite.owned)
+    const sprites = useSelector(state => state.user.user.sprite?.owned)
 
-    let maxHearts = 5
+    const [maxHearts, setHearts] = useState(5)
+    const [minutes, setMinutes] = useState(30)
 
-    if (sprites.includes("steve")) maxHearts += 2
-    else if (sprites.includes("emma")) maxHearts += 5
+    useEffect(() => {
+        if (sprites) {
+            switch (true) {
+                case sprites.includes("steve") && sprites.includes("emma"):
+                    setHearts(12)
+                    break
+                case sprites.includes("steve"):
+                    setHearts(7)
+                    break
+                case sprites.includes("emma"):
+                    setHearts(10)
+                    break
+                default:
+                    return
+            }
+
+            switch (true) {
+                case sprites.includes("michael") && sprites.includes("scarlett"):
+                    setMinutes(5)
+                    break
+                case sprites.includes("michael"):
+                    setMinutes(10)
+                    break
+                case sprites.includes("scarlett"):
+                    setMinutes(15)
+                    break
+                default:
+                    return
+            }
+        }
+    }, [sprites])
 
     const remove = async () => {
         try {
@@ -46,10 +76,7 @@ const PreScreen = ({ navigation }) => {
         } else if (time === null) {
             dispatch(getTime())
         }
-    }, [time, hearts])
-
-    let minutes = sprites.includes("michael") ? 10 : 30
-    if (sprites.includes("scarlett")) minutes /= 2
+    }, [time, hearts, maxHearts])
 
     const calculateRefresh = useCallback(async () => {
         if (time) {
@@ -68,7 +95,7 @@ const PreScreen = ({ navigation }) => {
             }
             dispatch(setRefreshTime((minutes * 60) - (diff - extraHearts * (60 * minutes))))
         }
-    }, [time, hearts])
+    }, [time, hearts, minutes, maxHearts])
 
     const useInterval = (callback, delay) => {
         const savedCallback = useRef()
