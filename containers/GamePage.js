@@ -160,7 +160,7 @@ export default GamePage
 const styles = StyleSheet.create({
     time: {
         textAlign: "center",
-        marginTop: width < 400 ? 90 : (width < 800 ? 150 : 200),
+        marginTop: width < 400 ? 90 : (width < 800 ? 160 : 200),
         fontFamily: "P22Bangersfield-Bold",
         fontSize: font() + 5
     }
