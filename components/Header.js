@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
     box: {
         marginLeft: "5%",
         marginRight: "-10%",
-        width: width < 600 ? "30%" : "25%",
+        width: width < 600 ? "35%" : "25%",
         height: width < 600 ? "40%" : "50%",
         justifyContent: "center",
         backgroundColor: "black",
