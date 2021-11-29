@@ -124,6 +124,8 @@ const font = () => {
             return 25
         case (width < 600):
             return 30
+        case (width < 800):
+            return 35
         default:
             return 45 
     }

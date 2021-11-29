@@ -7,7 +7,7 @@ import { width } from "../helper/functions"
 const GreenLetter = ({ letters, letter, word, index, playSound }) => {
     const dispatch = useDispatch()
     const length = word.length
-    const tileWidth = width > 600 ? "15%" : (length === 9 ? "12%" : (length === 8 ? "13%" : "15%"))
+    const tileWidth = width > 800 ? "15%" : (length === 9 ? "12%" : (length === 8 ? "13%" : "15%"))
 
     const handlePress = () => {
         let ind = word.indexOf(letter)

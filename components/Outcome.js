@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
         height: "100%",
     },
     text1: {
-        fontWeight: Platform.OS === "ios" ? "800" : "bold", 
+        fontFamily: "P22Bangersfield-Bold",
         fontSize: font(),
         position: "absolute",
         bottom: 0
@@ -214,7 +214,7 @@ const styles = StyleSheet.create({
     },
     text2: {
         fontSize: font() - 5,
-        fontWeight: Platform.OS === "ios" ? "800" : "bold",
+        fontFamily: "P22Bangersfield-Bold",
         marginRight: 20
     },
     coin: {

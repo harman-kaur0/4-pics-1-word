@@ -15,7 +15,7 @@ const PrizeWheel = ({ navigation, playSound }) => {
     const spins = user?.spins
     const boosts = user?.boosts
     const coins = user?.coins
-    
+
     const handleSpin = async () => {
         dispatch(updateUserData({spins: spins - 1}))
         playSound("spin")
@@ -147,6 +147,7 @@ export default PrizeWheel
 const styles = StyleSheet.create({
     wheelContainer: {
         width: "90%",
+        maxWidth: 650,
         height: width > 600 ? "75%" : "60%",
         marginTop: width > 900 ? 180 : (width > 600 ? 160 : 100),
         alignSelf: "center",
