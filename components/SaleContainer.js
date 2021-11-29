@@ -2,11 +2,12 @@ import React from "react"
 import { View, ImageBackground, TouchableOpacity, Image, Text, StyleSheet } from "react-native"
 import { width, font } from "../helper/functions"
 
-const SaleContainer = ({ item, navigation }) => {
+const SaleContainer = ({ item, navigation, playSound }) => {
 
     const handleBuyItem = item => {
         if (item.button) {
             navigation.navigate("Booster")
+            playSound("button")
         }
     }
 

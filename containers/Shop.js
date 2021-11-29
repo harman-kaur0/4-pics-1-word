@@ -12,14 +12,14 @@ const Shop = ({ navigation, playSound }) => {
             <View style={{...styles.saleContainer, marginTop: width > 600 ? "25%" : (width > 400 ? "45%" : "35%")}}>
                 {
                     row1Data.map(item => (
-                        <SaleContainer key={item.text} item={item} navigation={navigation}/>
+                        <SaleContainer key={item.text} item={item} navigation={navigation} playSound={playSound}/>
                     ))
                 }
             </View>
             <View style={styles.saleContainer}>
                 {
                     row2Data.map(item => (
-                        <SaleContainer key={item.text} item={item} navigation={navigation}/>
+                        <SaleContainer key={item.text} item={item} navigation={navigation} playSound={playSound}/>
                     ))
                 }
             </View>
