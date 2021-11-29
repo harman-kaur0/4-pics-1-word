@@ -39,8 +39,10 @@ const Challenge = ({ navigation, playSound }) => {
 
     useEffect(() => {
         if (victory) {
-            dispatch(setMessage("You've received 1 spin on the prize wheel!"))
-            dispatch(updateUserData({ spins: spins + 1, challenges: {...challengeData, [day]: true} }))
+            let reward = sprite.owned.includes("daniel") ? 2 : 1
+
+            dispatch(setMessage(`You've received ${reward} spin on the prize wheel!`))
+            dispatch(updateUserData({ spins: spins + reward, challenges: {...challengeData, [day]: true} }))
             navigation.goBack()
             setTimeout(() => {
                 dispatch({ type: "RESET" })

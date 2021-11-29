@@ -12,8 +12,8 @@ const PreScreen = ({ navigation }) => {
     const time = useSelector(state => state.header.time)
     const sprites = useSelector(state => state.user.user.sprite?.owned)
 
-    const [maxHearts, setHearts] = useState(5)
-    const [minutes, setMinutes] = useState(30)
+    const [maxHearts, setHearts] = useState(12)
+    const [minutes, setMinutes] = useState(5)
 
     useEffect(() => {
         if (sprites) {
@@ -28,7 +28,7 @@ const PreScreen = ({ navigation }) => {
                     setHearts(10)
                     break
                 default:
-                    return
+                    setHearts(5)
             }
 
             switch (true) {
@@ -42,7 +42,7 @@ const PreScreen = ({ navigation }) => {
                     setMinutes(15)
                     break
                 default:
-                    return
+                    setMinutes(30)
             }
         }
     }, [sprites])

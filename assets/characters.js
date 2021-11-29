@@ -49,7 +49,7 @@ export const charData = {
     },
     daniel: {
         cost: 5000,
-        perk: "Gain an additional spin per day.",
+        perk: "Gain an extra spin from challenges.",
         happy: require("../assets/characters/daniel/happy.png"),
         shock: require("../assets/characters/daniel/shock.png"),
         cry: require("../assets/characters/daniel/cry.png"),
