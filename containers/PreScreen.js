@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useRef, useState } from "react"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import { View } from "react-native"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchUserData, updateUserData } from "../actions/userActions"
+import { fetchDailyBoost, fetchUserData, resetDailyBoosts, updateUserData } from "../actions/userActions"
 import { getTime, setCurrentDate, setTime, setRefreshTime } from "../actions/headerActions"
 
 const PreScreen = ({ navigation }) => {
@@ -11,6 +11,7 @@ const PreScreen = ({ navigation }) => {
     const hearts = useSelector(state => state.user.user.hearts)
     const time = useSelector(state => state.header.time)
     const sprites = useSelector(state => state.user.user.sprite?.owned)
+    const day = useSelector(state => state.user.daily?.day)
 
     const [maxHearts, setHearts] = useState(12)
     const [minutes, setMinutes] = useState(5)
@@ -43,6 +44,10 @@ const PreScreen = ({ navigation }) => {
                     break
                 default:
                     setMinutes(30)
+            }
+
+            if (sprites.includes("evelyn")) {
+                dispatch(fetchDailyBoost())
             }
         }
     }, [sprites])
@@ -97,6 +102,10 @@ const PreScreen = ({ navigation }) => {
         }
     }, [time, hearts, minutes, maxHearts])
 
+    const refreshDaily = () => {
+        if (new Date().getDay() !== day && sprites.includes("evelyn")) dispatch(resetDailyBoosts())
+    }
+
     const useInterval = (callback, delay) => {
         const savedCallback = useRef()
       
@@ -112,7 +121,10 @@ const PreScreen = ({ navigation }) => {
         }, [delay])
       }
 
-      useInterval(() => calculateRefresh(), 1000)
+    useInterval(() => {
+        calculateRefresh()
+        refreshDaily()
+    }, 1000)
 
     return (
         <View>

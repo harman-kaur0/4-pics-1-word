@@ -6,7 +6,7 @@ export const fetchUserData = () => {
             const user = await AsyncStorage.getItem("user")
         
             if (user) {
-                dispatch({ type: "USER", user: JSON.parse(user)})
+                dispatch({ type: "USER", user: JSON.parse(user) })
             } else {
                 const newUser = {
                     name: "New User",
@@ -30,7 +30,7 @@ export const fetchUserData = () => {
     }
 }
 
-export const updateUserData = (data) => {
+export const updateUserData = data => {
     return async dispatch => {
         if (data) {
             const user = await AsyncStorage.getItem("user")
@@ -45,5 +45,53 @@ export const updateUserData = (data) => {
     
             dispatch({ type: "USER", user: updatedUser })
         }
+    }
+}
+
+export const fetchDailyBoost = () => {
+    return async dispatch => {
+        try {
+            const daily = await AsyncStorage.getItem("daily")
+
+            if (daily) {
+                dispatch({ type: "DAILY", daily: JSON.parse(daily) })
+            } else {
+                const newDaily = {
+                    day: new Date().getDay(),
+                    wand: true
+                }
+        
+                await AsyncStorage.setItem("daily", JSON.stringify(newDaily))
+        
+                dispatch({ type: "DAILY", daily: newDaily })
+            }
+        } catch (err) {
+            alert(err)
+        }
+    }
+}
+
+export const useDailyBoost = boost => {
+    return async dispatch => {
+        const daily = await AsyncStorage.getItem("daily")
+
+        const newDaily = {...JSON.parse(daily), [boost]: false}
+
+        await AsyncStorage.setItem("daily", JSON.stringify(newDaily))
+
+        dispatch({ type: "DAILY", daily: newDaily })
+    }
+}
+
+export const resetDailyBoosts = () => {
+    return async dispatch => {
+        const daily = {
+            day: new Date().getDay(),
+            wand: true
+        }
+
+        await AsyncStorage.setItem("daily", JSON.stringify(daily))
+        
+        dispatch({ type: "DAILY", daily })
     }
 }

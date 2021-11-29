@@ -1,6 +1,6 @@
 const initialState = {
     user: {},
-    daily: {}
+    daily: null
 }
 
 export const user = (state = initialState, action) => {

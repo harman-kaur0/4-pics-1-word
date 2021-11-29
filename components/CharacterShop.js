@@ -3,7 +3,7 @@ import { View, StyleSheet, Image, Animated, Text, TouchableOpacity, Platform } f
 import { font, width } from "../helper/functions"
 import { charData } from "../assets/characters"
 import { useDispatch } from "react-redux"
-import { updateUserData } from "../actions/userActions"
+import { fetchDailyBoost, updateUserData } from "../actions/userActions"
 
 const cardWidth = width > 600 ? width * 0.5 : width * 0.72
 const spacerWidth = (width - cardWidth)/2 - 10
@@ -23,6 +23,7 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound, boost
 
         if (item === "alex") data = { boosts: {...boosts, trash: trash + 10, letter: letter + 10} }
         if ( item === "leyla") data = { boosts: {...boosts, trash: trash + 5, letter: letter + 5, wand: wand + 5} }
+        if (item === "evelyn") dispatch(fetchDailyBoost())
 
         dispatch(updateUserData({
             ...data, 

@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native"
 import { shuffleArray, getRandomItem } from "../helper/functions"
 import { updateWordAndLetters } from "../actions/gameActions"
-import { updateUserData } from "../actions/userActions"
-import { useDispatch } from "react-redux"
+import { updateUserData, useDailyBoost } from "../actions/userActions"
+import { useDispatch, useSelector } from "react-redux"
 import { width, font } from "../helper/functions"
 
 const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
@@ -12,6 +12,7 @@ const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
     const { wand, trash, letter } = boosts
 
     const dispatch = useDispatch()
+    const dailyWand = useSelector(state => state.user.daily?.wand)
 
     const answer = data?.answer?.split("") || null
 
@@ -25,7 +26,8 @@ const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
         })
 
         dispatch(updateWordAndLetters(updatedWord, updatedLetters))
-        dispatch(updateUserData(wand ? {boosts: {...boosts, wand: wand - 1}} : {coins: coins - 100}))
+        if (dailyWand) dispatch(useDailyBoost("wand"))
+        else dispatch(updateUserData(wand ? {boosts: {...boosts, wand: wand - 1}} : {coins: coins - 100}))
         setWand(true)
         playSound("wand")
     }
@@ -99,7 +101,7 @@ const GameHints = ({ word, data, letters, coins, boosts, playSound }) => {
                         resizeMode="contain"
                         style={{height: "100%", width: "100%"}}
                     />
-                    <Text style={styles.boostAmount}>{wand}</Text>
+                    <Text style={styles.boostAmount}>{dailyWand ? "FREE" : wand}</Text>
                 </TouchableOpacity>
             }
             {   !letter && coins < 25 ?
