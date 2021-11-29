@@ -91,6 +91,7 @@ const Profile = ({ navigation, playSound }) => {
                     owned={owned} 
                     coins={user.coins}
                     sprite={user.sprite}
+                    boosts={user.boosts}
                     playSound={playSound}
                 /> :
                 <>

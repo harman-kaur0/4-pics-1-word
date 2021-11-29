@@ -8,7 +8,7 @@ import { updateUserData } from "../actions/userActions"
 const cardWidth = width > 600 ? width * 0.5 : width * 0.72
 const spacerWidth = (width - cardWidth)/2 - 10
 
-const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound }) => {
+const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound, boosts }) => {
     const dispatch = useDispatch()
     const scrollX = useRef(new Animated.Value(0)).current
 
@@ -18,7 +18,14 @@ const CharacterShop = ({ setShop, active, owned, coins, sprite, playSound }) => 
     }
 
     const purchaseCharacter = item => {
-        dispatch(updateUserData({ 
+        const { letter, trash, wand } = boosts
+        let data = {}
+
+        if (item === "alex") data = { boosts: {...boosts, trash: trash + 10, letter: letter + 10} }
+        if ( item === "leyla") data = { boosts: {...boosts, trash: trash + 5, letter: letter + 5, wand: wand + 5} }
+
+        dispatch(updateUserData({
+            ...data, 
             sprite: {...sprite, owned: [...sprite.owned, item]}, 
             coins: coins - charData[item].cost
         }))
