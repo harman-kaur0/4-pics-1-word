@@ -83,9 +83,11 @@ const Header = ({ button, navigation, text, playSound }) => {
                 { text ? <Text style={styles.selectionText}>{text}</Text> : null }
             </View>
             <View style={styles.coinsContainer}>
-                <Text style={{...styles.coinText, fontSize: font() - 10}}>
-                    {refreshTime ? new Date(refreshTime * 1000).toISOString().substr(14, 5) : null}
-                </Text>
+                <View style={styles.box}>
+                    <Text style={{...styles.coinText, fontSize: font() - 10}}>
+                        {refreshTime ? new Date(refreshTime * 1000).toISOString().substr(14, 5) : "FULL"}
+                    </Text>
+                </View>
                 <View style={styles.heart}>
                     <Text style={styles.heartText}>{hearts}</Text>
                     <Image
@@ -94,7 +96,9 @@ const Header = ({ button, navigation, text, playSound }) => {
                         resizeMode="contain"
                     />
                 </View>
-                <Text style={styles.coinText}>{displayedCoins(coins) || 0}</Text>
+                <View style={styles.box}>
+                    <Text style={styles.coinText}>{displayedCoins(coins) || 0}</Text>
+                </View>
                 <TouchableOpacity style={styles.coinTouch} onPress={() => navigation.navigate("Shop")}>
                     <Image
                         source={require("../assets/main/coins.png")}
@@ -167,11 +171,10 @@ const styles = StyleSheet.create({
         justifyContent: "flex-end"
     },
     coinText: {
-        marginRight: 5,
+        marginLeft: "5%",
         fontFamily: "P22Bangersfield-Bold",
         fontSize: font(),
         color: "white",
-        marginLeft: "5%"
     },
     coinTouch: {
         width: "20%",
@@ -191,7 +194,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         width: "15%", 
-        height: width > 600 ? "85%" : "60%"
+        height: width > 600 ? "85%" : "65%"
     },
     heartText: {
         fontFamily: "P22Bangersfield-Bold",
@@ -213,5 +216,16 @@ const styles = StyleSheet.create({
         padding: 10,
         alignSelf: "center",
         zIndex: 999,
+    },
+    box: {
+        marginLeft: "5%",
+        marginRight: "-10%",
+        width: width < 600 ? "30%" : "25%",
+        height: width < 600 ? "40%" : "50%",
+        justifyContent: "center",
+        backgroundColor: "black",
+        borderColor: "gray",
+        borderWidth: 2,
+        borderRadius: 10
     }
 })
