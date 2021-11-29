@@ -6,7 +6,7 @@ import { handleInitialSetup, handleVictory } from "../actions/gameActions"
 import gameData from "../assets/data"
 import GreenLetter from "./GreenLetter"
 
-const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, playSound }) => {
+const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, setActive, time, calculateCoins, playSound, initialTime }) => {
     const [coins, setCoins] = useState(0)
     const [word, setWord] = useState(null)
     const dispatch = useDispatch()
@@ -22,14 +22,14 @@ const Outcome = ({ navigation, level, victory, data, stage, setStage, setTime, s
     const handleRetry = () => {
         dispatch(handleVictory())
         dispatch(handleInitialSetup(level, 1))
-        setTime(180)
+        setTime(initialTime)
         setActive(true)
         playSound("button")
     }
 
     const handleNextLevel = () => {
         if (stage === 10) {
-            setTime(180)
+            setTime(initialTime)
             setStage(1)
             dispatch(handleVictory())
             dispatch(handleInitialSetup(parseInt(level) + 1, 1))

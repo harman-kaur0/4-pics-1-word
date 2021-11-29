@@ -10,6 +10,12 @@ const PreScreen = ({ navigation }) => {
 
     const hearts = useSelector(state => state.user.user.hearts)
     const time = useSelector(state => state.header.time)
+    const sprites = useSelector(state => state.user.user.sprite.owned)
+
+    let maxHearts = 5
+
+    if (sprites.includes("steve")) maxHearts += 2
+    else if (sprites.includes("emma")) maxHearts += 5
 
     const remove = async () => {
         try {
@@ -31,9 +37,9 @@ const PreScreen = ({ navigation }) => {
     }, [])
 
     useEffect(() => {
-        if (time === false && hearts < 5) {
+        if (time === false && hearts < maxHearts) {
             dispatch(setTime(Date.now()))
-        } else if (hearts >= 5) {
+        } else if (hearts >= maxHearts) {
             dispatch(setTime(null))
             dispatch(setRefreshTime(null))
             AsyncStorage.removeItem("time")
@@ -42,7 +48,8 @@ const PreScreen = ({ navigation }) => {
         }
     }, [time, hearts])
 
-    const minutes = 30
+    let minutes = sprites.includes("michael") ? 10 : 30
+    if (sprites.includes("scarlett")) minutes /= 2
 
     const calculateRefresh = useCallback(async () => {
         if (time) {
@@ -52,11 +59,11 @@ const PreScreen = ({ navigation }) => {
 
             if (extraHearts) {
                 const newHearts = hearts + extraHearts
-                if (newHearts < 5) {
+                if (newHearts < maxHearts) {
                     dispatch(updateUserData({ hearts: newHearts }))
                     dispatch(setTime(time + extraHearts * (60000 * minutes)))
                 } else {
-                    dispatch(updateUserData({ hearts: 5 }))
+                    dispatch(updateUserData({ hearts: maxHearts }))
                 }
             }
             dispatch(setRefreshTime((minutes * 60) - (diff - extraHearts * (60 * minutes))))

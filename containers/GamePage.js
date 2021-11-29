@@ -15,19 +15,21 @@ import LetterBank from "../components/LetterBank"
 const GamePage = ({ navigation, playSound }) => {
     const dispatch = useDispatch()
 
-    const [stage, setStage] = useState(1)
-    const [time, setTime] = useState(180)
-    const [active, setActive] = useState(true)
-
     const user = useSelector(state => state.user.user)
-    const { levels, records } = user
+    const { levels, records, sprite } = user
     const currentStars = levels[level] || 0
     const userCoins = user.coins
+    const initialTime = sprite.owned.includes("matthew") ? 210 : 180
 
     const gameData = useSelector(state => state.game)
     const { data, coins, word, letters, victory, level } = gameData
     const joined = word.join("").toLowerCase()
     const answer = data.answer
+
+    const [stage, setStage] = useState(1)
+    const [time, setTime] = useState(initialTime)
+    const [active, setActive] = useState(true)
+
     const newStars = time > 119 ? 3 : (time > 59 ? 2 : 1)
 
     useEffect(() => {
@@ -144,6 +146,7 @@ const GamePage = ({ navigation, playSound }) => {
                     setActive={setActive}
                     calculateCoins={calculateCoins}
                     playSound={playSound}
+                    initialTime={initialTime}
                 />
             }
         </>
