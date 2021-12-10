@@ -29,37 +29,37 @@ export const challenges = {
     4: {
         answer: "trivia",
         images: [
-            // require("../assets/challenges/trivia/1.png"),
-            // require("../assets/challenges/trivia/2.png"),
-            // require("../assets/challenges/trivia/3.png"),
-            // require("../assets/challenges/trivia/4.png")         
+            require("../assets/challenges/trivia/1.png"),
+            require("../assets/challenges/trivia/2.png"),
+            require("../assets/challenges/trivia/3.png"),
+            require("../assets/challenges/trivia/4.png")         
         ]
     },
     5: {
         answer: "whipped",
         images: [
-            // require("../assets/challenges/whipped/1.png"),
-            // require("../assets/challenges/whipped/2.png"),
-            // require("../assets/challenges/whipped/3.png"),
-            // require("../assets/challenges/whipped/4.png")         
+            require("../assets/challenges/whipped/1.png"),
+            require("../assets/challenges/whipped/2.png"),
+            require("../assets/challenges/whipped/3.png"),
+            require("../assets/challenges/whipped/4.png")         
         ]
     },
     6: {
         answer: "cuddling",
         images: [
-            // require("../assets/challenges/cuddling/1.png"),
-            // require("../assets/challenges/cuddling/2.png"),
-            // require("../assets/challenges/cuddling/3.png"),
-            // require("../assets/challenges/cuddling/4.png")         
+            require("../assets/challenges/cuddling/1.png"),
+            require("../assets/challenges/cuddling/2.png"),
+            require("../assets/challenges/cuddling/3.png"),
+            require("../assets/challenges/cuddling/4.png")         
         ]
     },
     7: {
         answer: "tempura",
         images: [
-            // require("../assets/challenges/tempura/1.png"),
-            // require("../assets/challenges/tempura/2.png"),
-            // require("../assets/challenges/tempura/3.png"),
-            // require("../assets/challenges/tempura/4.png")         
+            require("../assets/challenges/tempura/1.png"),
+            require("../assets/challenges/tempura/2.png"),
+            require("../assets/challenges/tempura/3.png"),
+            require("../assets/challenges/tempura/4.png")         
         ]
     },
     8: {
