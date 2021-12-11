@@ -44,6 +44,7 @@ const Challenge = ({ navigation, playSound }) => {
             dispatch(setMessage(`You've received ${reward} spin on the prize wheel!`))
             dispatch(updateUserData({ spins: spins + reward, challenges: {...challengeData, [day]: true} }))
             navigation.goBack()
+            navigation.navigate("Wheel")
             setTimeout(() => {
                 dispatch({ type: "RESET" })
             }, 1000)
