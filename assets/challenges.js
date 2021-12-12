@@ -65,46 +65,46 @@ export const challenges = {
     8: {
         answer: "bubbles",
         images: [
-            // require("../assets/challenges/bubbles/1.png"),
-            // require("../assets/challenges/bubbles/2.png"),
-            // require("../assets/challenges/bubbles/3.png"),
-            // require("../assets/challenges/bubbles/4.png")         
+            require("../assets/challenges/bubbles/1.png"),
+            require("../assets/challenges/bubbles/2.png"),
+            require("../assets/challenges/bubbles/3.png"),
+            require("../assets/challenges/wrapping/1.png")         
         ]
     },
     9: {
         answer: "supper",
         images: [
-            // require("../assets/challenges/supper/1.png"),
-            // require("../assets/challenges/supper/2.png"),
-            // require("../assets/challenges/supper/3.png"),
-            // require("../assets/challenges/supper/4.png")         
+            require("../assets/challenges/supper/1.png"),
+            require("../assets/challenges/supper/2.png"),
+            require("../assets/challenges/supper/3.png"),
+            require("../assets/challenges/supper/4.png")         
         ]
     },
     10: {
         answer: "energize",
         images: [
-            // require("../assets/challenges/energize/1.png"),
-            // require("../assets/challenges/energize/2.png"),
-            // require("../assets/challenges/energize/3.png"),
-            // require("../assets/challenges/energize/4.png")         
+            require("../assets/challenges/energize/1.png"),
+            require("../assets/challenges/energize/2.png"),
+            require("../assets/challenges/energize/3.png"),
+            require("../assets/challenges/energize/4.png")         
         ]
     },
     11: {
         answer: "humanity",
         images: [
-            // require("../assets/challenges/humanity/1.png"),
-            // require("../assets/challenges/humanity/2.png"),
-            // require("../assets/challenges/humanity/3.png"),
-            // require("../assets/challenges/humanity/4.png")         
+            require("../assets/challenges/humanity/1.png"),
+            require("../assets/challenges/humanity/2.png"),
+            require("../assets/challenges/humanity/3.png"),
+            require("../assets/challenges/humanity/4.png")         
         ]
     },
     12: {
         answer: "pharmacy",
         images: [
-            // require("../assets/challenges/pharmacy/1.png"),
-            // require("../assets/challenges/pharmacy/2.png"),
-            // require("../assets/challenges/pharmacy/3.png"),
-            // require("../assets/challenges/pharmacy/4.png")         
+            require("../assets/challenges/pharmacy/1.png"),
+            require("../assets/challenges/pharmacy/2.png"),
+            require("../assets/challenges/pharmacy/3.png"),
+            require("../assets/challenges/pharmacy/4.png")         
         ]
     },
     13: {
@@ -245,19 +245,19 @@ export const challenges = {
     28: {
         answer: "private",
         images: [
-            // require("../assets/challenges/private/1.png"),
-            // require("../assets/challenges/private/2.png"),
-            // require("../assets/challenges/private/3.png"),
-            // require("../assets/challenges/private/4.png")         
+            require("../assets/challenges/private/1.png"),
+            require("../assets/challenges/private/2.png"),
+            require("../assets/challenges/private/3.png"),
+            require("../assets/challenges/private/4.png")         
         ]
     },
     29: {
         answer: "tortilla",
         images: [
-            // require("../assets/challenges/tortilla/1.png"),
-            // require("../assets/challenges/tortilla/2.png"),
-            // require("../assets/challenges/tortilla/3.png"),
-            // require("../assets/challenges/tortilla/4.png")         
+            require("../assets/challenges/tortilla/1.png"),
+            require("../assets/challenges/tortilla/2.png"),
+            require("../assets/challenges/tortilla/3.png"),
+            require("../assets/challenges/tortilla/4.png")         
         ]
     },
     30: {
