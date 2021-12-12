@@ -110,28 +110,28 @@ export const challenges = {
     13: {
         answer: "rubber",
         images: [
-            // require("../assets/challenges/rubber/1.png"),
-            // require("../assets/challenges/rubber/2.png"),
-            // require("../assets/challenges/rubber/3.png"),
-            // require("../assets/challenges/rubber/4.png")         
+            require("../assets/challenges/rubber/1.png"),
+            require("../assets/challenges/rubber/2.png"),
+            require("../assets/challenges/rubber/3.png"),
+            require("../assets/challenges/rubber/4.png")         
         ]
     },
     14: {
         answer: "dressing",
         images: [
-            // require("../assets/challenges/dressing/1.png"),
-            // require("../assets/challenges/dressing/2.png"),
-            // require("../assets/challenges/dressing/3.png"),
-            // require("../assets/challenges/dressing/4.png")         
+            require("../assets/challenges/dressing/1.png"),
+            require("../assets/challenges/dressing/2.png"),
+            require("../assets/challenges/dressing/3.png"),
+            require("../assets/challenges/dressing/4.png")         
         ]
     },
     15: {
         answer: "bagels",
         images: [
-            // require("../assets/challenges/bagels/1.png"),
-            // require("../assets/challenges/bagels/2.png"),
-            // require("../assets/challenges/bagels/3.png"),
-            // require("../assets/challenges/bagels/4.png")         
+            require("../assets/challenges/bagels/1.png"),
+            require("../assets/challenges/bagels/2.png"),
+            require("../assets/challenges/bagels/3.png"),
+            require("../assets/challenges/bagels/4.png")         
         ]
     },
     16: {
@@ -227,19 +227,19 @@ export const challenges = {
     26: {
         answer: "brittle",
         images: [
-            // require("../assets/challenges/brittle/1.png"),
-            // require("../assets/challenges/brittle/2.png"),
-            // require("../assets/challenges/brittle/3.png"),
-            // require("../assets/challenges/brittle/4.png")         
+            require("../assets/challenges/brittle/1.png"),
+            require("../assets/challenges/brittle/2.png"),
+            require("../assets/challenges/brittle/3.png"),
+            require("../assets/challenges/brittle/4.png")         
         ]
     },
     27: {
         answer: "dessert",
         images: [
-            // require("../assets/challenges/dessert/1.png"),
-            // require("../assets/challenges/dessert/2.png"),
-            // require("../assets/challenges/dessert/3.png"),
-            // require("../assets/challenges/dessert/4.png")         
+            require("../assets/challenges/drumstick/3.png"),
+            require("../assets/challenges/parfait/3.png"),
+            require("../assets/challenges/eggnog/2.png"),
+            require("../assets/challenges/fountain/3.png")         
         ]
     },
     28: {
