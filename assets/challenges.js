@@ -182,46 +182,46 @@ export const challenges = {
     21: {
         answer: "granola",
         images: [
-            // require("../assets/challenges/granola/1.png"),
-            // require("../assets/challenges/granola/2.png"),
-            // require("../assets/challenges/granola/3.png"),
-            // require("../assets/challenges/granola/4.png")         
+            require("../assets/challenges/granola/1.png"),
+            require("../assets/challenges/granola/2.png"),
+            require("../assets/challenges/granola/3.png"),
+            require("../assets/challenges/granola/4.png")         
         ]
     },
     22: {
         answer: "brownie",
         images: [
-            // require("../assets/challenges/brownie/1.png"),
-            // require("../assets/challenges/brownie/2.png"),
-            // require("../assets/challenges/brownie/3.png"),
-            // require("../assets/challenges/brownie/4.png")         
+            require("../assets/challenges/brownie/1.png"),
+            require("../assets/challenges/brownie/2.png"),
+            require("../assets/challenges/brownie/3.png"),
+            require("../assets/challenges/brownie/4.png")         
         ]
     },
     23: {
         answer: "discount",
         images: [
-            // require("../assets/challenges/discount/1.png"),
-            // require("../assets/challenges/discount/2.png"),
-            // require("../assets/challenges/discount/3.png"),
-            // require("../assets/challenges/discount/4.png")         
+            require("../assets/challenges/discount/1.png"),
+            require("../assets/challenges/discount/2.png"),
+            require("../assets/challenges/discount/3.png"),
+            require("../assets/challenges/discount/4.png")         
         ]
     },
     24: {
         answer: "alcohol",
         images: [
-            // require("../assets/challenges/alcohol/1.png"),
-            // require("../assets/challenges/alcohol/2.png"),
-            // require("../assets/challenges/alcohol/3.png"),
-            // require("../assets/challenges/alcohol/4.png")         
+            require("../assets/challenges/alcohol/1.png"),
+            require("../assets/challenges/alcohol/2.png"),
+            require("../assets/challenges/alcohol/3.png"),
+            require("../assets/challenges/alcohol/4.png")         
         ]
     },
     25: {
         answer: "opposite",
         images: [
-            // require("../assets/challenges/opposite/1.png"),
-            // require("../assets/challenges/opposite/2.png"),
-            // require("../assets/challenges/opposite/3.png"),
-            // require("../assets/challenges/opposite/4.png")         
+            require("../assets/challenges/opposite/1.png"),
+            require("../assets/challenges/opposite/2.png"),
+            require("../assets/challenges/opposite/3.png"),
+            require("../assets/challenges/opposite/4.png")         
         ]
     },
     26: {
