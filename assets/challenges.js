@@ -308,10 +308,10 @@ export const challenges = {
     35: {
         answer: "vacuum",
         images: [
-            // require("../assets/challenges/vacuum/1.png"),
-            // require("../assets/challenges/vacuum/2.png"),
-            // require("../assets/challenges/vacuum/3.png"),
-            // require("../assets/challenges/vacuum/4.png")         
+            require("../assets/challenges/vacuum/1.png"),
+            require("../assets/challenges/vacuum/2.png"),
+            require("../assets/challenges/vacuum/3.png"),
+            require("../assets/challenges/vacuum/4.png")         
         ]
     },
     36: {
@@ -506,19 +506,19 @@ export const challenges = {
     57: {
         answer: "straw",
         images: [
-            // require("../assets/challenges/straw/1.png"),
-            // require("../assets/challenges/straw/2.png"),
-            // require("../assets/challenges/straw/3.png"),
-            // require("../assets/challenges/straw/4.png")         
+            require("../assets/challenges/straw/1.png"),
+            require("../assets/challenges/straw/2.png"),
+            require("../assets/challenges/straw/3.png"),
+            require("../assets/challenges/straw/4.png")         
         ]
     },
     58: {
         answer: "fairy",
         images: [
-            // require("../assets/challenges/fairy/1.png"),
-            // require("../assets/challenges/fairy/2.png"),
-            // require("../assets/challenges/fairy/3.png"),
-            // require("../assets/challenges/fairy/4.png")         
+            require("../assets/challenges/fairy/1.png"),
+            require("../assets/challenges/fairy/2.png"),
+            require("../assets/challenges/fairy/3.png"),
+            require("../assets/challenges/magic/2.png")         
         ]
     },
     59: {
