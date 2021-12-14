@@ -335,10 +335,10 @@ export const challenges = {
     38: {
         answer: "periodic",
         images: [
-            // require("../assets/challenges/periodic/1.png"),
-            // require("../assets/challenges/periodic/2.png"),
-            // require("../assets/challenges/periodic/3.png"),
-            // require("../assets/challenges/periodic/4.png")         
+            require("../assets/challenges/periodic/1.png"),
+            require("../assets/challenges/periodic/2.png"),
+            require("../assets/challenges/periodic/3.png"),
+            require("../assets/images/10/waiter/2.png")         
         ]
     },
     39: {
@@ -452,19 +452,19 @@ export const challenges = {
     51: {
         answer: "battery",
         images: [
-            // require("../assets/challenges/battery/1.png"),
-            // require("../assets/challenges/battery/2.png"),
-            // require("../assets/challenges/battery/3.png"),
-            // require("../assets/challenges/battery/4.png")         
+            require("../assets/challenges/battery/1.png"),
+            require("../assets/challenges/battery/2.png"),
+            require("../assets/challenges/battery/3.png"),
+            require("../assets/challenges/energize/2.png")         
         ]
     },
     52: {
         answer: "comfy",
         images: [
-            // require("../assets/challenges/comfy/1.png"),
-            // require("../assets/challenges/comfy/2.png"),
-            // require("../assets/challenges/comfy/3.png"),
-            // require("../assets/challenges/comfy/4.png")         
+            require("../assets/challenges/comfy/1.png"),
+            require("../assets/challenges/comfy/2.png"),
+            require("../assets/challenges/comfy/3.png"),
+            require("../assets/challenges/cuddling/3.png")         
         ]
     },
     53: {
