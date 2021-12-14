@@ -317,19 +317,19 @@ export const challenges = {
     36: {
         answer: "shower",
         images: [
-            // require("../assets/challenges/shower/1.png"),
-            // require("../assets/challenges/shower/2.png"),
-            // require("../assets/challenges/shower/3.png"),
-            // require("../assets/challenges/shower/4.png")         
+            require("../assets/challenges/shower/1.png"),
+            require("../assets/challenges/shower/2.png"),
+            require("../assets/challenges/shower/3.png"),
+            require("../assets/challenges/shower/4.png")         
         ]
     },
     37: {
         answer: "yogurt",
         images: [
-            // require("../assets/challenges/yogurt/1.png"),
-            // require("../assets/challenges/yogurt/2.png"),
-            // require("../assets/challenges/yogurt/3.png"),
-            // require("../assets/challenges/yogurt/4.png")         
+            require("../assets/challenges/yogurt/1.png"),
+            require("../assets/challenges/yogurt/2.png"),
+            require("../assets/challenges/yogurt/3.png"),
+            require("../assets/challenges/yogurt/4.png")         
         ]
     },
     38: {
@@ -470,37 +470,37 @@ export const challenges = {
     53: {
         answer: "president",
         images: [
-            // require("../assets/challenges/president/1.png"),
-            // require("../assets/challenges/president/2.png"),
-            // require("../assets/challenges/president/3.png"),
-            // require("../assets/challenges/president/4.png")         
+            require("../assets/challenges/president/1.png"),
+            require("../assets/challenges/president/2.png"),
+            require("../assets/images/8/lead/3.png"),      
+            require("../assets/challenges/president/3.png")
         ]
     },
     54: {
         answer: "margarita",
         images: [
-            // require("../assets/challenges/margarita/1.png"),
-            // require("../assets/challenges/margarita/2.png"),
-            // require("../assets/challenges/margarita/3.png"),
-            // require("../assets/challenges/margarita/4.png")         
+            require("../assets/challenges/margarita/1.png"),
+            require("../assets/challenges/margarita/2.png"),
+            require("../assets/challenges/margarita/3.png"),
+            require("../assets/challenges/margarita/4.png")         
         ]
     },
     55: {
         answer: "biscuit",
         images: [
-            // require("../assets/challenges/biscuit/1.png"),
-            // require("../assets/challenges/biscuit/2.png"),
-            // require("../assets/challenges/biscuit/3.png"),
-            // require("../assets/challenges/biscuit/4.png")         
+            require("../assets/challenges/biscuit/1.png"),
+            require("../assets/challenges/biscuit/2.png"),
+            require("../assets/challenges/biscuit/3.png"),
+            require("../assets/challenges/biscuit/4.png")         
         ]
     },
     56: {
         answer: "chowder",
         images: [
-            // require("../assets/challenges/chowder/1.png"),
-            // require("../assets/challenges/chowder/2.png"),
-            // require("../assets/challenges/chowder/3.png"),
-            // require("../assets/challenges/chowder/4.png")         
+            require("../assets/challenges/chowder/1.png"),
+            require("../assets/challenges/chowder/2.png"),
+            require("../assets/challenges/chowder/3.png"),
+            require("../assets/challenges/chowder/4.png")         
         ]
     },
     57: {
