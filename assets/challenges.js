@@ -137,46 +137,46 @@ export const challenges = {
     16: {
         answer: "nothing",
         images: [
-            // require("../assets/challenges/nothing/1.png"),
-            // require("../assets/challenges/nothing/2.png"),
-            // require("../assets/challenges/nothing/3.png"),
-            // require("../assets/challenges/nothing/4.png")         
+            require("../assets/challenges/nothing/1.png"),
+            require("../assets/challenges/nothing/2.png"),
+            require("../assets/challenges/nothing/3.png"),
+            require("../assets/challenges/nothing/4.png")         
         ]
     },
     17: {
         answer: "activist",
         images: [
-            // require("../assets/challenges/activist/1.png"),
-            // require("../assets/challenges/activist/2.png"),
-            // require("../assets/challenges/activist/3.png"),
-            // require("../assets/challenges/activist/4.png")         
+            require("../assets/images/8/lead/4.png"),
+            require("../assets/challenges/activist/1.png"),
+            require("../assets/challenges/activist/2.png"),
+            require("../assets/challenges/activist/3.png")         
         ]
     },
     18: {
         answer: "bootleg",
         images: [
-            // require("../assets/challenges/bootleg/1.png"),
-            // require("../assets/challenges/bootleg/2.png"),
-            // require("../assets/challenges/bootleg/3.png"),
-            // require("../assets/challenges/bootleg/4.png")         
+            require("../assets/challenges/bootleg/1.png"),
+            require("../assets/challenges/bootleg/2.png"),
+            require("../assets/challenges/bootleg/3.png"),
+            require("../assets/challenges/bootleg/4.png")         
         ]
     },
     19: {
         answer: "minister",
         images: [
-            // require("../assets/challenges/minister/1.png"),
-            // require("../assets/challenges/minister/2.png"),
-            // require("../assets/challenges/minister/3.png"),
-            // require("../assets/challenges/minister/4.png")         
+            require("../assets/challenges/minister/1.png"),
+            require("../assets/challenges/minister/2.png"),
+            require("../assets/challenges/minister/3.png"),
+            require("../assets/images/8/lead/4.png")         
         ]
     },
     20: {
         answer: "cheesy",
         images: [
-            // require("../assets/challenges/cheesy/1.png"),
-            // require("../assets/challenges/cheesy/2.png"),
-            // require("../assets/challenges/cheesy/3.png"),
-            // require("../assets/challenges/cheesy/4.png")         
+            require("../assets/challenges/cheesy/1.png"),
+            require("../assets/challenges/cheesy/2.png"),
+            require("../assets/images/5/smile/4.png"),
+            require("../assets/challenges/nacho/4.png")         
         ]
     },
     21: {
