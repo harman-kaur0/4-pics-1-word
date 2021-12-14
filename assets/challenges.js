@@ -369,39 +369,39 @@ export const challenges = {
         ]
     },
     42: {
-        answer: "visit",
+        answer: "visitor",
         images: [
-            // require("../assets/challenges/visit/1.png"),
-            // require("../assets/challenges/visit/2.png"),
-            // require("../assets/challenges/visit/3.png"),
-            // require("../assets/challenges/visit/4.png")         
+            require("../assets/challenges/visitor/1.png"),
+            require("../assets/challenges/visitor/2.png"),
+            require("../assets/images/6/flies/4.png"),
+            require("../assets/challenges/visitor/3.png")
         ]
     },
     43: {
         answer: "movie",
         images: [
-            // require("../assets/challenges/movie/1.png"),
-            // require("../assets/challenges/movie/2.png"),
-            // require("../assets/challenges/movie/3.png"),
-            // require("../assets/challenges/movie/4.png")         
+            require("../assets/challenges/movie/1.png"),
+            require("../assets/challenges/movie/2.png"),
+            require("../assets/challenges/movie/3.png"),
+            require("../assets/challenges/movie/4.png")         
         ]
     },
     44: {
         answer: "cheddar",
         images: [
-            // require("../assets/challenges/cheddar/1.png"),
-            // require("../assets/challenges/cheddar/2.png"),
-            // require("../assets/challenges/cheddar/3.png"),
-            // require("../assets/challenges/cheddar/4.png")         
+            require("../assets/challenges/cheddar/1.png"),
+            require("../assets/challenges/cheddar/2.png"),
+            require("../assets/challenges/nacho/4.png"),
+            require("../assets/challenges/cheddar/3.png")         
         ]
     },
     45: {
         answer: "valentine",
         images: [
-            // require("../assets/challenges/valentine/1.png"),
-            // require("../assets/challenges/valentine/2.png"),
-            // require("../assets/challenges/valentine/3.png"),
-            // require("../assets/challenges/valentine/4.png")         
+            require("../assets/challenges/valentine/1.png"),
+            require("../assets/challenges/valentine/2.png"),
+            require("../assets/challenges/lover/2.png"),
+            require("../assets/challenges/flowers/1.png")         
         ]
     },
     46: {
@@ -418,8 +418,8 @@ export const challenges = {
         images: [
             require("../assets/challenges/lover/2.png"),
             require("../assets/images/8/lead/4.png"),
-            require("../assets/challenges/groundhog/3.png"),
-            require("../assets/challenges/flowers/1.png")
+            require("../assets/challenges/flowers/1.png"),
+            require("../assets/challenges/groundhog/3.png")
         ]
     },
     48: {
