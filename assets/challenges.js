@@ -290,19 +290,19 @@ export const challenges = {
     33: {
         answer: "groundhog",
         images: [
-            // require("../assets/challenges/groundhog/1.png"),
-            // require("../assets/challenges/groundhog/2.png"),
-            // require("../assets/challenges/groundhog/3.png"),
-            // require("../assets/challenges/groundhog/4.png")         
+            require("../assets/challenges/groundhog/1.png"),
+            require("../assets/challenges/groundhog/2.png"),
+            require("../assets/challenges/groundhog/3.png"),
+            require("../assets/challenges/groundhog/4.png")         
         ]
     },
     34: {
         answer: "physical",
         images: [
-            // require("../assets/challenges/physical/1.png"),
-            // require("../assets/challenges/physical/2.png"),
-            // require("../assets/challenges/physical/3.png"),
-            // require("../assets/challenges/physical/4.png")         
+            require("../assets/challenges/physical/1.png"),
+            require("../assets/challenges/physical/2.png"),
+            require("../assets/images/5/shoes/2.png"),
+            require("../assets/challenges/cuddling/2.png")         
         ]
     },
     35: {
@@ -524,19 +524,19 @@ export const challenges = {
     59: {
         answer: "anosmia",
         images: [
-            // require("../assets/challenges/anosmia/1.png"),
-            // require("../assets/challenges/anosmia/2.png"),
-            // require("../assets/challenges/anosmia/3.png"),
-            // require("../assets/challenges/anosmia/4.png")         
+            require("../assets/challenges/anosmia/1.png"),
+            require("../assets/challenges/anosmia/2.png"),
+            require("../assets/challenges/anosmia/3.png"),
+            require("../assets/challenges/anosmia/4.png")         
         ]
     },
     60: {
         answer: "refund",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/refund/1.png"),
+            require("../assets/challenges/refund/2.png"),
+            require("../assets/challenges/refund/3.png"),
+            require("../assets/challenges/refund/4.png")         
         ]
     },
     61: {
