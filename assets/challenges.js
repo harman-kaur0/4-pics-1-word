@@ -362,10 +362,10 @@ export const challenges = {
     41: {
         answer: "umbrella",
         images: [
-            // require("../assets/challenges/umbrella/1.png"),
-            // require("../assets/challenges/umbrella/2.png"),
-            // require("../assets/challenges/umbrella/3.png"),
-            // require("../assets/challenges/umbrella/4.png")         
+            require("../assets/challenges/umbrella/1.png"),
+            require("../assets/challenges/umbrella/2.png"),
+            require("../assets/challenges/umbrella/3.png"),
+            require("../assets/challenges/shower/2.png")         
         ]
     },
     42: {
@@ -434,19 +434,19 @@ export const challenges = {
     49: {
         answer: "flowers",
         images: [
-            // require("../assets/challenges/flowers/1.png"),
-            // require("../assets/challenges/flowers/2.png"),
-            // require("../assets/challenges/flowers/3.png"),
-            // require("../assets/challenges/flowers/4.png")         
+            require("../assets/challenges/flowers/1.png"),
+            require("../assets/challenges/flowers/2.png"),
+            require("../assets/challenges/flowers/3.png"),
+            require("../assets/images/12/spring/4.png")         
         ]
     },
     50: {
         answer: "single",
         images: [
-            // require("../assets/challenges/single/1.png"),
-            // require("../assets/challenges/single/2.png"),
-            // require("../assets/challenges/single/3.png"),
-            // require("../assets/challenges/single/4.png")         
+            require("../assets/challenges/single/1.png"),
+            require("../assets/challenges/single/2.png"),
+            require("../assets/challenges/single/3.png"),
+            require("../assets/challenges/single/4.png")         
         ]
     },
     51: {
