@@ -405,30 +405,30 @@ export const challenges = {
         ]
     },
     46: {
-        answer: "couples",
+        answer: "couple",
         images: [
-            // require("../assets/challenges/couples/1.png"),
-            // require("../assets/challenges/couples/2.png"),
-            // require("../assets/challenges/couples/3.png"),
-            // require("../assets/challenges/couples/4.png")         
+            require("../assets/challenges/lover/3.png"),        
+            require("../assets/challenges/couple/1.png"),
+            require("../assets/challenges/couple/2.png"),
+            require("../assets/images/7/pair/2.png")
         ]
     },
     47: {
         answer: "february",
         images: [
-            // require("../assets/challenges/february/1.png"),
-            // require("../assets/challenges/february/2.png"),
-            // require("../assets/challenges/february/3.png"),
-            // require("../assets/challenges/february/4.png")         
+            require("../assets/challenges/lover/2.png"),
+            require("../assets/images/8/lead/4.png"),
+            require("../assets/challenges/groundhog/3.png"),
+            require("../assets/challenges/flowers/1.png")
         ]
     },
     48: {
         answer: "lover",
         images: [
-            // require("../assets/challenges/lover/1.png"),
-            // require("../assets/challenges/lover/2.png"),
-            // require("../assets/challenges/lover/3.png"),
-            // require("../assets/challenges/lover/4.png")         
+            require("../assets/challenges/lover/1.png"),
+            require("../assets/challenges/lover/2.png"),
+            require("../assets/challenges/lover/3.png"),
+            require("../assets/challenges/cuddling/1.png")         
         ]
     },
     49: {
