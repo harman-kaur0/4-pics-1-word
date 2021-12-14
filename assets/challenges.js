@@ -344,19 +344,19 @@ export const challenges = {
     39: {
         answer: "kite",
         images: [
-            // require("../assets/challenges/kite/1.png"),
-            // require("../assets/challenges/kite/2.png"),
-            // require("../assets/challenges/kite/3.png"),
-            // require("../assets/challenges/kite/4.png")         
+            require("../assets/challenges/kite/1.png"),
+            require("../assets/challenges/kite/2.png"),
+            require("../assets/challenges/kite/3.png"),
+            require("../assets/challenges/kite/4.png")         
         ]
     },
     40: {
         answer: "toothache",
         images: [
-            // require("../assets/challenges/toothache/1.png"),
-            // require("../assets/challenges/toothache/2.png"),
-            // require("../assets/challenges/toothache/3.png"),
-            // require("../assets/challenges/toothache/4.png")         
+            require("../assets/challenges/toothache/1.png"),
+            require("../assets/challenges/toothache/2.png"),
+            require("../assets/challenges/toothache/3.png"),
+            require("../assets/challenges/fairy/3.png")         
         ]
     },
     41: {
