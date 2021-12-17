@@ -614,46 +614,46 @@ export const challenges = {
     69: {
         answer: "kidney",
         images: [
-            // require("../assets/challenges/kidney/1.png"),
-            // require("../assets/challenges/kidney/2.png"),
-            // require("../assets/challenges/kidney/3.png"),
-            // require("../assets/challenges/kidney/4.png")         
+            require("../assets/challenges/kidney/1.png"),
+            require("../assets/challenges/kidney/2.png"),
+            require("../assets/challenges/kidney/3.png"),
+            require("../assets/challenges/kidney/4.png")         
         ]
     },
     70: {
         answer: "samaritan",
         images: [
-            // require("../assets/challenges/samaritan/1.png"),
-            // require("../assets/challenges/samaritan/2.png"),
-            // require("../assets/challenges/samaritan/3.png"),
-            // require("../assets/challenges/samaritan/4.png")         
+            require("../assets/challenges/samaritan/1.png"),
+            require("../assets/challenges/samaritan/2.png"),
+            require("../assets/challenges/samaritan/3.png"),
+            require("../assets/challenges/samaritan/4.png")         
         ]
     },
     71: {
         answer: "daylight",
         images: [
-            // require("../assets/challenges/daylight/1.png"),
-            // require("../assets/challenges/daylight/2.png"),
-            // require("../assets/challenges/daylight/3.png"),
-            // require("../assets/challenges/daylight/4.png")         
+            require("../assets/challenges/daylight/1.png"),
+            require("../assets/challenges/daylight/2.png"),
+            require("../assets/challenges/daylight/3.png"),
+            require("../assets/images/3/sun/2.png")         
         ]
     },
     72: {
         answer: "geometry",
         images: [
-            // require("../assets/challenges/geometry/1.png"),
-            // require("../assets/challenges/geometry/2.png"),
-            // require("../assets/challenges/geometry/3.png"),
-            // require("../assets/challenges/geometry/4.png")         
+            require("../assets/challenges/geometry/1.png"),
+            require("../assets/challenges/geometry/2.png"),
+            require("../assets/challenges/geometry/3.png"),
+            require("../assets/challenges/geometry/4.png")         
         ]
     },
     73: {
-        answer: "napping",
+        answer: "resign",
         images: [
-            // require("../assets/challenges/napping/1.png"),
-            // require("../assets/challenges/napping/2.png"),
-            // require("../assets/challenges/napping/3.png"),
-            // require("../assets/challenges/napping/4.png")         
+            require("../assets/challenges/resign/1.png"),
+            require("../assets/challenges/resign/2.png"),
+            require("../assets/challenges/resign/3.png"),
+            require("../assets/images/2/red/1.png")    
         ]
     },
     74: {
@@ -2799,12 +2799,12 @@ export const challenges = {
         ]
     },
     312: {
-        answer: "resign",
+        answer: "napping",
         images: [
-            require("../assets/challenges/resign/1.png"),
-            require("../assets/challenges/resign/2.png"),
-            require("../assets/challenges/resign/3.png"),
-            require("../assets/images/2/red/1.png")    
+            require("../assets/challenges/sleepy/3.png"),
+            require("../assets/challenges/cuddling/3.png"),
+            require("../assets/challenges/cuddling/2.png"),
+            require("../assets/challenges/sleepy/2.png")         
         ]
     },
     313: {
