@@ -1082,10 +1082,10 @@ export const challenges = {
     121: {
         answer: "hairstyle",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/hairstyle/1.png"),
+            require("../assets/challenges/hairstyle/2.png"),
+            require("../assets/challenges/hairstyle/3.png"),
+            require("../assets/challenges/hairstyle/4.png")         
         ]
     },
     122: {
