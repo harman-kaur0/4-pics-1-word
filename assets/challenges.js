@@ -830,28 +830,28 @@ export const challenges = {
     93: {
         answer: "rainbow",
         images: [
-            // require("../assets/challenges/rainbow/1.png"),
-            // require("../assets/challenges/rainbow/2.png"),
-            // require("../assets/challenges/rainbow/3.png"),
-            // require("../assets/challenges/rainbow/4.png")         
+            require("../assets/challenges/rainbow/1.png"),
+            require("../assets/challenges/rainbow/2.png"),
+            require("../assets/challenges/rainbow/3.png"),
+            require("../assets/images/10/lucky/1.png")         
         ]
     },
     94: {
         answer: "vitamin",
         images: [
-            // require("../assets/challenges/vitamin/1.png"),
-            // require("../assets/challenges/vitamin/2.png"),
-            // require("../assets/challenges/vitamin/3.png"),
-            // require("../assets/challenges/vitamin/4.png")         
+            require("../assets/challenges/vitamin/1.png"),
+            require("../assets/challenges/vitamin/2.png"),
+            require("../assets/challenges/vitamin/3.png"),
+            require("../assets/images/3/sun/2.png")         
         ]
     },
     95: {
         answer: "flash",
         images: [
-            // require("../assets/challenges/flash/1.png"),
-            // require("../assets/challenges/flash/2.png"),
-            // require("../assets/challenges/flash/3.png"),
-            // require("../assets/challenges/flash/4.png")         
+            require("../assets/challenges/flash/1.png"),
+            require("../assets/challenges/flash/2.png"),
+            require("../assets/challenges/flash/3.png"),
+            require("../assets/challenges/flash/4.png")         
         ]
     },
     96: {
@@ -1073,10 +1073,10 @@ export const challenges = {
     120: {
         answer: "military",
         images: [
-            // require("../assets/challenges/military/1.png"),
-            // require("../assets/challenges/military/2.png"),
-            // require("../assets/challenges/military/3.png"),
-            // require("../assets/challenges/military/4.png")         
+            require("../assets/images/18/uniform/4.png"),
+            require("../assets/challenges/veterans/3.png"),
+            require("../assets/challenges/veterans/1.png"),
+            require("../assets/images/18/uniform/2.png")         
         ]
     },
     121: {
