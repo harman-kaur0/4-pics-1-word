@@ -857,10 +857,10 @@ export const challenges = {
     96: {
         answer: "hopeful",
         images: [
-            // require("../assets/challenges/hopeful/1.png"),
-            // require("../assets/challenges/hopeful/2.png"),
-            // require("../assets/challenges/hopeful/3.png"),
-            // require("../assets/challenges/hopeful/4.png")         
+            require("../assets/challenges/hopeful/1.png"),
+            require("../assets/challenges/hopeful/2.png"),
+            require("../assets/challenges/hopeful/3.png"),
+            require("../assets/challenges/hopeful/4.png")         
         ]
     },
     97: {
@@ -992,37 +992,37 @@ export const challenges = {
     111: {
         answer: "quarter",
         images: [
-            // require("../assets/challenges/quarter/1.png"),
-            // require("../assets/challenges/quarter/2.png"),
-            // require("../assets/challenges/quarter/3.png"),
-            // require("../assets/challenges/quarter/4.png")         
+            require("../assets/challenges/quarter/1.png"),
+            require("../assets/challenges/quarter/2.png"),
+            require("../assets/challenges/quarter/3.png"),
+            require("../assets/challenges/quarter/4.png")         
         ]
     },
     112: {
         answer: "recycle",
         images: [
-            // require("../assets/challenges/recycle/1.png"),
-            // require("../assets/challenges/recycle/2.png"),
-            // require("../assets/challenges/recycle/3.png"),
-            // require("../assets/challenges/recycle/4.png")         
+            require("../assets/challenges/recycle/1.png"),
+            require("../assets/images/15/plastic/1.png"),
+            require("../assets/images/15/package/2.png"),
+            require("../assets/images/2/green/2.png")         
         ]
     },
     113: {
         answer: "picnic",
         images: [
-            // require("../assets/challenges/picnic/1.png"),
-            // require("../assets/challenges/picnic/2.png"),
-            // require("../assets/challenges/picnic/3.png"),
-            // require("../assets/challenges/picnic/4.png")         
+            require("../assets/challenges/picnic/1.png"),
+            require("../assets/images/12/blanket/1.png"),
+            require("../assets/challenges/picnic/2.png"),
+            require("../assets/images/12/camp/2.png")         
         ]
     },
     114: {
         answer: "parents",
         images: [
-            // require("../assets/challenges/parents/1.png"),
-            // require("../assets/challenges/parents/2.png"),
-            // require("../assets/challenges/parents/3.png"),
-            // require("../assets/challenges/parents/4.png")         
+            require("../assets/challenges/family/2.png"),
+            require("../assets/challenges/parents/1.png"),
+            require("../assets/challenges/cuddling/2.png"),
+            require("../assets/challenges/magic/2.png")         
         ]
     },
     115: {
