@@ -1037,37 +1037,37 @@ export const challenges = {
     116: {
         answer: "april",
         images: [
-            // require("../assets/challenges/april/1.png"),
-            // require("../assets/challenges/april/2.png"),
-            // require("../assets/challenges/april/3.png"),
-            // require("../assets/challenges/april/4.png")         
+            require("../assets/challenges/april/1.png"),
+            require("../assets/challenges/april/2.png"),
+            require("../assets/challenges/jester/1.png"),
+            require("../assets/images/12/easter/1.png")         
         ]
     },
     117: {
         answer: "prime",
         images: [
-            // require("../assets/challenges/prime/1.png"),
-            // require("../assets/challenges/prime/2.png"),
-            // require("../assets/challenges/prime/3.png"),
-            // require("../assets/challenges/prime/4.png")         
+            require("../assets/challenges/prime/1.png"),
+            require("../assets/challenges/prime/2.png"),
+            require("../assets/challenges/prime/3.png"),
+            require("../assets/challenges/prime/4.png")         
         ]
     },
     118: {
         answer: "superhero",
         images: [
-            // require("../assets/challenges/superhero/1.png"),
-            // require("../assets/challenges/superhero/2.png"),
-            // require("../assets/challenges/superhero/3.png"),
-            // require("../assets/challenges/superhero/4.png")         
+            require("../assets/images/6/flies/2.png"),
+            require("../assets/images/8/bat/4.png"),
+            require("../assets/challenges/flash/2.png"),
+            require("../assets/challenges/wonder/1.png")         
         ]
     },
     119: {
         answer: "peace",
         images: [
-            // require("../assets/challenges/peace/1.png"),
-            // require("../assets/challenges/peace/2.png"),
-            // require("../assets/challenges/peace/3.png"),
-            // require("../assets/challenges/peace/4.png")         
+            require("../assets/challenges/peace/1.png"),
+            require("../assets/challenges/peace/2.png"),
+            require("../assets/challenges/peace/3.png"),
+            require("../assets/challenges/prayer/1.png")         
         ]
     },
     120: {
