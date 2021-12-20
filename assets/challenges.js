@@ -1028,10 +1028,10 @@ export const challenges = {
     115: {
         answer: "telephone",
         images: [
-            // require("../assets/challenges/telephone/1.png"),
-            // require("../assets/challenges/telephone/2.png"),
-            // require("../assets/challenges/telephone/3.png"),
-            // require("../assets/challenges/telephone/4.png")         
+            require("../assets/challenges/telephone/1.png"),
+            require("../assets/challenges/telephone/2.png"),
+            require("../assets/challenges/telephone/3.png"),
+            require("../assets/challenges/telephone/4.png")         
         ]
     },
     116: {
@@ -1039,7 +1039,7 @@ export const challenges = {
         images: [
             require("../assets/challenges/april/1.png"),
             require("../assets/challenges/april/2.png"),
-            require("../assets/challenges/jester/1.png"),
+            require("../assets/images/17/jester/1.png"),
             require("../assets/images/12/easter/1.png")         
         ]
     },
