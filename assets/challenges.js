@@ -866,19 +866,19 @@ export const challenges = {
     97: {
         answer: "coffee",
         images: [
-            // require("../assets/challenges/coffee/1.png"),
-            // require("../assets/challenges/coffee/2.png"),
-            // require("../assets/challenges/coffee/3.png"),
-            // require("../assets/challenges/coffee/4.png")         
+            require("../assets/challenges/coffee/1.png"),
+            require("../assets/challenges/coffee/2.png"),
+            require("../assets/challenges/coffee/3.png"),
+            require("../assets/challenges/straw/3.png")         
         ]
     },
     98: {
         answer: "housework",
         images: [
-            // require("../assets/challenges/housework/1.png"),
-            // require("../assets/challenges/housework/2.png"),
-            // require("../assets/challenges/housework/3.png"),
-            // require("../assets/challenges/housework/4.png")         
+            require("../assets/challenges/housework/1.png"),
+            require("../assets/challenges/housework/2.png"),
+            require("../assets/challenges/housework/3.png"),
+            require("../assets/challenges/housework/4.png")         
         ]
     },
     99: {
@@ -974,19 +974,19 @@ export const challenges = {
     109: {
         answer: "hanging",
         images: [
-            // require("../assets/challenges/hanging/1.png"),
-            // require("../assets/challenges/hanging/2.png"),
-            // require("../assets/challenges/hanging/3.png"),
-            // require("../assets/challenges/hanging/4.png")         
+            require("../assets/challenges/hanging/1.png"),
+            require("../assets/challenges/friends/3.png"),
+            require("../assets/images/12/winter/2.png"),
+            require("../assets/challenges/lantern/3.png")         
         ]
     },
     110: {
         answer: "clone",
         images: [
-            // require("../assets/challenges/clone/1.png"),
-            // require("../assets/challenges/clone/2.png"),
-            // require("../assets/challenges/clone/3.png"),
-            // require("../assets/challenges/clone/4.png")         
+            require("../assets/challenges/clone/1.png"),
+            require("../assets/challenges/clone/2.png"),
+            require("../assets/challenges/clone/3.png"),
+            require("../assets/challenges/clone/4.png")         
         ]
     },
     111: {
