@@ -884,46 +884,46 @@ export const challenges = {
     99: {
         answer: "antique",
         images: [
-            // require("../assets/challenges/antique/1.png"),
-            // require("../assets/challenges/antique/2.png"),
-            // require("../assets/challenges/antique/3.png"),
-            // require("../assets/challenges/antique/4.png")         
+            require("../assets/challenges/antique/1.png"),
+            require("../assets/challenges/antique/2.png"),
+            require("../assets/challenges/antique/3.png"),
+            require("../assets/challenges/antique/4.png")         
         ]
     },
     100: {
         answer: "farmer",
         images: [
-            // require("../assets/challenges/farmer/1.png"),
-            // require("../assets/challenges/farmer/2.png"),
-            // require("../assets/challenges/farmer/3.png"),
-            // require("../assets/challenges/farmer/4.png")         
+            require("../assets/challenges/farmer/1.png"),
+            require("../assets/challenges/farmer/2.png"),
+            require("../assets/challenges/farmer/3.png"),
+            require("../assets/challenges/farmer/4.png")         
         ]
     },
     101: {
         answer: "submarine",
         images: [
-            // require("../assets/challenges/submarine/1.png"),
-            // require("../assets/challenges/submarine/2.png"),
-            // require("../assets/challenges/submarine/3.png"),
-            // require("../assets/challenges/submarine/4.png")         
+            require("../assets/challenges/submarine/1.png"),
+            require("../assets/challenges/submarine/2.png"),
+            require("../assets/challenges/submarine/3.png"),
+            require("../assets/challenges/submarine/4.png")         
         ]
     },
     102: {
         answer: "educate",
         images: [
-            // require("../assets/challenges/educate/1.png"),
-            // require("../assets/challenges/educate/2.png"),
-            // require("../assets/challenges/educate/3.png"),
-            // require("../assets/challenges/educate/4.png")         
+            require("../assets/challenges/educate/1.png"),
+            require("../assets/challenges/educate/2.png"),
+            require("../assets/challenges/educate/3.png"),
+            require("../assets/challenges/proposal/4.png")         
         ]
     },
     103: {
         answer: "record",
         images: [
-            // require("../assets/challenges/record/1.png"),
-            // require("../assets/challenges/record/2.png"),
-            // require("../assets/challenges/record/3.png"),
-            // require("../assets/challenges/record/4.png")         
+            require("../assets/challenges/record/1.png"),
+            require("../assets/challenges/record/2.png"),
+            require("../assets/challenges/record/3.png"),
+            require("../assets/challenges/antique/2.png")         
         ]
     },
     104: {
