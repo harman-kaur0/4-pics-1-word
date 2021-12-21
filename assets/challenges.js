@@ -929,46 +929,46 @@ export const challenges = {
     104: {
         answer: "gardener",
         images: [
-            // require("../assets/challenges/gardener/1.png"),
-            // require("../assets/challenges/gardener/2.png"),
-            // require("../assets/challenges/gardener/3.png"),
-            // require("../assets/challenges/gardener/4.png")         
+            require("../assets/challenges/gardener/1.png"),
+            require("../assets/challenges/gardener/2.png"),
+            require("../assets/challenges/gardener/3.png"),
+            require("../assets/challenges/gardener/4.png")         
         ]
     },
     105: {
         answer: "titanic",
         images: [
-            // require("../assets/challenges/titanic/1.png"),
-            // require("../assets/challenges/titanic/2.png"),
-            // require("../assets/challenges/titanic/3.png"),
-            // require("../assets/challenges/titanic/4.png")         
+            require("../assets/challenges/titanic/1.png"),
+            require("../assets/challenges/titanic/2.png"),
+            require("../assets/challenges/titanic/3.png"),
+            require("../assets/images/14/crash/3.png")         
         ]
     },
     106: {
         answer: "orchid",
         images: [
-            // require("../assets/challenges/orchid/1.png"),
-            // require("../assets/challenges/orchid/2.png"),
-            // require("../assets/challenges/orchid/3.png"),
-            // require("../assets/challenges/orchid/4.png")         
+            require("../assets/challenges/orchid/1.png"),
+            require("../assets/challenges/orchid/2.png"),
+            require("../assets/challenges/orchid/3.png"),
+            require("../assets/challenges/orchid/4.png")         
         ]
     },
     107: {
-        answer: "scavenge",
+        answer: "scavenger",
         images: [
-            // require("../assets/challenges/scavenge/1.png"),
-            // require("../assets/challenges/scavenge/2.png"),
-            // require("../assets/challenges/scavenge/3.png"),
-            // require("../assets/challenges/scavenge/4.png")         
+            require("../assets/challenges/scavenger/1.png"),
+            require("../assets/challenges/scavenger/2.png"),
+            require("../assets/challenges/scavenger/3.png"),
+            require("../assets/challenges/scavenger/4.png")         
         ]
     },
     108: {
-        answer: "lineman",
+        answer: "linesman",
         images: [
-            // require("../assets/challenges/lineman/1.png"),
-            // require("../assets/challenges/lineman/2.png"),
-            // require("../assets/challenges/lineman/3.png"),
-            // require("../assets/challenges/lineman/4.png")         
+            require("../assets/challenges/linesman/1.png"),
+            require("../assets/challenges/linesman/2.png"),
+            require("../assets/challenges/linesman/3.png"),
+            require("../assets/challenges/linesman/4.png")         
         ]
     },
     109: {
