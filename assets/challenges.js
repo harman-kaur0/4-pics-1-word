@@ -1091,10 +1091,10 @@ export const challenges = {
     122: {
         answer: "loyalty",
         images: [
-            // require("../assets/challenges/loyalty/1.png"),
-            // require("../assets/challenges/loyalty/2.png"),
-            // require("../assets/challenges/loyalty/3.png"),
-            // require("../assets/challenges/loyalty/4.png")         
+            require("../assets/challenges/loyalty/1.png"),
+            require("../assets/challenges/lover/3.png"),
+            require("../assets/challenges/veterans/1.png"),     
+            require("../assets/challenges/cuddling/3.png")
         ]
     },
     123: {
@@ -1694,37 +1694,37 @@ export const challenges = {
     189: {
         answer: "icicle",
         images: [
-            // require("../assets/challenges/icicle/1.png"),
-            // require("../assets/challenges/icicle/2.png"),
-            // require("../assets/challenges/icicle/3.png"),
-            // require("../assets/challenges/icicle/4.png")         
+            require("../assets/challenges/icicle/1.png"),
+            require("../assets/challenges/icicle/2.png"),
+            require("../assets/challenges/icicle/3.png"),
+            require("../assets/challenges/icicle/4.png")         
         ]
     },
     190: {
-        answer: "freezer",
+        answer: "radar",
         images: [
-            // require("../assets/challenges/freezer/1.png"),
-            // require("../assets/challenges/freezer/2.png"),
-            // require("../assets/challenges/freezer/3.png"),
-            // require("../assets/challenges/freezer/4.png")         
+            require("../assets/challenges/radar/1.png"),
+            require("../assets/challenges/radar/2.png"),
+            require("../assets/challenges/submarine/4.png"),   
+            require("../assets/challenges/radar/3.png")
         ]
     },
     191: {
         answer: "lonely",
         images: [
-            // require("../assets/challenges/lonely/1.png"),
-            // require("../assets/challenges/lonely/2.png"),
-            // require("../assets/challenges/lonely/3.png"),
-            // require("../assets/challenges/lonely/4.png")         
+            require("../assets/challenges/lonely/1.png"),
+            require("../assets/challenges/lonely/2.png"),
+            require("../assets/challenges/lonely/3.png"),
+            require("../assets/images/19/desert/1.png")         
         ]
     },
     192: {
         answer: "gnarly",
         images: [
-            // require("../assets/challenges/gnarly/1.png"),
-            // require("../assets/challenges/gnarly/2.png"),
-            // require("../assets/challenges/gnarly/3.png"),
-            // require("../assets/challenges/gnarly/4.png")         
+            require("../assets/challenges/gnarly/1.png"),
+            require("../assets/challenges/gnarly/2.png"),
+            require("../assets/challenges/gnarly/3.png"),
+            require("../assets/challenges/gnarly/4.png")         
         ]
     },
     193: {
@@ -2675,10 +2675,10 @@ export const challenges = {
     298: {
         answer: "identity",
         images: [
-            // require("../assets/challenges/identity/1.png"),
-            // require("../assets/challenges/identity/2.png"),
-            // require("../assets/challenges/identity/3.png"),
-            // require("../assets/challenges/identity/4.png")         
+            require("../assets/challenges/identity/1.png"),
+            require("../assets/challenges/identity/2.png"),
+            require("../assets/challenges/identity/3.png"),
+            require("../assets/images/8/bat/4.png")         
         ]
     },
     299: {
