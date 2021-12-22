@@ -1100,10 +1100,10 @@ export const challenges = {
     123: {
         answer: "insure",
         images: [
-            // require("../assets/challenges/insure/1.png"),
-            // require("../assets/challenges/insure/2.png"),
-            // require("../assets/challenges/insure/3.png"),
-            // require("../assets/challenges/insure/4.png")         
+            require("../assets/challenges/insure/1.png"),
+            require("../assets/challenges/insure/2.png"),
+            require("../assets/challenges/insure/3.png"),
+            require("../assets/challenges/insure/4.png")         
         ]
     },
     124: {
