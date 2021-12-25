@@ -1586,10 +1586,10 @@ export const challenges = {
     177: {
         answer: "pudding",
         images: [
-            // require("../assets/challenges/pudding/1.png"),
-            // require("../assets/challenges/pudding/2.png"),
-            // require("../assets/challenges/pudding/3.png"),
-            // require("../assets/challenges/pudding/4.png")         
+            require("../assets/challenges/pudding/1.png"),
+            require("../assets/challenges/pudding/2.png"),
+            require("../assets/challenges/pudding/3.png"),
+            require("../assets/challenges/pudding/4.png")         
         ]
     },
     178: {
@@ -1658,10 +1658,10 @@ export const challenges = {
     185: {
         answer: "barbecue",
         images: [
-            // require("../assets/challenges/barbecue/1.png"),
-            // require("../assets/challenges/barbecue/2.png"),
-            // require("../assets/challenges/barbecue/3.png"),
-            // require("../assets/challenges/barbecue/4.png")         
+            require("../assets/challenges/barbecue/1.png"),
+            require("../assets/challenges/barbecue/2.png"),
+            require("../assets/challenges/barbecue/3.png"),
+            require("../assets/challenges/barbecue/4.png")         
         ]
     },
     186: {
