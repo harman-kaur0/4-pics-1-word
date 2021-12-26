@@ -1595,19 +1595,19 @@ export const challenges = {
     178: {
         answer: "blossom",
         images: [
-            // require("../assets/challenges/blossom/1.png"),
-            // require("../assets/challenges/blossom/2.png"),
-            // require("../assets/challenges/blossom/3.png"),
-            // require("../assets/challenges/blossom/4.png")         
+            require("../assets/challenges/blossom/1.png"),
+            require("../assets/challenges/blossom/2.png"),
+            require("../assets/challenges/blossom/3.png"),
+            require("../assets/images/12/spring/3.png")         
         ]
     },
     179: {
         answer: "bingo",
         images: [
-            // require("../assets/challenges/bingo/1.png"),
-            // require("../assets/challenges/bingo/2.png"),
-            // require("../assets/challenges/bingo/3.png"),
-            // require("../assets/challenges/bingo/4.png")         
+            require("../assets/challenges/bingo/1.png"),
+            require("../assets/challenges/bingo/2.png"),
+            require("../assets/challenges/bingo/3.png"),
+            require("../assets/images/15/lottery/1.png")         
         ]
     },
     180: {
