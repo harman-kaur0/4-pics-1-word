@@ -1136,10 +1136,10 @@ export const challenges = {
     127: {
         answer: "barrier",
         images: [
-            // require("../assets/challenges/barrier/1.png"),
-            // require("../assets/challenges/barrier/2.png"),
-            // require("../assets/challenges/barrier/3.png"),
-            // require("../assets/challenges/barrier/4.png")         
+            require("../assets/challenges/barrier/1.png"),
+            require("../assets/challenges/barrier/2.png"),
+            require("../assets/challenges/barrier/3.png"),
+            require("../assets/images/10/escape/1.png")         
         ]
     },
     128: {
@@ -1190,10 +1190,10 @@ export const challenges = {
     133: {
         answer: "twilight",
         images: [
-            // require("../assets/challenges/twilight/1.png"),
-            // require("../assets/challenges/twilight/2.png"),
-            // require("../assets/challenges/twilight/3.png"),
-            // require("../assets/challenges/twilight/4.png")         
+            require("../assets/challenges/twilight/1.png"),
+            require("../assets/challenges/twilight/2.png"),
+            require("../assets/challenges/twilight/3.png"),
+            require("../assets/challenges/twilight/4.png")         
         ]
     },
     134: {
