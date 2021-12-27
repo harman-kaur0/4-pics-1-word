@@ -1145,46 +1145,46 @@ export const challenges = {
     128: {
         answer: "student",
         images: [
-            // require("../assets/challenges/student/1.png"),
-            // require("../assets/challenges/student/2.png"),
-            // require("../assets/challenges/student/3.png"),
-            // require("../assets/challenges/student/4.png")         
+            require("../assets/challenges/student/1.png"),
+            require("../assets/challenges/student/2.png"),
+            require("../assets/challenges/student/3.png"),
+            require("../assets/challenges/educate/3.png")         
         ]
     },
     129: {
         answer: "muscat",
         images: [
-            // require("../assets/challenges/muscat/1.png"),
-            // require("../assets/challenges/muscat/2.png"),
-            // require("../assets/challenges/muscat/3.png"),
-            // require("../assets/challenges/muscat/4.png")         
+            require("../assets/challenges/muscat/1.png"),
+            require("../assets/challenges/muscat/2.png"),
+            require("../assets/challenges/muscat/3.png"),
+            require("../assets/challenges/muscat/4.png")         
         ]
     },
     130: {
         answer: "reception",
         images: [
-            // require("../assets/challenges/reception/1.png"),
-            // require("../assets/challenges/reception/2.png"),
-            // require("../assets/challenges/reception/3.png"),
-            // require("../assets/challenges/reception/4.png")         
+            require("../assets/challenges/reception/1.png"),
+            require("../assets/challenges/reception/2.png"),
+            require("../assets/challenges/reception/3.png"),
+            require("../assets/challenges/banquet/2.png")         
         ]
     },
     131: {
         answer: "odometer",
         images: [
-            // require("../assets/challenges/odometer/1.png"),
-            // require("../assets/challenges/odometer/2.png"),
-            // require("../assets/challenges/odometer/3.png"),
-            // require("../assets/challenges/odometer/4.png")         
+            require("../assets/challenges/odometer/1.png"),
+            require("../assets/challenges/odometer/2.png"),
+            require("../assets/challenges/odometer/3.png"),
+            require("../assets/challenges/corvette/1.png")         
         ]
     },
     132: {
         answer: "jumping",
         images: [
-            // require("../assets/challenges/jumping/1.png"),
-            // require("../assets/challenges/jumping/2.png"),
-            // require("../assets/challenges/jumping/3.png"),
-            // require("../assets/challenges/jumping/4.png")         
+            require("../assets/challenges/jumping/1.png"),
+            require("../assets/challenges/jumping/2.png"),
+            require("../assets/images/10/escape/2.png"),
+            require("../assets/challenges/leapfrog/2.png")         
         ]
     },
     133: {
