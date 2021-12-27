@@ -1613,10 +1613,10 @@ export const challenges = {
     180: {
         answer: "parchment",
         images: [
-            // require("../assets/challenges/parchment/1.png"),
-            // require("../assets/challenges/parchment/2.png"),
-            // require("../assets/challenges/parchment/3.png"),
-            // require("../assets/challenges/parchment/4.png")         
+            require("../assets/challenges/parchment/1.png"),
+            require("../assets/challenges/parchment/2.png"),
+            require("../assets/challenges/parchment/3.png"),
+            require("../assets/challenges/parchment/4.png")         
         ]
     },
     181: {
@@ -1649,10 +1649,10 @@ export const challenges = {
     184: {
         answer: "fry",
         images: [
-            // require("../assets/challenges/fry/1.png"),
-            // require("../assets/challenges/fry/2.png"),
-            // require("../assets/challenges/fry/3.png"),
-            // require("../assets/challenges/fry/4.png")         
+            require("../assets/challenges/fry/1.png"),
+            require("../assets/challenges/fry/2.png"),
+            require("../assets/challenges/fry/3.png"),
+            require("../assets/challenges/fry/4.png")         
         ]
     },
     185: {
