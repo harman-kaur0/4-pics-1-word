@@ -1622,28 +1622,28 @@ export const challenges = {
     181: {
         answer: "corvette",
         images: [
-            // require("../assets/challenges/corvette/1.png"),
-            // require("../assets/challenges/corvette/2.png"),
-            // require("../assets/challenges/corvette/3.png"),
-            // require("../assets/challenges/corvette/4.png")         
+            require("../assets/challenges/corvette/1.png"),
+            require("../assets/challenges/corvette/2.png"),
+            require("../assets/challenges/corvette/3.png"),
+            require("../assets/challenges/corvette/4.png")         
         ]
     },
     182: {
         answer: "poster",
         images: [
-            // require("../assets/challenges/poster/1.png"),
-            // require("../assets/challenges/poster/2.png"),
-            // require("../assets/challenges/poster/3.png"),
-            // require("../assets/challenges/poster/4.png")         
+            require("../assets/challenges/poster/1.png"),
+            require("../assets/challenges/poster/2.png"),
+            require("../assets/challenges/poster/3.png"),
+            require("../assets/challenges/poster/4.png")         
         ]
     },
     183: {
         answer: "flavor",
         images: [
-            // require("../assets/challenges/flavor/1.png"),
-            // require("../assets/challenges/flavor/2.png"),
-            // require("../assets/challenges/flavor/3.png"),
-            // require("../assets/challenges/flavor/4.png")         
+            require("../assets/challenges/flavor/1.png"),
+            require("../assets/challenges/flavor/2.png"),
+            require("../assets/challenges/pudding/1.png"),
+            require("../assets/challenges/fry/2.png")         
         ]
     },
     184: {
