@@ -1127,10 +1127,10 @@ export const challenges = {
     126: {
         answer: "lunch",
         images: [
-            // require("../assets/challenges/lunch/1.png"),
-            // require("../assets/challenges/lunch/2.png"),
-            // require("../assets/challenges/lunch/3.png"),
-            // require("../assets/challenges/lunch/4.png")         
+            require("../assets/challenges/lunch/1.png"),
+            require("../assets/challenges/lunch/2.png"),
+            require("../assets/challenges/lunch/3.png"),
+            require("../assets/challenges/lunch/4.png")         
         ]
     },
     127: {
@@ -1199,19 +1199,19 @@ export const challenges = {
     134: {
         answer: "archery",
         images: [
-            // require("../assets/challenges/archery/1.png"),
-            // require("../assets/challenges/archery/2.png"),
-            // require("../assets/challenges/archery/3.png"),
-            // require("../assets/challenges/archery/4.png")         
+            require("../assets/challenges/archery/1.png"),
+            require("../assets/challenges/archery/2.png"),
+            require("../assets/challenges/archery/3.png"),
+            require("../assets/images/8/bow/2.png")         
         ]
     },
     135: {
         answer: "player",
         images: [
-            // require("../assets/challenges/player/1.png"),
-            // require("../assets/challenges/player/2.png"),
-            // require("../assets/challenges/player/3.png"),
-            // require("../assets/challenges/player/4.png")         
+            require("../assets/images/16/sports/2.png"),
+            require("../assets/challenges/poster/4.png"),    
+            require("../assets/images/16/sports/1.png"),
+            require("../assets/images/6/gamer/3.png")
         ]
     },
     136: {
