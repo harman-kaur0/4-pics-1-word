@@ -1235,46 +1235,46 @@ export const challenges = {
     138: {
         answer: "vaccine",
         images: [
-            // require("../assets/challenges/vaccine/1.png"),
-            // require("../assets/challenges/vaccine/2.png"),
-            // require("../assets/challenges/vaccine/3.png"),
-            // require("../assets/challenges/vaccine/4.png")         
+            require("../assets/challenges/vaccine/1.png"),
+            require("../assets/challenges/vaccine/2.png"),
+            require("../assets/challenges/vaccine/3.png"),
+            require("../assets/challenges/vaccine/4.png")         
         ]
     },
     139: {
         answer: "relative",
         images: [
-            // require("../assets/challenges/relative/1.png"),
-            // require("../assets/challenges/relative/2.png"),
-            // require("../assets/challenges/relative/3.png"),
-            // require("../assets/challenges/relative/4.png")         
+            require("../assets/challenges/relative/1.png"),
+            require("../assets/challenges/relative/2.png"),
+            require("../assets/challenges/relative/3.png"),
+            require("../assets/challenges/relative/4.png")         
         ]
     },
     140: {
         answer: "stream",
         images: [
-            // require("../assets/challenges/stream/1.png"),
-            // require("../assets/challenges/stream/2.png"),
-            // require("../assets/challenges/stream/3.png"),
-            // require("../assets/challenges/stream/4.png")         
+            require("../assets/challenges/stream/1.png"),
+            require("../assets/images/6/gamer/4.png"),
+            require("../assets/images/4/river/4.png"),      
+            require("../assets/challenges/stream/2.png")
         ]
     },
     141: {
         answer: "may",
         images: [
-            // require("../assets/challenges/may/1.png"),
-            // require("../assets/challenges/may/2.png"),
-            // require("../assets/challenges/may/3.png"),
-            // require("../assets/challenges/may/4.png")         
+            require("../assets/challenges/may/1.png"),
+            require("../assets/challenges/may/2.png"),
+            require("../assets/challenges/relative/4.png"),
+            require("../assets/images/14/crash/2.png")         
         ]
     },
     142: {
         answer: "vanilla",
         images: [
-            // require("../assets/challenges/vanilla/1.png"),
-            // require("../assets/challenges/vanilla/2.png"),
-            // require("../assets/challenges/vanilla/3.png"),
-            // require("../assets/challenges/vanilla/4.png")         
+            require("../assets/challenges/vanilla/1.png"),
+            require("../assets/challenges/vanilla/2.png"),
+            require("../assets/challenges/vanilla/3.png"),
+            require("../assets/images/2/white/3.png")         
         ]
     },
     143: {
