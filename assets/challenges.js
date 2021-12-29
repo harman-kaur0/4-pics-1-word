@@ -1226,10 +1226,10 @@ export const challenges = {
     137: {
         answer: "pierce",
         images: [
-            // require("../assets/challenges/pierce/1.png"),
-            // require("../assets/challenges/pierce/2.png"),
-            // require("../assets/challenges/pierce/3.png"),
-            // require("../assets/challenges/pierce/4.png")         
+            require("../assets/challenges/pierce/1.png"),
+            require("../assets/challenges/pierce/2.png"),
+            require("../assets/challenges/pierce/3.png"),
+            require("../assets/challenges/pierce/4.png")         
         ]
     },
     138: {
@@ -1280,10 +1280,10 @@ export const challenges = {
     143: {
         answer: "escargot",
         images: [
-            // require("../assets/challenges/escargot/1.png"),
-            // require("../assets/challenges/escargot/2.png"),
-            // require("../assets/challenges/escargot/3.png"),
-            // require("../assets/challenges/escargot/4.png")         
+            require("../assets/challenges/escargot/1.png"),
+            require("../assets/challenges/escargot/2.png"),
+            require("../assets/challenges/escargot/3.png"),
+            require("../assets/challenges/escargot/4.png")         
         ]
     },
     144: {
