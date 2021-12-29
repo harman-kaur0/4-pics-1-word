@@ -1217,10 +1217,10 @@ export const challenges = {
     136: {
         answer: "tracker",
         images: [
-            // require("../assets/challenges/tracker/1.png"),
-            // require("../assets/challenges/tracker/2.png"),
-            // require("../assets/challenges/tracker/3.png"),
-            // require("../assets/challenges/tracker/4.png")         
+            require("../assets/challenges/tracker/1.png"),
+            require("../assets/challenges/radar/1.png"),         
+            require("../assets/challenges/tracker/2.png"),
+            require("../assets/challenges/radar/2.png"),
         ]
     },
     137: {
@@ -1289,19 +1289,19 @@ export const challenges = {
     144: {
         answer: "senior",
         images: [
-            // require("../assets/challenges/senior/1.png"),
-            // require("../assets/challenges/senior/2.png"),
-            // require("../assets/challenges/senior/3.png"),
-            // require("../assets/challenges/senior/4.png")         
+            require("../assets/challenges/senior/1.png"),
+            require("../assets/challenges/senior/2.png"),
+            require("../assets/images/5/smile/4.png"),         
+            require("../assets/challenges/student/1.png")
         ]
     },
     145: {
         answer: "paper",
         images: [
-            // require("../assets/challenges/paper/1.png"),
-            // require("../assets/challenges/paper/2.png"),
-            // require("../assets/challenges/paper/3.png"),
-            // require("../assets/challenges/paper/4.png")         
+            require("../assets/images/11/ticket/2.png"),
+            require("../assets/challenges/paper/1.png"),
+            require("../assets/challenges/poetry/2.png"),
+            require("../assets/challenges/parchment/2.png")         
         ]
     },
     146: {
