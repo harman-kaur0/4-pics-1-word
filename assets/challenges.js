@@ -1487,10 +1487,10 @@ export const challenges = {
     166: {
         answer: "nature",
         images: [
-            // require("../assets/challenges/nature/1.png"),
-            // require("../assets/challenges/nature/2.png"),
-            // require("../assets/challenges/nature/3.png"),
-            // require("../assets/challenges/nature/4.png")         
+            require("../assets/challenges/nature/1.png"),
+            require("../assets/images/19/subarctic/3.png"),
+            require("../assets/images/19/grassland/2.png"),
+            require("../assets/images/19/forest/1.png")         
         ]
     },
     167: {
@@ -1568,10 +1568,10 @@ export const challenges = {
     175: {
         answer: "social",
         images: [
-            // require("../assets/challenges/social/1.png"),
-            // require("../assets/challenges/social/2.png"),
-            // require("../assets/challenges/social/3.png"),
-            // require("../assets/challenges/social/4.png")         
+            require("../assets/challenges/social/1.png"),
+            require("../assets/challenges/social/2.png"),
+            require("../assets/challenges/social/3.png"),
+            require("../assets/challenges/friends/3.png")         
         ]
     },
     176: {
