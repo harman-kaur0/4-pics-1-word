@@ -1496,10 +1496,10 @@ export const challenges = {
     167: {
         answer: "splurge",
         images: [
-            // require("../assets/challenges/splurge/1.png"),
-            // require("../assets/challenges/splurge/2.png"),
-            // require("../assets/challenges/splurge/3.png"),
-            // require("../assets/challenges/splurge/4.png")         
+            require("../assets/challenges/splurge/1.png"),
+            require("../assets/challenges/splurge/2.png"),
+            require("../assets/challenges/splurge/3.png"),
+            require("../assets/challenges/splurge/4.png")         
         ]
     },
     168: {
@@ -1514,55 +1514,55 @@ export const challenges = {
     169: {
         answer: "hiking",
         images: [
-            // require("../assets/challenges/hiking/1.png"),
-            // require("../assets/challenges/hiking/2.png"),
-            // require("../assets/challenges/hiking/3.png"),
-            // require("../assets/challenges/hiking/4.png")         
+            require("../assets/challenges/hiking/1.png"),
+            require("../assets/challenges/hiking/2.png"),
+            require("../assets/challenges/hiking/3.png"),
+            require("../assets/images/5/shoes/1.png")         
         ]
     },
     170: {
         answer: "music",
         images: [
-            // require("../assets/challenges/music/1.png"),
-            // require("../assets/challenges/music/2.png"),
-            // require("../assets/challenges/music/3.png"),
-            // require("../assets/challenges/music/4.png")         
+            require("../assets/challenges/music/1.png"),
+            require("../assets/images/10/hiphop/3.png"),
+            require("../assets/images/18/perform/1.png"),
+            require("../assets/challenges/stream/1.png")         
         ]
     },
     171: {
         answer: "solstice",
         images: [
-            // require("../assets/challenges/solstice/1.png"),
-            // require("../assets/challenges/solstice/2.png"),
-            // require("../assets/challenges/solstice/3.png"),
-            // require("../assets/challenges/solstice/4.png")         
+            require("../assets/challenges/solstice/1.png"),
+            require("../assets/challenges/solstice/2.png"),
+            require("../assets/challenges/solstice/3.png"),
+            require("../assets/challenges/solstice/4.png")         
         ]
     },
     172: {
         answer: "porridge",
         images: [
-            // require("../assets/challenges/porridge/1.png"),
-            // require("../assets/challenges/porridge/2.png"),
-            // require("../assets/challenges/porridge/3.png"),
-            // require("../assets/challenges/porridge/4.png")         
+            require("../assets/challenges/porridge/1.png"),
+            require("../assets/challenges/porridge/2.png"),
+            require("../assets/challenges/porridge/3.png"),
+            require("../assets/challenges/porridge/4.png")         
         ]
     },
     173: {
         answer: "buttercup",
         images: [
-            // require("../assets/challenges/buttercup/1.png"),
-            // require("../assets/challenges/buttercup/2.png"),
-            // require("../assets/challenges/buttercup/3.png"),
-            // require("../assets/challenges/buttercup/4.png")         
+            require("../assets/challenges/buttercup/1.png"),
+            require("../assets/challenges/buttercup/2.png"),
+            require("../assets/challenges/buttercup/3.png"),
+            require("../assets/challenges/buttercup/4.png")         
         ]
     },
     174: {
         answer: "party",
         images: [
-            // require("../assets/challenges/party/1.png"),
-            // require("../assets/challenges/party/2.png"),
-            // require("../assets/challenges/party/3.png"),
-            // require("../assets/challenges/party/4.png")         
+            require("../assets/challenges/party/1.png"),
+            require("../assets/challenges/party/2.png"),
+            require("../assets/challenges/party/3.png"),
+            require("../assets/images/2/orange/3.png")         
         ]
     },
     175: {
