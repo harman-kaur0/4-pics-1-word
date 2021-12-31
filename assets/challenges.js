@@ -1505,10 +1505,10 @@ export const challenges = {
     168: {
         answer: "refuge",
         images: [
-            // require("../assets/challenges/refuge/1.png"),
-            // require("../assets/challenges/refuge/2.png"),
-            // require("../assets/challenges/refuge/3.png"),
-            // require("../assets/challenges/refuge/4.png")         
+            require("../assets/challenges/refuge/1.png"),
+            require("../assets/challenges/refuge/2.png"),
+            require("../assets/challenges/refuge/3.png"),
+            require("../assets/challenges/refuge/4.png")         
         ]
     },
     169: {
