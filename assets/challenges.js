@@ -1397,10 +1397,10 @@ export const challenges = {
     156: {
         answer: "cancer",
         images: [
-            // require("../assets/challenges/cancer/1.png"),
-            // require("../assets/challenges/cancer/2.png"),
-            // require("../assets/challenges/cancer/3.png"),
-            // require("../assets/challenges/cancer/4.png")         
+            require("../assets/challenges/cancer/1.png"),
+            require("../assets/challenges/cancer/2.png"),
+            require("../assets/challenges/cancer/3.png"),
+            require("../assets/images/2/pink/2.png")         
         ]
     },
     157: {
@@ -1478,10 +1478,10 @@ export const challenges = {
     165: {
         answer: "donate",
         images: [
-            // require("../assets/challenges/donate/1.png"),
-            // require("../assets/challenges/donate/2.png"),
-            // require("../assets/challenges/donate/3.png"),
-            // require("../assets/challenges/donate/4.png")         
+            require("../assets/challenges/donate/1.png"),
+            require("../assets/challenges/donate/2.png"),
+            require("../assets/challenges/donate/3.png"),
+            require("../assets/challenges/donate/4.png")         
         ]
     },
     166: {
