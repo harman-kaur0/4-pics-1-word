@@ -1469,10 +1469,10 @@ export const challenges = {
     164: {
         answer: "sewing",
         images: [
-            // require("../assets/challenges/sewing/1.png"),
-            // require("../assets/challenges/sewing/2.png"),
-            // require("../assets/challenges/sewing/3.png"),
-            // require("../assets/challenges/sewing/4.png")         
+            require("../assets/challenges/sewing/1.png"),
+            require("../assets/challenges/sewing/2.png"),
+            require("../assets/challenges/sewing/3.png"),
+            require("../assets/challenges/sewing/4.png")         
         ]
     },
     165: {
