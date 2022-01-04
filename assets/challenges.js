@@ -1406,19 +1406,19 @@ export const challenges = {
     157: {
         answer: "june",
         images: [
-            // require("../assets/challenges/june/1.png"),
-            // require("../assets/challenges/june/2.png"),
-            // require("../assets/challenges/june/3.png"),
-            // require("../assets/challenges/june/4.png")         
+            require("../assets/challenges/june/1.png"),
+            require("../assets/challenges/june/2.png"),
+            require("../assets/images/summer/1.png"),
+            require("../assets/images/12/beach/3.png")         
         ]
     },
     158: {
         answer: "katana",
         images: [
-            // require("../assets/challenges/katana/1.png"),
-            // require("../assets/challenges/katana/2.png"),
-            // require("../assets/challenges/katana/3.png"),
-            // require("../assets/challenges/katana/4.png")         
+            require("../assets/challenges/katana/1.png"),
+            require("../assets/challenges/katana/2.png"),
+            require("../assets/challenges/katana/3.png"),
+            require("../assets/challenges/katana/4.png")         
         ]
     },
     159: {
