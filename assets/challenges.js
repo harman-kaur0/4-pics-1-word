@@ -1451,10 +1451,10 @@ export const challenges = {
     162: {
         answer: "loving",
         images: [
-            // require("../assets/challenges/loving/1.png"),
-            // require("../assets/challenges/loving/2.png"),
-            // require("../assets/challenges/loving/3.png"),
-            // require("../assets/challenges/loving/4.png")         
+            require("../assets/challenges/lover/3.png"),
+            require("../assets/challenges/cuddling/3.png"),
+            require("../assets/challenges/cuddling/2.png"),
+            require("../assets/challenges/lover/1.png")         
         ]
     },
     163: {
