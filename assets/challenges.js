@@ -1307,19 +1307,19 @@ export const challenges = {
     146: {
         answer: "brother",
         images: [
-            // require("../assets/challenges/brother/1.png"),
-            // require("../assets/challenges/brother/2.png"),
-            // require("../assets/challenges/brother/3.png"),
-            // require("../assets/challenges/brother/4.png")         
+            require("../assets/challenges/brother/1.png"),
+            require("../assets/challenges/brother/2.png"),
+            require("../assets/challenges/brother/3.png"),
+            require("../assets/challenges/family/3.png")         
         ]
     },
     147: {
         answer: "cooler",
         images: [
-            // require("../assets/challenges/cooler/1.png"),
-            // require("../assets/challenges/cooler/2.png"),
-            // require("../assets/challenges/cooler/3.png"),
-            // require("../assets/challenges/cooler/4.png")         
+            require("../assets/challenges/cooler/1.png"),
+            require("../assets/challenges/cooler/2.png"),
+            require("../assets/challenges/cooler/3.png"),
+            require("../assets/challenges/cooler/4.png")         
         ]
     },
     148: {
@@ -1379,19 +1379,19 @@ export const challenges = {
     154: {
         answer: "bicycle",
         images: [
-            // require("../assets/challenges/bicycle/1.png"),
-            // require("../assets/challenges/bicycle/2.png"),
-            // require("../assets/challenges/bicycle/3.png"),
-            // require("../assets/challenges/bicycle/4.png")         
+            require("../assets/challenges/bicycle/1.png"),
+            require("../assets/challenges/bicycle/2.png"),
+            require("../assets/challenges/bicycle/3.png"),
+            require("../assets/challenges/trails/1.png")         
         ]
     },
     155: {
         answer: "trails",
         images: [
-            // require("../assets/challenges/trails/1.png"),
-            // require("../assets/challenges/trails/2.png"),
-            // require("../assets/challenges/trails/3.png"),
-            // require("../assets/challenges/trails/4.png")         
+            require("../assets/challenges/trails/1.png"),
+            require("../assets/challenges/trails/2.png"),
+            require("../assets/challenges/tracker/2.png"),
+            require("../assets/challenges/hiking/1.png")         
         ]
     },
     156: {
