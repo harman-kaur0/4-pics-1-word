@@ -1408,7 +1408,7 @@ export const challenges = {
         images: [
             require("../assets/challenges/june/1.png"),
             require("../assets/challenges/june/2.png"),
-            require("../assets/images/summer/1.png"),
+            require("../assets/images/12/summer/1.png"),
             require("../assets/images/12/beach/3.png")         
         ]
     },
@@ -1424,28 +1424,28 @@ export const challenges = {
     159: {
         answer: "birthday",
         images: [
-            // require("../assets/challenges/birthday/1.png"),
-            // require("../assets/challenges/birthday/2.png"),
-            // require("../assets/challenges/birthday/3.png"),
-            // require("../assets/challenges/birthday/4.png")         
+            require("../assets/challenges/birthday/1.png"),
+            require("../assets/challenges/birthday/2.png"),
+            require("../assets/challenges/party/1.png"),
+            require("../assets/challenges/party/3.png")         
         ]
     },
     160: {
         answer: "spices",
         images: [
-            // require("../assets/challenges/spices/1.png"),
-            // require("../assets/challenges/spices/2.png"),
-            // require("../assets/challenges/spices/3.png"),
-            // require("../assets/challenges/spices/4.png")         
+            require("../assets/challenges/spices/1.png"),
+            require("../assets/images/9/powder/3.png"),
+            require("../assets/challenges/flavor/2.png"),
+            require("../assets/challenges/pepper/3.png")         
         ]
     },
     161: {
         answer: "beauty",
         images: [
-            // require("../assets/challenges/beauty/1.png"),
-            // require("../assets/challenges/beauty/2.png"),
-            // require("../assets/challenges/beauty/3.png"),
-            // require("../assets/challenges/beauty/4.png")         
+            require("../assets/challenges/beauty/1.png"),
+            require("../assets/challenges/beauty/2.png"),
+            require("../assets/challenges/beauty/3.png"),
+            require("../assets/challenges/resign/3.png")         
         ]
     },
     162: {
