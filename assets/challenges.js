@@ -1325,19 +1325,19 @@ export const challenges = {
     148: {
         answer: "brisket",
         images: [
-            // require("../assets/challenges/brisket/1.png"),
-            // require("../assets/challenges/brisket/2.png"),
-            // require("../assets/challenges/brisket/3.png"),
-            // require("../assets/challenges/brisket/4.png")         
+            require("../assets/challenges/brisket/1.png"),
+            require("../assets/challenges/brisket/2.png"),
+            require("../assets/challenges/brisket/3.png"),
+            require("../assets/images/1/cow/2.png")         
         ]
     },
     149: {
         answer: "paperclip",
         images: [
-            // require("../assets/challenges/paperclip/1.png"),
-            // require("../assets/challenges/paperclip/2.png"),
-            // require("../assets/challenges/paperclip/3.png"),
-            // require("../assets/challenges/paperclip/4.png")         
+            require("../assets/challenges/paperclip/1.png"),
+            require("../assets/challenges/paperclip/2.png"),
+            require("../assets/challenges/paper/1.png"),
+            require("../assets/images/8/clip/1.png")         
         ]
     },
     150: {
