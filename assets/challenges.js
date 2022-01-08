@@ -1343,37 +1343,37 @@ export const challenges = {
     150: {
         answer: "memorial",
         images: [
-            // require("../assets/challenges/memorial/1.png"),
-            // require("../assets/challenges/memorial/2.png"),
-            // require("../assets/challenges/memorial/3.png"),
-            // require("../assets/challenges/memorial/4.png")         
+            require("../assets/challenges/memorial/1.png"),
+            require("../assets/challenges/memorial/2.png"),
+            require("../assets/challenges/memorial/3.png"),
+            require("../assets/images/8/death/4.png")         
         ]
     },
     151: {
         answer: "hearing",
         images: [
-            // require("../assets/challenges/hearing/1.png"),
-            // require("../assets/challenges/hearing/2.png"),
-            // require("../assets/challenges/hearing/3.png"),
-            // require("../assets/challenges/hearing/4.png")         
+            require("../assets/challenges/hearing/1.png"),
+            require("../assets/challenges/hearing/2.png"),
+            require("../assets/challenges/hearing/3.png"),
+            require("../assets/images/10/lawyer/1.png")         
         ]
     },
     152: {
         answer: "dinosaur",
         images: [
-            // require("../assets/challenges/dinosaur/1.png"),
-            // require("../assets/challenges/dinosaur/2.png"),
-            // require("../assets/challenges/dinosaur/3.png"),
-            // require("../assets/challenges/dinosaur/4.png")         
+            require("../assets/challenges/dinosaur/1.png"),
+            require("../assets/challenges/dinosaur/2.png"),
+            require("../assets/challenges/dinosaur/3.png"),
+            require("../assets/challenges/dinosaur/4.png")         
         ]
     },
     153: {
         answer: "moonshine",
         images: [
-            // require("../assets/challenges/moonshine/1.png"),
-            // require("../assets/challenges/moonshine/2.png"),
-            // require("../assets/challenges/moonshine/3.png"),
-            // require("../assets/challenges/moonshine/4.png")         
+            require("../assets/challenges/moonshine/1.png"),
+            require("../assets/challenges/moonshine/2.png"),
+            require("../assets/challenges/moonshine/3.png"),
+            require("../assets/challenges/moonshine/4.png")         
         ]
     },
     154: {
