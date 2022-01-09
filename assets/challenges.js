@@ -1739,64 +1739,64 @@ export const challenges = {
     194: {
         answer: "jello",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/jello/1.png"),
+            require("../assets/challenges/jello/2.png"),
+            require("../assets/challenges/jello/3.png"),
+            require("../assets/challenges/jello/4.png")         
         ]
     },
     195: {
         answer: "barber",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/barber/1.png"),
+            require("../assets/challenges/barber/2.png"),
+            require("../assets/challenges/barber/3.png"),
+            require("../assets/challenges/barber/4.png")         
         ]
     },
     196: {
         answer: "measure",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/measure/1.png"),
+            // require("../assets/challenges/measure/2.png"),
+            // require("../assets/challenges/measure/3.png"),
+            // require("../assets/challenges/measure/4.png")         
         ]
     },
     197: {
         answer: "tapioca",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/tapioca/1.png"),
+            // require("../assets/challenges/tapioca/2.png"),
+            // require("../assets/challenges/tapioca/3.png"),
+            // require("../assets/challenges/tapioca/4.png")         
         ]
     },
     198: {
         answer: "gummy",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/gummy/1.png"),
+            // require("../assets/challenges/gummy/2.png"),
+            // require("../assets/challenges/gummy/3.png"),
+            // require("../assets/challenges/gummy/4.png")         
         ]
     },
     199: {
         answer: "wrong",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            // require("../assets/challenges/wrong/1.png"),
+            // require("../assets/challenges/wrong/2.png"),
+            // require("../assets/challenges/wrong/3.png"),
+            // require("../assets/challenges/wrong/4.png")         
         ]
     },
     200: {
         answer: "candy",
         images: [
-            // require("../assets/challenges//1.png"),
-            // require("../assets/challenges//2.png"),
-            // require("../assets/challenges//3.png"),
-            // require("../assets/challenges//4.png")         
+            require("../assets/challenges/candy/1.png"),
+            require("../assets/challenges/valentine/1.png"),
+            require("../assets/challenges/buttercup/2.png"),
+            require("../assets/challenges/sweets/3.png")         
         ]
     },
     201: {
