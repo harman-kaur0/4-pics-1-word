@@ -1784,10 +1784,10 @@ export const challenges = {
     199: {
         answer: "wrong",
         images: [
-            // require("../assets/challenges/wrong/1.png"),
-            // require("../assets/challenges/wrong/2.png"),
-            // require("../assets/challenges/wrong/3.png"),
-            // require("../assets/challenges/wrong/4.png")         
+            require("../assets/challenges/wrong/1.png"),
+            require("../assets/challenges/wrong/2.png"),
+            require("../assets/images/10/remove/1.png"),    
+            require("../assets/images/10/escape/3.png")
         ]
     },
     200: {
