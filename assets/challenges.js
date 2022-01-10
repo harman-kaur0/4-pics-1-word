@@ -1811,28 +1811,28 @@ export const challenges = {
     202: {
         answer: "customer",
         images: [
-            // require("../assets/challenges/customer/1.png"),
-            // require("../assets/challenges/customer/2.png"),
-            // require("../assets/challenges/customer/3.png"),
-            // require("../assets/challenges/customer/4.png")         
+            require("../assets/challenges/customer/1.png"),
+            require("../assets/challenges/customer/2.png"),
+            require("../assets/challenges/customer/3.png"),
+            require("../assets/challenges/consumer/2.png")         
         ]
     },
     203: {
         answer: "hammock",
         images: [
-            // require("../assets/challenges/hammock/1.png"),
-            // require("../assets/challenges/hammock/2.png"),
-            // require("../assets/challenges/hammock/3.png"),
-            // require("../assets/challenges/hammock/4.png")         
+            require("../assets/challenges/hammock/1.png"),
+            require("../assets/challenges/hammock/2.png"),
+            require("../assets/challenges/hammock/3.png"),
+            require("../assets/challenges/hammock/4.png")         
         ]
     },
     204: {
         answer: "cowboy",
         images: [
-            // require("../assets/challenges/cowboy/1.png"),
-            // require("../assets/challenges/cowboy/2.png"),
-            // require("../assets/challenges/cowboy/3.png"),
-            // require("../assets/challenges/cowboy/4.png")         
+            require("../assets/challenges/cowboy/1.png"),
+            require("../assets/challenges/cowboy/2.png"),
+            require("../assets/challenges/cowboy/3.png"),
+            require("../assets/challenges/cowboy/4.png")         
         ]
     },
     205: {
