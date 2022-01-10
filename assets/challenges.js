@@ -1802,10 +1802,10 @@ export const challenges = {
     201: {
         answer: "lollipop",
         images: [
-            // require("../assets/challenges/lollipop/1.png"),
-            // require("../assets/challenges/lollipop/2.png"),
-            // require("../assets/challenges/lollipop/3.png"),
-            // require("../assets/challenges/lollipop/4.png")         
+            require("../assets/challenges/lollipop/1.png"),
+            require("../assets/challenges/lollipop/2.png"),
+            require("../assets/challenges/lollipop/3.png"),
+            require("../assets/challenges/lollipop/4.png")         
         ]
     },
     202: {
@@ -1838,55 +1838,55 @@ export const challenges = {
     205: {
         answer: "thermal",
         images: [
-            // require("../assets/challenges/thermal/1.png"),
-            // require("../assets/challenges/thermal/2.png"),
-            // require("../assets/challenges/thermal/3.png"),
-            // require("../assets/challenges/thermal/4.png")         
+            require("../assets/challenges/thermal/1.png"),
+            require("../assets/challenges/thermal/2.png"),
+            require("../assets/challenges/thermal/3.png"),
+            require("../assets/challenges/thermal/4.png")         
         ]
     },
     206: {
         answer: "needle",
         images: [
-            // require("../assets/challenges/needle/1.png"),
-            // require("../assets/challenges/needle/2.png"),
-            // require("../assets/challenges/needle/3.png"),
-            // require("../assets/challenges/needle/4.png")         
+            require("../assets/challenges/vaccine/4.png"),
+            require("../assets/challenges/needle/1.png"),
+            require("../assets/challenges/needle/2.png"),
+            require("../assets/challenges/vaccine/1.png")         
         ]
     },
     207: {
         answer: "disable",
         images: [
-            // require("../assets/challenges/disable/1.png"),
-            // require("../assets/challenges/disable/2.png"),
-            // require("../assets/challenges/disable/3.png"),
-            // require("../assets/challenges/disable/4.png")         
+            require("../assets/challenges/disable/1.png"),
+            require("../assets/challenges/disable/2.png"),
+            require("../assets/challenges/disable/3.png"),
+            require("../assets/challenges/disable/4.png")         
         ]
     },
     208: {
         answer: "buffalo",
         images: [
-            // require("../assets/challenges/buffalo/1.png"),
-            // require("../assets/challenges/buffalo/2.png"),
-            // require("../assets/challenges/buffalo/3.png"),
-            // require("../assets/challenges/buffalo/4.png")         
+            require("../assets/challenges/buffalo/1.png"),
+            require("../assets/challenges/buffalo/2.png"),
+            require("../assets/challenges/buffalo/3.png"),
+            require("../assets/challenges/buffalo/4.png")         
         ]
     },
     209: {
         answer: "refresh",
         images: [
-            // require("../assets/challenges/refresh/1.png"),
-            // require("../assets/challenges/refresh/2.png"),
-            // require("../assets/challenges/refresh/3.png"),
-            // require("../assets/challenges/refresh/4.png")         
+            require("../assets/challenges/refresh/1.png"),
+            require("../assets/challenges/refresh/2.png"),
+            require("../assets/images/18/hydrate/4.png"),
+            require("../assets/challenges/renewal/1.png")         
         ]
     },
     210: {
         answer: "lipstick",
         images: [
-            // require("../assets/challenges/lipstick/1.png"),
-            // require("../assets/challenges/lipstick/2.png"),
-            // require("../assets/challenges/lipstick/3.png"),
-            // require("../assets/challenges/lipstick/4.png")         
+            require("../assets/challenges/lipstick/1.png"),
+            require("../assets/challenges/lipstick/2.png"),
+            require("../assets/challenges/lipstick/3.png"),
+            require("../assets/challenges/lipstick/4.png")         
         ]
     },
     211: {
