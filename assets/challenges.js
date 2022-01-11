@@ -1892,10 +1892,10 @@ export const challenges = {
     211: {
         answer: "whistle",
         images: [
-            // require("../assets/challenges/whistle/1.png"),
-            // require("../assets/challenges/whistle/2.png"),
-            // require("../assets/challenges/whistle/3.png"),
-            // require("../assets/challenges/whistle/4.png")
+            require("../assets/challenges/whistle/1.png"),
+            require("../assets/challenges/whistle/2.png"),
+            require("../assets/challenges/whistle/3.png"),
+            require("../assets/challenges/whistle/4.png")
         ]
     },
     212: {
