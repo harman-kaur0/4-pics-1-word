@@ -14,7 +14,7 @@ export const challenges = {
             require("../assets/challenges/buffet/1.png"),
             require("../assets/challenges/buffet/2.png"),
             require("../assets/challenges/buffet/3.png"),
-            require("../assets/challenges/banquet/3.png")         
+            require("../assets/challenges/banquet/3.png")
         ]
     },
     3: {
@@ -32,7 +32,7 @@ export const challenges = {
             require("../assets/challenges/trivia/1.png"),
             require("../assets/challenges/trivia/2.png"),
             require("../assets/challenges/trivia/3.png"),
-            require("../assets/challenges/trivia/4.png")         
+            require("../assets/challenges/trivia/4.png")
         ]
     },
     5: {
@@ -41,7 +41,7 @@ export const challenges = {
             require("../assets/challenges/whipped/1.png"),
             require("../assets/challenges/whipped/2.png"),
             require("../assets/challenges/whipped/3.png"),
-            require("../assets/challenges/whipped/4.png")         
+            require("../assets/challenges/whipped/4.png")
         ]
     },
     6: {
@@ -50,7 +50,7 @@ export const challenges = {
             require("../assets/challenges/cuddling/1.png"),
             require("../assets/challenges/cuddling/2.png"),
             require("../assets/challenges/cuddling/3.png"),
-            require("../assets/challenges/cuddling/4.png")         
+            require("../assets/challenges/cuddling/4.png")
         ]
     },
     7: {
@@ -59,7 +59,7 @@ export const challenges = {
             require("../assets/challenges/tempura/1.png"),
             require("../assets/challenges/tempura/2.png"),
             require("../assets/challenges/tempura/3.png"),
-            require("../assets/challenges/tempura/4.png")         
+            require("../assets/challenges/tempura/4.png")
         ]
     },
     8: {
@@ -68,7 +68,7 @@ export const challenges = {
             require("../assets/challenges/bubbles/1.png"),
             require("../assets/challenges/bubbles/2.png"),
             require("../assets/challenges/bubbles/3.png"),
-            require("../assets/challenges/wrapping/1.png")         
+            require("../assets/challenges/wrapping/1.png")
         ]
     },
     9: {
@@ -77,7 +77,7 @@ export const challenges = {
             require("../assets/challenges/supper/1.png"),
             require("../assets/challenges/supper/2.png"),
             require("../assets/challenges/supper/3.png"),
-            require("../assets/challenges/supper/4.png")         
+            require("../assets/challenges/supper/4.png")
         ]
     },
     10: {
@@ -86,7 +86,7 @@ export const challenges = {
             require("../assets/challenges/energize/1.png"),
             require("../assets/challenges/energize/2.png"),
             require("../assets/challenges/energize/3.png"),
-            require("../assets/challenges/energize/4.png")         
+            require("../assets/challenges/energize/4.png")
         ]
     },
     11: {
@@ -95,7 +95,7 @@ export const challenges = {
             require("../assets/challenges/humanity/1.png"),
             require("../assets/challenges/humanity/2.png"),
             require("../assets/challenges/humanity/3.png"),
-            require("../assets/challenges/humanity/4.png")         
+            require("../assets/challenges/humanity/4.png")
         ]
     },
     12: {
@@ -104,7 +104,7 @@ export const challenges = {
             require("../assets/challenges/pharmacy/1.png"),
             require("../assets/challenges/pharmacy/2.png"),
             require("../assets/challenges/pharmacy/3.png"),
-            require("../assets/challenges/pharmacy/4.png")         
+            require("../assets/challenges/pharmacy/4.png")
         ]
     },
     13: {
@@ -113,7 +113,7 @@ export const challenges = {
             require("../assets/challenges/rubber/1.png"),
             require("../assets/challenges/rubber/2.png"),
             require("../assets/challenges/rubber/3.png"),
-            require("../assets/challenges/rubber/4.png")         
+            require("../assets/challenges/rubber/4.png")
         ]
     },
     14: {
@@ -122,7 +122,7 @@ export const challenges = {
             require("../assets/challenges/dressing/1.png"),
             require("../assets/challenges/dressing/2.png"),
             require("../assets/challenges/dressing/3.png"),
-            require("../assets/challenges/dressing/4.png")         
+            require("../assets/challenges/dressing/4.png")
         ]
     },
     15: {
@@ -131,7 +131,7 @@ export const challenges = {
             require("../assets/challenges/bagels/1.png"),
             require("../assets/challenges/bagels/2.png"),
             require("../assets/challenges/bagels/3.png"),
-            require("../assets/challenges/bagels/4.png")         
+            require("../assets/challenges/bagels/4.png")
         ]
     },
     16: {
@@ -140,7 +140,7 @@ export const challenges = {
             require("../assets/challenges/nothing/1.png"),
             require("../assets/challenges/nothing/2.png"),
             require("../assets/challenges/nothing/3.png"),
-            require("../assets/challenges/nothing/4.png")         
+            require("../assets/challenges/nothing/4.png")
         ]
     },
     17: {
@@ -149,7 +149,7 @@ export const challenges = {
             require("../assets/images/8/lead/4.png"),
             require("../assets/challenges/activist/1.png"),
             require("../assets/challenges/activist/2.png"),
-            require("../assets/challenges/activist/3.png")         
+            require("../assets/challenges/activist/3.png")
         ]
     },
     18: {
@@ -158,7 +158,7 @@ export const challenges = {
             require("../assets/challenges/bootleg/1.png"),
             require("../assets/challenges/bootleg/2.png"),
             require("../assets/challenges/bootleg/3.png"),
-            require("../assets/challenges/bootleg/4.png")         
+            require("../assets/challenges/bootleg/4.png")
         ]
     },
     19: {
@@ -167,7 +167,7 @@ export const challenges = {
             require("../assets/challenges/minister/1.png"),
             require("../assets/challenges/minister/2.png"),
             require("../assets/challenges/minister/3.png"),
-            require("../assets/images/8/lead/4.png")         
+            require("../assets/images/8/lead/4.png")
         ]
     },
     20: {
@@ -176,7 +176,7 @@ export const challenges = {
             require("../assets/challenges/cheesy/1.png"),
             require("../assets/challenges/cheesy/2.png"),
             require("../assets/images/5/smile/4.png"),
-            require("../assets/challenges/nacho/4.png")         
+            require("../assets/challenges/nacho/4.png")
         ]
     },
     21: {
@@ -185,7 +185,7 @@ export const challenges = {
             require("../assets/challenges/granola/1.png"),
             require("../assets/challenges/granola/2.png"),
             require("../assets/challenges/granola/3.png"),
-            require("../assets/challenges/granola/4.png")         
+            require("../assets/challenges/granola/4.png")
         ]
     },
     22: {
@@ -194,7 +194,7 @@ export const challenges = {
             require("../assets/challenges/brownie/1.png"),
             require("../assets/challenges/brownie/2.png"),
             require("../assets/challenges/brownie/3.png"),
-            require("../assets/challenges/brownie/4.png")         
+            require("../assets/challenges/brownie/4.png")
         ]
     },
     23: {
@@ -203,7 +203,7 @@ export const challenges = {
             require("../assets/challenges/discount/1.png"),
             require("../assets/challenges/discount/2.png"),
             require("../assets/challenges/discount/3.png"),
-            require("../assets/challenges/discount/4.png")         
+            require("../assets/challenges/discount/4.png")
         ]
     },
     24: {
@@ -212,7 +212,7 @@ export const challenges = {
             require("../assets/challenges/alcohol/1.png"),
             require("../assets/challenges/alcohol/2.png"),
             require("../assets/challenges/alcohol/3.png"),
-            require("../assets/challenges/alcohol/4.png")         
+            require("../assets/challenges/alcohol/4.png")
         ]
     },
     25: {
@@ -221,7 +221,7 @@ export const challenges = {
             require("../assets/challenges/opposite/1.png"),
             require("../assets/challenges/opposite/2.png"),
             require("../assets/challenges/opposite/3.png"),
-            require("../assets/challenges/opposite/4.png")         
+            require("../assets/challenges/opposite/4.png")
         ]
     },
     26: {
@@ -230,7 +230,7 @@ export const challenges = {
             require("../assets/challenges/brittle/1.png"),
             require("../assets/challenges/brittle/2.png"),
             require("../assets/challenges/brittle/3.png"),
-            require("../assets/challenges/brittle/4.png")         
+            require("../assets/challenges/brittle/4.png")
         ]
     },
     27: {
@@ -239,7 +239,7 @@ export const challenges = {
             require("../assets/challenges/drumstick/3.png"),
             require("../assets/challenges/parfait/3.png"),
             require("../assets/challenges/eggnog/2.png"),
-            require("../assets/challenges/fountain/3.png")         
+            require("../assets/challenges/fountain/3.png")
         ]
     },
     28: {
@@ -248,7 +248,7 @@ export const challenges = {
             require("../assets/challenges/private/1.png"),
             require("../assets/challenges/private/2.png"),
             require("../assets/challenges/private/3.png"),
-            require("../assets/challenges/private/4.png")         
+            require("../assets/challenges/private/4.png")
         ]
     },
     29: {
@@ -257,7 +257,7 @@ export const challenges = {
             require("../assets/challenges/tortilla/1.png"),
             require("../assets/challenges/tortilla/2.png"),
             require("../assets/challenges/tortilla/3.png"),
-            require("../assets/challenges/tortilla/4.png")         
+            require("../assets/challenges/tortilla/4.png")
         ]
     },
     30: {
@@ -266,7 +266,7 @@ export const challenges = {
             require("../assets/challenges/croissant/1.png"),
             require("../assets/challenges/croissant/2.png"),
             require("../assets/challenges/croissant/3.png"),
-            require("../assets/challenges/croissant/4.png")         
+            require("../assets/challenges/croissant/4.png")
         ]
     },
     31: {
@@ -275,7 +275,7 @@ export const challenges = {
             require("../assets/challenges/wrapping/1.png"),
             require("../assets/challenges/wrapping/2.png"),
             require("../assets/challenges/wrapping/3.png"),
-            require("../assets/challenges/gifts/1.png")         
+            require("../assets/challenges/gifts/1.png")
         ]
     },
     32: {
@@ -284,7 +284,7 @@ export const challenges = {
             require("../assets/challenges/serpent/1.png"),
             require("../assets/challenges/serpent/2.png"),
             require("../assets/challenges/serpent/3.png"),
-            require("../assets/challenges/serpent/4.png")         
+            require("../assets/challenges/serpent/4.png")
         ]
     },
     33: {
@@ -293,7 +293,7 @@ export const challenges = {
             require("../assets/challenges/groundhog/1.png"),
             require("../assets/challenges/groundhog/2.png"),
             require("../assets/challenges/groundhog/3.png"),
-            require("../assets/challenges/groundhog/4.png")         
+            require("../assets/challenges/groundhog/4.png")
         ]
     },
     34: {
@@ -302,7 +302,7 @@ export const challenges = {
             require("../assets/challenges/physical/1.png"),
             require("../assets/challenges/physical/2.png"),
             require("../assets/images/5/shoes/2.png"),
-            require("../assets/challenges/cuddling/2.png")         
+            require("../assets/challenges/cuddling/2.png")
         ]
     },
     35: {
@@ -311,7 +311,7 @@ export const challenges = {
             require("../assets/challenges/vacuum/1.png"),
             require("../assets/challenges/vacuum/2.png"),
             require("../assets/challenges/vacuum/3.png"),
-            require("../assets/challenges/vacuum/4.png")         
+            require("../assets/challenges/vacuum/4.png")
         ]
     },
     36: {
@@ -320,7 +320,7 @@ export const challenges = {
             require("../assets/challenges/shower/1.png"),
             require("../assets/challenges/shower/2.png"),
             require("../assets/challenges/shower/3.png"),
-            require("../assets/challenges/shower/4.png")         
+            require("../assets/challenges/shower/4.png")
         ]
     },
     37: {
@@ -329,7 +329,7 @@ export const challenges = {
             require("../assets/challenges/yogurt/1.png"),
             require("../assets/challenges/yogurt/2.png"),
             require("../assets/challenges/yogurt/3.png"),
-            require("../assets/challenges/yogurt/4.png")         
+            require("../assets/challenges/yogurt/4.png")
         ]
     },
     38: {
@@ -338,7 +338,7 @@ export const challenges = {
             require("../assets/challenges/periodic/1.png"),
             require("../assets/challenges/periodic/2.png"),
             require("../assets/challenges/periodic/3.png"),
-            require("../assets/images/10/waiter/2.png")         
+            require("../assets/images/10/waiter/2.png")
         ]
     },
     39: {
@@ -347,7 +347,7 @@ export const challenges = {
             require("../assets/challenges/kite/1.png"),
             require("../assets/challenges/kite/2.png"),
             require("../assets/challenges/kite/3.png"),
-            require("../assets/challenges/kite/4.png")         
+            require("../assets/challenges/kite/4.png")
         ]
     },
     40: {
@@ -356,7 +356,7 @@ export const challenges = {
             require("../assets/challenges/toothache/1.png"),
             require("../assets/challenges/toothache/2.png"),
             require("../assets/challenges/toothache/3.png"),
-            require("../assets/challenges/fairy/3.png")         
+            require("../assets/challenges/fairy/3.png")
         ]
     },
     41: {
@@ -365,7 +365,7 @@ export const challenges = {
             require("../assets/challenges/umbrella/1.png"),
             require("../assets/challenges/umbrella/2.png"),
             require("../assets/challenges/umbrella/3.png"),
-            require("../assets/challenges/shower/2.png")         
+            require("../assets/challenges/shower/2.png")
         ]
     },
     42: {
@@ -383,7 +383,7 @@ export const challenges = {
             require("../assets/challenges/movie/1.png"),
             require("../assets/challenges/movie/2.png"),
             require("../assets/challenges/movie/3.png"),
-            require("../assets/challenges/movie/4.png")         
+            require("../assets/challenges/movie/4.png")
         ]
     },
     44: {
@@ -392,7 +392,7 @@ export const challenges = {
             require("../assets/challenges/cheddar/1.png"),
             require("../assets/challenges/cheddar/2.png"),
             require("../assets/challenges/nacho/4.png"),
-            require("../assets/challenges/cheddar/3.png")         
+            require("../assets/challenges/cheddar/3.png")
         ]
     },
     45: {
@@ -401,7 +401,7 @@ export const challenges = {
             require("../assets/challenges/valentine/1.png"),
             require("../assets/challenges/valentine/2.png"),
             require("../assets/challenges/lover/2.png"),
-            require("../assets/challenges/flowers/1.png")         
+            require("../assets/challenges/flowers/1.png")
         ]
     },
     46: {
@@ -428,7 +428,7 @@ export const challenges = {
             require("../assets/challenges/lover/1.png"),
             require("../assets/challenges/lover/2.png"),
             require("../assets/challenges/lover/3.png"),
-            require("../assets/challenges/cuddling/1.png")         
+            require("../assets/challenges/cuddling/1.png")
         ]
     },
     49: {
@@ -437,7 +437,7 @@ export const challenges = {
             require("../assets/challenges/flowers/1.png"),
             require("../assets/challenges/flowers/2.png"),
             require("../assets/challenges/flowers/3.png"),
-            require("../assets/images/12/spring/4.png")         
+            require("../assets/images/12/spring/4.png")
         ]
     },
     50: {
@@ -446,7 +446,7 @@ export const challenges = {
             require("../assets/challenges/single/1.png"),
             require("../assets/challenges/single/2.png"),
             require("../assets/challenges/single/3.png"),
-            require("../assets/challenges/single/4.png")         
+            require("../assets/challenges/single/4.png")
         ]
     },
     51: {
@@ -455,7 +455,7 @@ export const challenges = {
             require("../assets/challenges/battery/1.png"),
             require("../assets/challenges/battery/2.png"),
             require("../assets/challenges/battery/3.png"),
-            require("../assets/challenges/energize/2.png")         
+            require("../assets/challenges/energize/2.png")
         ]
     },
     52: {
@@ -464,7 +464,7 @@ export const challenges = {
             require("../assets/challenges/comfy/1.png"),
             require("../assets/challenges/comfy/2.png"),
             require("../assets/challenges/comfy/3.png"),
-            require("../assets/challenges/cuddling/3.png")         
+            require("../assets/challenges/cuddling/3.png")
         ]
     },
     53: {
@@ -482,7 +482,7 @@ export const challenges = {
             require("../assets/challenges/margarita/1.png"),
             require("../assets/challenges/margarita/2.png"),
             require("../assets/challenges/margarita/3.png"),
-            require("../assets/challenges/margarita/4.png")         
+            require("../assets/challenges/margarita/4.png")
         ]
     },
     55: {
@@ -491,7 +491,7 @@ export const challenges = {
             require("../assets/challenges/biscuit/1.png"),
             require("../assets/challenges/biscuit/2.png"),
             require("../assets/challenges/biscuit/3.png"),
-            require("../assets/challenges/biscuit/4.png")         
+            require("../assets/challenges/biscuit/4.png")
         ]
     },
     56: {
@@ -500,7 +500,7 @@ export const challenges = {
             require("../assets/challenges/chowder/1.png"),
             require("../assets/challenges/chowder/2.png"),
             require("../assets/challenges/chowder/3.png"),
-            require("../assets/challenges/chowder/4.png")         
+            require("../assets/challenges/chowder/4.png")
         ]
     },
     57: {
@@ -509,7 +509,7 @@ export const challenges = {
             require("../assets/challenges/straw/1.png"),
             require("../assets/challenges/straw/2.png"),
             require("../assets/challenges/straw/3.png"),
-            require("../assets/challenges/straw/4.png")         
+            require("../assets/challenges/straw/4.png")
         ]
     },
     58: {
@@ -518,7 +518,7 @@ export const challenges = {
             require("../assets/challenges/fairy/1.png"),
             require("../assets/challenges/fairy/2.png"),
             require("../assets/challenges/fairy/3.png"),
-            require("../assets/challenges/magic/2.png")         
+            require("../assets/challenges/magic/2.png")
         ]
     },
     59: {
@@ -527,7 +527,7 @@ export const challenges = {
             require("../assets/challenges/anosmia/1.png"),
             require("../assets/challenges/anosmia/2.png"),
             require("../assets/challenges/anosmia/3.png"),
-            require("../assets/challenges/anosmia/4.png")         
+            require("../assets/challenges/anosmia/4.png")
         ]
     },
     60: {
@@ -536,7 +536,7 @@ export const challenges = {
             require("../assets/challenges/refund/1.png"),
             require("../assets/challenges/refund/2.png"),
             require("../assets/challenges/refund/3.png"),
-            require("../assets/challenges/refund/4.png")         
+            require("../assets/challenges/refund/4.png")
         ]
     },
     61: {
@@ -554,7 +554,7 @@ export const challenges = {
             require("../assets/challenges/mentality/1.png"),
             require("../assets/challenges/mentality/2.png"),
             require("../assets/challenges/mentality/3.png"),
-            require("../assets/challenges/mentality/4.png")         
+            require("../assets/challenges/mentality/4.png")
         ]
     },
     63: {
@@ -563,7 +563,7 @@ export const challenges = {
             require("../assets/challenges/grammar/1.png"),
             require("../assets/challenges/grammar/2.png"),
             require("../assets/challenges/grammar/3.png"),
-            require("../assets/challenges/grammar/4.png")         
+            require("../assets/challenges/grammar/4.png")
         ]
     },
     64: {
@@ -572,7 +572,7 @@ export const challenges = {
             require("../assets/challenges/employee/1.png"),
             require("../assets/challenges/employee/2.png"),
             require("../assets/challenges/employee/3.png"),
-            require("../assets/challenges/employee/4.png")         
+            require("../assets/challenges/employee/4.png")
         ]
     },
     65: {
@@ -581,7 +581,7 @@ export const challenges = {
             require("../assets/challenges/dentist/1.png"),
             require("../assets/challenges/dentist/2.png"),
             require("../assets/challenges/dentist/3.png"),
-            require("../assets/challenges/toothache/2.png")         
+            require("../assets/challenges/toothache/2.png")
         ]
     },
     66: {
@@ -590,7 +590,7 @@ export const challenges = {
             require("../assets/challenges/biscuit/4.png"),
             require("../assets/challenges/cookie/1.png"),
             require("../assets/challenges/cookie/2.png"),
-            require("../assets/challenges/biscuit/3.png")         
+            require("../assets/challenges/biscuit/3.png")
         ]
     },
     67: {
@@ -599,7 +599,7 @@ export const challenges = {
             require("../assets/challenges/meatball/1.png"),
             require("../assets/challenges/meatball/2.png"),
             require("../assets/challenges/meatball/3.png"),
-            require("../assets/challenges/meatball/4.png")         
+            require("../assets/challenges/meatball/4.png")
         ]
     },
     68: {
@@ -608,7 +608,7 @@ export const challenges = {
             require("../assets/challenges/hugger/1.png"),
             require("../assets/challenges/hugger/2.png"),
             require("../assets/challenges/hugger/3.png"),
-            require("../assets/challenges/cuddling/2.png")         
+            require("../assets/challenges/cuddling/2.png")
         ]
     },
     69: {
@@ -617,7 +617,7 @@ export const challenges = {
             require("../assets/challenges/kidney/1.png"),
             require("../assets/challenges/kidney/2.png"),
             require("../assets/challenges/kidney/3.png"),
-            require("../assets/challenges/kidney/4.png")         
+            require("../assets/challenges/kidney/4.png")
         ]
     },
     70: {
@@ -626,7 +626,7 @@ export const challenges = {
             require("../assets/challenges/samaritan/1.png"),
             require("../assets/challenges/samaritan/2.png"),
             require("../assets/challenges/samaritan/3.png"),
-            require("../assets/challenges/samaritan/4.png")         
+            require("../assets/challenges/samaritan/4.png")
         ]
     },
     71: {
@@ -635,7 +635,7 @@ export const challenges = {
             require("../assets/challenges/daylight/1.png"),
             require("../assets/challenges/daylight/2.png"),
             require("../assets/challenges/daylight/3.png"),
-            require("../assets/images/3/sun/2.png")         
+            require("../assets/images/3/sun/2.png")
         ]
     },
     72: {
@@ -644,7 +644,7 @@ export const challenges = {
             require("../assets/challenges/geometry/1.png"),
             require("../assets/challenges/geometry/2.png"),
             require("../assets/challenges/geometry/3.png"),
-            require("../assets/challenges/geometry/4.png")         
+            require("../assets/challenges/geometry/4.png")
         ]
     },
     73: {
@@ -662,7 +662,7 @@ export const challenges = {
             require("../assets/challenges/evacuate/1.png"),
             require("../assets/challenges/evacuate/2.png"),
             require("../assets/challenges/evacuate/3.png"),
-            require("../assets/images/7/alarm/2.png")         
+            require("../assets/images/7/alarm/2.png")
         ]
     },
     75: {
@@ -671,7 +671,7 @@ export const challenges = {
             require("../assets/challenges/irish/1.png"),
             require("../assets/challenges/irish/2.png"),
             require("../assets/challenges/irish/3.png"),
-            require("../assets/images/10/lucky/1.png")         
+            require("../assets/images/10/lucky/1.png")
         ]
     },
     76: {
@@ -680,7 +680,7 @@ export const challenges = {
             require("../assets/challenges/awkward/1.png"),
             require("../assets/challenges/awkward/2.png"),
             require("../assets/challenges/awkward/3.png"),
-            require("../assets/challenges/awkward/4.png")         
+            require("../assets/challenges/awkward/4.png")
         ]
     },
     77: {
@@ -689,7 +689,7 @@ export const challenges = {
             require("../assets/challenges/sleepy/1.png"),
             require("../assets/challenges/sleepy/2.png"),
             require("../assets/challenges/sleepy/3.png"),
-            require("../assets/challenges/miracle/2.png")         
+            require("../assets/challenges/miracle/2.png")
         ]
     },
     78: {
@@ -698,7 +698,7 @@ export const challenges = {
             require("../assets/challenges/laughter/1.png"),
             require("../assets/challenges/laughter/2.png"),
             require("../assets/challenges/laughter/3.png"),
-            require("../assets/images/5/emoji/1.png")         
+            require("../assets/images/5/emoji/1.png")
         ]
     },
     79: {
@@ -707,7 +707,7 @@ export const challenges = {
             require("../assets/challenges/proposal/1.png"),
             require("../assets/challenges/proposal/2.png"),
             require("../assets/challenges/proposal/3.png"),
-            require("../assets/challenges/proposal/4.png")         
+            require("../assets/challenges/proposal/4.png")
         ]
     },
     80: {
@@ -716,7 +716,7 @@ export const challenges = {
             require("../assets/challenges/poetry/1.png"),
             require("../assets/challenges/poetry/2.png"),
             require("../assets/challenges/poetry/3.png"),
-            require("../assets/challenges/poetry/4.png")         
+            require("../assets/challenges/poetry/4.png")
         ]
     },
     81: {
@@ -725,7 +725,7 @@ export const challenges = {
             require("../assets/challenges/fragrance/1.png"),
             require("../assets/challenges/fragrance/2.png"),
             require("../assets/challenges/fragrance/3.png"),
-            require("../assets/challenges/flowers/3.png")         
+            require("../assets/challenges/flowers/3.png")
         ]
     },
     82: {
@@ -734,7 +734,7 @@ export const challenges = {
             require("../assets/images/17/climate/4.png"),
             require("../assets/images/18/hydrate/4.png"),
             require("../assets/challenges/shower/2.png"),
-            require("../assets/images/2/blue/2.png")         
+            require("../assets/images/2/blue/2.png")
         ]
     },
     83: {
@@ -743,7 +743,7 @@ export const challenges = {
             require("../assets/challenges/goofy/1.png"),
             require("../assets/challenges/goofy/2.png"),
             require("../assets/challenges/goofy/3.png"),
-            require("../assets/challenges/goofy/4.png")         
+            require("../assets/challenges/goofy/4.png")
         ]
     },
     84: {
@@ -752,7 +752,7 @@ export const challenges = {
             require("../assets/challenges/march/1.png"),
             require("../assets/challenges/march/2.png"),
             require("../assets/challenges/march/3.png"),
-            require("../assets/images/18/uniform/2.png")         
+            require("../assets/images/18/uniform/2.png")
         ]
     },
     85: {
@@ -761,7 +761,7 @@ export const challenges = {
             require("../assets/challenges/honor/1.png"),
             require("../assets/challenges/honor/2.png"),
             require("../assets/challenges/honor/3.png"),
-            require("../assets/images/10/lawyer/1.png")         
+            require("../assets/images/10/lawyer/1.png")
         ]
     },
     86: {
@@ -770,7 +770,7 @@ export const challenges = {
             require("../assets/challenges/spinach/1.png"),
             require("../assets/challenges/spinach/2.png"),
             require("../assets/challenges/spinach/3.png"),
-            require("../assets/challenges/spinach/4.png")         
+            require("../assets/challenges/spinach/4.png")
         ]
     },
     87: {
@@ -779,7 +779,7 @@ export const challenges = {
             require("../assets/challenges/mirror/1.png"),
             require("../assets/challenges/mirror/2.png"),
             require("../assets/challenges/mirror/3.png"),
-            require("../assets/challenges/mirror/4.png")         
+            require("../assets/challenges/mirror/4.png")
         ]
     },
     88: {
@@ -788,7 +788,7 @@ export const challenges = {
             require("../assets/challenges/smoking/1.png"),
             require("../assets/challenges/smoking/2.png"),
             require("../assets/challenges/smoking/3.png"),
-            require("../assets/challenges/smoking/4.png")         
+            require("../assets/challenges/smoking/4.png")
         ]
     },
     89: {
@@ -797,7 +797,7 @@ export const challenges = {
             require("../assets/challenges/doctor/1.png"),
             require("../assets/challenges/doctor/2.png"),
             require("../assets/challenges/doctor/3.png"),
-            require("../assets/challenges/doctor/4.png")         
+            require("../assets/challenges/doctor/4.png")
         ]
     },
     90: {
@@ -806,7 +806,7 @@ export const challenges = {
             require("../assets/challenges/crayon/1.png"),
             require("../assets/challenges/crayon/2.png"),
             require("../assets/challenges/crayon/3.png"),
-            require("../assets/challenges/crayon/4.png")         
+            require("../assets/challenges/crayon/4.png")
         ]
     },
     91: {
@@ -815,7 +815,7 @@ export const challenges = {
             require("../assets/challenges/fool/1.png"),
             require("../assets/challenges/fool/2.png"),
             require("../assets/challenges/fool/3.png"),
-            require("../assets/images/17/jester/3.png")         
+            require("../assets/images/17/jester/3.png")
         ]
     },
     92: {
@@ -824,7 +824,7 @@ export const challenges = {
             require("../assets/challenges/backup/1.png"),
             require("../assets/challenges/backup/2.png"),
             require("../assets/challenges/backup/3.png"),
-            require("../assets/challenges/backup/4.png")         
+            require("../assets/challenges/backup/4.png")
         ]
     },
     93: {
@@ -833,7 +833,7 @@ export const challenges = {
             require("../assets/challenges/rainbow/1.png"),
             require("../assets/challenges/rainbow/2.png"),
             require("../assets/challenges/rainbow/3.png"),
-            require("../assets/images/10/lucky/1.png")         
+            require("../assets/images/10/lucky/1.png")
         ]
     },
     94: {
@@ -842,7 +842,7 @@ export const challenges = {
             require("../assets/challenges/vitamin/1.png"),
             require("../assets/challenges/vitamin/2.png"),
             require("../assets/challenges/vitamin/3.png"),
-            require("../assets/images/3/sun/2.png")         
+            require("../assets/images/3/sun/2.png")
         ]
     },
     95: {
@@ -851,7 +851,7 @@ export const challenges = {
             require("../assets/challenges/flash/1.png"),
             require("../assets/challenges/flash/2.png"),
             require("../assets/challenges/flash/3.png"),
-            require("../assets/challenges/flash/4.png")         
+            require("../assets/challenges/flash/4.png")
         ]
     },
     96: {
@@ -860,7 +860,7 @@ export const challenges = {
             require("../assets/challenges/hopeful/1.png"),
             require("../assets/challenges/hopeful/2.png"),
             require("../assets/challenges/hopeful/3.png"),
-            require("../assets/challenges/hopeful/4.png")         
+            require("../assets/challenges/hopeful/4.png")
         ]
     },
     97: {
@@ -869,7 +869,7 @@ export const challenges = {
             require("../assets/challenges/coffee/1.png"),
             require("../assets/challenges/coffee/2.png"),
             require("../assets/challenges/coffee/3.png"),
-            require("../assets/challenges/straw/3.png")         
+            require("../assets/challenges/straw/3.png")
         ]
     },
     98: {
@@ -878,7 +878,7 @@ export const challenges = {
             require("../assets/challenges/housework/1.png"),
             require("../assets/challenges/housework/2.png"),
             require("../assets/challenges/housework/3.png"),
-            require("../assets/challenges/housework/4.png")         
+            require("../assets/challenges/housework/4.png")
         ]
     },
     99: {
@@ -887,7 +887,7 @@ export const challenges = {
             require("../assets/challenges/antique/1.png"),
             require("../assets/challenges/antique/2.png"),
             require("../assets/challenges/antique/3.png"),
-            require("../assets/challenges/antique/4.png")         
+            require("../assets/challenges/antique/4.png")
         ]
     },
     100: {
@@ -896,7 +896,7 @@ export const challenges = {
             require("../assets/challenges/farmer/1.png"),
             require("../assets/challenges/farmer/2.png"),
             require("../assets/challenges/farmer/3.png"),
-            require("../assets/challenges/farmer/4.png")         
+            require("../assets/challenges/farmer/4.png")
         ]
     },
     101: {
@@ -905,7 +905,7 @@ export const challenges = {
             require("../assets/challenges/submarine/1.png"),
             require("../assets/challenges/submarine/2.png"),
             require("../assets/challenges/submarine/3.png"),
-            require("../assets/challenges/submarine/4.png")         
+            require("../assets/challenges/submarine/4.png")
         ]
     },
     102: {
@@ -914,7 +914,7 @@ export const challenges = {
             require("../assets/challenges/educate/1.png"),
             require("../assets/challenges/educate/2.png"),
             require("../assets/challenges/educate/3.png"),
-            require("../assets/challenges/proposal/4.png")         
+            require("../assets/challenges/proposal/4.png")
         ]
     },
     103: {
@@ -923,7 +923,7 @@ export const challenges = {
             require("../assets/challenges/record/1.png"),
             require("../assets/challenges/record/2.png"),
             require("../assets/challenges/record/3.png"),
-            require("../assets/challenges/antique/2.png")         
+            require("../assets/challenges/antique/2.png")
         ]
     },
     104: {
@@ -932,7 +932,7 @@ export const challenges = {
             require("../assets/challenges/gardener/1.png"),
             require("../assets/challenges/gardener/2.png"),
             require("../assets/challenges/gardener/3.png"),
-            require("../assets/challenges/gardener/4.png")         
+            require("../assets/challenges/gardener/4.png")
         ]
     },
     105: {
@@ -941,7 +941,7 @@ export const challenges = {
             require("../assets/challenges/titanic/1.png"),
             require("../assets/challenges/titanic/2.png"),
             require("../assets/challenges/titanic/3.png"),
-            require("../assets/images/14/crash/3.png")         
+            require("../assets/images/14/crash/3.png")
         ]
     },
     106: {
@@ -950,7 +950,7 @@ export const challenges = {
             require("../assets/challenges/orchid/1.png"),
             require("../assets/challenges/orchid/2.png"),
             require("../assets/challenges/orchid/3.png"),
-            require("../assets/challenges/orchid/4.png")         
+            require("../assets/challenges/orchid/4.png")
         ]
     },
     107: {
@@ -959,7 +959,7 @@ export const challenges = {
             require("../assets/challenges/scavenger/1.png"),
             require("../assets/challenges/scavenger/2.png"),
             require("../assets/challenges/scavenger/3.png"),
-            require("../assets/challenges/scavenger/4.png")         
+            require("../assets/challenges/scavenger/4.png")
         ]
     },
     108: {
@@ -968,7 +968,7 @@ export const challenges = {
             require("../assets/challenges/linesman/1.png"),
             require("../assets/challenges/linesman/2.png"),
             require("../assets/challenges/linesman/3.png"),
-            require("../assets/challenges/linesman/4.png")         
+            require("../assets/challenges/linesman/4.png")
         ]
     },
     109: {
@@ -977,7 +977,7 @@ export const challenges = {
             require("../assets/challenges/hanging/1.png"),
             require("../assets/challenges/friends/3.png"),
             require("../assets/images/12/winter/2.png"),
-            require("../assets/challenges/lantern/3.png")         
+            require("../assets/challenges/lantern/3.png")
         ]
     },
     110: {
@@ -986,7 +986,7 @@ export const challenges = {
             require("../assets/challenges/clone/1.png"),
             require("../assets/challenges/clone/2.png"),
             require("../assets/challenges/clone/3.png"),
-            require("../assets/challenges/clone/4.png")         
+            require("../assets/challenges/clone/4.png")
         ]
     },
     111: {
@@ -995,7 +995,7 @@ export const challenges = {
             require("../assets/challenges/quarter/1.png"),
             require("../assets/challenges/quarter/2.png"),
             require("../assets/challenges/quarter/3.png"),
-            require("../assets/challenges/quarter/4.png")         
+            require("../assets/challenges/quarter/4.png")
         ]
     },
     112: {
@@ -1004,7 +1004,7 @@ export const challenges = {
             require("../assets/challenges/recycle/1.png"),
             require("../assets/images/15/plastic/1.png"),
             require("../assets/images/15/package/2.png"),
-            require("../assets/images/2/green/2.png")         
+            require("../assets/images/2/green/2.png")
         ]
     },
     113: {
@@ -1013,7 +1013,7 @@ export const challenges = {
             require("../assets/challenges/picnic/1.png"),
             require("../assets/images/12/blanket/1.png"),
             require("../assets/challenges/picnic/2.png"),
-            require("../assets/images/12/camp/2.png")         
+            require("../assets/images/12/camp/2.png")
         ]
     },
     114: {
@@ -1022,7 +1022,7 @@ export const challenges = {
             require("../assets/challenges/family/2.png"),
             require("../assets/challenges/parents/1.png"),
             require("../assets/challenges/cuddling/2.png"),
-            require("../assets/challenges/magic/2.png")         
+            require("../assets/challenges/magic/2.png")
         ]
     },
     115: {
@@ -1031,7 +1031,7 @@ export const challenges = {
             require("../assets/challenges/telephone/1.png"),
             require("../assets/challenges/telephone/2.png"),
             require("../assets/challenges/telephone/3.png"),
-            require("../assets/challenges/telephone/4.png")         
+            require("../assets/challenges/telephone/4.png")
         ]
     },
     116: {
@@ -1040,7 +1040,7 @@ export const challenges = {
             require("../assets/challenges/april/1.png"),
             require("../assets/challenges/april/2.png"),
             require("../assets/images/17/jester/1.png"),
-            require("../assets/images/12/easter/1.png")         
+            require("../assets/images/12/easter/1.png")
         ]
     },
     117: {
@@ -1049,7 +1049,7 @@ export const challenges = {
             require("../assets/challenges/prime/1.png"),
             require("../assets/challenges/prime/2.png"),
             require("../assets/challenges/prime/3.png"),
-            require("../assets/challenges/prime/4.png")         
+            require("../assets/challenges/prime/4.png")
         ]
     },
     118: {
@@ -1058,7 +1058,7 @@ export const challenges = {
             require("../assets/images/6/flies/2.png"),
             require("../assets/images/8/bat/4.png"),
             require("../assets/challenges/flash/2.png"),
-            require("../assets/challenges/wonder/1.png")         
+            require("../assets/challenges/wonder/1.png")
         ]
     },
     119: {
@@ -1067,7 +1067,7 @@ export const challenges = {
             require("../assets/challenges/peace/1.png"),
             require("../assets/challenges/peace/2.png"),
             require("../assets/challenges/peace/3.png"),
-            require("../assets/challenges/prayer/1.png")         
+            require("../assets/challenges/prayer/1.png")
         ]
     },
     120: {
@@ -1076,7 +1076,7 @@ export const challenges = {
             require("../assets/images/18/uniform/4.png"),
             require("../assets/challenges/veterans/3.png"),
             require("../assets/challenges/veterans/1.png"),
-            require("../assets/images/18/uniform/2.png")         
+            require("../assets/images/18/uniform/2.png")
         ]
     },
     121: {
@@ -1085,7 +1085,7 @@ export const challenges = {
             require("../assets/challenges/hairstyle/1.png"),
             require("../assets/challenges/hairstyle/2.png"),
             require("../assets/challenges/hairstyle/3.png"),
-            require("../assets/challenges/hairstyle/4.png")         
+            require("../assets/challenges/hairstyle/4.png")
         ]
     },
     122: {
@@ -1103,7 +1103,7 @@ export const challenges = {
             require("../assets/challenges/insure/1.png"),
             require("../assets/challenges/insure/2.png"),
             require("../assets/challenges/insure/3.png"),
-            require("../assets/challenges/insure/4.png")         
+            require("../assets/challenges/insure/4.png")
         ]
     },
     124: {
@@ -1112,7 +1112,7 @@ export const challenges = {
             require("../assets/challenges/foster/1.png"),
             require("../assets/challenges/foster/2.png"),
             require("../assets/challenges/foster/3.png"),
-            require("../assets/challenges/educate/1.png")         
+            require("../assets/challenges/educate/1.png")
         ]
     },
     125: {
@@ -1121,7 +1121,7 @@ export const challenges = {
             require("../assets/challenges/renewal/1.png"),
             require("../assets/challenges/renewal/2.png"),
             require("../assets/challenges/renewal/3.png"),
-            require("../assets/images/18/hydrate/2.png")         
+            require("../assets/images/18/hydrate/2.png")
         ]
     },
     126: {
@@ -1130,7 +1130,7 @@ export const challenges = {
             require("../assets/challenges/lunch/1.png"),
             require("../assets/challenges/lunch/2.png"),
             require("../assets/challenges/lunch/3.png"),
-            require("../assets/challenges/lunch/4.png")         
+            require("../assets/challenges/lunch/4.png")
         ]
     },
     127: {
@@ -1139,7 +1139,7 @@ export const challenges = {
             require("../assets/challenges/barrier/1.png"),
             require("../assets/challenges/barrier/2.png"),
             require("../assets/challenges/barrier/3.png"),
-            require("../assets/images/10/escape/1.png")         
+            require("../assets/images/10/escape/1.png")
         ]
     },
     128: {
@@ -1148,7 +1148,7 @@ export const challenges = {
             require("../assets/challenges/student/1.png"),
             require("../assets/challenges/student/2.png"),
             require("../assets/challenges/student/3.png"),
-            require("../assets/challenges/educate/3.png")         
+            require("../assets/challenges/educate/3.png")
         ]
     },
     129: {
@@ -1157,7 +1157,7 @@ export const challenges = {
             require("../assets/challenges/muscat/1.png"),
             require("../assets/challenges/muscat/2.png"),
             require("../assets/challenges/muscat/3.png"),
-            require("../assets/challenges/muscat/4.png")         
+            require("../assets/challenges/muscat/4.png")
         ]
     },
     130: {
@@ -1166,7 +1166,7 @@ export const challenges = {
             require("../assets/challenges/reception/1.png"),
             require("../assets/challenges/reception/2.png"),
             require("../assets/challenges/reception/3.png"),
-            require("../assets/challenges/banquet/2.png")         
+            require("../assets/challenges/banquet/2.png")
         ]
     },
     131: {
@@ -1175,7 +1175,7 @@ export const challenges = {
             require("../assets/challenges/odometer/1.png"),
             require("../assets/challenges/odometer/2.png"),
             require("../assets/challenges/odometer/3.png"),
-            require("../assets/challenges/corvette/1.png")         
+            require("../assets/challenges/corvette/1.png")
         ]
     },
     132: {
@@ -1184,7 +1184,7 @@ export const challenges = {
             require("../assets/challenges/jumping/1.png"),
             require("../assets/challenges/jumping/2.png"),
             require("../assets/images/10/escape/2.png"),
-            require("../assets/challenges/leapfrog/2.png")         
+            require("../assets/challenges/leapfrog/2.png")
         ]
     },
     133: {
@@ -1193,7 +1193,7 @@ export const challenges = {
             require("../assets/challenges/twilight/1.png"),
             require("../assets/challenges/twilight/2.png"),
             require("../assets/challenges/twilight/3.png"),
-            require("../assets/challenges/twilight/4.png")         
+            require("../assets/challenges/twilight/4.png")
         ]
     },
     134: {
@@ -1202,7 +1202,7 @@ export const challenges = {
             require("../assets/challenges/archery/1.png"),
             require("../assets/challenges/archery/2.png"),
             require("../assets/challenges/archery/3.png"),
-            require("../assets/images/8/bow/2.png")         
+            require("../assets/images/8/bow/2.png")
         ]
     },
     135: {
@@ -1229,7 +1229,7 @@ export const challenges = {
             require("../assets/challenges/pierce/1.png"),
             require("../assets/challenges/pierce/2.png"),
             require("../assets/challenges/pierce/3.png"),
-            require("../assets/challenges/pierce/4.png")         
+            require("../assets/challenges/pierce/4.png")
         ]
     },
     138: {
@@ -1238,7 +1238,7 @@ export const challenges = {
             require("../assets/challenges/vaccine/1.png"),
             require("../assets/challenges/vaccine/2.png"),
             require("../assets/challenges/vaccine/3.png"),
-            require("../assets/challenges/vaccine/4.png")         
+            require("../assets/challenges/vaccine/4.png")
         ]
     },
     139: {
@@ -1247,7 +1247,7 @@ export const challenges = {
             require("../assets/challenges/relative/1.png"),
             require("../assets/challenges/relative/2.png"),
             require("../assets/challenges/relative/3.png"),
-            require("../assets/challenges/relative/4.png")         
+            require("../assets/challenges/relative/4.png")
         ]
     },
     140: {
@@ -1265,7 +1265,7 @@ export const challenges = {
             require("../assets/challenges/may/1.png"),
             require("../assets/challenges/may/2.png"),
             require("../assets/challenges/relative/4.png"),
-            require("../assets/images/14/crash/2.png")         
+            require("../assets/images/14/crash/2.png")
         ]
     },
     142: {
@@ -1274,7 +1274,7 @@ export const challenges = {
             require("../assets/challenges/vanilla/1.png"),
             require("../assets/challenges/vanilla/2.png"),
             require("../assets/challenges/vanilla/3.png"),
-            require("../assets/images/2/white/3.png")         
+            require("../assets/images/2/white/3.png")
         ]
     },
     143: {
@@ -1283,7 +1283,7 @@ export const challenges = {
             require("../assets/challenges/escargot/1.png"),
             require("../assets/challenges/escargot/2.png"),
             require("../assets/challenges/escargot/3.png"),
-            require("../assets/challenges/escargot/4.png")         
+            require("../assets/challenges/escargot/4.png")
         ]
     },
     144: {
@@ -1301,7 +1301,7 @@ export const challenges = {
             require("../assets/images/11/ticket/2.png"),
             require("../assets/challenges/paper/1.png"),
             require("../assets/challenges/poetry/2.png"),
-            require("../assets/challenges/parchment/2.png")         
+            require("../assets/challenges/parchment/2.png")
         ]
     },
     146: {
@@ -1310,7 +1310,7 @@ export const challenges = {
             require("../assets/challenges/brother/1.png"),
             require("../assets/challenges/brother/2.png"),
             require("../assets/challenges/brother/3.png"),
-            require("../assets/challenges/family/3.png")         
+            require("../assets/challenges/family/3.png")
         ]
     },
     147: {
@@ -1319,7 +1319,7 @@ export const challenges = {
             require("../assets/challenges/cooler/1.png"),
             require("../assets/challenges/cooler/2.png"),
             require("../assets/challenges/cooler/3.png"),
-            require("../assets/challenges/cooler/4.png")         
+            require("../assets/challenges/cooler/4.png")
         ]
     },
     148: {
@@ -1328,7 +1328,7 @@ export const challenges = {
             require("../assets/challenges/brisket/1.png"),
             require("../assets/challenges/brisket/2.png"),
             require("../assets/challenges/brisket/3.png"),
-            require("../assets/images/1/cow/2.png")         
+            require("../assets/images/1/cow/2.png")
         ]
     },
     149: {
@@ -1337,7 +1337,7 @@ export const challenges = {
             require("../assets/challenges/paperclip/1.png"),
             require("../assets/challenges/paperclip/2.png"),
             require("../assets/challenges/paper/1.png"),
-            require("../assets/images/8/clip/1.png")         
+            require("../assets/images/8/clip/1.png")
         ]
     },
     150: {
@@ -1346,7 +1346,7 @@ export const challenges = {
             require("../assets/challenges/memorial/1.png"),
             require("../assets/challenges/memorial/2.png"),
             require("../assets/challenges/memorial/3.png"),
-            require("../assets/images/8/death/4.png")         
+            require("../assets/images/8/death/4.png")
         ]
     },
     151: {
@@ -1355,7 +1355,7 @@ export const challenges = {
             require("../assets/challenges/hearing/1.png"),
             require("../assets/challenges/hearing/2.png"),
             require("../assets/challenges/hearing/3.png"),
-            require("../assets/images/10/lawyer/1.png")         
+            require("../assets/images/10/lawyer/1.png")
         ]
     },
     152: {
@@ -1364,7 +1364,7 @@ export const challenges = {
             require("../assets/challenges/dinosaur/1.png"),
             require("../assets/challenges/dinosaur/2.png"),
             require("../assets/challenges/dinosaur/3.png"),
-            require("../assets/challenges/dinosaur/4.png")         
+            require("../assets/challenges/dinosaur/4.png")
         ]
     },
     153: {
@@ -1373,7 +1373,7 @@ export const challenges = {
             require("../assets/challenges/moonshine/1.png"),
             require("../assets/challenges/moonshine/2.png"),
             require("../assets/challenges/moonshine/3.png"),
-            require("../assets/challenges/moonshine/4.png")         
+            require("../assets/challenges/moonshine/4.png")
         ]
     },
     154: {
@@ -1382,7 +1382,7 @@ export const challenges = {
             require("../assets/challenges/bicycle/1.png"),
             require("../assets/challenges/bicycle/2.png"),
             require("../assets/challenges/bicycle/3.png"),
-            require("../assets/challenges/trails/1.png")         
+            require("../assets/challenges/trails/1.png")
         ]
     },
     155: {
@@ -1391,7 +1391,7 @@ export const challenges = {
             require("../assets/challenges/trails/1.png"),
             require("../assets/challenges/trails/2.png"),
             require("../assets/challenges/tracker/2.png"),
-            require("../assets/challenges/hiking/1.png")         
+            require("../assets/challenges/hiking/1.png")
         ]
     },
     156: {
@@ -1400,7 +1400,7 @@ export const challenges = {
             require("../assets/challenges/cancer/1.png"),
             require("../assets/challenges/cancer/2.png"),
             require("../assets/challenges/cancer/3.png"),
-            require("../assets/images/2/pink/2.png")         
+            require("../assets/images/2/pink/2.png")
         ]
     },
     157: {
@@ -1409,7 +1409,7 @@ export const challenges = {
             require("../assets/challenges/june/1.png"),
             require("../assets/challenges/june/2.png"),
             require("../assets/images/12/summer/1.png"),
-            require("../assets/images/12/beach/3.png")         
+            require("../assets/images/12/beach/3.png")
         ]
     },
     158: {
@@ -1418,7 +1418,7 @@ export const challenges = {
             require("../assets/challenges/katana/1.png"),
             require("../assets/challenges/katana/2.png"),
             require("../assets/challenges/katana/3.png"),
-            require("../assets/challenges/katana/4.png")         
+            require("../assets/challenges/katana/4.png")
         ]
     },
     159: {
@@ -1427,7 +1427,7 @@ export const challenges = {
             require("../assets/challenges/birthday/1.png"),
             require("../assets/challenges/birthday/2.png"),
             require("../assets/challenges/party/1.png"),
-            require("../assets/challenges/party/3.png")         
+            require("../assets/challenges/party/3.png")
         ]
     },
     160: {
@@ -1436,7 +1436,7 @@ export const challenges = {
             require("../assets/challenges/spices/1.png"),
             require("../assets/images/9/powder/3.png"),
             require("../assets/challenges/flavor/2.png"),
-            require("../assets/challenges/pepper/3.png")         
+            require("../assets/challenges/pepper/3.png")
         ]
     },
     161: {
@@ -1445,7 +1445,7 @@ export const challenges = {
             require("../assets/challenges/beauty/1.png"),
             require("../assets/challenges/beauty/2.png"),
             require("../assets/challenges/beauty/3.png"),
-            require("../assets/challenges/resign/3.png")         
+            require("../assets/challenges/resign/3.png")
         ]
     },
     162: {
@@ -1454,7 +1454,7 @@ export const challenges = {
             require("../assets/challenges/lover/3.png"),
             require("../assets/challenges/cuddling/3.png"),
             require("../assets/challenges/cuddling/2.png"),
-            require("../assets/challenges/lover/1.png")         
+            require("../assets/challenges/lover/1.png")
         ]
     },
     163: {
@@ -1463,7 +1463,7 @@ export const challenges = {
             require("../assets/challenges/jerk/1.png"),
             require("../assets/challenges/jerk/2.png"),
             require("../assets/challenges/jerk/3.png"),
-            require("../assets/challenges/jerk/4.png")         
+            require("../assets/challenges/jerk/4.png")
         ]
     },
     164: {
@@ -1472,7 +1472,7 @@ export const challenges = {
             require("../assets/challenges/sewing/1.png"),
             require("../assets/challenges/sewing/2.png"),
             require("../assets/challenges/sewing/3.png"),
-            require("../assets/challenges/sewing/4.png")         
+            require("../assets/challenges/sewing/4.png")
         ]
     },
     165: {
@@ -1481,7 +1481,7 @@ export const challenges = {
             require("../assets/challenges/donate/1.png"),
             require("../assets/challenges/donate/2.png"),
             require("../assets/challenges/donate/3.png"),
-            require("../assets/challenges/donate/4.png")         
+            require("../assets/challenges/donate/4.png")
         ]
     },
     166: {
@@ -1490,7 +1490,7 @@ export const challenges = {
             require("../assets/challenges/nature/1.png"),
             require("../assets/images/19/subarctic/3.png"),
             require("../assets/images/19/grassland/2.png"),
-            require("../assets/images/19/forest/1.png")         
+            require("../assets/images/19/forest/1.png")
         ]
     },
     167: {
@@ -1499,7 +1499,7 @@ export const challenges = {
             require("../assets/challenges/splurge/1.png"),
             require("../assets/challenges/splurge/2.png"),
             require("../assets/challenges/splurge/3.png"),
-            require("../assets/challenges/splurge/4.png")         
+            require("../assets/challenges/splurge/4.png")
         ]
     },
     168: {
@@ -1508,7 +1508,7 @@ export const challenges = {
             require("../assets/challenges/refuge/1.png"),
             require("../assets/challenges/refuge/2.png"),
             require("../assets/challenges/refuge/3.png"),
-            require("../assets/challenges/refuge/4.png")         
+            require("../assets/challenges/refuge/4.png")
         ]
     },
     169: {
@@ -1517,7 +1517,7 @@ export const challenges = {
             require("../assets/challenges/hiking/1.png"),
             require("../assets/challenges/hiking/2.png"),
             require("../assets/challenges/hiking/3.png"),
-            require("../assets/images/5/shoes/1.png")         
+            require("../assets/images/5/shoes/1.png")
         ]
     },
     170: {
@@ -1526,7 +1526,7 @@ export const challenges = {
             require("../assets/challenges/music/1.png"),
             require("../assets/images/10/hiphop/3.png"),
             require("../assets/images/18/perform/1.png"),
-            require("../assets/challenges/stream/1.png")         
+            require("../assets/challenges/stream/1.png")
         ]
     },
     171: {
@@ -1535,7 +1535,7 @@ export const challenges = {
             require("../assets/challenges/solstice/1.png"),
             require("../assets/challenges/solstice/2.png"),
             require("../assets/challenges/solstice/3.png"),
-            require("../assets/challenges/solstice/4.png")         
+            require("../assets/challenges/solstice/4.png")
         ]
     },
     172: {
@@ -1544,7 +1544,7 @@ export const challenges = {
             require("../assets/challenges/porridge/1.png"),
             require("../assets/challenges/porridge/2.png"),
             require("../assets/challenges/porridge/3.png"),
-            require("../assets/challenges/porridge/4.png")         
+            require("../assets/challenges/porridge/4.png")
         ]
     },
     173: {
@@ -1553,7 +1553,7 @@ export const challenges = {
             require("../assets/challenges/buttercup/1.png"),
             require("../assets/challenges/buttercup/2.png"),
             require("../assets/challenges/buttercup/3.png"),
-            require("../assets/challenges/buttercup/4.png")         
+            require("../assets/challenges/buttercup/4.png")
         ]
     },
     174: {
@@ -1562,7 +1562,7 @@ export const challenges = {
             require("../assets/challenges/party/1.png"),
             require("../assets/challenges/party/2.png"),
             require("../assets/challenges/party/3.png"),
-            require("../assets/images/2/orange/3.png")         
+            require("../assets/images/2/orange/3.png")
         ]
     },
     175: {
@@ -1571,7 +1571,7 @@ export const challenges = {
             require("../assets/challenges/social/1.png"),
             require("../assets/challenges/social/2.png"),
             require("../assets/challenges/social/3.png"),
-            require("../assets/challenges/friends/3.png")         
+            require("../assets/challenges/friends/3.png")
         ]
     },
     176: {
@@ -1580,7 +1580,7 @@ export const challenges = {
             require("../assets/challenges/beatles/1.png"),
             require("../assets/challenges/beatles/2.png"),
             require("../assets/challenges/beatles/3.png"),
-            require("../assets/challenges/beatles/4.png")         
+            require("../assets/challenges/beatles/4.png")
         ]
     },
     177: {
@@ -1589,7 +1589,7 @@ export const challenges = {
             require("../assets/challenges/pudding/1.png"),
             require("../assets/challenges/pudding/2.png"),
             require("../assets/challenges/pudding/3.png"),
-            require("../assets/challenges/pudding/4.png")         
+            require("../assets/challenges/pudding/4.png")
         ]
     },
     178: {
@@ -1598,7 +1598,7 @@ export const challenges = {
             require("../assets/challenges/blossom/1.png"),
             require("../assets/challenges/blossom/2.png"),
             require("../assets/challenges/blossom/3.png"),
-            require("../assets/images/12/spring/3.png")         
+            require("../assets/images/12/spring/3.png")
         ]
     },
     179: {
@@ -1607,7 +1607,7 @@ export const challenges = {
             require("../assets/challenges/bingo/1.png"),
             require("../assets/challenges/bingo/2.png"),
             require("../assets/challenges/bingo/3.png"),
-            require("../assets/images/15/lottery/1.png")         
+            require("../assets/images/15/lottery/1.png")
         ]
     },
     180: {
@@ -1616,7 +1616,7 @@ export const challenges = {
             require("../assets/challenges/parchment/1.png"),
             require("../assets/challenges/parchment/2.png"),
             require("../assets/challenges/parchment/3.png"),
-            require("../assets/challenges/parchment/4.png")         
+            require("../assets/challenges/parchment/4.png")
         ]
     },
     181: {
@@ -1625,7 +1625,7 @@ export const challenges = {
             require("../assets/challenges/corvette/1.png"),
             require("../assets/challenges/corvette/2.png"),
             require("../assets/challenges/corvette/3.png"),
-            require("../assets/challenges/corvette/4.png")         
+            require("../assets/challenges/corvette/4.png")
         ]
     },
     182: {
@@ -1634,7 +1634,7 @@ export const challenges = {
             require("../assets/challenges/poster/1.png"),
             require("../assets/challenges/poster/2.png"),
             require("../assets/challenges/poster/3.png"),
-            require("../assets/challenges/poster/4.png")         
+            require("../assets/challenges/poster/4.png")
         ]
     },
     183: {
@@ -1643,7 +1643,7 @@ export const challenges = {
             require("../assets/challenges/flavor/1.png"),
             require("../assets/challenges/flavor/2.png"),
             require("../assets/challenges/pudding/1.png"),
-            require("../assets/challenges/fry/2.png")         
+            require("../assets/challenges/fry/2.png")
         ]
     },
     184: {
@@ -1652,7 +1652,7 @@ export const challenges = {
             require("../assets/challenges/fry/1.png"),
             require("../assets/challenges/fry/2.png"),
             require("../assets/challenges/fry/3.png"),
-            require("../assets/challenges/fry/4.png")         
+            require("../assets/challenges/fry/4.png")
         ]
     },
     185: {
@@ -1661,7 +1661,7 @@ export const challenges = {
             require("../assets/challenges/barbecue/1.png"),
             require("../assets/challenges/barbecue/2.png"),
             require("../assets/challenges/barbecue/3.png"),
-            require("../assets/challenges/barbecue/4.png")         
+            require("../assets/challenges/barbecue/4.png")
         ]
     },
     186: {
@@ -1670,7 +1670,7 @@ export const challenges = {
             require("../assets/challenges/popsicle/1.png"),
             require("../assets/challenges/popsicle/2.png"),
             require("../assets/challenges/popsicle/3.png"),
-            require("../assets/challenges/popsicle/4.png")         
+            require("../assets/challenges/popsicle/4.png")
         ]
     },
     187: {
@@ -1679,7 +1679,7 @@ export const challenges = {
             require("../assets/challenges/catcher/1.png"),
             require("../assets/challenges/catcher/2.png"),
             require("../assets/challenges/catcher/3.png"),
-            require("../assets/challenges/catcher/4.png")         
+            require("../assets/challenges/catcher/4.png")
         ]
     },
     188: {
@@ -1688,7 +1688,7 @@ export const challenges = {
             require("../assets/challenges/elevate/1.png"),
             require("../assets/challenges/elevate/2.png"),
             require("../assets/challenges/elevate/3.png"),
-            require("../assets/challenges/elevate/4.png")         
+            require("../assets/challenges/elevate/4.png")
         ]
     },
     189: {
@@ -1697,7 +1697,7 @@ export const challenges = {
             require("../assets/challenges/icicle/1.png"),
             require("../assets/challenges/icicle/2.png"),
             require("../assets/challenges/icicle/3.png"),
-            require("../assets/challenges/icicle/4.png")         
+            require("../assets/challenges/icicle/4.png")
         ]
     },
     190: {
@@ -1715,7 +1715,7 @@ export const challenges = {
             require("../assets/challenges/lonely/1.png"),
             require("../assets/challenges/lonely/2.png"),
             require("../assets/challenges/lonely/3.png"),
-            require("../assets/images/19/desert/1.png")         
+            require("../assets/images/19/desert/1.png")
         ]
     },
     192: {
@@ -1724,7 +1724,7 @@ export const challenges = {
             require("../assets/challenges/gnarly/1.png"),
             require("../assets/challenges/gnarly/2.png"),
             require("../assets/challenges/gnarly/3.png"),
-            require("../assets/challenges/gnarly/4.png")         
+            require("../assets/challenges/gnarly/4.png")
         ]
     },
     193: {
@@ -1733,7 +1733,7 @@ export const challenges = {
             require("../assets/challenges/simple/1.png"),
             require("../assets/challenges/simple/2.png"),
             require("../assets/challenges/simple/3.png"),
-            require("../assets/challenges/simple/4.png")         
+            require("../assets/challenges/simple/4.png")
         ]
     },
     194: {
@@ -1742,7 +1742,7 @@ export const challenges = {
             require("../assets/challenges/jello/1.png"),
             require("../assets/challenges/jello/2.png"),
             require("../assets/challenges/jello/3.png"),
-            require("../assets/challenges/jello/4.png")         
+            require("../assets/challenges/jello/4.png")
         ]
     },
     195: {
@@ -1751,7 +1751,7 @@ export const challenges = {
             require("../assets/challenges/barber/1.png"),
             require("../assets/challenges/barber/2.png"),
             require("../assets/challenges/barber/3.png"),
-            require("../assets/challenges/barber/4.png")         
+            require("../assets/challenges/barber/4.png")
         ]
     },
     196: {
@@ -1760,7 +1760,7 @@ export const challenges = {
             require("../assets/challenges/measure/1.png"),
             require("../assets/challenges/measure/2.png"),
             require("../assets/challenges/measure/3.png"),
-            require("../assets/challenges/measure/4.png")         
+            require("../assets/challenges/measure/4.png")
         ]
     },
     197: {
@@ -1769,7 +1769,7 @@ export const challenges = {
             require("../assets/challenges/tapioca/1.png"),
             require("../assets/challenges/tapioca/2.png"),
             require("../assets/challenges/tapioca/3.png"),
-            require("../assets/challenges/tapioca/4.png")         
+            require("../assets/challenges/tapioca/4.png")
         ]
     },
     198: {
@@ -1778,7 +1778,7 @@ export const challenges = {
             require("../assets/challenges/gummy/1.png"),
             require("../assets/challenges/gummy/2.png"),
             require("../assets/challenges/gummy/3.png"),
-            require("../assets/challenges/gummy/4.png")         
+            require("../assets/challenges/gummy/4.png")
         ]
     },
     199: {
@@ -1796,7 +1796,7 @@ export const challenges = {
             require("../assets/challenges/candy/1.png"),
             require("../assets/challenges/valentine/1.png"),
             require("../assets/challenges/buttercup/2.png"),
-            require("../assets/challenges/sweets/3.png")         
+            require("../assets/challenges/sweets/3.png")
         ]
     },
     201: {
@@ -1805,7 +1805,7 @@ export const challenges = {
             require("../assets/challenges/lollipop/1.png"),
             require("../assets/challenges/lollipop/2.png"),
             require("../assets/challenges/lollipop/3.png"),
-            require("../assets/challenges/lollipop/4.png")         
+            require("../assets/challenges/lollipop/4.png")
         ]
     },
     202: {
@@ -1814,7 +1814,7 @@ export const challenges = {
             require("../assets/challenges/customer/1.png"),
             require("../assets/challenges/customer/2.png"),
             require("../assets/challenges/customer/3.png"),
-            require("../assets/challenges/consumer/2.png")         
+            require("../assets/challenges/consumer/2.png")
         ]
     },
     203: {
@@ -1823,7 +1823,7 @@ export const challenges = {
             require("../assets/challenges/hammock/1.png"),
             require("../assets/challenges/hammock/2.png"),
             require("../assets/challenges/hammock/3.png"),
-            require("../assets/challenges/hammock/4.png")         
+            require("../assets/challenges/hammock/4.png")
         ]
     },
     204: {
@@ -1832,7 +1832,7 @@ export const challenges = {
             require("../assets/challenges/cowboy/1.png"),
             require("../assets/challenges/cowboy/2.png"),
             require("../assets/challenges/cowboy/3.png"),
-            require("../assets/challenges/cowboy/4.png")         
+            require("../assets/challenges/cowboy/4.png")
         ]
     },
     205: {
@@ -1841,7 +1841,7 @@ export const challenges = {
             require("../assets/challenges/thermal/1.png"),
             require("../assets/challenges/thermal/2.png"),
             require("../assets/challenges/thermal/3.png"),
-            require("../assets/challenges/thermal/4.png")         
+            require("../assets/challenges/thermal/4.png")
         ]
     },
     206: {
@@ -1850,7 +1850,7 @@ export const challenges = {
             require("../assets/challenges/vaccine/4.png"),
             require("../assets/challenges/needle/1.png"),
             require("../assets/challenges/needle/2.png"),
-            require("../assets/challenges/vaccine/1.png")         
+            require("../assets/challenges/vaccine/1.png")
         ]
     },
     207: {
@@ -1859,7 +1859,7 @@ export const challenges = {
             require("../assets/challenges/disable/1.png"),
             require("../assets/challenges/disable/2.png"),
             require("../assets/challenges/disable/3.png"),
-            require("../assets/challenges/disable/4.png")         
+            require("../assets/challenges/disable/4.png")
         ]
     },
     208: {
@@ -1868,7 +1868,7 @@ export const challenges = {
             require("../assets/challenges/buffalo/1.png"),
             require("../assets/challenges/buffalo/2.png"),
             require("../assets/challenges/buffalo/3.png"),
-            require("../assets/challenges/buffalo/4.png")         
+            require("../assets/challenges/buffalo/4.png")
         ]
     },
     209: {
@@ -1877,7 +1877,7 @@ export const challenges = {
             require("../assets/challenges/refresh/1.png"),
             require("../assets/challenges/refresh/2.png"),
             require("../assets/images/18/hydrate/4.png"),
-            require("../assets/challenges/renewal/1.png")         
+            require("../assets/challenges/renewal/1.png")
         ]
     },
     210: {
@@ -1886,7 +1886,7 @@ export const challenges = {
             require("../assets/challenges/lipstick/1.png"),
             require("../assets/challenges/lipstick/2.png"),
             require("../assets/challenges/lipstick/3.png"),
-            require("../assets/challenges/lipstick/4.png")         
+            require("../assets/challenges/lipstick/4.png")
         ]
     },
     211: {
@@ -1895,7 +1895,7 @@ export const challenges = {
             // require("../assets/challenges/whistle/1.png"),
             // require("../assets/challenges/whistle/2.png"),
             // require("../assets/challenges/whistle/3.png"),
-            // require("../assets/challenges/whistle/4.png")         
+            // require("../assets/challenges/whistle/4.png")
         ]
     },
     212: {
@@ -1904,7 +1904,7 @@ export const challenges = {
             // require("../assets/challenges/july/1.png"),
             // require("../assets/challenges/july/2.png"),
             // require("../assets/challenges/july/3.png"),
-            // require("../assets/challenges/july/4.png")         
+            // require("../assets/challenges/july/4.png")
         ]
     },
     213: {
@@ -1913,7 +1913,7 @@ export const challenges = {
             // require("../assets/challenges/mahjong/1.png"),
             // require("../assets/challenges/mahjong/2.png"),
             // require("../assets/challenges/mahjong/3.png"),
-            // require("../assets/challenges/mahjong/4.png")         
+            // require("../assets/challenges/mahjong/4.png")
         ]
     },
     214: {
@@ -1922,7 +1922,7 @@ export const challenges = {
             // require("../assets/challenges/sanwich/1.png"),
             // require("../assets/challenges/sanwich/2.png"),
             // require("../assets/challenges/sanwich/3.png"),
-            // require("../assets/challenges/sanwich/4.png")         
+            // require("../assets/challenges/sanwich/4.png")
         ]
     },
     215: {
@@ -1931,7 +1931,7 @@ export const challenges = {
             // require("../assets/challenges/melon/1.png"),
             // require("../assets/challenges/melon/2.png"),
             // require("../assets/challenges/melon/3.png"),
-            // require("../assets/challenges/melon/4.png")         
+            // require("../assets/challenges/melon/4.png")
         ]
     },
     216: {
@@ -1940,7 +1940,7 @@ export const challenges = {
             // require("../assets/challenges/coaster/1.png"),
             // require("../assets/challenges/coaster/2.png"),
             // require("../assets/challenges/coaster/3.png"),
-            // require("../assets/challenges/coaster/4.png")         
+            // require("../assets/challenges/coaster/4.png")
         ]
     },
     217: {
@@ -1949,7 +1949,7 @@ export const challenges = {
             // require("../assets/challenges/balloon/1.png"),
             // require("../assets/challenges/balloon/2.png"),
             // require("../assets/challenges/balloon/3.png"),
-            // require("../assets/challenges/balloon/4.png")         
+            // require("../assets/challenges/balloon/4.png")
         ]
     },
     218: {
@@ -1958,7 +1958,7 @@ export const challenges = {
             // require("../assets/challenges/summit/1.png"),
             // require("../assets/challenges/summit/2.png"),
             // require("../assets/challenges/summit/3.png"),
-            // require("../assets/challenges/summit/4.png")         
+            // require("../assets/challenges/summit/4.png")
         ]
     },
     219: {
@@ -1967,7 +1967,7 @@ export const challenges = {
             // require("../assets/challenges/august/1.png"),
             // require("../assets/challenges/august/2.png"),
             // require("../assets/challenges/august/3.png"),
-            // require("../assets/challenges/august/4.png")         
+            // require("../assets/challenges/august/4.png")
         ]
     },
     220: {
@@ -1976,16 +1976,16 @@ export const challenges = {
             // require("../assets/challenges/airborne/1.png"),
             // require("../assets/challenges/airborne/2.png"),
             // require("../assets/challenges/airborne/3.png"),
-            // require("../assets/challenges/airborne/4.png")         
+            // require("../assets/challenges/airborne/4.png")
         ]
     },
     221: {
         answer: "nonprofit",
         images: [
-            // require("../assets/challenges/nonprofit/1.png"),
-            // require("../assets/challenges/nonprofit/2.png"),
-            // require("../assets/challenges/nonprofit/3.png"),
-            // require("../assets/challenges/nonprofit/4.png")         
+            require("../assets/challenges/nonprofit/1.png"),
+            require("../assets/challenges/nonprofit/2.png"),
+            require("../assets/challenges/nonprofit/3.png"),
+            require("../assets/challenges/donate/4.png")
         ]
     },
     222: {
@@ -1994,7 +1994,7 @@ export const challenges = {
             // require("../assets/challenges/thrifting/1.png"),
             // require("../assets/challenges/thrifting/2.png"),
             // require("../assets/challenges/thrifting/3.png"),
-            // require("../assets/challenges/thrifting/4.png")         
+            // require("../assets/challenges/thrifting/4.png")
         ]
     },
     223: {
@@ -2003,7 +2003,7 @@ export const challenges = {
             // require("../assets/challenges/mediocre/1.png"),
             // require("../assets/challenges/mediocre/2.png"),
             // require("../assets/challenges/mediocre/3.png"),
-            // require("../assets/challenges/mediocre/4.png")         
+            // require("../assets/challenges/mediocre/4.png")
         ]
     },
     224: {
@@ -2012,7 +2012,7 @@ export const challenges = {
             // require("../assets/challenges/heroic/1.png"),
             // require("../assets/challenges/heroic/2.png"),
             // require("../assets/challenges/heroic/3.png"),
-            // require("../assets/challenges/heroic/4.png")         
+            // require("../assets/challenges/heroic/4.png")
         ]
     },
     225: {
@@ -2021,7 +2021,7 @@ export const challenges = {
             // require("../assets/challenges/grand/1.png"),
             // require("../assets/challenges/grand/2.png"),
             // require("../assets/challenges/grand/3.png"),
-            // require("../assets/challenges/grand/4.png")         
+            // require("../assets/challenges/grand/4.png")
         ]
     },
     226: {
@@ -2030,7 +2030,7 @@ export const challenges = {
             // require("../assets/challenges/monster/1.png"),
             // require("../assets/challenges/monster/2.png"),
             // require("../assets/challenges/monster/3.png"),
-            // require("../assets/challenges/monster/4.png")         
+            // require("../assets/challenges/monster/4.png")
         ]
     },
     227: {
@@ -2039,7 +2039,7 @@ export const challenges = {
             // require("../assets/challenges/backflip/1.png"),
             // require("../assets/challenges/backflip/2.png"),
             // require("../assets/challenges/backflip/3.png"),
-            // require("../assets/challenges/backflip/4.png")         
+            // require("../assets/challenges/backflip/4.png")
         ]
     },
     228: {
@@ -2048,7 +2048,7 @@ export const challenges = {
             // require("../assets/challenges/vegetable/1.png"),
             // require("../assets/challenges/vegetable/2.png"),
             // require("../assets/challenges/vegetable/3.png"),
-            // require("../assets/challenges/vegetable/4.png")         
+            // require("../assets/challenges/vegetable/4.png")
         ]
     },
     229: {
@@ -2057,7 +2057,7 @@ export const challenges = {
             // require("../assets/challenges/youtube/1.png"),
             // require("../assets/challenges/youtube/2.png"),
             // require("../assets/challenges/youtube/3.png"),
-            // require("../assets/challenges/youtube/4.png")         
+            // require("../assets/challenges/youtube/4.png")
         ]
     },
     230: {
@@ -2066,16 +2066,16 @@ export const challenges = {
             // require("../assets/challenges/zookeeper/1.png"),
             // require("../assets/challenges/zookeeper/2.png"),
             // require("../assets/challenges/zookeeper/3.png"),
-            // require("../assets/challenges/zookeeper/4.png")         
+            // require("../assets/challenges/zookeeper/4.png")
         ]
     },
     231: {
-        answer: "kickback",
+        answer: "rocking",
         images: [
-            // require("../assets/challenges/kickback/1.png"),
-            // require("../assets/challenges/kickback/2.png"),
-            // require("../assets/challenges/kickback/3.png"),
-            // require("../assets/challenges/kickback/4.png")         
+            require("../assets/challenges/rocking/1.png"),
+            require("../assets/challenges/rocking/2.png"),
+            require("../assets/challenges/rocking/3.png"),
+            require("../assets/challenges/rocking/4.png")
         ]
     },
     232: {
@@ -2084,7 +2084,7 @@ export const challenges = {
             // require("../assets/challenges/colossal/1.png"),
             // require("../assets/challenges/colossal/2.png"),
             // require("../assets/challenges/colossal/3.png"),
-            // require("../assets/challenges/colossal/4.png")         
+            // require("../assets/challenges/colossal/4.png")
         ]
     },
     233: {
@@ -2093,7 +2093,7 @@ export const challenges = {
             // require("../assets/challenges/kimono/1.png"),
             // require("../assets/challenges/kimono/2.png"),
             // require("../assets/challenges/kimono/3.png"),
-            // require("../assets/challenges/kimono/4.png")         
+            // require("../assets/challenges/kimono/4.png")
         ]
     },
     234: {
@@ -2102,7 +2102,7 @@ export const challenges = {
             // require("../assets/challenges/potato/1.png"),
             // require("../assets/challenges/potato/2.png"),
             // require("../assets/challenges/potato/3.png"),
-            // require("../assets/challenges/potato/4.png")         
+            // require("../assets/challenges/potato/4.png")
         ]
     },
     235: {
@@ -2111,7 +2111,7 @@ export const challenges = {
             // require("../assets/challenges/oncology/1.png"),
             // require("../assets/challenges/oncology/2.png"),
             // require("../assets/challenges/oncology/3.png"),
-            // require("../assets/challenges/oncology/4.png")         
+            // require("../assets/challenges/oncology/4.png")
         ]
     },
     236: {
@@ -2120,7 +2120,7 @@ export const challenges = {
             // require("../assets/challenges/sponge/1.png"),
             // require("../assets/challenges/sponge/2.png"),
             // require("../assets/challenges/sponge/3.png"),
-            // require("../assets/challenges/sponge/4.png")         
+            // require("../assets/challenges/sponge/4.png")
         ]
     },
     237: {
@@ -2129,7 +2129,7 @@ export const challenges = {
             // require("../assets/challenges/makeup/1.png"),
             // require("../assets/challenges/makeup/2.png"),
             // require("../assets/challenges/makeup/3.png"),
-            // require("../assets/challenges/makeup/4.png")         
+            // require("../assets/challenges/makeup/4.png")
         ]
     },
     238: {
@@ -2138,7 +2138,7 @@ export const challenges = {
             // require("../assets/challenges/equality/1.png"),
             // require("../assets/challenges/equality/2.png"),
             // require("../assets/challenges/equality/3.png"),
-            // require("../assets/challenges/equality/4.png")         
+            // require("../assets/challenges/equality/4.png")
         ]
     },
     239: {
@@ -2147,7 +2147,7 @@ export const challenges = {
             // require("../assets/challenges/turnover/1.png"),
             // require("../assets/challenges/turnover/2.png"),
             // require("../assets/challenges/turnover/3.png"),
-            // require("../assets/challenges/turnover/4.png")         
+            // require("../assets/challenges/turnover/4.png")
         ]
     },
     240: {
@@ -2156,106 +2156,106 @@ export const challenges = {
             // require("../assets/challenges/ranger/1.png"),
             // require("../assets/challenges/ranger/2.png"),
             // require("../assets/challenges/ranger/3.png"),
-            // require("../assets/challenges/ranger/4.png")         
+            // require("../assets/challenges/ranger/4.png")
         ]
     },
     241: {
         answer: "immune",
         images: [
-            // require("../assets/challenges/immune/1.png"),
-            // require("../assets/challenges/immune/2.png"),
-            // require("../assets/challenges/immune/3.png"),
-            // require("../assets/challenges/immune/4.png")         
+            require("../assets/challenges/immune/1.png"),
+            require("../assets/challenges/immune/2.png"),
+            require("../assets/challenges/vaccine/4.png"),        
+            require("../assets/challenges/immune/3.png")
         ]
     },
     242: {
         answer: "grief",
         images: [
-            // require("../assets/challenges/grief/1.png"),
-            // require("../assets/challenges/grief/2.png"),
-            // require("../assets/challenges/grief/3.png"),
-            // require("../assets/challenges/grief/4.png")         
+            require("../assets/challenges/grief/1.png"),
+            require("../assets/challenges/grief/2.png"),
+            require("../assets/images/6/agony/4.png"),         
+            require("../assets/challenges/memorial/3.png")
         ]
     },
     243: {
         answer: "outside",
         images: [
-            // require("../assets/challenges/outside/1.png"),
-            // require("../assets/challenges/outside/2.png"),
-            // require("../assets/challenges/outside/3.png"),
-            // require("../assets/challenges/outside/4.png")         
+            require("../assets/challenges/hiking/3.png"),
+            require("../assets/images/19/grassland/1.png"),
+            require("../assets/images/12/autumn/2.png"),
+            require("../assets/challenges/trails/1.png")
         ]
     },
     244: {
-        answer: "xenophobe",
+        answer: "border",
         images: [
-            // require("../assets/challenges/xenophobe/1.png"),
-            // require("../assets/challenges/xenophobe/2.png"),
-            // require("../assets/challenges/xenophobe/3.png"),
-            // require("../assets/challenges/xenophobe/4.png")         
+            require("../assets/challenges/border/1.png"),
+            require("../assets/challenges/border/2.png"),
+            require("../assets/challenges/border/3.png"),
+            require("../assets/challenges/border/4.png")
         ]
     },
     245: {
         answer: "vapor",
         images: [
-            // require("../assets/challenges/vapor/1.png"),
-            // require("../assets/challenges/vapor/2.png"),
-            // require("../assets/challenges/vapor/3.png"),
-            // require("../assets/challenges/vapor/4.png")         
+            require("../assets/challenges/vapor/1.png"),
+            require("../assets/challenges/vapor/2.png"),
+            require("../assets/challenges/vapor/3.png"),
+            require("../assets/challenges/vapor/4.png")
         ]
     },
     246: {
         answer: "ignite",
         images: [
-            // require("../assets/challenges/ignite/1.png"),
-            // require("../assets/challenges/ignite/2.png"),
-            // require("../assets/challenges/ignite/3.png"),
-            // require("../assets/challenges/ignite/4.png")         
+            require("../assets/challenges/ignite/1.png"),
+            require("../assets/challenges/ignite/2.png"),
+            require("../assets/challenges/ignite/3.png"),
+            require("../assets/challenges/ignite/4.png")
         ]
     },
     247: {
         answer: "toasty",
         images: [
-            // require("../assets/challenges/toasty/1.png"),
-            // require("../assets/challenges/toasty/2.png"),
-            // require("../assets/challenges/toasty/3.png"),
-            // require("../assets/challenges/toasty/4.png")         
+            require("../assets/challenges/toasty/1.png"),
+            require("../assets/challenges/toasty/2.png"),
+            require("../assets/challenges/toasty/3.png"),
+            require("../assets/images/12/camp/4.png")
         ]
     },
     248: {
         answer: "jetpack",
         images: [
-            // require("../assets/challenges/jetpack/1.png"),
-            // require("../assets/challenges/jetpack/2.png"),
-            // require("../assets/challenges/jetpack/3.png"),
-            // require("../assets/challenges/jetpack/4.png")         
+            require("../assets/challenges/jetpack/1.png"),
+            require("../assets/challenges/jetpack/2.png"),
+            require("../assets/challenges/jetpack/3.png"),
+            require("../assets/challenges/jetpack/4.png")
         ]
     },
     249: {
         answer: "yawning",
         images: [
-            // require("../assets/challenges/yawning/1.png"),
-            // require("../assets/challenges/yawning/2.png"),
-            // require("../assets/challenges/yawning/3.png"),
-            // require("../assets/challenges/yawning/4.png")         
+            require("../assets/challenges/yawning/1.png"),
+            require("../assets/challenges/yawning/2.png"),
+            require("../assets/challenges/yawning/3.png"),
+            require("../assets/challenges/yawning/4.png")
         ]
     },
     250: {
         answer: "luxury",
         images: [
-            // require("../assets/challenges/luxury/1.png"),
-            // require("../assets/challenges/luxury/2.png"),
-            // require("../assets/challenges/luxury/3.png"),
-            // require("../assets/challenges/luxury/4.png")         
+            require("../assets/challenges/luxury/1.png"),
+            require("../assets/challenges/luxury/2.png"),
+            require("../assets/challenges/customer/4.png"),       
+            require("../assets/challenges/luxury/3.png")
         ]
     },
     251: {
         answer: "marriage",
         images: [
-            // require("../assets/challenges/marriage/1.png"),
-            // require("../assets/challenges/marriage/2.png"),
-            // require("../assets/challenges/marriage/3.png"),
-            // require("../assets/challenges/marriage/4.png")         
+            require("../assets/challenges/marriage/1.png"),
+            require("../assets/challenges/marriage/2.png"),
+            require("../assets/challenges/marriage/3.png"),
+            require("../assets/challenges/proposal/2.png")
         ]
     },
     252: {
@@ -2264,7 +2264,7 @@ export const challenges = {
             // require("../assets/challenges/kebabs/1.png"),
             // require("../assets/challenges/kebabs/2.png"),
             // require("../assets/challenges/kebabs/3.png"),
-            // require("../assets/challenges/kebabs/4.png")         
+            // require("../assets/challenges/kebabs/4.png")
         ]
     },
     253: {
@@ -2273,7 +2273,7 @@ export const challenges = {
             // require("../assets/challenges/ocean/1.png"),
             // require("../assets/challenges/ocean/2.png"),
             // require("../assets/challenges/ocean/3.png"),
-            // require("../assets/challenges/ocean/4.png")         
+            // require("../assets/challenges/ocean/4.png")
         ]
     },
     254: {
@@ -2282,7 +2282,7 @@ export const challenges = {
             // require("../assets/challenges/terror/1.png"),
             // require("../assets/challenges/terror/2.png"),
             // require("../assets/challenges/terror/3.png"),
-            // require("../assets/challenges/terror/4.png")         
+            // require("../assets/challenges/terror/4.png")
         ]
     },
     255: {
@@ -2291,7 +2291,7 @@ export const challenges = {
             // require("../assets/challenges/quests/1.png"),
             // require("../assets/challenges/quests/2.png"),
             // require("../assets/challenges/quests/3.png"),
-            // require("../assets/challenges/quests/4.png")         
+            // require("../assets/challenges/quests/4.png")
         ]
     },
     256: {
@@ -2300,7 +2300,7 @@ export const challenges = {
             // require("../assets/challenges/aquatic/1.png"),
             // require("../assets/challenges/aquatic/2.png"),
             // require("../assets/challenges/aquatic/3.png"),
-            // require("../assets/challenges/aquatic/4.png")         
+            // require("../assets/challenges/aquatic/4.png")
         ]
     },
     257: {
@@ -2309,7 +2309,7 @@ export const challenges = {
             // require("../assets/challenges/zapper/1.png"),
             // require("../assets/challenges/zapper/2.png"),
             // require("../assets/challenges/zapper/3.png"),
-            // require("../assets/challenges/zapper/4.png")         
+            // require("../assets/challenges/zapper/4.png")
         ]
     },
     258: {
@@ -2318,7 +2318,7 @@ export const challenges = {
             // require("../assets/challenges/activate/1.png"),
             // require("../assets/challenges/activate/2.png"),
             // require("../assets/challenges/activate/3.png"),
-            // require("../assets/challenges/activate/4.png")         
+            // require("../assets/challenges/activate/4.png")
         ]
     },
     259: {
@@ -2327,7 +2327,7 @@ export const challenges = {
             // require("../assets/challenges/classroom/1.png"),
             // require("../assets/challenges/classroom/2.png"),
             // require("../assets/challenges/classroom/3.png"),
-            // require("../assets/challenges/classroom/4.png")         
+            // require("../assets/challenges/classroom/4.png")
         ]
     },
     260: {
@@ -2336,16 +2336,16 @@ export const challenges = {
             // require("../assets/challenges/octagon/1.png"),
             // require("../assets/challenges/octagon/2.png"),
             // require("../assets/challenges/octagon/3.png"),
-            // require("../assets/challenges/octagon/4.png")         
+            // require("../assets/challenges/octagon/4.png")
         ]
     },
     261: {
         answer: "program",
         images: [
-            // require("../assets/challenges/program/1.png"),
-            // require("../assets/challenges/program/2.png"),
-            // require("../assets/challenges/program/3.png"),
-            // require("../assets/challenges/program/4.png")         
+            require("../assets/challenges/program/1.png"),
+            require("../assets/challenges/program/2.png"),
+            require("../assets/challenges/program/3.png"),
+            require("../assets/challenges/program/4.png")
         ]
     },
     262: {
@@ -2354,7 +2354,7 @@ export const challenges = {
             // require("../assets/challenges/universe/1.png"),
             // require("../assets/challenges/universe/2.png"),
             // require("../assets/challenges/universe/3.png"),
-            // require("../assets/challenges/universe/4.png")         
+            // require("../assets/challenges/universe/4.png")
         ]
     },
     263: {
@@ -2363,7 +2363,7 @@ export const challenges = {
             // require("../assets/challenges/labyrinth/1.png"),
             // require("../assets/challenges/labyrinth/2.png"),
             // require("../assets/challenges/labyrinth/3.png"),
-            // require("../assets/challenges/labyrinth/4.png")         
+            // require("../assets/challenges/labyrinth/4.png")
         ]
     },
     264: {
@@ -2372,7 +2372,7 @@ export const challenges = {
             // require("../assets/challenges/jackknife/1.png"),
             // require("../assets/challenges/jackknife/2.png"),
             // require("../assets/challenges/jackknife/3.png"),
-            // require("../assets/challenges/jackknife/4.png")         
+            // require("../assets/challenges/jackknife/4.png")
         ]
     },
     265: {
@@ -2381,7 +2381,7 @@ export const challenges = {
             // require("../assets/challenges/kinetic/1.png"),
             // require("../assets/challenges/kinetic/2.png"),
             // require("../assets/challenges/kinetic/3.png"),
-            // require("../assets/challenges/kinetic/4.png")         
+            // require("../assets/challenges/kinetic/4.png")
         ]
     },
     266: {
@@ -2390,7 +2390,7 @@ export const challenges = {
             // require("../assets/challenges/arcane/1.png"),
             // require("../assets/challenges/arcane/2.png"),
             // require("../assets/challenges/arcane/3.png"),
-            // require("../assets/challenges/arcane/4.png")         
+            // require("../assets/challenges/arcane/4.png")
         ]
     },
     267: {
@@ -2399,7 +2399,7 @@ export const challenges = {
             // require("../assets/challenges/intercept/1.png"),
             // require("../assets/challenges/intercept/2.png"),
             // require("../assets/challenges/intercept/3.png"),
-            // require("../assets/challenges/intercept/4.png")         
+            // require("../assets/challenges/intercept/4.png")
         ]
     },
     268: {
@@ -2408,7 +2408,7 @@ export const challenges = {
             // require("../assets/challenges/occipital/1.png"),
             // require("../assets/challenges/occipital/2.png"),
             // require("../assets/challenges/occipital/3.png"),
-            // require("../assets/challenges/occipital/4.png")         
+            // require("../assets/challenges/occipital/4.png")
         ]
     },
     269: {
@@ -2417,7 +2417,7 @@ export const challenges = {
             // require("../assets/challenges/maestro/1.png"),
             // require("../assets/challenges/maestro/2.png"),
             // require("../assets/challenges/maestro/3.png"),
-            // require("../assets/challenges/maestro/4.png")         
+            // require("../assets/challenges/maestro/4.png")
         ]
     },
     270: {
@@ -2426,16 +2426,16 @@ export const challenges = {
             // require("../assets/challenges/september/1.png"),
             // require("../assets/challenges/september/2.png"),
             // require("../assets/challenges/september/3.png"),
-            // require("../assets/challenges/september/4.png")         
+            // require("../assets/challenges/september/4.png")
         ]
     },
     271: {
         answer: "announce",
         images: [
-            // require("../assets/challenges/announce/1.png"),
-            // require("../assets/challenges/announce/2.png"),
-            // require("../assets/challenges/announce/3.png"),
-            // require("../assets/challenges/announce/4.png")         
+            require("../assets/challenges/announce/1.png"),
+            require("../assets/challenges/announce/2.png"),
+            require("../assets/challenges/announce/3.png"),
+            require("../assets/images/18/amplify/4.png")
         ]
     },
     272: {
@@ -2444,7 +2444,7 @@ export const challenges = {
             // require("../assets/challenges/questions/1.png"),
             // require("../assets/challenges/questions/2.png"),
             // require("../assets/challenges/questions/3.png"),
-            // require("../assets/challenges/questions/4.png")         
+            // require("../assets/challenges/questions/4.png")
         ]
     },
     273: {
@@ -2453,7 +2453,7 @@ export const challenges = {
             // require("../assets/challenges/yodelling/1.png"),
             // require("../assets/challenges/yodelling/2.png"),
             // require("../assets/challenges/yodelling/3.png"),
-            // require("../assets/challenges/yodelling/4.png")         
+            // require("../assets/challenges/yodelling/4.png")
         ]
     },
     274: {
@@ -2462,7 +2462,7 @@ export const challenges = {
             // require("../assets/challenges/pumpkin/1.png"),
             // require("../assets/challenges/pumpkin/2.png"),
             // require("../assets/challenges/pumpkin/3.png"),
-            // require("../assets/challenges/pumpkin/4.png")         
+            // require("../assets/challenges/pumpkin/4.png")
         ]
     },
     275: {
@@ -2471,7 +2471,7 @@ export const challenges = {
             // require("../assets/challenges/witch/1.png"),
             // require("../assets/challenges/witch/2.png"),
             // require("../assets/challenges/witch/3.png"),
-            // require("../assets/challenges/cauldron/2.png")         
+            // require("../assets/challenges/cauldron/2.png")
         ]
     },
     276: {
@@ -2480,7 +2480,7 @@ export const challenges = {
             // require("../assets/challenges/afterlife/1.png"),
             // require("../assets/challenges/afterlife/2.png"),
             // require("../assets/challenges/afterlife/3.png"),
-            // require("../assets/challenges/afterlife/4.png")         
+            // require("../assets/challenges/afterlife/4.png")
         ]
     },
     277: {
@@ -2489,7 +2489,7 @@ export const challenges = {
             // require("../assets/challenges/october/1.png"),
             // require("../assets/challenges/october/2.png"),
             // require("../assets/challenges/october/3.png"),
-            // require("../assets/challenges/october/4.png")         
+            // require("../assets/challenges/october/4.png")
         ]
     },
     278: {
@@ -2498,7 +2498,7 @@ export const challenges = {
             // require("../assets/challenges/vampire/1.png"),
             // require("../assets/challenges/vampire/2.png"),
             // require("../assets/challenges/vampire/3.png"),
-            // require("../assets/challenges/vampire/4.png")         
+            // require("../assets/challenges/vampire/4.png")
         ]
     },
     279: {
@@ -2507,7 +2507,7 @@ export const challenges = {
             // require("../assets/challenges/haunting/1.png"),
             // require("../assets/challenges/haunting/2.png"),
             // require("../assets/challenges/haunting/3.png"),
-            // require("../assets/challenges/haunting/4.png")         
+            // require("../assets/challenges/haunting/4.png")
         ]
     },
     280: {
@@ -2516,16 +2516,16 @@ export const challenges = {
             // require("../assets/challenges/illusions/1.png"),
             // require("../assets/challenges/illusions/2.png"),
             // require("../assets/challenges/illusions/3.png"),
-            // require("../assets/challenges/illusions/4.png")         
+            // require("../assets/challenges/illusions/4.png")
         ]
     },
     281: {
         answer: "xylophone",
         images: [
-            // require("../assets/challenges/xylophone/1.png"),
-            // require("../assets/challenges/xylophone/2.png"),
-            // require("../assets/challenges/xylophone/3.png"),
-            // require("../assets/challenges/xylophone/4.png")         
+            require("../assets/challenges/xylophone/1.png"),
+            require("../assets/challenges/xylophone/2.png"),
+            require("../assets/challenges/xylophone/3.png"),
+            require("../assets/challenges/xylophone/4.png")
         ]
     },
     282: {
@@ -2534,7 +2534,7 @@ export const challenges = {
             // require("../assets/challenges/abhorrent/1.png"),
             // require("../assets/challenges/abhorrent/2.png"),
             // require("../assets/challenges/abhorrent/3.png"),
-            // require("../assets/challenges/abhorrent/4.png")         
+            // require("../assets/challenges/abhorrent/4.png")
         ]
     },
     283: {
@@ -2543,7 +2543,7 @@ export const challenges = {
             // require("../assets/challenges/nightmare/1.png"),
             // require("../assets/challenges/nightmare/2.png"),
             // require("../assets/challenges/nightmare/3.png"),
-            // require("../assets/challenges/nightmare/4.png")         
+            // require("../assets/challenges/nightmare/4.png")
         ]
     },
     284: {
@@ -2552,7 +2552,7 @@ export const challenges = {
             // require("../assets/challenges/disguise/1.png"),
             // require("../assets/challenges/disguise/2.png"),
             // require("../assets/challenges/disguise/3.png"),
-            // require("../assets/challenges/disguise/4.png")         
+            // require("../assets/challenges/disguise/4.png")
         ]
     },
     285: {
@@ -2561,7 +2561,7 @@ export const challenges = {
             // require("../assets/challenges/cemetery/1.png"),
             // require("../assets/challenges/cemetery/2.png"),
             // require("../assets/challenges/cemetery/3.png"),
-            // require("../assets/challenges/cemetery/4.png")         
+            // require("../assets/challenges/cemetery/4.png")
         ]
     },
     286: {
@@ -2570,7 +2570,7 @@ export const challenges = {
             // require("../assets/challenges/cobweb/1.png"),
             // require("../assets/challenges/cobweb/2.png"),
             // require("../assets/challenges/cobweb/3.png"),
-            // require("../assets/challenges/cobweb/4.png")         
+            // require("../assets/challenges/cobweb/4.png")
         ]
     },
     287: {
@@ -2579,7 +2579,7 @@ export const challenges = {
             // require("../assets/challenges/abnormal/1.png"),
             // require("../assets/challenges/abnormal/2.png"),
             // require("../assets/challenges/abnormal/3.png"),
-            // require("../assets/challenges/abnormal/4.png")         
+            // require("../assets/challenges/abnormal/4.png")
         ]
     },
     288: {
@@ -2588,7 +2588,7 @@ export const challenges = {
             // require("../assets/challenges/illumed/1.png"),
             // require("../assets/challenges/illumed/2.png"),
             // require("../assets/challenges/illumed/3.png"),
-            // require("../assets/challenges/illumed/4.png")         
+            // require("../assets/challenges/illumed/4.png")
         ]
     },
     289: {
@@ -2597,7 +2597,7 @@ export const challenges = {
             // require("../assets/challenges/unique/1.png"),
             // require("../assets/challenges/unique/2.png"),
             // require("../assets/challenges/unique/3.png"),
-            // require("../assets/challenges/unique/4.png")         
+            // require("../assets/challenges/unique/4.png")
         ]
     },
     290: {
@@ -2606,7 +2606,7 @@ export const challenges = {
             // require("../assets/challenges/quarrels/1.png"),
             // require("../assets/challenges/quarrels/2.png"),
             // require("../assets/challenges/quarrels/3.png"),
-            // require("../assets/challenges/quarrels/4.png")         
+            // require("../assets/challenges/quarrels/4.png")
         ]
     },
     291: {
@@ -2615,7 +2615,7 @@ export const challenges = {
             require("../assets/challenges/fishing/1.png"),
             require("../assets/challenges/fishing/2.png"),
             require("../assets/challenges/fishing/3.png"),
-            require("../assets/images/1/fish/2.png")         
+            require("../assets/images/1/fish/2.png")
         ]
     },
     292: {
@@ -2633,7 +2633,7 @@ export const challenges = {
             require("../assets/challenges/yearbook/1.png"),
             require("../assets/challenges/yearbook/2.png"),
             require("../assets/challenges/yearbook/3.png"),
-            require("../assets/challenges/yearbook/4.png")         
+            require("../assets/challenges/yearbook/4.png")
         ]
     },
     294: {
@@ -2651,7 +2651,7 @@ export const challenges = {
             require("../assets/challenges/darkness/1.png"),
             require("../assets/images/3/space/3.png"),
             require("../assets/images/6/shady/4.png"),
-            require("../assets/challenges/vacuum/3.png")         
+            require("../assets/challenges/vacuum/3.png")
         ]
     },
     296: {
@@ -2660,7 +2660,7 @@ export const challenges = {
             require("../assets/challenges/sweets/1.png"),
             require("../assets/challenges/sweets/2.png"),
             require("../assets/challenges/sweets/3.png"),
-            require("../assets/challenges/parfait/1.png")         
+            require("../assets/challenges/parfait/1.png")
         ]
     },
     297: {
@@ -2669,7 +2669,7 @@ export const challenges = {
             require("../assets/challenges/lantern/1.png"),
             require("../assets/challenges/lantern/2.png"),
             require("../assets/challenges/lantern/3.png"),
-            require("../assets/challenges/lantern/4.png")         
+            require("../assets/challenges/lantern/4.png")
         ]
     },
     298: {
@@ -2678,7 +2678,7 @@ export const challenges = {
             require("../assets/challenges/identity/1.png"),
             require("../assets/challenges/identity/2.png"),
             require("../assets/challenges/identity/3.png"),
-            require("../assets/images/8/bat/4.png")         
+            require("../assets/images/8/bat/4.png")
         ]
     },
     299: {
@@ -2687,7 +2687,7 @@ export const challenges = {
             require("../assets/challenges/decorate/1.png"),
             require("../assets/challenges/decorate/2.png"),
             require("../assets/challenges/decorate/3.png"),
-            require("../assets/images/12/winter/2.png")         
+            require("../assets/images/12/winter/2.png")
         ]
     },
     300: {
@@ -2696,7 +2696,7 @@ export const challenges = {
             require("../assets/challenges/costume/1.png"),
             require("../assets/challenges/costume/2.png"),
             require("../assets/challenges/cauldron/2.png"),
-            require("../assets/challenges/costume/4.png")         
+            require("../assets/challenges/costume/4.png")
         ]
     },
     301: {
@@ -2705,7 +2705,7 @@ export const challenges = {
             require("../assets/challenges/cauldron/1.png"),
             require("../assets/challenges/cauldron/2.png"),
             require("../assets/challenges/cauldron/3.png"),
-            require("../assets/challenges/cauldron/4.png")         
+            require("../assets/challenges/cauldron/4.png")
         ]
     },
     302: {
@@ -2714,7 +2714,7 @@ export const challenges = {
             require("../assets/challenges/zombie/1.png"),
             require("../assets/challenges/zombie/2.png"),
             require("../assets/challenges/zombie/3.png"),
-            require("../assets/challenges/zombie/4.png")         
+            require("../assets/challenges/zombie/4.png")
         ]
     },
     303: {
@@ -2723,7 +2723,7 @@ export const challenges = {
             require("../assets/challenges/ghoul/1.png"),
             require("../assets/challenges/ghoul/2.png"),
             require("../assets/challenges/ghoul/3.png"),
-            require("../assets/challenges/ghoul/4.png")         
+            require("../assets/challenges/ghoul/4.png")
         ]
     },
     304: {
@@ -2804,7 +2804,7 @@ export const challenges = {
             require("../assets/challenges/sleepy/3.png"),
             require("../assets/challenges/cuddling/3.png"),
             require("../assets/challenges/cuddling/2.png"),
-            require("../assets/challenges/sleepy/2.png")         
+            require("../assets/challenges/sleepy/2.png")
         ]
     },
     313: {
