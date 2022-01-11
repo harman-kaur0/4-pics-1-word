@@ -1946,37 +1946,37 @@ export const challenges = {
     217: {
         answer: "balloon",
         images: [
-            // require("../assets/challenges/balloon/1.png"),
-            // require("../assets/challenges/balloon/2.png"),
-            // require("../assets/challenges/balloon/3.png"),
-            // require("../assets/challenges/balloon/4.png")
+            require("../assets/challenges/balloon/1.png"),
+            require("../assets/challenges/balloon/2.png"),
+            require("../assets/images/2/orange/3.png"),
+            require("../assets/images/11/clown/1.png")
         ]
     },
     218: {
         answer: "summit",
         images: [
-            // require("../assets/challenges/summit/1.png"),
-            // require("../assets/challenges/summit/2.png"),
-            // require("../assets/challenges/summit/3.png"),
-            // require("../assets/challenges/summit/4.png")
+            require("../assets/challenges/summit/1.png"),
+            require("../assets/challenges/summit/2.png"),
+            require("../assets/challenges/summit/3.png"),
+            require("../assets/challenges/summit/4.png")
         ]
     },
     219: {
         answer: "august",
         images: [
-            // require("../assets/challenges/august/1.png"),
-            // require("../assets/challenges/august/2.png"),
-            // require("../assets/challenges/august/3.png"),
-            // require("../assets/challenges/august/4.png")
+            require("../assets/challenges/august/1.png"),
+            require("../assets/challenges/august/2.png"),
+            require("../assets/challenges/august/3.png"),
+            require("../assets/challenges/august/4.png")
         ]
     },
     220: {
         answer: "airborne",
         images: [
-            // require("../assets/challenges/airborne/1.png"),
-            // require("../assets/challenges/airborne/2.png"),
-            // require("../assets/challenges/airborne/3.png"),
-            // require("../assets/challenges/airborne/4.png")
+            require("../assets/images/10/escape/4.png"),
+            require("../assets/challenges/airborne/1.png"),
+            require("../assets/images/6/flies/4.png"),
+            require("../assets/challenges/immune/2.png")
         ]
     },
     221: {
