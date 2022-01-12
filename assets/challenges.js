@@ -1901,37 +1901,37 @@ export const challenges = {
     212: {
         answer: "july",
         images: [
-            // require("../assets/challenges/july/1.png"),
-            // require("../assets/challenges/july/2.png"),
-            // require("../assets/challenges/july/3.png"),
-            // require("../assets/challenges/july/4.png")
+            require("../assets/challenges/july/1.png"),
+            require("../assets/challenges/july/2.png"),
+            require("../assets/challenges/july/3.png"),
+            require("../assets/challenges/barbecue/3.png")
         ]
     },
     213: {
         answer: "mahjong",
         images: [
-            // require("../assets/challenges/mahjong/1.png"),
-            // require("../assets/challenges/mahjong/2.png"),
-            // require("../assets/challenges/mahjong/3.png"),
-            // require("../assets/challenges/mahjong/4.png")
+            require("../assets/challenges/mahjong/1.png"),
+            require("../assets/challenges/mahjong/2.png"),
+            require("../assets/challenges/mahjong/3.png"),
+            require("../assets/images/13/china/1.png")
         ]
     },
     214: {
         answer: "sandwich",
         images: [
-            // require("../assets/challenges/sanwich/1.png"),
-            // require("../assets/challenges/sanwich/2.png"),
-            // require("../assets/challenges/sanwich/3.png"),
-            // require("../assets/challenges/sanwich/4.png")
+            require("../assets/challenges/sanwich/1.png"),
+            require("../assets/challenges/sanwich/2.png"),
+            require("../assets/challenges/sanwich/3.png"),
+            require("../assets/challenges/sanwich/4.png")
         ]
     },
     215: {
         answer: "melon",
         images: [
-            // require("../assets/challenges/melon/1.png"),
-            // require("../assets/challenges/melon/2.png"),
-            // require("../assets/challenges/melon/3.png"),
-            // require("../assets/challenges/melon/4.png")
+            require("../assets/challenges/melon/1.png"),
+            require("../assets/challenges/melon/2.png"),
+            require("../assets/challenges/melon/3.png"),
+            require("../assets/images/15/bitter/1.png")
         ]
     },
     216: {
