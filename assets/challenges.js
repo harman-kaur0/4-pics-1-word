@@ -1937,10 +1937,10 @@ export const challenges = {
     216: {
         answer: "coaster",
         images: [
-            // require("../assets/challenges/coaster/1.png"),
-            // require("../assets/challenges/coaster/2.png"),
-            // require("../assets/challenges/coaster/3.png"),
-            // require("../assets/challenges/coaster/4.png")
+            require("../assets/challenges/coaster/1.png"),
+            require("../assets/challenges/coaster/2.png"),
+            require("../assets/challenges/coaster/3.png"),
+            require("../assets/images/14/shipping/4.png")
         ]
     },
     217: {
