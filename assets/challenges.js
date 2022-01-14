@@ -2063,10 +2063,10 @@ export const challenges = {
     230: {
         answer: "zookeeper",
         images: [
-            // require("../assets/challenges/zookeeper/1.png"),
-            // require("../assets/challenges/zookeeper/2.png"),
-            // require("../assets/challenges/zookeeper/3.png"),
-            // require("../assets/challenges/zookeeper/4.png")
+            require("../assets/challenges/zookeeper/1.png"),
+            require("../assets/challenges/zookeeper/2.png"),
+            require("../assets/challenges/zookeeper/3.png"),
+            require("../assets/challenges/zookeeper/4.png")
         ]
     },
     231: {
@@ -2531,37 +2531,37 @@ export const challenges = {
     282: {
         answer: "abhorrent",
         images: [
-            // require("../assets/challenges/abhorrent/1.png"),
-            // require("../assets/challenges/abhorrent/2.png"),
-            // require("../assets/challenges/abhorrent/3.png"),
-            // require("../assets/challenges/abhorrent/4.png")
+            require("../assets/challenges/abhorrent/1.png"),
+            require("../assets/images/10/escape/3.png"),
+            require("../assets/images/18/pollute/2.png"),
+            require("../assets/images/15/bitter/2.png")
         ]
     },
     283: {
         answer: "nightmare",
         images: [
-            // require("../assets/challenges/nightmare/1.png"),
-            // require("../assets/challenges/nightmare/2.png"),
-            // require("../assets/challenges/nightmare/3.png"),
-            // require("../assets/challenges/nightmare/4.png")
+            require("../assets/challenges/nightmare/1.png"),
+            require("../assets/challenges/nightmare/2.png"),
+            require("../assets/challenges/nightmare/3.png"),
+            require("../assets/images/11/clown/1.png")
         ]
     },
     284: {
         answer: "disguise",
         images: [
-            // require("../assets/challenges/disguise/1.png"),
-            // require("../assets/challenges/disguise/2.png"),
-            // require("../assets/challenges/disguise/3.png"),
-            // require("../assets/challenges/disguise/4.png")
+            require("../assets/challenges/disguise/1.png"),
+            require("../assets/challenges/ninja/3.png"),
+            require("../assets/images/6/gamer/4.png"),
+            require("../assets/challenges/costume/2.png")
         ]
     },
     285: {
         answer: "cemetery",
         images: [
-            // require("../assets/challenges/cemetery/1.png"),
-            // require("../assets/challenges/cemetery/2.png"),
-            // require("../assets/challenges/cemetery/3.png"),
-            // require("../assets/challenges/cemetery/4.png")
+            require("../assets/challenges/cemetery/1.png"),
+            require("../assets/challenges/cemetery/2.png"),
+            require("../assets/challenges/cemetery/3.png"),
+            require("../assets/images/8/death/4.png")
         ]
     },
     286: {
