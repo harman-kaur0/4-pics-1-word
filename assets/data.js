@@ -1240,7 +1240,7 @@ const data = {
            { "level": 1, "answer": "control", "images": [
                // require("../assets/images/19/control/1.png"),
                // require("../assets/images/19/control/2.png"),
-               // require("../assets/images/19/control/3.png"),
+               // require("../assets/challenges/button/3.png"),
                // require("../assets/images/6/gamer/1.png")
            ]},
            { "level": 2, "answer": "balance", "images": [
