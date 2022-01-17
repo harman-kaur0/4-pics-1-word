@@ -1244,58 +1244,58 @@ const data = {
                require("../assets/images/20/control/2.png")
            ]},
            { "level": 2, "answer": "balance", "images": [
-               // require("../assets/images/20/balance/1.png"),
-               // require("../assets/images/20/balance/2.png"),
-               // require("../assets/images/20/balance/3.png"),
-               // require("../assets/images/20/balance/4.png")
+               require("../assets/images/20/balance/1.png"),
+               require("../assets/images/20/balance/2.png"),
+               require("../assets/images/20/balance/3.png"),
+               require("../assets/challenges/backflip/2.png")
            ]},
            { "level": 3, "answer": "present", "images": [
-               // require("../assets/images/20/present/1.png"),
-               // require("../assets/images/20/present/2.png"),
-               // require("../assets/images/20/present/3.png"),
-               // require("../assets/images/20/present/4.png")
+               require("../assets/challenges/educate/3.png"),
+               require("../assets/challenges/gifts/1.png"),
+               require("../assets/challenges/proposal/4.png"),
+               require("../assets/images/12/winter/2.png")
            ]},
            { "level": 4, "answer": "babysit", "images": [
-               // require("../assets/images/20/babysit/1.png"),
-               // require("../assets/images/20/babysit/2.png"),
-               // require("../assets/images/20/babysit/3.png"),
-               // require("../assets/images/20/babysit/4.png")
+               require("../assets/images/20/babysit/1.png"),
+               require("../assets/images/20/babysit/2.png"),
+               require("../assets/images/20/babysit/3.png"),
+               require("../assets/images/20/babysit/4.png")
            ]},
            { "level": 5, "answer": "besties", "images": [
-               // require("../assets/images/20/besties/1.png"),
-               // require("../assets/images/20/besties/2.png"),
-               // require("../assets/images/20/besties/3.png"),
-               // require("../assets/images/12/snow/2.png")
+               require("../assets/challenges/brother/3.png"),
+               require("../assets/challenges/brother/1.png"),
+               require("../assets/challenges/friends/4.png"),
+               require("../assets/images/12/snow/2.png")
            ]},
            { "level": 6, "answer": "physics", "images": [
-               // require("../assets/images/20/physics/1.png"),
-               // require("../assets/images/20/physics/2.png"),
-               // require("../assets/images/20/physics/3.png"),
-               // require("../assets/images/20/physics/4.png")
+               require("../assets/images/20/physics/1.png"),
+               require("../assets/images/20/physics/2.png"),
+               require("../assets/challenges/kinetic/4.png"),
+               require("../assets/challenges/kinetic/2.png")
            ]},
            { "level": 7, "answer": "dolphin", "images": [
-               // require("../assets/images/20/dolphin/1.png"),
-               // require("../assets/images/20/dolphin/2.png"),
-               // require("../assets/images/20/dolphin/3.png"),
-               // require("../assets/images/20/dolphin/4.png")
+               require("../assets/images/20/dolphin/1.png"),
+               require("../assets/images/20/dolphin/2.png"),
+               require("../assets/images/20/dolphin/3.png"),
+               require("../assets/images/20/dolphin/4.png")
            ]},
            { "level": 8, "answer": "glacier", "images": [
-               // require("../assets/images/20/glacier/1.png"),
-               // require("../assets/images/20/glacier/2.png"),
-               // require("../assets/images/20/glacier/3.png"),
-               // require("../assets/images/20/glacier/4.png")
+               require("../assets/images/20/glacier/1.png"),
+               require("../assets/images/20/glacier/2.png"),
+               require("../assets/images/20/glacier/3.png"),
+               require("../assets/images/14/crash/3.png")
            ]},
            { "level": 9, "answer": "divorce", "images": [
-               // require("../assets/images/20/divorce/1.png"),
-               // require("../assets/images/20/divorce/2.png"),
-               // require("../assets/images/20/divorce/3.png"),
-               // require("../assets/images/20/divorce/4.png")
+               require("../assets/images/20/divorce/1.png"),
+               require("../assets/images/20/divorce/2.png"),
+               require("../assets/images/20/divorce/3.png"),
+               require("../assets/images/20/divorce/4.png")
            ]},
            { "level": 10, "answer": "ancient", "images": [
-               // require("../assets/images/20/ancient/1.png"),
-               // require("../assets/images/20/ancient/2.png"),
-               // require("../assets/images/20/ancient/3.png"),
-               // require("../assets/images/20/ancient/4.png")
+               require("../assets/images/20/ancient/1.png"),
+               require("../assets/images/20/ancient/2.png"),
+               require("../assets/images/20/ancient/3.png"),
+               require("../assets/challenges/august/1.png")
            ]}
        ]
    },
