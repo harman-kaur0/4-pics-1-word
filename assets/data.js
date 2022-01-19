@@ -1303,64 +1303,64 @@ const data = {
        "coins": 500,
        "stages": [
            { "level": 1, "answer": "floods", "images": [
-               // require("../assets/images/21/floods/1.png"),
-               // require("../assets/images/21/floods/2.png"),
-               // require("../assets/images/21/floods/3.png"),
-               // require("../assets/images/21/floods/4.png")
+               require("../assets/images/21/floods/1.png"),
+               require("../assets/images/21/floods/2.png"),
+               require("../assets/images/21/floods/3.png"),
+               require("../assets/images/21/floods/4.png")
            ]},
            { "level": 2, "answer": "drought", "images": [
-               // require("../assets/images/21/drought/1.png"),
-               // require("../assets/images/21/drought/2.png"),
-               // require("../assets/images/21/drought/3.png"),
-               // require("../assets/images/21/drought/4.png")
+               require("../assets/images/21/drought/1.png"),
+               require("../assets/images/19/desert/1.png"),
+               require("../assets/images/21/drought/2.png"),
+               require("../assets/images/19/desert/2.png")
            ]},
            { "level": 3, "answer": "tornado", "images": [
-               // require("../assets/images/21/tornado/1.png"),
-               // require("../assets/images/21/tornado/2.png"),
-               // require("../assets/images/21/tornado/3.png"),
-               // require("../assets/images/21/tornado/4.png")
+               require("../assets/images/21/tornado/1.png"),
+               require("../assets/images/21/tornado/2.png"),
+               require("../assets/images/21/tornado/3.png"),
+               require("../assets/images/21/tornado/4.png")
            ]},
            { "level": 4, "answer": "tsunami", "images": [
-               // require("../assets/images/21/tsunami/1.png"),
-               // require("../assets/images/21/tsunami/2.png"),
-               // require("../assets/images/21/tsunami/3.png"),
-               // require("../assets/images/21/tsunami/4.png")
+               require("../assets/images/21/tsunami/1.png"),
+               require("../assets/images/21/tsunami/2.png"),
+               require("../assets/images/21/tsunami/3.png"),
+               require("../assets/images/21/tsunami/4.png")
            ]},
            { "level": 5, "answer": "landslide", "images": [
-               // require("../assets/images/21/landslide/1.png"),
-               // require("../assets/images/21/landslide/2.png"),
-               // require("../assets/images/21/landslide/3.png"),
-               // require("../assets/images/21/landslide/4.png")
+               require("../assets/images/21/landslide/1.png"),
+               require("../assets/images/21/landslide/2.png"),
+               require("../assets/images/21/landslide/3.png"),
+               require("../assets/images/21/landslide/4.png")
            ]},
            { "level": 6, "answer": "wildfire", "images": [
-               // require("../assets/images/21/wildfire/1.png"),
-               // require("../assets/images/21/wildfire/2.png"),
-               // require("../assets/images/21/wildfire/3.png"),
-               // require("../assets/images/21/wildfire/4.png")
+               require("../assets/images/21/wildfire/1.png"),
+               require("../assets/images/21/wildfire/2.png"),
+               require("../assets/images/21/wildfire/3.png"),
+               require("../assets/images/21/wildfire/4.png")
            ]},
            { "level": 7, "answer": "heatwave", "images": [
-               // require("../assets/images/21/heatwave/1.png"),
-               // require("../assets/images/21/heatwave/2.png"),
-               // require("../assets/images/21/heatwave/3.png"),
-               // require("../assets/images/21/heatwave/4.png")
+               require("../assets/images/21/heatwave/1.png"),
+               require("../assets/images/21/heatwave/2.png"),
+               require("../assets/images/21/heatwave/3.png"),
+               require("../assets/images/21/heatwave/4.png")
            ]},
            { "level": 8, "answer": "eruption", "images": [
-               // require("../assets/images/21/eruption/1.png"),
-               // require("../assets/images/21/eruption/2.png"),
-               // require("../assets/images/21/eruption/3.png"),
-               // require("../assets/images/21/eruption/4.png")
+               require("../assets/images/21/eruption/1.png"),
+               require("../assets/images/21/eruption/2.png"),
+               require("../assets/images/21/eruption/3.png"),
+               require("../assets/images/5/upset/1.png")
            ]},
            { "level": 9, "answer": "avalanche", "images": [
-               // require("../assets/images/21/avalanche/1.png"),
-               // require("../assets/images/21/avalanche/2.png"),
-               // require("../assets/images/21/avalanche/3.png"),
-               // require("../assets/images/21/avalanche/4.png")
+               require("../assets/images/21/avalanche/1.png"),
+               require("../assets/images/21/avalanche/2.png"),
+               require("../assets/images/21/avalanche/3.png"),
+               require("../assets/images/21/avalanche/4.png")
            ]},
            { "level": 10, "answer": "hurricane", "images": [
-               // require("../assets/images/21/hurricane/1.png"),
-               // require("../assets/images/21/hurricane/2.png"),
-               // require("../assets/images/21/hurricane/3.png"),
-               // require("../assets/images/21/hurricane/4.png")
+               require("../assets/images/21/hurricane/1.png"),
+               require("../assets/images/21/hurricane/2.png"),
+               require("../assets/images/21/hurricane/3.png"),
+               require("../assets/images/21/hurricane/4.png")
            ]}
        ]
    },
