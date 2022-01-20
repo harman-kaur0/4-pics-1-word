@@ -1403,23 +1403,23 @@ const data = {
                 require("../assets/images/22/austria/3.png"),
                 require("../assets/images/22/austria/4.png")
             ]},
-            { "level": 7, "answer": "barbuda", "images": [
-                // require("../assets/images/22/barbuda/1.png"),
-                // require("../assets/images/22/barbuda/2.png"),
-                // require("../assets/images/22/barbuda/3.png"),
-                // require("../assets/images/22/barbuda/4.png")
+            { "level": 7, "answer": "cuba", "images": [
+                require("../assets/images/22/cuba/1.png"),
+                require("../assets/images/22/cuba/2.png"),
+                require("../assets/images/22/cuba/3.png"),
+                require("../assets/images/22/cuba/4.png")
             ]},
             { "level": 8, "answer": "germany", "images": [
-                // require("../assets/images/22/germany/1.png"),
-                // require("../assets/images/22/germany/2.png"),
-                // require("../assets/images/22/germany/3.png"),
-                // require("../assets/images/22/germany/4.png")
+                require("../assets/images/22/germany/1.png"),
+                require("../assets/images/22/germany/2.png"),
+                require("../assets/images/22/germany/3.png"),
+                require("../assets/images/22/germany/4.png")
             ]},
             { "level": 9, "answer": "georgia", "images": [
-                // require("../assets/images/22/georgia/1.png"),
-                // require("../assets/images/22/georgia/2.png"),
-                // require("../assets/images/22/georgia/3.png"),
-                // require("../assets/images/22/georgia/4.png")
+                require("../assets/images/22/georgia/1.png"),
+                require("../assets/images/22/georgia/2.png"),
+                require("../assets/images/22/georgia/3.png"),
+                require("../assets/images/22/georgia/4.png")
             ]},
             { "level": 10, "answer": "finland", "images": [
                 require("../assets/images/22/finland/1.png"),
