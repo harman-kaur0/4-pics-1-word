@@ -1368,40 +1368,40 @@ const data = {
     "coins": 550,
     "stages": [
             { "level": 1, "answer": "france", "images": [
-                // require("../assets/images/22/france/1.png"),
-                // require("../assets/images/22/france/2.png"),
-                // require("../assets/images/22/france/3.png"),
-                // require("../assets/images/22/france/4.png")
+                require("../assets/images/22/france/1.png"),
+                require("../assets/images/22/france/2.png"),
+                require("../assets/images/22/france/3.png"),
+                require("../assets/images/22/france/4.png")
             ]},
             { "level": 2, "answer": "russia", "images": [
-                // require("../assets/images/22/russia/1.png"),
-                // require("../assets/images/22/russia/2.png"),
-                // require("../assets/images/22/russia/3.png"),
-                // require("../assets/images/22/russia/4.png")
+                require("../assets/images/22/russia/1.png"),
+                require("../assets/images/22/russia/2.png"),
+                require("../assets/images/22/russia/3.png"),
+                require("../assets/images/22/russia/4.png")
             ]},
             { "level": 3, "answer": "belgium", "images": [
-                // require("../assets/images/22/belgium/1.png"),
-                // require("../assets/images/22/belgium/2.png"),
-                // require("../assets/images/22/belgium/3.png"),
-                // require("../assets/images/22/belgium/4.png")
+                require("../assets/images/22/belgium/1.png"),
+                require("../assets/images/22/belgium/2.png"),
+                require("../assets/images/22/belgium/3.png"),
+                require("../assets/images/22/belgium/4.png")
             ]},
             { "level": 4, "answer": "england", "images": [
-                // require("../assets/images/22/england/1.png"),
-                // require("../assets/images/22/england/2.png"),
-                // require("../assets/images/22/england/3.png"),
-                // require("../assets/images/22/england/4.png")
+                require("../assets/images/22/england/1.png"),
+                require("../assets/images/22/england/2.png"),
+                require("../assets/images/22/england/3.png"),
+                require("../assets/images/22/england/4.png")
             ]},
             { "level": 5, "answer": "serbia", "images": [
-                // require("../assets/images/22/serbia/1.png"),
-                // require("../assets/images/22/serbia/2.png"),
-                // require("../assets/images/22/serbia/3.png"),
-                // require("../assets/images/22/serbia/4.png")
+                require("../assets/images/22/serbia/1.png"),
+                require("../assets/images/22/serbia/2.png"),
+                require("../assets/images/22/serbia/3.png"),
+                require("../assets/images/22/serbia/4.png")
             ]},
             { "level": 6, "answer": "austria", "images": [
-                // require("../assets/images/22/austria/1.png"),
-                // require("../assets/images/22/austria/2.png"),
-                // require("../assets/images/22/austria/3.png"),
-                // require("../assets/images/22/austria/4.png")
+                require("../assets/images/22/austria/1.png"),
+                require("../assets/images/22/austria/2.png"),
+                require("../assets/images/22/austria/3.png"),
+                require("../assets/images/22/austria/4.png")
             ]},
             { "level": 7, "answer": "barbuda", "images": [
                 // require("../assets/images/22/barbuda/1.png"),
@@ -1422,10 +1422,10 @@ const data = {
                 // require("../assets/images/22/georgia/4.png")
             ]},
             { "level": 10, "answer": "finland", "images": [
-                // require("../assets/images/22/finland/1.png"),
-                // require("../assets/images/22/finland/2.png"),
-                // require("../assets/images/22/finland/3.png"),
-                // require("../assets/images/22/finland/4.png")
+                require("../assets/images/22/finland/1.png"),
+                require("../assets/images/22/finland/2.png"),
+                require("../assets/images/22/finland/3.png"),
+                require("../assets/images/22/finland/4.png")
             ]}
         ]
     },
