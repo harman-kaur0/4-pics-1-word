@@ -1433,10 +1433,10 @@ const data = {
         "coins": 550,
         "stages": [
             { "level": 1, "answer": "address", "images": [
-                // require("../assets/images/23/address/1.png"),
-                // require("../assets/images/23/address/2.png"),
-                // require("../assets/images/23/address/3.png"),
-                // require("../assets/images/23/address/4.png")
+                require("../assets/images/23/address/1.png"),
+                require("../assets/images/23/address/2.png"),
+                require("../assets/images/23/address/3.png"),
+                require("../assets/images/23/address/4.png")
             ]},
             { "level": 2, "answer": "achieve", "images": [
                 // require("../assets/images/23/achieve/1.png"),
