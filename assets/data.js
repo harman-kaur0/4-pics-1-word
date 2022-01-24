@@ -1439,10 +1439,10 @@ const data = {
                 require("../assets/images/23/address/4.png")
             ]},
             { "level": 2, "answer": "achieve", "images": [
-                // require("../assets/images/23/achieve/1.png"),
-                // require("../assets/images/23/achieve/2.png"),
-                // require("../assets/images/23/achieve/3.png"),
-                // require("../assets/images/23/achieve/4.png")
+                require("../assets/images/23/achieve/1.png"),
+                require("../assets/images/23/achieve/2.png"),
+                require("../assets/images/23/achieve/3.png"),
+                require("../assets/challenges/student/1.png")
             ]},
             { "level": 3, "answer": "attempt", "images": [
                 // require("../assets/images/23/attempt/1.png"),
@@ -1487,10 +1487,10 @@ const data = {
                 // require("../assets/images/23/average/4.png")
             ]},
             { "level": 10, "answer": "article", "images": [
-                // require("../assets/images/23/article/1.png"),
-                // require("../assets/images/23/article/2.png"),
-                // require("../assets/images/23/article/3.png"),
-                // require("../assets/images/23/article/4.png")
+                require("../assets/images/23/article/1.png"),
+                require("../assets/challenges/jogger/3.png"),
+                require("../assets/images/23/article/2.png"),
+                require("../assets/images/23/article/4.png")
             ]}
         ]
     },
