@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { width, checkForDuplicate } from '../helper/functions'
 import { useSelector } from 'react-redux'
 import Header from "../components/Header"
+import Settings from "../components/Settings"
 
 const HomeScreen = ({ navigation, playSound }) => {
+    const [open, setOpen] = useState(false)
+
     const challenges = useSelector(state => state.user.user.challenges) || {}
     const day = useSelector(state => state.header.day)
     
@@ -14,11 +17,15 @@ const HomeScreen = ({ navigation, playSound }) => {
         else null
     }
 
+    const handleClick = () => {
+        setOpen(!open)
+    }
+
     checkForDuplicate()
 
     return (
         <>
-            <Header button="settings" navigation={navigation} playSound={playSound}/>
+            <Header button="settings" navigation={navigation} playSound={playSound} handleClick={handleClick}/>
             <Image 
                 source={require("../assets/main/logo.png")} 
                 style={styles.logo}
@@ -87,6 +94,9 @@ const HomeScreen = ({ navigation, playSound }) => {
                     ))
                 }
             </View>
+            {
+                open ? <Settings handleClick={handleClick}/> : null
+            }
         </>
     )
 }

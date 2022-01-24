@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux"
 import { width } from "../helper/functions"
 import { setMessage } from "../actions/headerActions"
 
-const Header = ({ button, navigation, text, playSound }) => {
+const Header = ({ button, navigation, text, playSound, handleClick }) => {
     const dispatch = useDispatch()
 
     const user = useSelector(state => state.user.user)
@@ -72,7 +72,10 @@ const Header = ({ button, navigation, text, playSound }) => {
                             resizeMode="contain"
                         />
                     </TouchableOpacity> :
-                    <TouchableOpacity style={styles.closeTouch}>
+                    <TouchableOpacity
+                        onPress={handleClick}
+                        style={styles.closeTouch}
+                    >
                         <Image
                             source={require("../assets/main/settings.png")}
                             style={{width: "100%", flex: 1}}

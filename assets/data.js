@@ -1481,10 +1481,10 @@ const data = {
                 // require("../assets/images/23/athlete/4.png")
             ]},
             { "level": 9, "answer": "average", "images": [
-                // require("../assets/images/23/average/1.png"),
-                // require("../assets/images/23/average/2.png"),
-                // require("../assets/images/23/average/3.png"),
-                // require("../assets/images/23/average/4.png")
+                require("../assets/images/23/average/1.png"),
+                require("../assets/images/23/average/2.png"),
+                require("../assets/images/23/average/3.png"),
+                require("../assets/challenges/mediocre/2.png")
             ]},
             { "level": 10, "answer": "article", "images": [
                 require("../assets/images/23/article/1.png"),

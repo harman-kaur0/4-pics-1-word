@@ -61,6 +61,7 @@ export const preloadImages = arr => {
 }
 
 export const width = Dimensions.get('window').width
+export const height = Dimensions.get('window').height
 
 export const font = () => {
     switch(true) {

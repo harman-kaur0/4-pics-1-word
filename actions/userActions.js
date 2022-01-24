@@ -95,3 +95,9 @@ export const resetDailyBoosts = () => {
         dispatch({ type: "DAILY", daily })
     }
 }
+
+export const changeSettings = () => {
+    return async dispatch => {
+        
+    }
+}
