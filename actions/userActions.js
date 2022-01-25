@@ -4,9 +4,10 @@ export const fetchUserData = () => {
     return async dispatch => {
         try {
             const user = await AsyncStorage.getItem("user")
+            const settings = await AsyncStorage.getItem("settings")
         
             if (user) {
-                dispatch({ type: "USER", user: JSON.parse(user) })
+                dispatch({ type: "USER", user: JSON.parse(user), settings: JSON.parse(settings) })
             } else {
                 const newUser = {
                     name: "New User",
@@ -19,10 +20,16 @@ export const fetchUserData = () => {
                     records: {},
                     challenges: {}
                 }
+
+                const defaultSettings = {
+                    sound: 100,
+                    music: 100
+                }
         
                 await AsyncStorage.setItem("user", JSON.stringify(newUser))
+                await AsyncStorage.setItem("settings", JSON.stringify(defaultSettings))
         
-                dispatch({ type: "USER", user: newUser})
+                dispatch({ type: "USER", user: newUser, settings: defaultSettings })
             }
         } catch (err) {
             alert(err)
@@ -96,8 +103,13 @@ export const resetDailyBoosts = () => {
     }
 }
 
-export const changeSettings = () => {
+export const changeSettings = (amount, option) => {
     return async dispatch => {
+        const settings = await AsyncStorage.getItem("settings")
+        const newSettings = {...JSON.parse(settings), [option]: amount}
+
+        await AsyncStorage.setItem("settings", JSON.stringify(newSettings))
         
+        dispatch({ type: "SETTINGS", settings: newSettings })
     }
 }

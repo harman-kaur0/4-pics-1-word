@@ -10,7 +10,7 @@ const initialState = {
 export const user = (state = initialState, action) => {
     switch(action.type) {
         case "USER":
-            return {...state, user: action.user}
+            return {...state, user: action.user, settings: action.settings}
         case "DAILY":
             return {...state, daily: action.daily}
         case "SETTINGS":

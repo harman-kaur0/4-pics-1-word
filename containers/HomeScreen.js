@@ -18,6 +18,7 @@ const HomeScreen = ({ navigation, playSound }) => {
     }
 
     const handleClick = () => {
+        playSound("button")
         setOpen(!open)
     }
 
