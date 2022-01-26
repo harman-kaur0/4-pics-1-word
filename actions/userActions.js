@@ -23,7 +23,9 @@ export const fetchUserData = () => {
 
                 const defaultSettings = {
                     sound: 100,
-                    music: 100
+                    music: 100,
+                    muted_sound: false,
+                    muted_music: false
                 }
         
                 await AsyncStorage.setItem("user", JSON.stringify(newUser))
@@ -103,13 +105,22 @@ export const resetDailyBoosts = () => {
     }
 }
 
-export const changeSettings = (amount, option) => {
+export const changeSettings = (option, amount, mute) => {
     return async dispatch => {
-        const settings = await AsyncStorage.getItem("settings")
-        const newSettings = {...JSON.parse(settings), [option]: amount}
+        const settings = JSON.parse(await AsyncStorage.getItem("settings"))
+        let newSettings
+
+        if (amount) {
+            newSettings = {...settings, [option]: amount}
+        } else {
+            let mutedVolume = "muted_" + option
+            newSettings = {...settings, [mutedVolume]: !settings[mutedVolume]}
+        }
+
+        if (mute) newSettings = {...newSettings, ["muted_" + option]: false}
 
         await AsyncStorage.setItem("settings", JSON.stringify(newSettings))
-        
+
         dispatch({ type: "SETTINGS", settings: newSettings })
     }
 }

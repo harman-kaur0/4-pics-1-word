@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Slider from "@react-native-community/slider"
 import { useSelector, useDispatch } from "react-redux"
 import { StyleSheet, View, TouchableOpacity, Image, Text } from "react-native"
@@ -11,13 +11,28 @@ const Settings = ({ handleClick }) => {
 
     const [volume, setVolume] = useState(settings)
 
+    useEffect(() => {
+        let initial = {music: settings.music, sound: settings.sound}
+        if (settings.muted_music) initial = {...initial, music: 0}
+        if (settings.muted_sound) initial = {...initial, sound: 0}
+        setVolume(initial)
+    }, [])
+
     const muteVolume = type => {
-        if (volume[type] !== 0) {
-            setVolume({...volume, [type]: 0})
-            dispatch(changeSettings(0, type))
+        if (settings["muted_" + type]) {
+            setVolume({...volume, [type]: settings[type]})
+            dispatch(changeSettings(type))
         } else {
-            setVolume({...volume, [type]: 75})
-            dispatch(changeSettings(75, type))
+            setVolume({...volume, [type]: 0})
+            dispatch(changeSettings(type))
+        }
+    }
+
+    const adjustSlider = (type, value) => {
+        if (settings["muted_" + type]) {
+            dispatch(changeSettings(type, value, "mute"))
+        } else {
+            dispatch(changeSettings(type, value))
         }
     }
 
@@ -44,7 +59,7 @@ const Settings = ({ handleClick }) => {
                         minimumTrackTintColor="red"
                         maximumTrackTintColor="black"
                         onValueChange={value => setVolume({...volume, sound: value})}
-                        onSlidingComplete={value => dispatch(changeSettings(value, "sound"))}
+                        onSlidingComplete={value => adjustSlider("sound", value)}
                     />
                     <Text style={styles.text}>{volume.sound}</Text>
                     <TouchableOpacity style={styles.volumeImage} onPress={() => muteVolume("sound")}>
@@ -65,7 +80,7 @@ const Settings = ({ handleClick }) => {
                         minimumTrackTintColor="blue"
                         maximumTrackTintColor="black"
                         onValueChange={value => setVolume({...volume, music: value})}
-                        onSlidingComplete={value => dispatch(changeSettings(value, "music"))}
+                        onSlidingComplete={value => adjustSlider("music", value)}
                     />
                     <Text style={styles.text}>{volume.music}</Text>
                     <TouchableOpacity style={styles.volumeImage} onPress={() => muteVolume("music")}>
@@ -99,7 +114,7 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "white",
+        backgroundColor: "lightblue",
         width: 0.9 * width,
         height: 0.4 * height,
         borderRadius: 50
