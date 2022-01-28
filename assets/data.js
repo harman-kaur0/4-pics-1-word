@@ -1463,22 +1463,22 @@ const data = {
                 // require("../assets/images/23/advance/4.png")
             ]},
             { "level": 6, "answer": "airport", "images": [
-                // require("../assets/images/23/airport/1.png"),
-                // require("../assets/images/23/airport/2.png"),
-                // require("../assets/images/23/airport/3.png"),
-                // require("../assets/images/23/airport/4.png")
+                require("../assets/images/23/airport/1.png"),
+                require("../assets/images/23/airport/2.png"),
+                require("../assets/images/6/flies/4.png"),
+                require("../assets/images/23/airport/3.png")
             ]},
             { "level": 7, "answer": "account", "images": [
-                // require("../assets/images/23/account/1.png"),
-                // require("../assets/images/23/account/2.png"),
-                // require("../assets/images/23/account/3.png"),
-                // require("../assets/images/23/account/4.png")
+                require("../assets/images/23/account/1.png"),
+                require("../assets/images/23/account/2.png"),
+                require("../assets/images/23/account/3.png"),
+                require("../assets/images/23/account/4.png")
             ]},
             { "level": 8, "answer": "athlete", "images": [
-                // require("../assets/images/23/athlete/1.png"),
-                // require("../assets/images/23/athlete/2.png"),
-                // require("../assets/images/23/athlete/3.png"),
-                // require("../assets/images/23/athlete/4.png")
+                require("../assets/images/13/jamaica/2.png"),
+                require("../assets/images/25/fitness/1.png"),
+                require("../assets/images/16/sports/1.png"),
+                require("../assets/images/16/sports/2.png")
             ]},
             { "level": 9, "answer": "average", "images": [
                 require("../assets/images/23/average/1.png"),
@@ -1611,10 +1611,10 @@ const data = {
                 // require("../assets/images/25/offense/4.png")
             ]},
             { "level": 9, "answer": "fitness", "images": [
-                // require("../assets/images/25/fitness/1.png"),
-                // require("../assets/images/25/fitness/2.png"),
-                // require("../assets/images/25/fitness/3.png"),
-                // require("../assets/images/25/fitness/4.png")
+                require("../assets/images/25/fitness/1.png"),
+                require("../assets/images/25/fitness/2.png"),
+                require("../assets/images/25/fitness/3.png"),
+                require("../assets/images/25/fitness/4.png")
             ]},
             { "level": 10, "answer": "defense", "images": [
                 // require("../assets/images/25/defense/1.png"),
