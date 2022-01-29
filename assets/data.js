@@ -1563,10 +1563,10 @@ const data = {
         "coins": 600,
         "stages": [
             { "level": 1, "answer": "squeeze", "images": [
-                // require("../assets/images/25/squeeze/1.png"),
-                // require("../assets/images/25/squeeze/2.png"),
-                // require("../assets/images/25/squeeze/3.png"),
-                // require("../assets/images/25/squeeze/4.png")
+                require("../assets/images/25/squeeze/1.png"),
+                require("../assets/images/25/squeeze/2.png"),
+                require("../assets/images/25/squeeze/3.png"),
+                require("../assets/images/25/squeeze/4.png")
             ]},
             { "level": 2, "answer": "complex", "images": [
                 // require("../assets/images/25/complex/1.png"),
@@ -1599,16 +1599,16 @@ const data = {
                 // require("../assets/images/25/produce/4.png")
             ]},
             { "level": 7, "answer": "journal", "images": [
-                // require("../assets/images/25/journal/1.png"),
-                // require("../assets/images/25/journal/2.png"),
-                // require("../assets/images/25/journal/3.png"),
-                // require("../assets/images/25/journal/4.png")
+                require("../assets/images/25/journal/1.png"),
+                require("../assets/images/25/journal/2.png"),
+                require("../assets/images/25/journal/3.png"),
+                require("../assets/images/25/journal/4.png")
             ]},
-            { "level": 8, "answer": "offense", "images": [
-                // require("../assets/images/25/offense/1.png"),
-                // require("../assets/images/25/offense/2.png"),
-                // require("../assets/images/25/offense/3.png"),
-                // require("../assets/images/25/offense/4.png")
+            { "level": 8, "answer": "samurai", "images": [
+                require("../assets/images/25/samurai/1.png"),
+                require("../assets/images/25/samurai/2.png"),
+                require("../assets/challenges/katana/1.png"),
+                require("../assets/challenges/katana/3.png")
             ]},
             { "level": 9, "answer": "fitness", "images": [
                 require("../assets/images/25/fitness/1.png"),
@@ -1617,10 +1617,10 @@ const data = {
                 require("../assets/images/25/fitness/4.png")
             ]},
             { "level": 10, "answer": "defense", "images": [
-                // require("../assets/images/25/defense/1.png"),
-                // require("../assets/images/25/defense/2.png"),
-                // require("../assets/images/25/defense/3.png"),
-                // require("../assets/images/25/defense/4.png")
+                require("../assets/images/25/defense/1.png"),
+                require("../assets/images/25/defense/2.png"),
+                require("../assets/images/25/defense/3.png"),
+                require("../assets/challenges/immune/2.png")
             ]}
         ]
     },
