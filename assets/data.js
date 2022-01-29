@@ -1444,23 +1444,23 @@ const data = {
                 require("../assets/images/23/achieve/3.png"),
                 require("../assets/challenges/student/1.png")
             ]},
-            { "level": 3, "answer": "attempt", "images": [
-                // require("../assets/images/23/attempt/1.png"),
-                // require("../assets/images/23/attempt/2.png"),
-                // require("../assets/images/23/attempt/3.png"),
-                // require("../assets/images/23/attempt/4.png")
+            { "level": 3, "answer": "artists", "images": [
+                require("../assets/images/23/artists/1.png"),
+                require("../assets/images/10/hiphop/1.png"),
+                require("../assets/images/18/perform/1.png"),
+                require("../assets/images/23/artists/3.png")
             ]},
             { "level": 4, "answer": "approve", "images": [
-                // require("../assets/images/23/approve/1.png"),
-                // require("../assets/images/23/approve/2.png"),
-                // require("../assets/images/23/approve/3.png"),
-                // require("../assets/images/23/approve/4.png")
+                require("../assets/images/23/approve/1.png"),
+                require("../assets/images/23/approve/2.png"),
+                require("../assets/images/23/approve/3.png"),
+                require("../assets/images/23/approve/4.png")
             ]},
             { "level": 5, "answer": "advance", "images": [
-                // require("../assets/images/23/advance/1.png"),
-                // require("../assets/images/23/advance/2.png"),
-                // require("../assets/images/23/advance/3.png"),
-                // require("../assets/images/23/advance/4.png")
+                require("../assets/images/23/advance/1.png"),
+                require("../assets/images/23/advance/2.png"),
+                require("../assets/images/23/advance/3.png"),
+                require("../assets/images/23/advance/4.png")
             ]},
             { "level": 6, "answer": "airport", "images": [
                 require("../assets/images/23/airport/1.png"),
