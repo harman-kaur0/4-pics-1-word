@@ -1581,10 +1581,10 @@ const data = {
                 // require("../assets/images/25/example/4.png")
             ]},
             { "level": 4, "answer": "warning", "images": [
-                // require("../assets/images/25/warning/1.png"),
-                // require("../assets/images/25/warning/2.png"),
-                // require("../assets/images/25/warning/3.png"),
-                // require("../assets/images/25/warning/4.png")
+                require("../assets/images/25/warning/1.png"),
+                require("../assets/images/25/warning/2.png"),
+                require("../assets/images/25/warning/3.png"),
+                require("../assets/images/25/warning/4.png")
             ]},
             { "level": 5, "answer": "destroy", "images": [
                 // require("../assets/images/25/destroy/1.png"),
