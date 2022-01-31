@@ -1569,16 +1569,16 @@ const data = {
                 require("../assets/images/25/squeeze/4.png")
             ]},
             { "level": 2, "answer": "complex", "images": [
-                // require("../assets/images/25/complex/1.png"),
-                // require("../assets/images/25/complex/2.png"),
-                // require("../assets/images/25/complex/3.png"),
-                // require("../assets/images/25/complex/4.png")
+                require("../assets/images/25/complex/1.png"),
+                require("../assets/images/25/complex/2.png"),
+                require("../assets/images/25/complex/3.png"),
+                require("../assets/images/25/complex/4.png")
             ]},
-            { "level": 3, "answer": "example", "images": [
-                // require("../assets/images/25/example/1.png"),
-                // require("../assets/images/25/example/2.png"),
-                // require("../assets/images/25/example/3.png"),
-                // require("../assets/images/25/example/4.png")
+            { "level": 3, "answer": "offense", "images": [
+                require("../assets/images/25/offense/1.png"),
+                require("../assets/images/25/offense/2.png"),
+                require("../assets/images/25/offense/3.png"),
+                require("../assets/images/25/offense/4.png")
             ]},
             { "level": 4, "answer": "warning", "images": [
                 require("../assets/images/25/warning/1.png"),
@@ -1587,16 +1587,16 @@ const data = {
                 require("../assets/images/25/warning/4.png")
             ]},
             { "level": 5, "answer": "destroy", "images": [
-                // require("../assets/images/25/destroy/1.png"),
-                // require("../assets/images/25/destroy/2.png"),
-                // require("../assets/images/25/destroy/3.png"),
-                // require("../assets/images/25/destroy/4.png")
+                require("../assets/images/25/destroy/1.png"),
+                require("../assets/images/25/destroy/2.png"),
+                require("../assets/images/25/destroy/3.png"),
+                require("../assets/images/25/destroy/4.png")
             ]},
             { "level": 6, "answer": "produce", "images": [
-                // require("../assets/images/25/produce/1.png"),
-                // require("../assets/images/25/produce/2.png"),
-                // require("../assets/images/25/produce/3.png"),
-                // require("../assets/images/25/produce/4.png")
+                require("../assets/images/25/produce/1.png"),
+                require("../assets/challenges/farmer/3.png"),
+                require("../assets/images/25/produce/2.png"),
+                require("../assets/challenges/vegetable/1.png")
             ]},
             { "level": 7, "answer": "journal", "images": [
                 require("../assets/images/25/journal/1.png"),
