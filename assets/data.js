@@ -1552,10 +1552,10 @@ const data = {
                 // require("../assets/images/24/captain/4.png")
             ]},
             { "level": 10, "answer": "curious", "images": [
-                // require("../assets/images/24/curious/1.png"),
-                // require("../assets/images/24/curious/2.png"),
-                // require("../assets/images/24/curious/3.png"),
-                // require("../assets/images/24/curious/4.png")
+                require("../assets/images/24/curious/1.png"),
+                require("../assets/images/24/curious/2.png"),
+                require("../assets/images/24/curious/3.png"),
+                require("../assets/images/24/curious/4.png")
             ]}
         ]
     },
