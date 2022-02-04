@@ -1498,10 +1498,10 @@ const data = {
         "coins": 550,
         "stages": [
             { "level": 1, "answer": "chamber", "images": [
-                // require("../assets/images/24/chamber/1.png"),
-                // require("../assets/images/24/chamber/2.png"),
-                // require("../assets/images/24/chamber/3.png"),
-                // require("../assets/images/24/chamber/4.png")
+                require("../assets/images/24/chamber/1.png"),
+                require("../assets/images/24/chamber/2.png"),
+                require("../assets/images/24/chamber/3.png"),
+                require("../assets/images/24/chamber/4.png")
             ]},
             { "level": 2, "answer": "courage", "images": [
                 // require("../assets/images/24/courage/1.png"),
