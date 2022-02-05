@@ -1504,10 +1504,10 @@ const data = {
                 require("../assets/images/24/chamber/4.png")
             ]},
             { "level": 2, "answer": "courage", "images": [
-                // require("../assets/images/24/courage/1.png"),
-                // require("../assets/images/24/courage/2.png"),
-                // require("../assets/images/24/courage/3.png"),
-                // require("../assets/images/24/courage/4.png")
+                require("../assets/images/24/courage/1.png"),
+                require("../assets/images/24/courage/2.png"),
+                require("../assets/images/24/courage/3.png"),
+                require("../assets/images/20/balance/2.png")
             ]},
             { "level": 3, "answer": "century", "images": [
                 // require("../assets/images/24/century/1.png"),
@@ -1540,16 +1540,16 @@ const data = {
                 // require("../assets/images/24/combine/4.png")
             ]},
             { "level": 8, "answer": "conduct", "images": [
-                // require("../assets/images/24/conduct/1.png"),
-                // require("../assets/images/24/conduct/2.png"),
-                // require("../assets/images/24/conduct/3.png"),
-                // require("../assets/images/24/conduct/4.png")
+                require("../assets/images/24/conduct/1.png"),
+                require("../assets/images/24/conduct/2.png"),
+                require("../assets/images/24/conduct/3.png"),
+                require("../assets/images/24/conduct/4.png")
             ]},
             { "level": 9, "answer": "captain", "images": [
-                // require("../assets/images/24/captain/1.png"),
-                // require("../assets/images/24/captain/2.png"),
-                // require("../assets/images/24/captain/3.png"),
-                // require("../assets/images/24/captain/4.png")
+                require("../assets/images/24/captain/1.png"),
+                require("../assets/images/24/captain/2.png"),
+                require("../assets/challenges/veterans/1.png"),
+                require("../assets/images/14/sparrow/1.png")
             ]},
             { "level": 10, "answer": "curious", "images": [
                 require("../assets/images/24/curious/1.png"),
