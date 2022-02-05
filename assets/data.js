@@ -1534,10 +1534,10 @@ const data = {
                 // require("../assets/images/24/comment/4.png")
             ]},
             { "level": 7, "answer": "combine", "images": [
-                // require("../assets/images/24/combine/1.png"),
-                // require("../assets/images/24/combine/2.png"),
-                // require("../assets/images/24/combine/3.png"),
-                // require("../assets/images/24/combine/4.png")
+                require("../assets/images/24/combine/1.png"),
+                require("../assets/images/24/combine/2.png"),
+                require("../assets/images/24/combine/3.png"),
+                require("../assets/images/24/combine/4.png")
             ]},
             { "level": 8, "answer": "conduct", "images": [
                 require("../assets/images/24/conduct/1.png"),
