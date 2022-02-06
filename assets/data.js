@@ -1510,28 +1510,28 @@ const data = {
                 require("../assets/images/20/balance/2.png")
             ]},
             { "level": 3, "answer": "century", "images": [
-                // require("../assets/images/24/century/1.png"),
-                // require("../assets/images/24/century/2.png"),
-                // require("../assets/images/24/century/3.png"),
-                // require("../assets/images/24/century/4.png")
+                require("../assets/images/24/century/1.png"),
+                require("../assets/images/24/century/2.png"),
+                require("../assets/images/24/century/3.png"),
+                require("../assets/images/24/century/4.png")
             ]},
             { "level": 4, "answer": "country", "images": [
-                // require("../assets/images/24/country/1.png"),
-                // require("../assets/images/24/country/2.png"),
-                // require("../assets/images/24/country/3.png"),
-                // require("../assets/images/24/country/4.png")
+                require("../assets/images/22/russia/4.png"),
+                require("../assets/images/13/ireland/1.png"),
+                require("../assets/images/13/china/1.png"),
+                require("../assets/images/22/germany/1.png")
             ]},
             { "level": 5, "answer": "clothes", "images": [
-                // require("../assets/images/24/clothes/1.png"),
-                // require("../assets/images/24/clothes/2.png"),
-                // require("../assets/images/24/clothes/3.png"),
-                // require("../assets/images/24/clothes/4.png")
+                require("../assets/challenges/housework/2.png"),
+                require("../assets/challenges/sweater/4.png"),
+                require("../assets/challenges/sweater/2.png"),
+                require("../assets/challenges/jogger/1.png")
             ]},
             { "level": 6, "answer": "comment", "images": [
-                // require("../assets/images/24/comment/1.png"),
-                // require("../assets/images/24/comment/2.png"),
-                // require("../assets/images/24/comment/3.png"),
-                // require("../assets/images/24/comment/4.png")
+                require("../assets/images/24/comment/1.png"),
+                require("../assets/images/24/comment/2.png"),
+                require("../assets/images/24/comment/3.png"),
+                require("../assets/images/24/comment/4.png")
             ]},
             { "level": 7, "answer": "combine", "images": [
                 require("../assets/images/24/combine/1.png"),
