@@ -1628,10 +1628,10 @@ const data = {
         "coins": 600,
         "stages": [
             { "level": 1, "answer": "bottle", "images": [
-                // require("../assets/images/26/bottle/1.png"),
-                // require("../assets/images/26/bottle/2.png"),
-                // require("../assets/images/26/bottle/3.png"),
-                // require("../assets/images/26/bottle/4.png")
+                require("../assets/images/26/bottle/1.png"),
+                require("../assets/challenges/alcohol/3.png"),
+                require("../assets/images/25/squeeze/1.png"),
+                require("../assets/images/18/hydrate/3.png")
             ]},
             { "level": 2, "answer": "benefit", "images": [
                 // require("../assets/images/26/benefit/1.png"),
@@ -1682,10 +1682,10 @@ const data = {
                 // require("../assets/images/26/behavior/4.png")
             ]},
             { "level": 10, "answer": "boundary", "images": [
-                // require("../assets/images/26/boundary/1.png"),
-                // require("../assets/images/26/boundary/2.png"),
-                // require("../assets/images/26/boundary/3.png"),
-                // require("../assets/images/26/boundary/4.png")
+                require("../assets/images/26/boundary/1.png"),
+                require("../assets/images/26/boundary/2.png"),
+                require("../assets/images/26/boundary/3.png"),
+                require("../assets/challenges/border/1.png")
             ]}
         ]
     },
